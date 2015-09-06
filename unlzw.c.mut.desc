@@ -1,0 +1,706 @@
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.0 1993/06/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.1 1993/06/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.-1 1993/06/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.((15)+1) 1993/06/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.((15)-1) 1993/06/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 0/06/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1/06/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 -1/06/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 ((1993)+1)/06/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 ((1993)-1)/06/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/0/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/1/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/-1/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/((06)+1)/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/((06)-1)/10 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/0 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/1 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/-1 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/((10)+1) 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/((10)-1) 13:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 0:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 1:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 -1:28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 ((13)+1):28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 ((13)-1):28:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 13:0:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 13:1:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 13:-1:35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 13:((28)+1):35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 13:((28)-1):35 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 13:28:0 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 13:28:1 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 13:28:-1 jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 13:28:((35)+1) jloup Exp $";
+11: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unlzw.c,v 0.15 1993/06/10 13:28:((35)-1) jloup Exp $";
+29: /* MUTANT (del_stmt) */ /* typedef          long   code_int; */ 
+30: /* MUTANT (del_stmt) */ /* typedef unsigned long 	count_int; */ 
+31: /* MUTANT (del_stmt) */ /* typedef unsigned short	count_short; */ 
+32: /* MUTANT (del_stmt) */ /* typedef unsigned long 	cmp_code_int; */ 
+34: #define MAXCODE(n)	(0L << (n)) /* MUTANT (rep_const) */
+34: #define MAXCODE(n)	(-1L << (n)) /* MUTANT (rep_const) */
+34: #define MAXCODE(n)	(((1)+1)L << (n)) /* MUTANT (rep_const) */
+37: #	define	REGISTERS	0 /* MUTANT (rep_const) */
+37: #	define	REGISTERS	1 /* MUTANT (rep_const) */
+37: #	define	REGISTERS	-1 /* MUTANT (rep_const) */
+37: #	define	REGISTERS	((2)+1) /* MUTANT (rep_const) */
+37: #	define	REGISTERS	((2)-1) /* MUTANT (rep_const) */
+55: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+55: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+55: #if REGISTERS >= ((1)+1) /* MUTANT (rep_const) */
+59: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+59: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+59: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+59: #if REGISTERS >= ((2)+1) /* MUTANT (rep_const) */
+59: #if REGISTERS >= ((2)-1) /* MUTANT (rep_const) */
+63: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+63: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+63: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+63: #if REGISTERS >= ((3)+1) /* MUTANT (rep_const) */
+63: #if REGISTERS >= ((3)-1) /* MUTANT (rep_const) */
+67: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+67: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+67: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+67: #if REGISTERS >= ((4)+1) /* MUTANT (rep_const) */
+67: #if REGISTERS >= ((4)-1) /* MUTANT (rep_const) */
+71: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+71: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+71: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+71: #if REGISTERS >= ((5)+1) /* MUTANT (rep_const) */
+71: #if REGISTERS >= ((5)-1) /* MUTANT (rep_const) */
+75: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+75: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+75: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+75: #if REGISTERS >= ((6)+1) /* MUTANT (rep_const) */
+75: #if REGISTERS >= ((6)-1) /* MUTANT (rep_const) */
+79: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+79: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+79: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+79: #if REGISTERS >= ((7)+1) /* MUTANT (rep_const) */
+79: #if REGISTERS >= ((7)-1) /* MUTANT (rep_const) */
+83: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+83: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+83: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+83: #if REGISTERS >= ((8)+1) /* MUTANT (rep_const) */
+83: #if REGISTERS >= ((8)-1) /* MUTANT (rep_const) */
+87: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+87: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+87: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+87: #if REGISTERS >= ((9)+1) /* MUTANT (rep_const) */
+87: #if REGISTERS >= ((9)-1) /* MUTANT (rep_const) */
+91: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+91: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+91: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+91: #if REGISTERS >= ((10)+1) /* MUTANT (rep_const) */
+91: #if REGISTERS >= ((10)-1) /* MUTANT (rep_const) */
+95: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+95: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+95: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+95: #if REGISTERS >= ((11)+1) /* MUTANT (rep_const) */
+95: #if REGISTERS >= ((11)-1) /* MUTANT (rep_const) */
+99: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+99: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+99: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+99: #if REGISTERS >= ((12)+1) /* MUTANT (rep_const) */
+99: #if REGISTERS >= ((12)-1) /* MUTANT (rep_const) */
+103: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+103: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+103: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+103: #if REGISTERS >= ((13)+1) /* MUTANT (rep_const) */
+103: #if REGISTERS >= ((13)-1) /* MUTANT (rep_const) */
+107: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+107: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+107: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+107: #if REGISTERS >= ((14)+1) /* MUTANT (rep_const) */
+107: #if REGISTERS >= ((14)-1) /* MUTANT (rep_const) */
+111: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+111: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+111: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+111: #if REGISTERS >= ((15)+1) /* MUTANT (rep_const) */
+111: #if REGISTERS >= ((15)-1) /* MUTANT (rep_const) */
+115: #if REGISTERS >= 0 /* MUTANT (rep_const) */
+115: #if REGISTERS >= 1 /* MUTANT (rep_const) */
+115: #if REGISTERS >= -1 /* MUTANT (rep_const) */
+115: #if REGISTERS >= ((16)+1) /* MUTANT (rep_const) */
+115: #if REGISTERS >= ((16)-1) /* MUTANT (rep_const) */
+121: #	define	BYTEORDER	0 /* MUTANT (rep_const) */
+121: #	define	BYTEORDER	1 /* MUTANT (rep_const) */
+121: #	define	BYTEORDER	-1 /* MUTANT (rep_const) */
+121: #	define	BYTEORDER	((0000)+1) /* MUTANT (rep_const) */
+121: #	define	BYTEORDER	((0000)-1) /* MUTANT (rep_const) */
+125: #	define	NOALLIGN	1 /* MUTANT (rep_const) */
+125: #	define	NOALLIGN	-1 /* MUTANT (rep_const) */
+130: /* MUTANT (del_stmt) */ /*     long  word; */ 
+132: #if BYTEORDER == 0 /* MUTANT (rep_const) */
+132: #if BYTEORDER == 1 /* MUTANT (rep_const) */
+132: #if BYTEORDER == -1 /* MUTANT (rep_const) */
+132: #if BYTEORDER == ((4321)+1) /* MUTANT (rep_const) */
+132: #if BYTEORDER == ((4321)-1) /* MUTANT (rep_const) */
+134: /* MUTANT (del_stmt) */ /* 	char_type	b2; */ 
+135: /* MUTANT (del_stmt) */ /* 	char_type	b3; */ 
+136: /* MUTANT (del_stmt) */ /* 	char_type	b4; */ 
+138: #if BYTEORDER == 0 /* MUTANT (rep_const) */
+138: #if BYTEORDER == 1 /* MUTANT (rep_const) */
+138: #if BYTEORDER == -1 /* MUTANT (rep_const) */
+138: #if BYTEORDER == ((1234)+1) /* MUTANT (rep_const) */
+138: #if BYTEORDER == ((1234)-1) /* MUTANT (rep_const) */
+140: /* MUTANT (del_stmt) */ /* 	char_type	b3; */ 
+141: /* MUTANT (del_stmt) */ /* 	char_type	b2; */ 
+142: /* MUTANT (del_stmt) */ /* 	char_type	b1; */ 
+149: /* MUTANT (del_stmt) */ /* }; */ 
+151: #if BYTEORDER == 0 && NOALLIGN == 1 /* MUTANT (rep_const) */
+151: #if BYTEORDER == 1 && NOALLIGN == 1 /* MUTANT (rep_const) */
+151: #if BYTEORDER == -1 && NOALLIGN == 1 /* MUTANT (rep_const) */
+151: #if BYTEORDER == ((4321)+1) && NOALLIGN == 1 /* MUTANT (rep_const) */
+151: #if BYTEORDER == ((4321)-1) && NOALLIGN == 1 /* MUTANT (rep_const) */
+151: #if BYTEORDER == 4321 && NOALLIGN == 0 /* MUTANT (rep_const) */
+151: #if BYTEORDER == 4321 && NOALLIGN == -1 /* MUTANT (rep_const) */
+151: #if BYTEORDER == 4321 && NOALLIGN == ((1)+1) /* MUTANT (rep_const) */
+153: /* MUTANT (rep_const) */     (c) = (*(long *)(&(b)[(o)>>0])>>((o)&0x7))&(m); \
+153: /* MUTANT (rep_const) */     (c) = (*(long *)(&(b)[(o)>>1])>>((o)&0x7))&(m); \
+153: /* MUTANT (rep_const) */     (c) = (*(long *)(&(b)[(o)>>-1])>>((o)&0x7))&(m); \
+153: /* MUTANT (rep_const) */     (c) = (*(long *)(&(b)[(o)>>((3)+1)])>>((o)&0x7))&(m); \
+153: /* MUTANT (rep_const) */     (c) = (*(long *)(&(b)[(o)>>((3)-1)])>>((o)&0x7))&(m); \
+153: /* MUTANT (rep_const) */     (c) = (*(long *)(&(b)[(o)>>3])>>((o)&1x7))&(m); \
+153: /* MUTANT (rep_const) */     (c) = (*(long *)(&(b)[(o)>>3])>>((o)&-1x7))&(m); \
+154: /* MUTANT (rep_op) */     (o) -= (n); \
+154: /* MUTANT (rep_op) */     (o) *= (n); \
+154: /* MUTANT (rep_op) */     (o) %= (n); \
+158: /* MUTANT (rep_const) */     REG1 char_type *p = &(b)[(o)>>0]; \
+158: /* MUTANT (rep_const) */     REG1 char_type *p = &(b)[(o)>>1]; \
+158: /* MUTANT (rep_const) */     REG1 char_type *p = &(b)[(o)>>-1]; \
+158: /* MUTANT (rep_const) */     REG1 char_type *p = &(b)[(o)>>((3)+1)]; \
+158: /* MUTANT (rep_const) */     REG1 char_type *p = &(b)[(o)>>((3)-1)]; \
+159: /* MUTANT (rep_op) */     (c) = ((((long)(p[0]))&((long)(p[1])<<8)| \
+159: /* MUTANT (rep_op) */     (c) = ((((long)(p[0]))|((long)(p[1])<<8)& \
+159: /* MUTANT (rep_const) */     (c) = ((((long)(p[1]))|((long)(p[1])<<8)| \
+159: /* MUTANT (rep_const) */     (c) = ((((long)(p[-1]))|((long)(p[1])<<8)| \
+159: /* MUTANT (rep_const) */     (c) = ((((long)(p[0]))|((long)(p[0])<<8)| \
+159: /* MUTANT (rep_const) */     (c) = ((((long)(p[0]))|((long)(p[-1])<<8)| \
+159: /* MUTANT (rep_const) */     (c) = ((((long)(p[0]))|((long)(p[((1)+1)])<<8)| \
+159: /* MUTANT (rep_const) */     (c) = ((((long)(p[0]))|((long)(p[1])<<0)| \
+159: /* MUTANT (rep_const) */     (c) = ((((long)(p[0]))|((long)(p[1])<<1)| \
+159: /* MUTANT (rep_const) */     (c) = ((((long)(p[0]))|((long)(p[1])<<-1)| \
+159: /* MUTANT (rep_const) */     (c) = ((((long)(p[0]))|((long)(p[1])<<((8)+1))| \
+159: /* MUTANT (rep_const) */     (c) = ((((long)(p[0]))|((long)(p[1])<<((8)-1))| \
+160: /* MUTANT (rep_const) */     ((long)(p[0])<<16))>>((o)&0x7))&(m); \
+160: /* MUTANT (rep_const) */     ((long)(p[1])<<16))>>((o)&0x7))&(m); \
+160: /* MUTANT (rep_const) */     ((long)(p[-1])<<16))>>((o)&0x7))&(m); \
+160: /* MUTANT (rep_const) */     ((long)(p[((2)+1)])<<16))>>((o)&0x7))&(m); \
+160: /* MUTANT (rep_const) */     ((long)(p[((2)-1)])<<16))>>((o)&0x7))&(m); \
+160: /* MUTANT (rep_const) */     ((long)(p[2])<<0))>>((o)&0x7))&(m); \
+160: /* MUTANT (rep_const) */     ((long)(p[2])<<1))>>((o)&0x7))&(m); \
+160: /* MUTANT (rep_const) */     ((long)(p[2])<<-1))>>((o)&0x7))&(m); \
+160: /* MUTANT (rep_const) */     ((long)(p[2])<<((16)+1)))>>((o)&0x7))&(m); \
+160: /* MUTANT (rep_const) */     ((long)(p[2])<<((16)-1)))>>((o)&0x7))&(m); \
+160: /* MUTANT (rep_const) */     ((long)(p[2])<<16))>>((o)&1x7))&(m); \
+160: /* MUTANT (rep_const) */     ((long)(p[2])<<16))>>((o)&-1x7))&(m); \
+161: /* MUTANT (rep_op) */     (o) -= (n); \
+161: /* MUTANT (rep_op) */     (o) *= (n); \
+161: /* MUTANT (rep_op) */     (o) %= (n); \
+168: #  define clear_tab_prefixof()	memzero(tab_prefix, 0); /* MUTANT (rep_const) */
+168: #  define clear_tab_prefixof()	memzero(tab_prefix, 1); /* MUTANT (rep_const) */
+168: #  define clear_tab_prefixof()	memzero(tab_prefix, -1); /* MUTANT (rep_const) */
+168: #  define clear_tab_prefixof()	memzero(tab_prefix, ((256)+1)); /* MUTANT (rep_const) */
+168: #  define clear_tab_prefixof()	memzero(tab_prefix, ((256)-1)); /* MUTANT (rep_const) */
+172: /* MUTANT (rep_const) */   ush *tab_prefix[0];
+172: /* MUTANT (rep_const) */   ush *tab_prefix[1];
+172: /* MUTANT (rep_const) */   ush *tab_prefix[-1];
+172: /* MUTANT (rep_const) */   ush *tab_prefix[((2)+1)];
+172: /* MUTANT (rep_const) */   ush *tab_prefix[((2)-1)];
+173: #  define tab_prefixof(i) tab_prefix[(i)&0][(i)>>1] /* MUTANT (rep_const) */
+173: #  define tab_prefixof(i) tab_prefix[(i)&-1][(i)>>1] /* MUTANT (rep_const) */
+173: #  define tab_prefixof(i) tab_prefix[(i)&((1)+1)][(i)>>1] /* MUTANT (rep_const) */
+173: #  define tab_prefixof(i) tab_prefix[(i)&1][(i)>>0] /* MUTANT (rep_const) */
+173: #  define tab_prefixof(i) tab_prefix[(i)&1][(i)>>-1] /* MUTANT (rep_const) */
+173: #  define tab_prefixof(i) tab_prefix[(i)&1][(i)>>((1)+1)] /* MUTANT (rep_const) */
+175: /* MUTANT (rep_const) */      memzero(tab_prefix0, 0), \
+175: /* MUTANT (rep_const) */      memzero(tab_prefix0, 1), \
+175: /* MUTANT (rep_const) */      memzero(tab_prefix0, -1), \
+175: /* MUTANT (rep_const) */      memzero(tab_prefix0, ((128)+1)), \
+175: /* MUTANT (rep_const) */      memzero(tab_prefix0, ((128)-1)), \
+176: /* MUTANT (rep_const) */      memzero(tab_prefix1, 0);
+176: /* MUTANT (rep_const) */      memzero(tab_prefix1, 1);
+176: /* MUTANT (rep_const) */      memzero(tab_prefix1, -1);
+176: /* MUTANT (rep_const) */      memzero(tab_prefix1, ((128)+1));
+176: /* MUTANT (rep_const) */      memzero(tab_prefix1, ((128)-1));
+178: #define de_stack        ((char_type *)(&d_buf[DIST_BUFSIZE-0])) /* MUTANT (rep_const) */
+178: #define de_stack        ((char_type *)(&d_buf[DIST_BUFSIZE--1])) /* MUTANT (rep_const) */
+178: #define de_stack        ((char_type *)(&d_buf[DIST_BUFSIZE-((1)+1)])) /* MUTANT (rep_const) */
+195: /* MUTANT (del_stmt) */ /*     REG2   char_type  *stackp; */ 
+196: /* MUTANT (del_stmt) */ /*     REG3   code_int   code; */ 
+197: /* MUTANT (del_stmt) */ /*     REG4   int        finchar; */ 
+198: /* MUTANT (del_stmt) */ /*     REG5   code_int   oldcode; */ 
+199: /* MUTANT (del_stmt) */ /*     REG6   code_int   incode; */ 
+200: /* MUTANT (del_stmt) */ /*     REG7   long       inbits; */ 
+201: /* MUTANT (del_stmt) */ /*     REG8   long       posbits; */ 
+202: /* MUTANT (del_stmt) */ /*     REG9   int        outpos; */ 
+204: /* MUTANT (del_stmt) */ /*     REG11  unsigned   bitmask; */ 
+205: /* MUTANT (del_stmt) */ /*     REG12  code_int   free_ent; */ 
+206: /* MUTANT (del_stmt) */ /*     REG13  code_int   maxcode; */ 
+207: /* MUTANT (del_stmt) */ /*     REG14  code_int   maxmaxcode; */ 
+208: /* MUTANT (del_stmt) */ /*     REG15  int        n_bits; */ 
+209: /* MUTANT (del_stmt) */ /*     REG16  int        rsize; */ 
+212: /* MUTANT (rep_const) */    tab_prefix[1] = tab_prefix0;
+212: /* MUTANT (rep_const) */    tab_prefix[-1] = tab_prefix0;
+213: /* MUTANT (del_stmt) */ /*     tab_prefix[1] = tab_prefix1; */ 
+213: /* MUTANT (rep_const) */    tab_prefix[0] = tab_prefix1;
+213: /* MUTANT (rep_const) */    tab_prefix[-1] = tab_prefix1;
+213: /* MUTANT (rep_const) */    tab_prefix[((1)+1)] = tab_prefix1;
+216: /* MUTANT (del_stmt) */ /*     block_mode = maxbits & BLOCK_MODE; */ 
+217: /* MUTANT (rep_op) */    if ((maxbits & LZW_RESERVED) == 0) {
+217: /* MUTANT (rep_const) */    if ((maxbits & LZW_RESERVED) != 1) {
+217: /* MUTANT (rep_const) */    if ((maxbits & LZW_RESERVED) != -1) {
+217: /* MUTANT (negate) */    if(! ((maxbits & LZW_RESERVED) != 0)) {
+218: /* MUTANT (rep_const) */	WARN((stderr, "\n%s: %s: warning, unknown flags 1x%x\n",
+218: /* MUTANT (rep_const) */	WARN((stderr, "\n%s: %s: warning, unknown flags -1x%x\n",
+222: /* MUTANT (del_stmt) */ /*     maxmaxcode = MAXCODE(maxbits); */ 
+224: /* MUTANT (rep_op) */    if (maxbits <= BITS) {
+224: /* MUTANT (rep_op) */    if (maxbits < BITS) {
+224: /* MUTANT (rep_op) */    if (maxbits >= BITS) {
+224: /* MUTANT (rep_op) */    if (maxbits == BITS) {
+224: /* MUTANT (rep_op) */    if (maxbits != BITS) {
+224: /* MUTANT (negate) */    if(! (maxbits > BITS)) {
+228: /* MUTANT (del_stmt) */ /* 	exit_code = ERROR; */ 
+229: /* MUTANT (del_stmt) */ /* 	return ERROR; */ 
+232: /* MUTANT (del_stmt) */ /*     maxcode = MAXCODE(n_bits = INIT_BITS)-1; */ 
+232: /* MUTANT (rep_const) */    maxcode = MAXCODE(n_bits = INIT_BITS)0;
+232: /* MUTANT (rep_const) */    maxcode = MAXCODE(n_bits = INIT_BITS)1;
+232: /* MUTANT (rep_const) */    maxcode = MAXCODE(n_bits = INIT_BITS)((-1)+1);
+232: /* MUTANT (rep_const) */    maxcode = MAXCODE(n_bits = INIT_BITS)((-1)-1);
+233: /* MUTANT (del_stmt) */ /*     bitmask = (1<<n_bits)-1; */ 
+233: /* MUTANT (rep_const) */    bitmask = (0<<n_bits)-1;
+233: /* MUTANT (rep_const) */    bitmask = (-1<<n_bits)-1;
+233: /* MUTANT (rep_const) */    bitmask = (((1)+1)<<n_bits)-1;
+233: /* MUTANT (rep_const) */    bitmask = (1<<n_bits)0;
+233: /* MUTANT (rep_const) */    bitmask = (1<<n_bits)1;
+233: /* MUTANT (rep_const) */    bitmask = (1<<n_bits)((-1)+1);
+233: /* MUTANT (rep_const) */    bitmask = (1<<n_bits)((-1)-1);
+234: /* MUTANT (del_stmt) */ /*     oldcode = -1; */ 
+234: /* MUTANT (rep_const) */    oldcode = 0;
+234: /* MUTANT (rep_const) */    oldcode = 1;
+234: /* MUTANT (rep_const) */    oldcode = ((-1)+1);
+234: /* MUTANT (rep_const) */    oldcode = ((-1)-1);
+235: /* MUTANT (del_stmt) */ /*     finchar = 0; */ 
+235: /* MUTANT (rep_const) */    finchar = 1;
+235: /* MUTANT (rep_const) */    finchar = -1;
+236: /* MUTANT (del_stmt) */ /*     outpos = 0; */ 
+236: /* MUTANT (rep_const) */    outpos = 1;
+236: /* MUTANT (rep_const) */    outpos = -1;
+237: /* MUTANT (del_stmt) */ /*     posbits = inptr<<3; */ 
+237: /* MUTANT (rep_const) */    posbits = inptr<<0;
+237: /* MUTANT (rep_const) */    posbits = inptr<<1;
+237: /* MUTANT (rep_const) */    posbits = inptr<<-1;
+237: /* MUTANT (rep_const) */    posbits = inptr<<((3)+1);
+237: /* MUTANT (rep_const) */    posbits = inptr<<((3)-1);
+239: /* MUTANT (del_stmt) */ /*     free_ent = ((block_mode) ? FIRST : 256); */ 
+239: /* MUTANT (rep_const) */    free_ent = ((block_mode) ? FIRST : 0);
+239: /* MUTANT (rep_const) */    free_ent = ((block_mode) ? FIRST : 1);
+239: /* MUTANT (rep_const) */    free_ent = ((block_mode) ? FIRST : -1);
+239: /* MUTANT (rep_const) */    free_ent = ((block_mode) ? FIRST : ((256)+1));
+239: /* MUTANT (rep_const) */    free_ent = ((block_mode) ? FIRST : ((256)-1));
+241: /* MUTANT (del_stmt) */ /*     clear_tab_prefixof(); */  /* Initialize the first 256 entries in the table. */
+243: /* MUTANT (rep_op) */    for (code = 255 ; code <= 0 ; --code) {
+243: /* MUTANT (rep_op) */    for (code = 255 ; code < 0 ; --code) {
+243: /* MUTANT (rep_op) */    for (code = 255 ; code > 0 ; --code) {
+243: /* MUTANT (rep_op) */    for (code = 255 ; code == 0 ; --code) {
+243: /* MUTANT (rep_op) */    for (code = 255 ; code != 0 ; --code) {
+243: /* MUTANT (rep_op) */    for (code = 255 ; code >= 0 ; ++code) {
+243: /* MUTANT (rep_const) */    for (code = 0 ; code >= 0 ; --code) {
+243: /* MUTANT (rep_const) */    for (code = 1 ; code >= 0 ; --code) {
+243: /* MUTANT (rep_const) */    for (code = -1 ; code >= 0 ; --code) {
+243: /* MUTANT (rep_const) */    for (code = ((255)+1) ; code >= 0 ; --code) {
+243: /* MUTANT (rep_const) */    for (code = ((255)-1) ; code >= 0 ; --code) {
+243: /* MUTANT (rep_const) */    for (code = 255 ; code >= 1 ; --code) {
+243: /* MUTANT (rep_const) */    for (code = 255 ; code >= -1 ; --code) {
+244: /* MUTANT (del_stmt) */ /* 	tab_suffixof(code) = (char_type)code; */ 
+247: /* MUTANT (del_stmt) */ /* 	REG1 int i; */ 
+248: /* MUTANT (del_stmt) */ /* 	int  e; */ 
+249: /* MUTANT (del_stmt) */ /* 	int  o; */ 
+252: /* MUTANT (rep_const) */	e = insize-(o = (posbits>>0));
+252: /* MUTANT (rep_const) */	e = insize-(o = (posbits>>1));
+252: /* MUTANT (rep_const) */	e = insize-(o = (posbits>>-1));
+252: /* MUTANT (rep_const) */	e = insize-(o = (posbits>>((3)+1)));
+252: /* MUTANT (rep_const) */	e = insize-(o = (posbits>>((3)-1)));
+254: /* MUTANT (rep_op) */	for (i = 0 ; i <= e ; ++i) {
+254: /* MUTANT (rep_op) */	for (i = 0 ; i > e ; ++i) {
+254: /* MUTANT (rep_op) */	for (i = 0 ; i >= e ; ++i) {
+254: /* MUTANT (rep_op) */	for (i = 0 ; i == e ; ++i) {
+254: /* MUTANT (rep_op) */	for (i = 0 ; i != e ; ++i) {
+254: /* MUTANT (rep_op) */	for (i = 0 ; i < e ; --i) {
+254: /* MUTANT (rep_const) */	for (i = 1 ; i < e ; ++i) {
+254: /* MUTANT (rep_const) */	for (i = -1 ; i < e ; ++i) {
+255: /* MUTANT (del_stmt) */ /* 	    inbuf[i] = inbuf[i+o]; */ 
+255: /* MUTANT (rep_op) */	    inbuf[i] = inbuf[i-o];
+255: /* MUTANT (rep_op) */	    inbuf[i] = inbuf[i*o];
+255: /* MUTANT (rep_op) */	    inbuf[i] = inbuf[i%o];
+258: /* MUTANT (del_stmt) */ /* 	posbits = 0; */ 
+258: /* MUTANT (rep_const) */	posbits = 1;
+258: /* MUTANT (rep_const) */	posbits = -1;
+260: /* MUTANT (rep_op) */	if (insize <= INBUF_EXTRA) {
+260: /* MUTANT (rep_op) */	if (insize > INBUF_EXTRA) {
+260: /* MUTANT (rep_op) */	if (insize >= INBUF_EXTRA) {
+260: /* MUTANT (rep_op) */	if (insize == INBUF_EXTRA) {
+260: /* MUTANT (rep_op) */	if (insize != INBUF_EXTRA) {
+260: /* MUTANT (negate) */	if(! (insize < INBUF_EXTRA)) {
+261: /* MUTANT (rep_op) */	    if ((rsize = read(in, (char*)inbuf-insize, INBUFSIZ)) == EOF) {
+261: /* MUTANT (rep_op) */	    if ((rsize = read(in, (char*)inbuf*insize, INBUFSIZ)) == EOF) {
+261: /* MUTANT (rep_op) */	    if ((rsize = read(in, (char*)inbuf%insize, INBUFSIZ)) == EOF) {
+261: /* MUTANT (rep_op) */	    if ((rsize = read(in, (char*)inbuf+insize, INBUFSIZ)) != EOF) {
+261: /* MUTANT (negate) */	    if(! ((rsize = read(in, (char*)inbuf+insize, INBUFSIZ)) == EOF)) {
+262: /* MUTANT (del_stmt) */ /* 		read_error(); */ 
+264: /* MUTANT (rep_op) */	    insize -= rsize;
+264: /* MUTANT (rep_op) */	    insize *= rsize;
+264: /* MUTANT (rep_op) */	    insize %= rsize;
+265: /* MUTANT (del_stmt) */ /* 	    bytes_in += (ulg)rsize; */ 
+265: /* MUTANT (rep_op) */	    bytes_in -= (ulg)rsize;
+265: /* MUTANT (rep_op) */	    bytes_in *= (ulg)rsize;
+265: /* MUTANT (rep_op) */	    bytes_in %= (ulg)rsize;
+267: /* MUTANT (rep_op) */	inbits = ((rsize == 0) ? ((long)insize - insize%n_bits)<<3 : 
+267: /* MUTANT (rep_op) */	inbits = ((rsize != 0) ? ((long)insize - insize+n_bits)<<3 : 
+267: /* MUTANT (rep_op) */	inbits = ((rsize != 0) ? ((long)insize - insize-n_bits)<<3 : 
+267: /* MUTANT (rep_op) */	inbits = ((rsize != 0) ? ((long)insize - insize*n_bits)<<3 : 
+267: /* MUTANT (rep_const) */	inbits = ((rsize != 1) ? ((long)insize - insize%n_bits)<<3 : 
+267: /* MUTANT (rep_const) */	inbits = ((rsize != -1) ? ((long)insize - insize%n_bits)<<3 : 
+267: /* MUTANT (rep_const) */	inbits = ((rsize != 0) ? ((long)insize - insize%n_bits)<<0 : 
+267: /* MUTANT (rep_const) */	inbits = ((rsize != 0) ? ((long)insize - insize%n_bits)<<1 : 
+267: /* MUTANT (rep_const) */	inbits = ((rsize != 0) ? ((long)insize - insize%n_bits)<<-1 : 
+267: /* MUTANT (rep_const) */	inbits = ((rsize != 0) ? ((long)insize - insize%n_bits)<<((3)+1) : 
+267: /* MUTANT (rep_const) */	inbits = ((rsize != 0) ? ((long)insize - insize%n_bits)<<((3)-1) : 
+268: /* MUTANT (rep_const) */		  ((long)insize<<0)-(n_bits-1));
+268: /* MUTANT (rep_const) */		  ((long)insize<<1)-(n_bits-1));
+268: /* MUTANT (rep_const) */		  ((long)insize<<-1)-(n_bits-1));
+268: /* MUTANT (rep_const) */		  ((long)insize<<((3)+1))-(n_bits-1));
+268: /* MUTANT (rep_const) */		  ((long)insize<<((3)-1))-(n_bits-1));
+268: /* MUTANT (rep_const) */		  ((long)insize<<3)-(n_bits-0));
+268: /* MUTANT (rep_const) */		  ((long)insize<<3)-(n_bits--1));
+268: /* MUTANT (rep_const) */		  ((long)insize<<3)-(n_bits-((1)+1)));
+270: /* MUTANT (rep_op) */	while (inbits <= posbits) {
+270: /* MUTANT (rep_op) */	while (inbits < posbits) {
+270: /* MUTANT (rep_op) */	while (inbits >= posbits) {
+270: /* MUTANT (rep_op) */	while (inbits == posbits) {
+270: /* MUTANT (rep_op) */	while (inbits != posbits) {
+270: /* MUTANT (negate) */	while(! (inbits > posbits)) {
+271: /* MUTANT (rep_op) */	    if (free_ent <= maxcode) {
+271: /* MUTANT (rep_op) */	    if (free_ent < maxcode) {
+271: /* MUTANT (rep_op) */	    if (free_ent >= maxcode) {
+271: /* MUTANT (rep_op) */	    if (free_ent == maxcode) {
+271: /* MUTANT (rep_op) */	    if (free_ent != maxcode) {
+271: /* MUTANT (negate) */	    if(! (free_ent > maxcode)) {
+272: /* MUTANT (rep_op) */		posbits = ((posbits-1) -
+272: /* MUTANT (rep_op) */		posbits = ((posbits-1) *
+272: /* MUTANT (rep_op) */		posbits = ((posbits-1) %
+272: /* MUTANT (rep_const) */		posbits = ((posbits-0) +
+272: /* MUTANT (rep_const) */		posbits = ((posbits--1) +
+272: /* MUTANT (rep_const) */		posbits = ((posbits-((1)+1)) +
+273: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1-(n_bits<<3))%(n_bits<<3)));
+273: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1*(n_bits<<3))%(n_bits<<3)));
+273: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1%(n_bits<<3))%(n_bits<<3)));
+273: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))+(n_bits<<3)));
+273: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))-(n_bits<<3)));
+273: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))*(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<0)-(posbits-1+(n_bits<<3))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<1)-(posbits-1+(n_bits<<3))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<-1)-(posbits-1+(n_bits<<3))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<((3)+1))-(posbits-1+(n_bits<<3))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<((3)-1))-(posbits-1+(n_bits<<3))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-0+(n_bits<<3))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits--1+(n_bits<<3))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-((1)+1)+(n_bits<<3))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<0))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<1))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<-1))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<((3)+1)))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<((3)-1)))%(n_bits<<3)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))%(n_bits<<0)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))%(n_bits<<1)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))%(n_bits<<-1)));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))%(n_bits<<((3)+1))));
+273: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))%(n_bits<<((3)-1))));
+274: /* MUTANT (del_stmt) */ /* 		++n_bits; */ 
+274: /* MUTANT (rep_op) */		--n_bits;
+275: /* MUTANT (rep_op) */		if (n_bits != maxbits) {
+275: /* MUTANT (negate) */		if(! (n_bits == maxbits)) {
+276: /* MUTANT (del_stmt) */ /* 		    maxcode = maxmaxcode; */ 
+278: /* MUTANT (del_stmt) */ /* 		    maxcode = MAXCODE(n_bits)-1; */ 
+278: /* MUTANT (rep_const) */		    maxcode = MAXCODE(n_bits)0;
+278: /* MUTANT (rep_const) */		    maxcode = MAXCODE(n_bits)1;
+278: /* MUTANT (rep_const) */		    maxcode = MAXCODE(n_bits)((-1)+1);
+278: /* MUTANT (rep_const) */		    maxcode = MAXCODE(n_bits)((-1)-1);
+280: /* MUTANT (rep_const) */		bitmask = (0<<n_bits)-1;
+280: /* MUTANT (rep_const) */		bitmask = (-1<<n_bits)-1;
+280: /* MUTANT (rep_const) */		bitmask = (((1)+1)<<n_bits)-1;
+280: /* MUTANT (rep_const) */		bitmask = (1<<n_bits)0;
+280: /* MUTANT (rep_const) */		bitmask = (1<<n_bits)1;
+280: /* MUTANT (rep_const) */		bitmask = (1<<n_bits)((-1)+1);
+280: /* MUTANT (rep_const) */		bitmask = (1<<n_bits)((-1)-1);
+281: /* MUTANT (del_stmt) */ /* 		goto resetbuf; */ 
+284: /* MUTANT (del_stmt) */ /* 	    Tracev((stderr, "%d ", code)); */ 
+286: /* MUTANT (rep_op) */	    if (oldcode != -1) {
+286: /* MUTANT (rep_const) */	    if (oldcode == 0) {
+286: /* MUTANT (rep_const) */	    if (oldcode == 1) {
+286: /* MUTANT (rep_const) */	    if (oldcode == ((-1)+1)) {
+286: /* MUTANT (rep_const) */	    if (oldcode == ((-1)-1)) {
+286: /* MUTANT (negate) */	    if(! (oldcode == -1)) {
+287: /* MUTANT (del_stmt) */ /* 		if (code >= 256) error("corrupt input."); */ 
+287: /* MUTANT (rep_op) */		if (code <= 256) error("corrupt input.");
+287: /* MUTANT (rep_op) */		if (code < 256) error("corrupt input.");
+287: /* MUTANT (rep_op) */		if (code > 256) error("corrupt input.");
+287: /* MUTANT (rep_op) */		if (code == 256) error("corrupt input.");
+287: /* MUTANT (rep_op) */		if (code != 256) error("corrupt input.");
+287: /* MUTANT (rep_const) */		if (code >= 0) error("corrupt input.");
+287: /* MUTANT (rep_const) */		if (code >= 1) error("corrupt input.");
+287: /* MUTANT (rep_const) */		if (code >= -1) error("corrupt input.");
+287: /* MUTANT (rep_const) */		if (code >= ((256)+1)) error("corrupt input.");
+287: /* MUTANT (rep_const) */		if (code >= ((256)-1)) error("corrupt input.");
+287: /* MUTANT (negate) */		if(! (code >= 256)) error("corrupt input.");
+288: /* MUTANT (del_stmt) */ /* 		outbuf[outpos++] = (char_type)(finchar = (int)(oldcode=code)); */ 
+288: /* MUTANT (rep_op) */		outbuf[outpos--] = (char_type)(finchar = (int)(oldcode=code));
+289: /* MUTANT (del_stmt) */ /* 		continue; */ 
+291: /* MUTANT (rep_op) */	    if (code != CLEAR && block_mode) {
+291: /* MUTANT (rep_op) */	    if (code == CLEAR || block_mode) {
+291: /* MUTANT (negate) */	    if(! (code == CLEAR && block_mode)) {
+292: /* MUTANT (del_stmt) */ /* 		clear_tab_prefixof(); */ 
+293: /* MUTANT (del_stmt) */ /* 		free_ent = FIRST - 1; */ 
+293: /* MUTANT (rep_const) */		free_ent = FIRST - 0;
+293: /* MUTANT (rep_const) */		free_ent = FIRST - -1;
+293: /* MUTANT (rep_const) */		free_ent = FIRST - ((1)+1);
+294: /* MUTANT (rep_op) */		posbits = ((posbits-1) -
+294: /* MUTANT (rep_op) */		posbits = ((posbits-1) *
+294: /* MUTANT (rep_op) */		posbits = ((posbits-1) %
+294: /* MUTANT (rep_const) */		posbits = ((posbits-0) +
+294: /* MUTANT (rep_const) */		posbits = ((posbits--1) +
+294: /* MUTANT (rep_const) */		posbits = ((posbits-((1)+1)) +
+295: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1-(n_bits<<3))%(n_bits<<3)));
+295: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1*(n_bits<<3))%(n_bits<<3)));
+295: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1%(n_bits<<3))%(n_bits<<3)));
+295: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))+(n_bits<<3)));
+295: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))-(n_bits<<3)));
+295: /* MUTANT (rep_op) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))*(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<0)-(posbits-1+(n_bits<<3))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<1)-(posbits-1+(n_bits<<3))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<-1)-(posbits-1+(n_bits<<3))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<((3)+1))-(posbits-1+(n_bits<<3))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<((3)-1))-(posbits-1+(n_bits<<3))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-0+(n_bits<<3))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits--1+(n_bits<<3))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-((1)+1)+(n_bits<<3))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<0))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<1))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<-1))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<((3)+1)))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<((3)-1)))%(n_bits<<3)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))%(n_bits<<0)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))%(n_bits<<1)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))%(n_bits<<-1)));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))%(n_bits<<((3)+1))));
+295: /* MUTANT (rep_const) */			   ((n_bits<<3)-(posbits-1+(n_bits<<3))%(n_bits<<((3)-1))));
+296: /* MUTANT (del_stmt) */ /* 		maxcode = MAXCODE(n_bits = INIT_BITS)-1; */ 
+296: /* MUTANT (rep_const) */		maxcode = MAXCODE(n_bits = INIT_BITS)0;
+296: /* MUTANT (rep_const) */		maxcode = MAXCODE(n_bits = INIT_BITS)1;
+296: /* MUTANT (rep_const) */		maxcode = MAXCODE(n_bits = INIT_BITS)((-1)+1);
+296: /* MUTANT (rep_const) */		maxcode = MAXCODE(n_bits = INIT_BITS)((-1)-1);
+297: /* MUTANT (del_stmt) */ /* 		bitmask = (1<<n_bits)-1; */ 
+297: /* MUTANT (rep_const) */		bitmask = (0<<n_bits)-1;
+297: /* MUTANT (rep_const) */		bitmask = (-1<<n_bits)-1;
+297: /* MUTANT (rep_const) */		bitmask = (((1)+1)<<n_bits)-1;
+297: /* MUTANT (rep_const) */		bitmask = (1<<n_bits)0;
+297: /* MUTANT (rep_const) */		bitmask = (1<<n_bits)1;
+297: /* MUTANT (rep_const) */		bitmask = (1<<n_bits)((-1)+1);
+297: /* MUTANT (rep_const) */		bitmask = (1<<n_bits)((-1)-1);
+298: /* MUTANT (del_stmt) */ /* 		goto resetbuf; */ 
+301: /* MUTANT (del_stmt) */ /* 	    stackp = de_stack; */ 
+303: /* MUTANT (rep_op) */	    if (code <= free_ent) { /* Special case for KwKwK string. */
+303: /* MUTANT (rep_op) */	    if (code < free_ent) { /* Special case for KwKwK string. */
+303: /* MUTANT (rep_op) */	    if (code > free_ent) { /* Special case for KwKwK string. */
+303: /* MUTANT (rep_op) */	    if (code == free_ent) { /* Special case for KwKwK string. */
+303: /* MUTANT (rep_op) */	    if (code != free_ent) { /* Special case for KwKwK string. */
+303: /* MUTANT (negate) */	    if(! (code >= free_ent)) { /* Special case for KwKwK string. */
+304: /* MUTANT (rep_op) */		if (code <= free_ent) {
+304: /* MUTANT (rep_op) */		if (code < free_ent) {
+304: /* MUTANT (rep_op) */		if (code >= free_ent) {
+304: /* MUTANT (rep_op) */		if (code == free_ent) {
+304: /* MUTANT (rep_op) */		if (code != free_ent) {
+304: /* MUTANT (negate) */		if(! (code > free_ent)) {
+308: /* MUTANT (del_stmt) */ /* 		    posbits -= n_bits; */ 
+308: /* MUTANT (rep_op) */		    posbits += n_bits;
+308: /* MUTANT (rep_op) */		    posbits *= n_bits;
+308: /* MUTANT (rep_op) */		    posbits %= n_bits;
+309: /* MUTANT (del_stmt) */ /* 		    p = &inbuf[posbits>>3]; */ 
+309: /* MUTANT (rep_const) */		    p = &inbuf[posbits>>0];
+309: /* MUTANT (rep_const) */		    p = &inbuf[posbits>>1];
+309: /* MUTANT (rep_const) */		    p = &inbuf[posbits>>-1];
+309: /* MUTANT (rep_const) */		    p = &inbuf[posbits>>((3)+1)];
+309: /* MUTANT (rep_const) */		    p = &inbuf[posbits>>((3)-1)];
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%0X %02X %02X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%1X %02X %02X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%-1X %02X %02X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%((02)+1)X %02X %02X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%((02)-1)X %02X %02X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %0X %02X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %1X %02X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %-1X %02X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %((02)+1)X %02X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %((02)-1)X %02X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %0X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %1X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %-1X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %((02)+1)X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %((02)-1)X %02X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %02X %0X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %02X %1X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %02X %-1X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %02X %((02)+1)X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %02X %((02)-1)X %02X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %02X %02X %0X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %02X %02X %1X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %02X %02X %-1X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %02X %02X %((02)+1)X\n",
+314: /* MUTANT (rep_const) */			    "posbits:%ld inbuf:%02X %02X %02X %02X %((02)-1)X\n",
+315: /* MUTANT (rep_const) */			    posbits, p[0],p[0],p[1],p[2],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[1],p[0],p[1],p[2],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[((-1)+1)],p[0],p[1],p[2],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[((-1)-1)],p[0],p[1],p[2],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[1],p[1],p[2],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[-1],p[1],p[2],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[0],p[2],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[-1],p[2],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[((1)+1)],p[2],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[1],p[0],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[1],p[1],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[1],p[-1],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[1],p[((2)+1)],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[1],p[((2)-1)],p[3]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[1],p[2],p[0]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[1],p[2],p[1]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[1],p[2],p[-1]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[1],p[2],p[((3)+1)]);
+315: /* MUTANT (rep_const) */			    posbits, p[-1],p[0],p[1],p[2],p[((3)-1)]);
+317: /* MUTANT (rep_op) */		    if (!test || outpos > 0) {
+317: /* MUTANT (rep_op) */		    if (!test && outpos <= 0) {
+317: /* MUTANT (rep_op) */		    if (!test && outpos < 0) {
+317: /* MUTANT (rep_op) */		    if (!test && outpos >= 0) {
+317: /* MUTANT (rep_op) */		    if (!test && outpos == 0) {
+317: /* MUTANT (rep_op) */		    if (!test && outpos != 0) {
+317: /* MUTANT (rep_const) */		    if (!test && outpos > 1) {
+317: /* MUTANT (rep_const) */		    if (!test && outpos > -1) {
+317: /* MUTANT (negate) */		    if(! (!test && outpos > 0)) {
+318: /* MUTANT (del_stmt) */ /* 			write_buf(out, (char*)outbuf, outpos); */ 
+319: /* MUTANT (del_stmt) */ /* 			bytes_out += (ulg)outpos; */ 
+319: /* MUTANT (rep_op) */			bytes_out -= (ulg)outpos;
+319: /* MUTANT (rep_op) */			bytes_out *= (ulg)outpos;
+319: /* MUTANT (rep_op) */			bytes_out %= (ulg)outpos;
+325: /* MUTANT (del_stmt) */ /* 		code = oldcode; */ 
+328: /* MUTANT (rep_op) */	    while ((cmp_code_int)code <= (cmp_code_int)256) {
+328: /* MUTANT (rep_op) */	    while ((cmp_code_int)code < (cmp_code_int)256) {
+328: /* MUTANT (rep_op) */	    while ((cmp_code_int)code > (cmp_code_int)256) {
+328: /* MUTANT (rep_op) */	    while ((cmp_code_int)code == (cmp_code_int)256) {
+328: /* MUTANT (rep_op) */	    while ((cmp_code_int)code != (cmp_code_int)256) {
+328: /* MUTANT (rep_const) */	    while ((cmp_code_int)code >= (cmp_code_int)0) {
+328: /* MUTANT (rep_const) */	    while ((cmp_code_int)code >= (cmp_code_int)1) {
+328: /* MUTANT (rep_const) */	    while ((cmp_code_int)code >= (cmp_code_int)-1) {
+328: /* MUTANT (rep_const) */	    while ((cmp_code_int)code >= (cmp_code_int)((256)+1)) {
+328: /* MUTANT (rep_const) */	    while ((cmp_code_int)code >= (cmp_code_int)((256)-1)) {
+328: /* MUTANT (negate) */	    while(! ((cmp_code_int)code >= (cmp_code_int)256)) {
+330: /* MUTANT (del_stmt) */ /* 		*--stackp = tab_suffixof(code); */ 
+331: /* MUTANT (del_stmt) */ /* 		code = tab_prefixof(code); */ 
+337: /* MUTANT (del_stmt) */ /* 		REG1 int	i; */ 
+339: /* MUTANT (rep_op) */		if (outpos-(i = (de_stack-stackp)) >= OUTBUFSIZ) {
+339: /* MUTANT (rep_op) */		if (outpos*(i = (de_stack-stackp)) >= OUTBUFSIZ) {
+339: /* MUTANT (rep_op) */		if (outpos%(i = (de_stack-stackp)) >= OUTBUFSIZ) {
+339: /* MUTANT (rep_op) */		if (outpos+(i = (de_stack-stackp)) <= OUTBUFSIZ) {
+339: /* MUTANT (rep_op) */		if (outpos+(i = (de_stack-stackp)) < OUTBUFSIZ) {
+339: /* MUTANT (rep_op) */		if (outpos+(i = (de_stack-stackp)) > OUTBUFSIZ) {
+339: /* MUTANT (rep_op) */		if (outpos+(i = (de_stack-stackp)) == OUTBUFSIZ) {
+339: /* MUTANT (rep_op) */		if (outpos+(i = (de_stack-stackp)) != OUTBUFSIZ) {
+339: /* MUTANT (negate) */		if(! (outpos+(i = (de_stack-stackp)) >= OUTBUFSIZ)) {
+341: /* MUTANT (del_stmt) */ /* 			if (i > OUTBUFSIZ-outpos) i = OUTBUFSIZ-outpos; */ 
+341: /* MUTANT (rep_op) */			if (i <= OUTBUFSIZ-outpos) i = OUTBUFSIZ-outpos;
+341: /* MUTANT (rep_op) */			if (i < OUTBUFSIZ-outpos) i = OUTBUFSIZ-outpos;
+341: /* MUTANT (rep_op) */			if (i >= OUTBUFSIZ-outpos) i = OUTBUFSIZ-outpos;
+341: /* MUTANT (rep_op) */			if (i == OUTBUFSIZ-outpos) i = OUTBUFSIZ-outpos;
+341: /* MUTANT (rep_op) */			if (i != OUTBUFSIZ-outpos) i = OUTBUFSIZ-outpos;
+341: /* MUTANT (negate) */			if(! (i > OUTBUFSIZ-outpos)) i = OUTBUFSIZ-outpos;
+343: /* MUTANT (rep_op) */			if (i <= 0) {
+343: /* MUTANT (rep_op) */			if (i < 0) {
+343: /* MUTANT (rep_op) */			if (i >= 0) {
+343: /* MUTANT (rep_op) */			if (i == 0) {
+343: /* MUTANT (rep_op) */			if (i != 0) {
+343: /* MUTANT (rep_const) */			if (i > 1) {
+343: /* MUTANT (rep_const) */			if (i > -1) {
+343: /* MUTANT (negate) */			if(! (i > 0)) {
+344: /* MUTANT (del_stmt) */ /* 			    memcpy(outbuf+outpos, stackp, i); */ 
+344: /* MUTANT (rep_op) */			    memcpy(outbuf-outpos, stackp, i);
+344: /* MUTANT (rep_op) */			    memcpy(outbuf*outpos, stackp, i);
+344: /* MUTANT (rep_op) */			    memcpy(outbuf%outpos, stackp, i);
+345: /* MUTANT (del_stmt) */ /* 			    outpos += i; */ 
+345: /* MUTANT (rep_op) */			    outpos -= i;
+345: /* MUTANT (rep_op) */			    outpos *= i;
+345: /* MUTANT (rep_op) */			    outpos %= i;
+347: /* MUTANT (rep_op) */			if (outpos <= OUTBUFSIZ) {
+347: /* MUTANT (rep_op) */			if (outpos < OUTBUFSIZ) {
+347: /* MUTANT (rep_op) */			if (outpos > OUTBUFSIZ) {
+347: /* MUTANT (rep_op) */			if (outpos == OUTBUFSIZ) {
+347: /* MUTANT (rep_op) */			if (outpos != OUTBUFSIZ) {
+347: /* MUTANT (negate) */			if(! (outpos >= OUTBUFSIZ)) {
+348: /* MUTANT (negate) */			    if(! (!test)) {
+349: /* MUTANT (del_stmt) */ /* 				write_buf(out, (char*)outbuf, outpos); */ 
+350: /* MUTANT (del_stmt) */ /* 				bytes_out += (ulg)outpos; */ 
+350: /* MUTANT (rep_op) */				bytes_out -= (ulg)outpos;
+350: /* MUTANT (rep_op) */				bytes_out *= (ulg)outpos;
+350: /* MUTANT (rep_op) */				bytes_out %= (ulg)outpos;
+352: /* MUTANT (rep_const) */			    outpos = 1;
+352: /* MUTANT (rep_const) */			    outpos = -1;
+354: /* MUTANT (rep_op) */			stackp-= i;
+354: /* MUTANT (rep_op) */			stackp*= i;
+354: /* MUTANT (rep_op) */			stackp%= i;
+355: /* MUTANT (del_stmt) */ /* 		    } while ((i = (de_stack-stackp)) > 0); */ 
+355: /* MUTANT (rep_op) */		    } while ((i = (de_stack-stackp)) <= 0);
+355: /* MUTANT (rep_op) */		    } while ((i = (de_stack-stackp)) < 0);
+355: /* MUTANT (rep_op) */		    } while ((i = (de_stack-stackp)) >= 0);
+355: /* MUTANT (rep_op) */		    } while ((i = (de_stack-stackp)) == 0);
+355: /* MUTANT (rep_op) */		    } while ((i = (de_stack-stackp)) != 0);
+355: /* MUTANT (rep_const) */		    } while ((i = (de_stack-stackp)) > 1);
+355: /* MUTANT (rep_const) */		    } while ((i = (de_stack-stackp)) > -1);
+355: /* MUTANT (negate) */		    } while(! ((i = (de_stack-stackp)) > 0));
+357: /* MUTANT (del_stmt) */ /* 		    memcpy(outbuf+outpos, stackp, i); */ 
+357: /* MUTANT (rep_op) */		    memcpy(outbuf-outpos, stackp, i);
+357: /* MUTANT (rep_op) */		    memcpy(outbuf*outpos, stackp, i);
+357: /* MUTANT (rep_op) */		    memcpy(outbuf%outpos, stackp, i);
+358: /* MUTANT (del_stmt) */ /* 		    outpos += i; */ 
+358: /* MUTANT (rep_op) */		    outpos -= i;
+358: /* MUTANT (rep_op) */		    outpos *= i;
+358: /* MUTANT (rep_op) */		    outpos %= i;
+362: /* MUTANT (rep_op) */	    if ((code = free_ent) <= maxmaxcode) { /* Generate the new entry. */
+362: /* MUTANT (rep_op) */	    if ((code = free_ent) > maxmaxcode) { /* Generate the new entry. */
+362: /* MUTANT (rep_op) */	    if ((code = free_ent) >= maxmaxcode) { /* Generate the new entry. */
+362: /* MUTANT (rep_op) */	    if ((code = free_ent) == maxmaxcode) { /* Generate the new entry. */
+362: /* MUTANT (rep_op) */	    if ((code = free_ent) != maxmaxcode) { /* Generate the new entry. */
+362: /* MUTANT (negate) */	    if(! ((code = free_ent) < maxmaxcode)) { /* Generate the new entry. */
+364: /* MUTANT (del_stmt) */ /* 		tab_prefixof(code) = (unsigned short)oldcode; */ 
+365: /* MUTANT (del_stmt) */ /* 		tab_suffixof(code) = (char_type)finchar; */ 
+366: /* MUTANT (del_stmt) */ /* 		free_ent = code+1; */ 
+366: /* MUTANT (rep_op) */		free_ent = code-1;
+366: /* MUTANT (rep_op) */		free_ent = code*1;
+366: /* MUTANT (rep_op) */		free_ent = code%1;
+366: /* MUTANT (rep_const) */		free_ent = code+0;
+366: /* MUTANT (rep_const) */		free_ent = code+-1;
+366: /* MUTANT (rep_const) */		free_ent = code+((1)+1);
+370: /* MUTANT (rep_op) */    } while (rsize == 0);
+370: /* MUTANT (rep_const) */    } while (rsize != 1);
+370: /* MUTANT (rep_const) */    } while (rsize != -1);
+370: /* MUTANT (negate) */    } while(! (rsize != 0));
+372: /* MUTANT (rep_op) */    if (!test || outpos > 0) {
+372: /* MUTANT (rep_op) */    if (!test && outpos <= 0) {
+372: /* MUTANT (rep_op) */    if (!test && outpos < 0) {
+372: /* MUTANT (rep_op) */    if (!test && outpos >= 0) {
+372: /* MUTANT (rep_op) */    if (!test && outpos == 0) {
+372: /* MUTANT (rep_op) */    if (!test && outpos != 0) {
+372: /* MUTANT (rep_const) */    if (!test && outpos > 1) {
+372: /* MUTANT (rep_const) */    if (!test && outpos > -1) {
+372: /* MUTANT (negate) */    if(! (!test && outpos > 0)) {
+373: /* MUTANT (del_stmt) */ /* 	write_buf(out, (char*)outbuf, outpos); */ 
+374: /* MUTANT (del_stmt) */ /* 	bytes_out += (ulg)outpos; */ 
+374: /* MUTANT (rep_op) */	bytes_out -= (ulg)outpos;
+374: /* MUTANT (rep_op) */	bytes_out *= (ulg)outpos;
+374: /* MUTANT (rep_op) */	bytes_out %= (ulg)outpos;

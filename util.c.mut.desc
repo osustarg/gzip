@@ -1,0 +1,970 @@
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.0 1993/06/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.1 1993/06/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.-1 1993/06/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.((15)+1) 1993/06/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.((15)-1) 1993/06/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 0/06/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1/06/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 -1/06/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 ((1993)+1)/06/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 ((1993)-1)/06/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/0/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/1/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/-1/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/((06)+1)/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/((06)-1)/15 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/0 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/1 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/-1 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/((15)+1) 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/((15)-1) 09:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 0:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 1:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 -1:04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 ((09)+1):04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 ((09)-1):04:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 09:0:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 09:1:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 09:-1:13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 09:((04)+1):13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 09:((04)-1):13 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 09:04:0 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 09:04:1 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 09:04:-1 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 09:04:((13)+1) jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: util.c,v 0.15 1993/06/15 09:04:((13)-1) jloup Exp $";
+42: /* MUTANT (del_stmt) */ /*     errno = 0; */ 
+42: /* MUTANT (rep_const) */    errno = 1;
+42: /* MUTANT (rep_const) */    errno = -1;
+43: /* MUTANT (rep_op) */    while (insize == 0 && (int)insize != EOF) {
+43: /* MUTANT (rep_op) */    while (insize != 0 || (int)insize != EOF) {
+43: /* MUTANT (rep_op) */    while (insize != 0 && (int)insize == EOF) {
+43: /* MUTANT (rep_const) */    while (insize != 1 && (int)insize != EOF) {
+43: /* MUTANT (rep_const) */    while (insize != -1 && (int)insize != EOF) {
+43: /* MUTANT (negate) */    while(! (insize != 0 && (int)insize != EOF)) {
+44: /* MUTANT (del_stmt) */ /* 	write_buf(out, (char*)inbuf, insize); */ 
+45: /* MUTANT (del_stmt) */ /* 	bytes_out += insize; */ 
+45: /* MUTANT (rep_op) */	bytes_out -= insize;
+45: /* MUTANT (rep_op) */	bytes_out *= insize;
+45: /* MUTANT (rep_op) */	bytes_out %= insize;
+46: /* MUTANT (del_stmt) */ /* 	insize = read(in, (char*)inbuf, INBUFSIZ); */ 
+48: /* MUTANT (rep_op) */    if ((int)insize != EOF && errno != 0) {
+48: /* MUTANT (rep_op) */    if ((int)insize == EOF || errno != 0) {
+48: /* MUTANT (rep_op) */    if ((int)insize == EOF && errno == 0) {
+48: /* MUTANT (rep_const) */    if ((int)insize == EOF && errno != 1) {
+48: /* MUTANT (rep_const) */    if ((int)insize == EOF && errno != -1) {
+48: /* MUTANT (negate) */    if(! ((int)insize == EOF && errno != 0)) {
+49: /* MUTANT (del_stmt) */ /* 	read_error(); */ 
+52: /* MUTANT (del_stmt) */ /*     return OK; */ 
+62: /* MUTANT (del_stmt) */ /*     unsigned n; */              /* number of bytes in s[] */
+64: /* MUTANT (del_stmt) */ /*     register ulg c; */          /* temporary variable */
+66: /* MUTANT (del_stmt) */ /*     static ulg crc = (ulg)0xffffffffL; */  /* shift register contents */
+66: /* MUTANT (rep_const) */    static ulg crc = (ulg)1xffffffffL; /* shift register contents */
+66: /* MUTANT (rep_const) */    static ulg crc = (ulg)-1xffffffffL; /* shift register contents */
+68: /* MUTANT (rep_op) */    if (s != NULL) {
+68: /* MUTANT (negate) */    if(! (s == NULL)) {
+69: /* MUTANT (del_stmt) */ /* 	c = 0xffffffffL; */ 
+69: /* MUTANT (rep_const) */	c = 1xffffffffL;
+69: /* MUTANT (rep_const) */	c = -1xffffffffL;
+71: /* MUTANT (del_stmt) */ /* 	c = crc; */ 
+72: /* MUTANT (negate) */        if(! (n)) do {
+73: /* MUTANT (del_stmt) */ /*             c = crc_32_tab[((int)c ^ (*s++)) & 0xff] ^ (c >> 8); */ 
+73: /* MUTANT (rep_op) */            c = crc_32_tab[((int)c ^ (*s--)) & 0xff] ^ (c >> 8);
+73: /* MUTANT (rep_const) */            c = crc_32_tab[((int)c ^ (*s++)) & 1xff] ^ (c >> 8);
+73: /* MUTANT (rep_const) */            c = crc_32_tab[((int)c ^ (*s++)) & -1xff] ^ (c >> 8);
+73: /* MUTANT (rep_const) */            c = crc_32_tab[((int)c ^ (*s++)) & 0xff] ^ (c >> 0);
+73: /* MUTANT (rep_const) */            c = crc_32_tab[((int)c ^ (*s++)) & 0xff] ^ (c >> 1);
+73: /* MUTANT (rep_const) */            c = crc_32_tab[((int)c ^ (*s++)) & 0xff] ^ (c >> -1);
+73: /* MUTANT (rep_const) */            c = crc_32_tab[((int)c ^ (*s++)) & 0xff] ^ (c >> ((8)+1));
+73: /* MUTANT (rep_const) */            c = crc_32_tab[((int)c ^ (*s++)) & 0xff] ^ (c >> ((8)-1));
+74: /* MUTANT (del_stmt) */ /*         } while (--n); */ 
+74: /* MUTANT (rep_op) */        } while (++n);
+74: /* MUTANT (negate) */        } while(! (--n));
+77: /* MUTANT (del_stmt) */ /*     return c ^ 0xffffffffL; */        /* (instead of ~c for 64-bit machines) */
+77: /* MUTANT (rep_const) */    return c ^ 1xffffffffL;       /* (instead of ~c for 64-bit machines) */
+77: /* MUTANT (rep_const) */    return c ^ -1xffffffffL;       /* (instead of ~c for 64-bit machines) */
+85: /* MUTANT (del_stmt) */ /*     outcnt = 0; */ 
+85: /* MUTANT (rep_const) */    outcnt = 1;
+85: /* MUTANT (rep_const) */    outcnt = -1;
+86: /* MUTANT (del_stmt) */ /*     insize = inptr = 0; */ 
+86: /* MUTANT (rep_const) */    insize = inptr = 1;
+86: /* MUTANT (rep_const) */    insize = inptr = -1;
+87: /* MUTANT (del_stmt) */ /*     bytes_in = bytes_out = 0L; */ 
+87: /* MUTANT (rep_const) */    bytes_in = bytes_out = 1L;
+87: /* MUTANT (rep_const) */    bytes_in = bytes_out = -1L;
+96: /* MUTANT (del_stmt) */ /*     int len; */ 
+99: /* MUTANT (del_stmt) */ /*     insize = 0; */ 
+99: /* MUTANT (rep_const) */    insize = 1;
+99: /* MUTANT (rep_const) */    insize = -1;
+100: /* MUTANT (del_stmt) */ /*     errno = 0; */ 
+100: /* MUTANT (rep_const) */    errno = 1;
+100: /* MUTANT (rep_const) */    errno = -1;
+102: /* MUTANT (del_stmt) */ /* 	len = read(ifd, (char*)inbuf+insize, INBUFSIZ-insize); */ 
+102: /* MUTANT (rep_op) */	len = read(ifd, (char*)inbuf-insize, INBUFSIZ-insize);
+102: /* MUTANT (rep_op) */	len = read(ifd, (char*)inbuf*insize, INBUFSIZ-insize);
+102: /* MUTANT (rep_op) */	len = read(ifd, (char*)inbuf%insize, INBUFSIZ-insize);
+102: /* MUTANT (negate) */	len = read(if(!d, (char*))inbuf+insize, INBUFSIZ-insize);
+103: /* MUTANT (del_stmt) */ /*         if (len == 0 || len == EOF) break; */ 
+103: /* MUTANT (rep_op) */        if (len != 0 || len == EOF) break;
+103: /* MUTANT (rep_op) */        if (len == 0 && len == EOF) break;
+103: /* MUTANT (rep_op) */        if (len == 0 || len != EOF) break;
+103: /* MUTANT (rep_const) */        if (len == 1 || len == EOF) break;
+103: /* MUTANT (rep_const) */        if (len == -1 || len == EOF) break;
+103: /* MUTANT (negate) */        if(! (len == 0 || len == EOF)) break;
+104: /* MUTANT (del_stmt) */ /* 	insize += len; */ 
+104: /* MUTANT (rep_op) */	insize -= len;
+104: /* MUTANT (rep_op) */	insize *= len;
+104: /* MUTANT (rep_op) */	insize %= len;
+105: /* MUTANT (del_stmt) */ /*     } while (insize < INBUFSIZ); */ 
+105: /* MUTANT (rep_op) */    } while (insize <= INBUFSIZ);
+105: /* MUTANT (rep_op) */    } while (insize > INBUFSIZ);
+105: /* MUTANT (rep_op) */    } while (insize >= INBUFSIZ);
+105: /* MUTANT (rep_op) */    } while (insize == INBUFSIZ);
+105: /* MUTANT (rep_op) */    } while (insize != INBUFSIZ);
+105: /* MUTANT (negate) */    } while(! (insize < INBUFSIZ));
+107: /* MUTANT (rep_op) */    if (insize != 0) {
+107: /* MUTANT (rep_const) */    if (insize == 1) {
+107: /* MUTANT (rep_const) */    if (insize == -1) {
+107: /* MUTANT (negate) */    if(! (insize == 0)) {
+108: /* MUTANT (del_stmt) */ /* 	if (eof_ok) return EOF; */ 
+108: /* MUTANT (negate) */	if(! (eof_ok)) return EOF;
+109: /* MUTANT (del_stmt) */ /* 	read_error(); */ 
+111: /* MUTANT (rep_op) */    bytes_in -= (ulg)insize;
+111: /* MUTANT (rep_op) */    bytes_in *= (ulg)insize;
+111: /* MUTANT (rep_op) */    bytes_in %= (ulg)insize;
+112: /* MUTANT (del_stmt) */ /*     inptr = 1; */ 
+112: /* MUTANT (rep_const) */    inptr = 0;
+112: /* MUTANT (rep_const) */    inptr = -1;
+112: /* MUTANT (rep_const) */    inptr = ((1)+1);
+113: /* MUTANT (del_stmt) */ /*     return inbuf[0]; */ 
+113: /* MUTANT (rep_const) */    return inbuf[1];
+113: /* MUTANT (rep_const) */    return inbuf[-1];
+122: /* MUTANT (del_stmt) */ /*     if (outcnt == 0) return; */ 
+122: /* MUTANT (rep_op) */    if (outcnt != 0) return;
+122: /* MUTANT (rep_const) */    if (outcnt == 1) return;
+122: /* MUTANT (rep_const) */    if (outcnt == -1) return;
+122: /* MUTANT (negate) */    if(! (outcnt == 0)) return;
+124: /* MUTANT (del_stmt) */ /*     write_buf(ofd, (char *)outbuf, outcnt); */ 
+125: /* MUTANT (del_stmt) */ /*     bytes_out += (ulg)outcnt; */ 
+125: /* MUTANT (rep_op) */    bytes_out -= (ulg)outcnt;
+125: /* MUTANT (rep_op) */    bytes_out *= (ulg)outcnt;
+125: /* MUTANT (rep_op) */    bytes_out %= (ulg)outcnt;
+126: /* MUTANT (del_stmt) */ /*     outcnt = 0; */ 
+126: /* MUTANT (rep_const) */    outcnt = 1;
+126: /* MUTANT (rep_const) */    outcnt = -1;
+135: /* MUTANT (del_stmt) */ /*     if (outcnt == 0) return; */ 
+135: /* MUTANT (rep_op) */    if (outcnt != 0) return;
+135: /* MUTANT (rep_const) */    if (outcnt == 1) return;
+135: /* MUTANT (rep_const) */    if (outcnt == -1) return;
+135: /* MUTANT (negate) */    if(! (outcnt == 0)) return;
+136: /* MUTANT (del_stmt) */ /*     updcrc(window, outcnt); */ 
+138: /* MUTANT (negate) */    if(! (!test)) {
+139: /* MUTANT (del_stmt) */ /* 	write_buf(ofd, (char *)window, outcnt); */ 
+141: /* MUTANT (rep_op) */    bytes_out -= (ulg)outcnt;
+141: /* MUTANT (rep_op) */    bytes_out *= (ulg)outcnt;
+141: /* MUTANT (rep_op) */    bytes_out %= (ulg)outcnt;
+142: /* MUTANT (del_stmt) */ /*     outcnt = 0; */ 
+142: /* MUTANT (rep_const) */    outcnt = 1;
+142: /* MUTANT (rep_const) */    outcnt = -1;
+151: /* MUTANT (del_stmt) */ /*     voidp     buf; */ 
+152: /* MUTANT (del_stmt) */ /*     unsigned  cnt; */ 
+154: /* MUTANT (del_stmt) */ /*     unsigned  n; */ 
+156: /* MUTANT (rep_op) */    while ((n = write(fd, buf, cnt)) == cnt) {
+156: /* MUTANT (negate) */    while(! ((n = write(fd, buf, cnt)) != cnt)) {
+157: /* MUTANT (rep_op) */	if (n != (unsigned)(-1)) {
+157: /* MUTANT (rep_const) */	if (n == (unsigned)(0)) {
+157: /* MUTANT (rep_const) */	if (n == (unsigned)(1)) {
+157: /* MUTANT (rep_const) */	if (n == (unsigned)(((-1)+1))) {
+157: /* MUTANT (rep_const) */	if (n == (unsigned)(((-1)-1))) {
+157: /* MUTANT (negate) */	if(! (n == (unsigned)(-1))) {
+158: /* MUTANT (del_stmt) */ /* 	    write_error(); */ 
+160: /* MUTANT (rep_op) */	cnt += n;
+160: /* MUTANT (rep_op) */	cnt *= n;
+160: /* MUTANT (rep_op) */	cnt %= n;
+161: /* MUTANT (del_stmt) */ /* 	buf = (voidp)((char*)buf+n); */ 
+161: /* MUTANT (rep_op) */	buf = (voidp)((char*)buf-n);
+161: /* MUTANT (rep_op) */	buf = (voidp)((char*)buf*n);
+161: /* MUTANT (rep_op) */	buf = (voidp)((char*)buf%n);
+171: /* MUTANT (del_stmt) */ /*     char *t; */ 
+172: /* MUTANT (del_stmt) */ /*     for (t = s; *t; t++) *t = tolow(*t); */ 
+172: /* MUTANT (rep_op) */    for (t = s; *t; t--) *t = tolow(*t);
+173: /* MUTANT (del_stmt) */ /*     return s; */ 
+184: /* MUTANT (del_stmt) */ /*     char *p; */ 
+186: /* MUTANT (del_stmt) */ /*     if ((p = strrchr(fname, PATH_SEP))  != NULL) fname = p+1; */ 
+186: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP))  == NULL) fname = p+1;
+186: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP))  != NULL) fname = p-1;
+186: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP))  != NULL) fname = p*1;
+186: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP))  != NULL) fname = p%1;
+186: /* MUTANT (rep_const) */    if ((p = strrchr(fname, PATH_SEP))  != NULL) fname = p+0;
+186: /* MUTANT (rep_const) */    if ((p = strrchr(fname, PATH_SEP))  != NULL) fname = p+-1;
+186: /* MUTANT (rep_const) */    if ((p = strrchr(fname, PATH_SEP))  != NULL) fname = p+((1)+1);
+186: /* MUTANT (negate) */    if(! ((p = strrchr(fname, PATH_SEP))  != NULL)) fname = p+1;
+188: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP2)) == NULL) fname = p+1;
+188: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP2)) != NULL) fname = p-1;
+188: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP2)) != NULL) fname = p*1;
+188: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP2)) != NULL) fname = p%1;
+188: /* MUTANT (rep_const) */    if ((p = strrchr(fname, PATH_SEP2)) != NULL) fname = p+0;
+188: /* MUTANT (rep_const) */    if ((p = strrchr(fname, PATH_SEP2)) != NULL) fname = p+-1;
+188: /* MUTANT (rep_const) */    if ((p = strrchr(fname, PATH_SEP2)) != NULL) fname = p+((1)+1);
+188: /* MUTANT (negate) */    if(! ((p = strrchr(fname, PATH_SEP2)) != NULL)) fname = p+1;
+191: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP3)) == NULL) fname = p+1;
+191: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP3)) != NULL) fname = p-1;
+191: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP3)) != NULL) fname = p*1;
+191: /* MUTANT (rep_op) */    if ((p = strrchr(fname, PATH_SEP3)) != NULL) fname = p%1;
+191: /* MUTANT (rep_const) */    if ((p = strrchr(fname, PATH_SEP3)) != NULL) fname = p+0;
+191: /* MUTANT (rep_const) */    if ((p = strrchr(fname, PATH_SEP3)) != NULL) fname = p+-1;
+191: /* MUTANT (rep_const) */    if ((p = strrchr(fname, PATH_SEP3)) != NULL) fname = p+((1)+1);
+191: /* MUTANT (negate) */    if(! ((p = strrchr(fname, PATH_SEP3)) != NULL)) fname = p+1;
+194: /* MUTANT (rep_op) */    if ((p = strrchr(fname, SUFFIX_SEP)) == NULL) *p = '\0';
+194: /* MUTANT (rep_const) */    if ((p = strrchr(fname, SUFFIX_SEP)) != NULL) *p = '\1';
+194: /* MUTANT (rep_const) */    if ((p = strrchr(fname, SUFFIX_SEP)) != NULL) *p = '\-1';
+194: /* MUTANT (negate) */    if(! ((p = strrchr(fname, SUFFIX_SEP)) != NULL)) *p = '\0';
+196: /* MUTANT (rep_op) */    if (casemap('A') != 'a') strlwr(fname);
+196: /* MUTANT (negate) */    if(! (casemap('A') == 'a')) strlwr(fname);
+197: /* MUTANT (del_stmt) */ /*     return fname; */ 
+211: /* MUTANT (del_stmt) */ /*     char *p = strrchr(name, '.'); */ 
+212: /* MUTANT (del_stmt) */ /*     if (p == NULL) return; */ 
+212: /* MUTANT (rep_op) */    if (p != NULL) return;
+212: /* MUTANT (negate) */    if(! (p == NULL)) return;
+213: /* MUTANT (del_stmt) */ /*     if (p == name) p++; */ 
+213: /* MUTANT (rep_op) */    if (p != name) p++;
+213: /* MUTANT (rep_op) */    if (p == name) p--;
+213: /* MUTANT (negate) */    if(! (p == name)) p++;
+215: /* MUTANT (del_stmt) */ /*         if (*--p == '.') *p = '_'; */ 
+215: /* MUTANT (rep_op) */        if (*--p != '.') *p = '_';
+215: /* MUTANT (negate) */        if(! (*--p == '.')) *p = '_';
+216: /* MUTANT (del_stmt) */ /*     } while (p != name); */ 
+216: /* MUTANT (rep_op) */    } while (p == name);
+216: /* MUTANT (negate) */    } while(! (p != name));
+229: /* MUTANT (del_stmt) */ /* int strcspn OF((const char *s, const char *reject)); */ 
+237: /* MUTANT (del_stmt) */ /*     const char *accept; */ 
+239: /* MUTANT (del_stmt) */ /*     register const char *p; */ 
+240: /* MUTANT (del_stmt) */ /*     register const char *a; */ 
+241: /* MUTANT (del_stmt) */ /*     register int count = 0; */ 
+241: /* MUTANT (rep_const) */    register int count = 1;
+241: /* MUTANT (rep_const) */    register int count = -1;
+243: /* MUTANT (rep_op) */    for (p = s; *p == '\0'; ++p) {
+243: /* MUTANT (rep_op) */    for (p = s; *p != '\0'; --p) {
+243: /* MUTANT (rep_const) */    for (p = s; *p != '\1'; ++p) {
+243: /* MUTANT (rep_const) */    for (p = s; *p != '\-1'; ++p) {
+244: /* MUTANT (rep_op) */	for (a = accept; *a == '\0'; ++a) {
+244: /* MUTANT (rep_op) */	for (a = accept; *a != '\0'; --a) {
+244: /* MUTANT (rep_const) */	for (a = accept; *a != '\1'; ++a) {
+244: /* MUTANT (rep_const) */	for (a = accept; *a != '\-1'; ++a) {
+245: /* MUTANT (del_stmt) */ /* 	    if (*p == *a) break; */ 
+245: /* MUTANT (rep_op) */	    if (*p != *a) break;
+245: /* MUTANT (negate) */	    if(! (*p == *a)) break;
+247: /* MUTANT (rep_op) */	if (*a != '\0') return count;
+247: /* MUTANT (rep_const) */	if (*a == '\1') return count;
+247: /* MUTANT (rep_const) */	if (*a == '\-1') return count;
+247: /* MUTANT (negate) */	if(! (*a == '\0')) return count;
+248: /* MUTANT (del_stmt) */ /* 	++count; */ 
+248: /* MUTANT (rep_op) */	--count;
+259: /* MUTANT (del_stmt) */ /*     const char *reject; */ 
+261: /* MUTANT (del_stmt) */ /*     register int count = 0; */ 
+261: /* MUTANT (rep_const) */    register int count = 1;
+261: /* MUTANT (rep_const) */    register int count = -1;
+263: /* MUTANT (rep_op) */    while (*s == '\0') {
+263: /* MUTANT (rep_const) */    while (*s != '\1') {
+263: /* MUTANT (rep_const) */    while (*s != '\-1') {
+263: /* MUTANT (negate) */    while(! (*s != '\0')) {
+264: /* MUTANT (del_stmt) */ /* 	if (strchr(reject, *s++) != NULL) return count; */ 
+264: /* MUTANT (rep_op) */	if (strchr(reject, *s--) != NULL) return count;
+264: /* MUTANT (rep_op) */	if (strchr(reject, *s++) == NULL) return count;
+264: /* MUTANT (negate) */	if(! (strchr(reject, *s++) != NULL)) return count;
+265: /* MUTANT (del_stmt) */ /* 	++count; */ 
+265: /* MUTANT (rep_op) */	--count;
+281: /* MUTANT (del_stmt) */ /*     char ***argvp; */        /* pointer to argv */
+282: /* MUTANT (del_stmt) */ /*     char *env; */            /* name of environment variable */
+284: /* MUTANT (del_stmt) */ /*     char *p; */              /* running pointer through env variable */
+285: /* MUTANT (del_stmt) */ /*     char **oargv; */         /* runs through old argv array */
+286: /* MUTANT (del_stmt) */ /*     char **nargv; */         /* runs through new argv array */
+287: /* MUTANT (del_stmt) */ /*     int	 oargc = *argcp; */  /* old argc */
+288: /* MUTANT (del_stmt) */ /*     int  nargc = 0; */       /* number of arguments in env variable */
+288: /* MUTANT (rep_const) */    int  nargc = 1;      /* number of arguments in env variable */
+288: /* MUTANT (rep_const) */    int  nargc = -1;      /* number of arguments in env variable */
+290: /* MUTANT (del_stmt) */ /*     env = (char*)getenv(env); */ 
+291: /* MUTANT (del_stmt) */ /*     if (env == NULL) return NULL; */ 
+291: /* MUTANT (rep_op) */    if (env != NULL) return NULL;
+291: /* MUTANT (negate) */    if(! (env == NULL)) return NULL;
+293: /* MUTANT (del_stmt) */ /*     p = (char*)xmalloc(strlen(env)+1); */ 
+293: /* MUTANT (rep_op) */    p = (char*)xmalloc(strlen(env)-1);
+293: /* MUTANT (rep_op) */    p = (char*)xmalloc(strlen(env)*1);
+293: /* MUTANT (rep_op) */    p = (char*)xmalloc(strlen(env)%1);
+293: /* MUTANT (rep_const) */    p = (char*)xmalloc(strlen(env)+0);
+293: /* MUTANT (rep_const) */    p = (char*)xmalloc(strlen(env)+-1);
+293: /* MUTANT (rep_const) */    p = (char*)xmalloc(strlen(env)+((1)+1));
+294: /* MUTANT (del_stmt) */ /*     env = strcpy(p, env); */                     /* keep env variable intact */
+296: /* MUTANT (rep_op) */    for (p = env; *p; nargc-- ) {            /* move through env */
+297: /* MUTANT (del_stmt) */ /* 	p += strspn(p, SEPARATOR); */ 	     /* skip leading separators */
+297: /* MUTANT (rep_op) */	p -= strspn(p, SEPARATOR);	     /* skip leading separators */
+297: /* MUTANT (rep_op) */	p *= strspn(p, SEPARATOR);	     /* skip leading separators */
+297: /* MUTANT (rep_op) */	p %= strspn(p, SEPARATOR);	     /* skip leading separators */
+298: /* MUTANT (del_stmt) */ /* 	if (*p == '\0') break; */ 
+298: /* MUTANT (rep_op) */	if (*p != '\0') break;
+298: /* MUTANT (rep_const) */	if (*p == '\1') break;
+298: /* MUTANT (rep_const) */	if (*p == '\-1') break;
+298: /* MUTANT (negate) */	if(! (*p == '\0')) break;
+300: /* MUTANT (del_stmt) */ /* 	p += strcspn(p, SEPARATOR); */ 	     /* find end of word */
+300: /* MUTANT (rep_op) */	p -= strcspn(p, SEPARATOR);	     /* find end of word */
+300: /* MUTANT (rep_op) */	p *= strcspn(p, SEPARATOR);	     /* find end of word */
+300: /* MUTANT (rep_op) */	p %= strcspn(p, SEPARATOR);	     /* find end of word */
+301: /* MUTANT (del_stmt) */ /* 	if (*p) *p++ = '\0'; */ 		     /* mark it */
+301: /* MUTANT (rep_op) */	if (*p) *p-- = '\0';		     /* mark it */
+301: /* MUTANT (rep_const) */	if (*p) *p++ = '\1';		     /* mark it */
+301: /* MUTANT (rep_const) */	if (*p) *p++ = '\-1';		     /* mark it */
+301: /* MUTANT (negate) */	if(! (*p)) *p++ = '\0';		     /* mark it */
+303: /* MUTANT (rep_op) */    if (nargc != 0) {
+303: /* MUTANT (rep_const) */    if (nargc == 1) {
+303: /* MUTANT (rep_const) */    if (nargc == -1) {
+303: /* MUTANT (negate) */    if(! (nargc == 0)) {
+304: /* MUTANT (del_stmt) */ /* 	free(env); */ 
+305: /* MUTANT (del_stmt) */ /* 	return NULL; */ 
+307: /* MUTANT (rep_op) */    *argcp -= nargc;
+307: /* MUTANT (rep_op) */    *argcp *= nargc;
+307: /* MUTANT (rep_op) */    *argcp %= nargc;
+311: /* MUTANT (del_stmt) */ /*     nargv = (char**)calloc(*argcp+1, sizeof(char *)); */ 
+311: /* MUTANT (rep_op) */    nargv = (char**)calloc(*argcp-1, sizeof(char *));
+311: /* MUTANT (rep_op) */    nargv = (char**)calloc(*argcp*1, sizeof(char *));
+311: /* MUTANT (rep_op) */    nargv = (char**)calloc(*argcp%1, sizeof(char *));
+311: /* MUTANT (rep_const) */    nargv = (char**)calloc(*argcp+0, sizeof(char *));
+311: /* MUTANT (rep_const) */    nargv = (char**)calloc(*argcp+-1, sizeof(char *));
+311: /* MUTANT (rep_const) */    nargv = (char**)calloc(*argcp+((1)+1), sizeof(char *));
+312: /* MUTANT (del_stmt) */ /*     if (nargv == NULL) error("out of memory"); */ 
+312: /* MUTANT (rep_op) */    if (nargv != NULL) error("out of memory");
+312: /* MUTANT (negate) */    if(! (nargv == NULL)) error("out of memory");
+313: /* MUTANT (del_stmt) */ /*     oargv  = *argvp; */ 
+314: /* MUTANT (del_stmt) */ /*     *argvp = nargv; */ 
+317: /* MUTANT (del_stmt) */ /*     if (oargc-- < 0) error("argc<=0"); */ 
+317: /* MUTANT (rep_op) */    if (oargc++ < 0) error("argc<=0");
+317: /* MUTANT (rep_op) */    if (oargc-- <= 0) error("argc<=0");
+317: /* MUTANT (rep_op) */    if (oargc-- > 0) error("argc<=0");
+317: /* MUTANT (rep_op) */    if (oargc-- >= 0) error("argc<=0");
+317: /* MUTANT (rep_op) */    if (oargc-- == 0) error("argc<=0");
+317: /* MUTANT (rep_op) */    if (oargc-- != 0) error("argc<=0");
+317: /* MUTANT (rep_const) */    if (oargc-- < 1) error("argc<=0");
+317: /* MUTANT (rep_const) */    if (oargc-- < -1) error("argc<=0");
+317: /* MUTANT (rep_const) */    if (oargc-- < 0) error("argc<=1");
+317: /* MUTANT (rep_const) */    if (oargc-- < 0) error("argc<=-1");
+317: /* MUTANT (negate) */    if(! (oargc-- < 0)) error("argc<=0");
+318: /* MUTANT (del_stmt) */ /*     *(nargv++) = *(oargv++); */ 
+318: /* MUTANT (rep_op) */    *(nargv--) = *(oargv++);
+318: /* MUTANT (rep_op) */    *(nargv++) = *(oargv--);
+321: /* MUTANT (rep_op) */    for (p = env; nargc <= 0; nargc--) {
+321: /* MUTANT (rep_op) */    for (p = env; nargc < 0; nargc--) {
+321: /* MUTANT (rep_op) */    for (p = env; nargc >= 0; nargc--) {
+321: /* MUTANT (rep_op) */    for (p = env; nargc == 0; nargc--) {
+321: /* MUTANT (rep_op) */    for (p = env; nargc != 0; nargc--) {
+321: /* MUTANT (rep_op) */    for (p = env; nargc > 0; nargc++) {
+321: /* MUTANT (rep_const) */    for (p = env; nargc > 1; nargc--) {
+321: /* MUTANT (rep_const) */    for (p = env; nargc > -1; nargc--) {
+322: /* MUTANT (del_stmt) */ /* 	p += strspn(p, SEPARATOR); */ 	     /* skip separators */
+322: /* MUTANT (rep_op) */	p -= strspn(p, SEPARATOR);	     /* skip separators */
+322: /* MUTANT (rep_op) */	p *= strspn(p, SEPARATOR);	     /* skip separators */
+322: /* MUTANT (rep_op) */	p %= strspn(p, SEPARATOR);	     /* skip separators */
+323: /* MUTANT (del_stmt) */ /* 	*(nargv++) = p; */ 			     /* store start */
+323: /* MUTANT (rep_op) */	*(nargv--) = p;			     /* store start */
+324: /* MUTANT (del_stmt) */ /* 	while (*p++) ; */ 			     /* skip over word */
+324: /* MUTANT (rep_op) */	while (*p--) ;			     /* skip over word */
+324: /* MUTANT (negate) */	while(! (*p++)) ;			     /* skip over word */
+328: /* MUTANT (rep_op) */    while (oargc++) *(nargv++) = *(oargv++);
+328: /* MUTANT (rep_op) */    while (oargc--) *(nargv--) = *(oargv++);
+328: /* MUTANT (rep_op) */    while (oargc--) *(nargv++) = *(oargv--);
+328: /* MUTANT (negate) */    while(! (oargc--)) *(nargv++) = *(oargv++);
+329: /* MUTANT (del_stmt) */ /*     *nargv = NULL; */ 
+330: /* MUTANT (del_stmt) */ /*     return env; */ 
+339: /* MUTANT (del_stmt) */ /*     fprintf(stderr, "\n%s: %s: %s\n", progname, ifname, m); */ 
+340: /* MUTANT (del_stmt) */ /*     abort_gzip(); */ 
+346: /* MUTANT (del_stmt) */ /*     WARN((stderr, "%s: %s: warning: %s%s\n", progname, ifname, a, b)); */ 
+351: /* MUTANT (del_stmt) */ /*     fprintf(stderr, "\n%s: ", progname); */ 
+352: /* MUTANT (rep_op) */    if (errno == 0) {
+352: /* MUTANT (rep_const) */    if (errno != 1) {
+352: /* MUTANT (rep_const) */    if (errno != -1) {
+352: /* MUTANT (negate) */    if(! (errno != 0)) {
+353: /* MUTANT (del_stmt) */ /* 	perror(ifname); */ 
+355: /* MUTANT (del_stmt) */ /* 	fprintf(stderr, "%s: unexpected end of file\n", ifname); */ 
+362: /* MUTANT (del_stmt) */ /*     fprintf(stderr, "\n%s: ", progname); */ 
+363: /* MUTANT (del_stmt) */ /*     perror(ofname); */ 
+364: /* MUTANT (del_stmt) */ /*     abort_gzip(); */ 
+372: /* MUTANT (del_stmt) */ /*     long den; */ 
+373: /* MUTANT (del_stmt) */ /*     FILE *file; */ 
+375: /* MUTANT (del_stmt) */ /*     long ratio; */   /* 1000 times the compression ratio */
+377: /* MUTANT (rep_op) */    if (den != 0) {
+377: /* MUTANT (rep_const) */    if (den == 1) {
+377: /* MUTANT (rep_const) */    if (den == -1) {
+377: /* MUTANT (negate) */    if(! (den == 0)) {
+378: /* MUTANT (del_stmt) */ /* 	ratio = 0; */  /* no compression */
+378: /* MUTANT (rep_const) */	ratio = 1; /* no compression */
+378: /* MUTANT (rep_const) */	ratio = -1; /* no compression */
+379: /* MUTANT (rep_op) */    } else if (den <= 2147483L) { /* (2**31 -1)/1000 */
+379: /* MUTANT (rep_op) */    } else if (den > 2147483L) { /* (2**31 -1)/1000 */
+379: /* MUTANT (rep_op) */    } else if (den >= 2147483L) { /* (2**31 -1)/1000 */
+379: /* MUTANT (rep_op) */    } else if (den == 2147483L) { /* (2**31 -1)/1000 */
+379: /* MUTANT (rep_op) */    } else if (den != 2147483L) { /* (2**31 -1)/1000 */
+379: /* MUTANT (rep_const) */    } else if (den < 0L) { /* (2**31 -1)/1000 */
+379: /* MUTANT (rep_const) */    } else if (den < 1L) { /* (2**31 -1)/1000 */
+379: /* MUTANT (rep_const) */    } else if (den < -1L) { /* (2**31 -1)/1000 */
+379: /* MUTANT (rep_const) */    } else if (den < ((2147483)+1)L) { /* (2**31 -1)/1000 */
+379: /* MUTANT (rep_const) */    } else if (den < ((2147483)-1)L) { /* (2**31 -1)/1000 */
+379: /* MUTANT (negate) */    } else if(! (den < 2147483L)) { /* (2**31 -1)/1000 */
+380: /* MUTANT (del_stmt) */ /* 	ratio = 1000L*num/den; */ 
+380: /* MUTANT (rep_const) */	ratio = 0L*num/den;
+380: /* MUTANT (rep_const) */	ratio = 1L*num/den;
+380: /* MUTANT (rep_const) */	ratio = -1L*num/den;
+380: /* MUTANT (rep_const) */	ratio = ((1000)+1)L*num/den;
+380: /* MUTANT (rep_const) */	ratio = ((1000)-1)L*num/den;
+382: /* MUTANT (del_stmt) */ /* 	ratio = num/(den/1000L); */ 
+382: /* MUTANT (rep_const) */	ratio = num/(den/0L);
+382: /* MUTANT (rep_const) */	ratio = num/(den/1L);
+382: /* MUTANT (rep_const) */	ratio = num/(den/-1L);
+382: /* MUTANT (rep_const) */	ratio = num/(den/((1000)+1)L);
+382: /* MUTANT (rep_const) */	ratio = num/(den/((1000)-1)L);
+384: /* MUTANT (rep_op) */    if (ratio <= 0) {
+384: /* MUTANT (rep_op) */    if (ratio > 0) {
+384: /* MUTANT (rep_op) */    if (ratio >= 0) {
+384: /* MUTANT (rep_op) */    if (ratio == 0) {
+384: /* MUTANT (rep_op) */    if (ratio != 0) {
+384: /* MUTANT (rep_const) */    if (ratio < 1) {
+384: /* MUTANT (rep_const) */    if (ratio < -1) {
+384: /* MUTANT (negate) */    if(! (ratio < 0)) {
+385: /* MUTANT (del_stmt) */ /* 	putc('-', file); */ 
+386: /* MUTANT (del_stmt) */ /* 	ratio = -ratio; */ 
+388: /* MUTANT (del_stmt) */ /* 	putc(' ', file); */ 
+390: /* MUTANT (rep_op) */    fprintf(file, "%2ld.%1ld%%", ratio / 10L, ratio + 10L);
+390: /* MUTANT (rep_op) */    fprintf(file, "%2ld.%1ld%%", ratio / 10L, ratio - 10L);
+390: /* MUTANT (rep_op) */    fprintf(file, "%2ld.%1ld%%", ratio / 10L, ratio * 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%0ld.%1ld%%", ratio / 10L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%1ld.%1ld%%", ratio / 10L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%-1ld.%1ld%%", ratio / 10L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%((2)+1)ld.%1ld%%", ratio / 10L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%((2)-1)ld.%1ld%%", ratio / 10L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%0ld%%", ratio / 10L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%-1ld%%", ratio / 10L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%((1)+1)ld%%", ratio / 10L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%1ld%%", ratio / 0L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%1ld%%", ratio / 1L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%1ld%%", ratio / -1L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%1ld%%", ratio / ((10)+1)L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%1ld%%", ratio / ((10)-1)L, ratio % 10L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%1ld%%", ratio / 10L, ratio % 0L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%1ld%%", ratio / 10L, ratio % 1L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%1ld%%", ratio / 10L, ratio % -1L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%1ld%%", ratio / 10L, ratio % ((10)+1)L);
+390: /* MUTANT (rep_const) */    fprintf(file, "%2ld.%1ld%%", ratio / 10L, ratio % ((10)-1)L);
+400: /* MUTANT (del_stmt) */ /*     voidp cp = (voidp)malloc (size); */ 
+402: /* MUTANT (del_stmt) */ /*     if (cp == NULL) error("out of memory"); */ 
+402: /* MUTANT (rep_op) */    if (cp != NULL) error("out of memory");
+402: /* MUTANT (negate) */    if(! (cp == NULL)) error("out of memory");
+403: /* MUTANT (del_stmt) */ /*     return cp; */ 
+410: /* MUTANT (rep_const) */  1x00000000L, 0x77073096L, 0xee0e612cL, 0x990951baL, 0x076dc419L,
+410: /* MUTANT (rep_const) */  -1x00000000L, 0x77073096L, 0xee0e612cL, 0x990951baL, 0x076dc419L,
+410: /* MUTANT (rep_const) */  0x00000000L, 1x77073096L, 0xee0e612cL, 0x990951baL, 0x076dc419L,
+410: /* MUTANT (rep_const) */  0x00000000L, -1x77073096L, 0xee0e612cL, 0x990951baL, 0x076dc419L,
+410: /* MUTANT (rep_const) */  0x00000000L, 0x77073096L, 1xee0e612cL, 0x990951baL, 0x076dc419L,
+410: /* MUTANT (rep_const) */  0x00000000L, 0x77073096L, -1xee0e612cL, 0x990951baL, 0x076dc419L,
+410: /* MUTANT (rep_const) */  0x00000000L, 0x77073096L, 0xee0e612cL, 1x990951baL, 0x076dc419L,
+410: /* MUTANT (rep_const) */  0x00000000L, 0x77073096L, 0xee0e612cL, -1x990951baL, 0x076dc419L,
+410: /* MUTANT (rep_const) */  0x00000000L, 0x77073096L, 0xee0e612cL, 0x990951baL, 1x076dc419L,
+410: /* MUTANT (rep_const) */  0x00000000L, 0x77073096L, 0xee0e612cL, 0x990951baL, -1x076dc419L,
+411: /* MUTANT (rep_const) */  1x706af48fL, 0xe963a535L, 0x9e6495a3L, 0x0edb8832L, 0x79dcb8a4L,
+411: /* MUTANT (rep_const) */  -1x706af48fL, 0xe963a535L, 0x9e6495a3L, 0x0edb8832L, 0x79dcb8a4L,
+411: /* MUTANT (rep_const) */  0x706af48fL, 1xe963a535L, 0x9e6495a3L, 0x0edb8832L, 0x79dcb8a4L,
+411: /* MUTANT (rep_const) */  0x706af48fL, -1xe963a535L, 0x9e6495a3L, 0x0edb8832L, 0x79dcb8a4L,
+411: /* MUTANT (rep_const) */  0x706af48fL, 0xe963a535L, 1x9e6495a3L, 0x0edb8832L, 0x79dcb8a4L,
+411: /* MUTANT (rep_const) */  0x706af48fL, 0xe963a535L, -1x9e6495a3L, 0x0edb8832L, 0x79dcb8a4L,
+411: /* MUTANT (rep_const) */  0x706af48fL, 0xe963a535L, 0x9e6495a3L, 1x0edb8832L, 0x79dcb8a4L,
+411: /* MUTANT (rep_const) */  0x706af48fL, 0xe963a535L, 0x9e6495a3L, -1x0edb8832L, 0x79dcb8a4L,
+411: /* MUTANT (rep_const) */  0x706af48fL, 0xe963a535L, 0x9e6495a3L, 0x0edb8832L, 1x79dcb8a4L,
+411: /* MUTANT (rep_const) */  0x706af48fL, 0xe963a535L, 0x9e6495a3L, 0x0edb8832L, -1x79dcb8a4L,
+412: /* MUTANT (rep_const) */  1xe0d5e91eL, 0x97d2d988L, 0x09b64c2bL, 0x7eb17cbdL, 0xe7b82d07L,
+412: /* MUTANT (rep_const) */  -1xe0d5e91eL, 0x97d2d988L, 0x09b64c2bL, 0x7eb17cbdL, 0xe7b82d07L,
+412: /* MUTANT (rep_const) */  0xe0d5e91eL, 1x97d2d988L, 0x09b64c2bL, 0x7eb17cbdL, 0xe7b82d07L,
+412: /* MUTANT (rep_const) */  0xe0d5e91eL, -1x97d2d988L, 0x09b64c2bL, 0x7eb17cbdL, 0xe7b82d07L,
+412: /* MUTANT (rep_const) */  0xe0d5e91eL, 0x97d2d988L, 1x09b64c2bL, 0x7eb17cbdL, 0xe7b82d07L,
+412: /* MUTANT (rep_const) */  0xe0d5e91eL, 0x97d2d988L, -1x09b64c2bL, 0x7eb17cbdL, 0xe7b82d07L,
+412: /* MUTANT (rep_const) */  0xe0d5e91eL, 0x97d2d988L, 0x09b64c2bL, 1x7eb17cbdL, 0xe7b82d07L,
+412: /* MUTANT (rep_const) */  0xe0d5e91eL, 0x97d2d988L, 0x09b64c2bL, -1x7eb17cbdL, 0xe7b82d07L,
+412: /* MUTANT (rep_const) */  0xe0d5e91eL, 0x97d2d988L, 0x09b64c2bL, 0x7eb17cbdL, 1xe7b82d07L,
+412: /* MUTANT (rep_const) */  0xe0d5e91eL, 0x97d2d988L, 0x09b64c2bL, 0x7eb17cbdL, -1xe7b82d07L,
+413: /* MUTANT (rep_const) */  1x90bf1d91L, 0x1db71064L, 0x6ab020f2L, 0xf3b97148L, 0x84be41deL,
+413: /* MUTANT (rep_const) */  -1x90bf1d91L, 0x1db71064L, 0x6ab020f2L, 0xf3b97148L, 0x84be41deL,
+413: /* MUTANT (rep_const) */  0x90bf1d91L, 1x1db71064L, 0x6ab020f2L, 0xf3b97148L, 0x84be41deL,
+413: /* MUTANT (rep_const) */  0x90bf1d91L, -1x1db71064L, 0x6ab020f2L, 0xf3b97148L, 0x84be41deL,
+413: /* MUTANT (rep_const) */  0x90bf1d91L, 0x1db71064L, 1x6ab020f2L, 0xf3b97148L, 0x84be41deL,
+413: /* MUTANT (rep_const) */  0x90bf1d91L, 0x1db71064L, -1x6ab020f2L, 0xf3b97148L, 0x84be41deL,
+413: /* MUTANT (rep_const) */  0x90bf1d91L, 0x1db71064L, 0x6ab020f2L, 1xf3b97148L, 0x84be41deL,
+413: /* MUTANT (rep_const) */  0x90bf1d91L, 0x1db71064L, 0x6ab020f2L, -1xf3b97148L, 0x84be41deL,
+413: /* MUTANT (rep_const) */  0x90bf1d91L, 0x1db71064L, 0x6ab020f2L, 0xf3b97148L, 1x84be41deL,
+413: /* MUTANT (rep_const) */  0x90bf1d91L, 0x1db71064L, 0x6ab020f2L, 0xf3b97148L, -1x84be41deL,
+414: /* MUTANT (rep_const) */  1x1adad47dL, 0x6ddde4ebL, 0xf4d4b551L, 0x83d385c7L, 0x136c9856L,
+414: /* MUTANT (rep_const) */  -1x1adad47dL, 0x6ddde4ebL, 0xf4d4b551L, 0x83d385c7L, 0x136c9856L,
+414: /* MUTANT (rep_const) */  0x1adad47dL, 1x6ddde4ebL, 0xf4d4b551L, 0x83d385c7L, 0x136c9856L,
+414: /* MUTANT (rep_const) */  0x1adad47dL, -1x6ddde4ebL, 0xf4d4b551L, 0x83d385c7L, 0x136c9856L,
+414: /* MUTANT (rep_const) */  0x1adad47dL, 0x6ddde4ebL, 1xf4d4b551L, 0x83d385c7L, 0x136c9856L,
+414: /* MUTANT (rep_const) */  0x1adad47dL, 0x6ddde4ebL, -1xf4d4b551L, 0x83d385c7L, 0x136c9856L,
+414: /* MUTANT (rep_const) */  0x1adad47dL, 0x6ddde4ebL, 0xf4d4b551L, 1x83d385c7L, 0x136c9856L,
+414: /* MUTANT (rep_const) */  0x1adad47dL, 0x6ddde4ebL, 0xf4d4b551L, -1x83d385c7L, 0x136c9856L,
+414: /* MUTANT (rep_const) */  0x1adad47dL, 0x6ddde4ebL, 0xf4d4b551L, 0x83d385c7L, 1x136c9856L,
+414: /* MUTANT (rep_const) */  0x1adad47dL, 0x6ddde4ebL, 0xf4d4b551L, 0x83d385c7L, -1x136c9856L,
+415: /* MUTANT (rep_const) */  1x646ba8c0L, 0xfd62f97aL, 0x8a65c9ecL, 0x14015c4fL, 0x63066cd9L,
+415: /* MUTANT (rep_const) */  -1x646ba8c0L, 0xfd62f97aL, 0x8a65c9ecL, 0x14015c4fL, 0x63066cd9L,
+415: /* MUTANT (rep_const) */  0x646ba8c0L, 1xfd62f97aL, 0x8a65c9ecL, 0x14015c4fL, 0x63066cd9L,
+415: /* MUTANT (rep_const) */  0x646ba8c0L, -1xfd62f97aL, 0x8a65c9ecL, 0x14015c4fL, 0x63066cd9L,
+415: /* MUTANT (rep_const) */  0x646ba8c0L, 0xfd62f97aL, 1x8a65c9ecL, 0x14015c4fL, 0x63066cd9L,
+415: /* MUTANT (rep_const) */  0x646ba8c0L, 0xfd62f97aL, -1x8a65c9ecL, 0x14015c4fL, 0x63066cd9L,
+415: /* MUTANT (rep_const) */  0x646ba8c0L, 0xfd62f97aL, 0x8a65c9ecL, 1x14015c4fL, 0x63066cd9L,
+415: /* MUTANT (rep_const) */  0x646ba8c0L, 0xfd62f97aL, 0x8a65c9ecL, -1x14015c4fL, 0x63066cd9L,
+415: /* MUTANT (rep_const) */  0x646ba8c0L, 0xfd62f97aL, 0x8a65c9ecL, 0x14015c4fL, 1x63066cd9L,
+415: /* MUTANT (rep_const) */  0x646ba8c0L, 0xfd62f97aL, 0x8a65c9ecL, 0x14015c4fL, -1x63066cd9L,
+416: /* MUTANT (rep_const) */  1xfa0f3d63L, 0x8d080df5L, 0x3b6e20c8L, 0x4c69105eL, 0xd56041e4L,
+416: /* MUTANT (rep_const) */  -1xfa0f3d63L, 0x8d080df5L, 0x3b6e20c8L, 0x4c69105eL, 0xd56041e4L,
+416: /* MUTANT (rep_const) */  0xfa0f3d63L, 1x8d080df5L, 0x3b6e20c8L, 0x4c69105eL, 0xd56041e4L,
+416: /* MUTANT (rep_const) */  0xfa0f3d63L, -1x8d080df5L, 0x3b6e20c8L, 0x4c69105eL, 0xd56041e4L,
+416: /* MUTANT (rep_const) */  0xfa0f3d63L, 0x8d080df5L, 1x3b6e20c8L, 0x4c69105eL, 0xd56041e4L,
+416: /* MUTANT (rep_const) */  0xfa0f3d63L, 0x8d080df5L, -1x3b6e20c8L, 0x4c69105eL, 0xd56041e4L,
+416: /* MUTANT (rep_const) */  0xfa0f3d63L, 0x8d080df5L, 0x3b6e20c8L, 1x4c69105eL, 0xd56041e4L,
+416: /* MUTANT (rep_const) */  0xfa0f3d63L, 0x8d080df5L, 0x3b6e20c8L, -1x4c69105eL, 0xd56041e4L,
+416: /* MUTANT (rep_const) */  0xfa0f3d63L, 0x8d080df5L, 0x3b6e20c8L, 0x4c69105eL, 1xd56041e4L,
+416: /* MUTANT (rep_const) */  0xfa0f3d63L, 0x8d080df5L, 0x3b6e20c8L, 0x4c69105eL, -1xd56041e4L,
+417: /* MUTANT (rep_const) */  1xa2677172L, 0x3c03e4d1L, 0x4b04d447L, 0xd20d85fdL, 0xa50ab56bL,
+417: /* MUTANT (rep_const) */  -1xa2677172L, 0x3c03e4d1L, 0x4b04d447L, 0xd20d85fdL, 0xa50ab56bL,
+417: /* MUTANT (rep_const) */  0xa2677172L, 1x3c03e4d1L, 0x4b04d447L, 0xd20d85fdL, 0xa50ab56bL,
+417: /* MUTANT (rep_const) */  0xa2677172L, -1x3c03e4d1L, 0x4b04d447L, 0xd20d85fdL, 0xa50ab56bL,
+417: /* MUTANT (rep_const) */  0xa2677172L, 0x3c03e4d1L, 1x4b04d447L, 0xd20d85fdL, 0xa50ab56bL,
+417: /* MUTANT (rep_const) */  0xa2677172L, 0x3c03e4d1L, -1x4b04d447L, 0xd20d85fdL, 0xa50ab56bL,
+417: /* MUTANT (rep_const) */  0xa2677172L, 0x3c03e4d1L, 0x4b04d447L, 1xd20d85fdL, 0xa50ab56bL,
+417: /* MUTANT (rep_const) */  0xa2677172L, 0x3c03e4d1L, 0x4b04d447L, -1xd20d85fdL, 0xa50ab56bL,
+417: /* MUTANT (rep_const) */  0xa2677172L, 0x3c03e4d1L, 0x4b04d447L, 0xd20d85fdL, 1xa50ab56bL,
+417: /* MUTANT (rep_const) */  0xa2677172L, 0x3c03e4d1L, 0x4b04d447L, 0xd20d85fdL, -1xa50ab56bL,
+418: /* MUTANT (rep_const) */  1x35b5a8faL, 0x42b2986cL, 0xdbbbc9d6L, 0xacbcf940L, 0x32d86ce3L,
+418: /* MUTANT (rep_const) */  -1x35b5a8faL, 0x42b2986cL, 0xdbbbc9d6L, 0xacbcf940L, 0x32d86ce3L,
+418: /* MUTANT (rep_const) */  0x35b5a8faL, 1x42b2986cL, 0xdbbbc9d6L, 0xacbcf940L, 0x32d86ce3L,
+418: /* MUTANT (rep_const) */  0x35b5a8faL, -1x42b2986cL, 0xdbbbc9d6L, 0xacbcf940L, 0x32d86ce3L,
+418: /* MUTANT (rep_const) */  0x35b5a8faL, 0x42b2986cL, 1xdbbbc9d6L, 0xacbcf940L, 0x32d86ce3L,
+418: /* MUTANT (rep_const) */  0x35b5a8faL, 0x42b2986cL, -1xdbbbc9d6L, 0xacbcf940L, 0x32d86ce3L,
+418: /* MUTANT (rep_const) */  0x35b5a8faL, 0x42b2986cL, 0xdbbbc9d6L, 1xacbcf940L, 0x32d86ce3L,
+418: /* MUTANT (rep_const) */  0x35b5a8faL, 0x42b2986cL, 0xdbbbc9d6L, -1xacbcf940L, 0x32d86ce3L,
+418: /* MUTANT (rep_const) */  0x35b5a8faL, 0x42b2986cL, 0xdbbbc9d6L, 0xacbcf940L, 1x32d86ce3L,
+418: /* MUTANT (rep_const) */  0x35b5a8faL, 0x42b2986cL, 0xdbbbc9d6L, 0xacbcf940L, -1x32d86ce3L,
+419: /* MUTANT (rep_const) */  1x45df5c75L, 0xdcd60dcfL, 0xabd13d59L, 0x26d930acL, 0x51de003aL,
+419: /* MUTANT (rep_const) */  -1x45df5c75L, 0xdcd60dcfL, 0xabd13d59L, 0x26d930acL, 0x51de003aL,
+419: /* MUTANT (rep_const) */  0x45df5c75L, 1xdcd60dcfL, 0xabd13d59L, 0x26d930acL, 0x51de003aL,
+419: /* MUTANT (rep_const) */  0x45df5c75L, -1xdcd60dcfL, 0xabd13d59L, 0x26d930acL, 0x51de003aL,
+419: /* MUTANT (rep_const) */  0x45df5c75L, 0xdcd60dcfL, 1xabd13d59L, 0x26d930acL, 0x51de003aL,
+419: /* MUTANT (rep_const) */  0x45df5c75L, 0xdcd60dcfL, -1xabd13d59L, 0x26d930acL, 0x51de003aL,
+419: /* MUTANT (rep_const) */  0x45df5c75L, 0xdcd60dcfL, 0xabd13d59L, 1x26d930acL, 0x51de003aL,
+419: /* MUTANT (rep_const) */  0x45df5c75L, 0xdcd60dcfL, 0xabd13d59L, -1x26d930acL, 0x51de003aL,
+419: /* MUTANT (rep_const) */  0x45df5c75L, 0xdcd60dcfL, 0xabd13d59L, 0x26d930acL, 1x51de003aL,
+419: /* MUTANT (rep_const) */  0x45df5c75L, 0xdcd60dcfL, 0xabd13d59L, 0x26d930acL, -1x51de003aL,
+420: /* MUTANT (rep_const) */  1xc8d75180L, 0xbfd06116L, 0x21b4f4b5L, 0x56b3c423L, 0xcfba9599L,
+420: /* MUTANT (rep_const) */  -1xc8d75180L, 0xbfd06116L, 0x21b4f4b5L, 0x56b3c423L, 0xcfba9599L,
+420: /* MUTANT (rep_const) */  0xc8d75180L, 1xbfd06116L, 0x21b4f4b5L, 0x56b3c423L, 0xcfba9599L,
+420: /* MUTANT (rep_const) */  0xc8d75180L, -1xbfd06116L, 0x21b4f4b5L, 0x56b3c423L, 0xcfba9599L,
+420: /* MUTANT (rep_const) */  0xc8d75180L, 0xbfd06116L, 1x21b4f4b5L, 0x56b3c423L, 0xcfba9599L,
+420: /* MUTANT (rep_const) */  0xc8d75180L, 0xbfd06116L, -1x21b4f4b5L, 0x56b3c423L, 0xcfba9599L,
+420: /* MUTANT (rep_const) */  0xc8d75180L, 0xbfd06116L, 0x21b4f4b5L, 1x56b3c423L, 0xcfba9599L,
+420: /* MUTANT (rep_const) */  0xc8d75180L, 0xbfd06116L, 0x21b4f4b5L, -1x56b3c423L, 0xcfba9599L,
+420: /* MUTANT (rep_const) */  0xc8d75180L, 0xbfd06116L, 0x21b4f4b5L, 0x56b3c423L, 1xcfba9599L,
+420: /* MUTANT (rep_const) */  0xc8d75180L, 0xbfd06116L, 0x21b4f4b5L, 0x56b3c423L, -1xcfba9599L,
+421: /* MUTANT (rep_const) */  1xb8bda50fL, 0x2802b89eL, 0x5f058808L, 0xc60cd9b2L, 0xb10be924L,
+421: /* MUTANT (rep_const) */  -1xb8bda50fL, 0x2802b89eL, 0x5f058808L, 0xc60cd9b2L, 0xb10be924L,
+421: /* MUTANT (rep_const) */  0xb8bda50fL, 1x2802b89eL, 0x5f058808L, 0xc60cd9b2L, 0xb10be924L,
+421: /* MUTANT (rep_const) */  0xb8bda50fL, -1x2802b89eL, 0x5f058808L, 0xc60cd9b2L, 0xb10be924L,
+421: /* MUTANT (rep_const) */  0xb8bda50fL, 0x2802b89eL, 1x5f058808L, 0xc60cd9b2L, 0xb10be924L,
+421: /* MUTANT (rep_const) */  0xb8bda50fL, 0x2802b89eL, -1x5f058808L, 0xc60cd9b2L, 0xb10be924L,
+421: /* MUTANT (rep_const) */  0xb8bda50fL, 0x2802b89eL, 0x5f058808L, 1xc60cd9b2L, 0xb10be924L,
+421: /* MUTANT (rep_const) */  0xb8bda50fL, 0x2802b89eL, 0x5f058808L, -1xc60cd9b2L, 0xb10be924L,
+421: /* MUTANT (rep_const) */  0xb8bda50fL, 0x2802b89eL, 0x5f058808L, 0xc60cd9b2L, 1xb10be924L,
+421: /* MUTANT (rep_const) */  0xb8bda50fL, 0x2802b89eL, 0x5f058808L, 0xc60cd9b2L, -1xb10be924L,
+422: /* MUTANT (rep_const) */  1x2f6f7c87L, 0x58684c11L, 0xc1611dabL, 0xb6662d3dL, 0x76dc4190L,
+422: /* MUTANT (rep_const) */  -1x2f6f7c87L, 0x58684c11L, 0xc1611dabL, 0xb6662d3dL, 0x76dc4190L,
+422: /* MUTANT (rep_const) */  0x2f6f7c87L, 1x58684c11L, 0xc1611dabL, 0xb6662d3dL, 0x76dc4190L,
+422: /* MUTANT (rep_const) */  0x2f6f7c87L, -1x58684c11L, 0xc1611dabL, 0xb6662d3dL, 0x76dc4190L,
+422: /* MUTANT (rep_const) */  0x2f6f7c87L, 0x58684c11L, 1xc1611dabL, 0xb6662d3dL, 0x76dc4190L,
+422: /* MUTANT (rep_const) */  0x2f6f7c87L, 0x58684c11L, -1xc1611dabL, 0xb6662d3dL, 0x76dc4190L,
+422: /* MUTANT (rep_const) */  0x2f6f7c87L, 0x58684c11L, 0xc1611dabL, 1xb6662d3dL, 0x76dc4190L,
+422: /* MUTANT (rep_const) */  0x2f6f7c87L, 0x58684c11L, 0xc1611dabL, -1xb6662d3dL, 0x76dc4190L,
+422: /* MUTANT (rep_const) */  0x2f6f7c87L, 0x58684c11L, 0xc1611dabL, 0xb6662d3dL, 1x76dc4190L,
+422: /* MUTANT (rep_const) */  0x2f6f7c87L, 0x58684c11L, 0xc1611dabL, 0xb6662d3dL, -1x76dc4190L,
+423: /* MUTANT (rep_const) */  1x01db7106L, 0x98d220bcL, 0xefd5102aL, 0x71b18589L, 0x06b6b51fL,
+423: /* MUTANT (rep_const) */  -1x01db7106L, 0x98d220bcL, 0xefd5102aL, 0x71b18589L, 0x06b6b51fL,
+423: /* MUTANT (rep_const) */  0x01db7106L, 1x98d220bcL, 0xefd5102aL, 0x71b18589L, 0x06b6b51fL,
+423: /* MUTANT (rep_const) */  0x01db7106L, -1x98d220bcL, 0xefd5102aL, 0x71b18589L, 0x06b6b51fL,
+423: /* MUTANT (rep_const) */  0x01db7106L, 0x98d220bcL, 1xefd5102aL, 0x71b18589L, 0x06b6b51fL,
+423: /* MUTANT (rep_const) */  0x01db7106L, 0x98d220bcL, -1xefd5102aL, 0x71b18589L, 0x06b6b51fL,
+423: /* MUTANT (rep_const) */  0x01db7106L, 0x98d220bcL, 0xefd5102aL, 1x71b18589L, 0x06b6b51fL,
+423: /* MUTANT (rep_const) */  0x01db7106L, 0x98d220bcL, 0xefd5102aL, -1x71b18589L, 0x06b6b51fL,
+423: /* MUTANT (rep_const) */  0x01db7106L, 0x98d220bcL, 0xefd5102aL, 0x71b18589L, 1x06b6b51fL,
+423: /* MUTANT (rep_const) */  0x01db7106L, 0x98d220bcL, 0xefd5102aL, 0x71b18589L, -1x06b6b51fL,
+424: /* MUTANT (rep_const) */  1x9fbfe4a5L, 0xe8b8d433L, 0x7807c9a2L, 0x0f00f934L, 0x9609a88eL,
+424: /* MUTANT (rep_const) */  -1x9fbfe4a5L, 0xe8b8d433L, 0x7807c9a2L, 0x0f00f934L, 0x9609a88eL,
+424: /* MUTANT (rep_const) */  0x9fbfe4a5L, 1xe8b8d433L, 0x7807c9a2L, 0x0f00f934L, 0x9609a88eL,
+424: /* MUTANT (rep_const) */  0x9fbfe4a5L, -1xe8b8d433L, 0x7807c9a2L, 0x0f00f934L, 0x9609a88eL,
+424: /* MUTANT (rep_const) */  0x9fbfe4a5L, 0xe8b8d433L, 1x7807c9a2L, 0x0f00f934L, 0x9609a88eL,
+424: /* MUTANT (rep_const) */  0x9fbfe4a5L, 0xe8b8d433L, -1x7807c9a2L, 0x0f00f934L, 0x9609a88eL,
+424: /* MUTANT (rep_const) */  0x9fbfe4a5L, 0xe8b8d433L, 0x7807c9a2L, 1x0f00f934L, 0x9609a88eL,
+424: /* MUTANT (rep_const) */  0x9fbfe4a5L, 0xe8b8d433L, 0x7807c9a2L, -1x0f00f934L, 0x9609a88eL,
+424: /* MUTANT (rep_const) */  0x9fbfe4a5L, 0xe8b8d433L, 0x7807c9a2L, 0x0f00f934L, 1x9609a88eL,
+424: /* MUTANT (rep_const) */  0x9fbfe4a5L, 0xe8b8d433L, 0x7807c9a2L, 0x0f00f934L, -1x9609a88eL,
+425: /* MUTANT (rep_const) */  1xe10e9818L, 0x7f6a0dbbL, 0x086d3d2dL, 0x91646c97L, 0xe6635c01L,
+425: /* MUTANT (rep_const) */  -1xe10e9818L, 0x7f6a0dbbL, 0x086d3d2dL, 0x91646c97L, 0xe6635c01L,
+425: /* MUTANT (rep_const) */  0xe10e9818L, 1x7f6a0dbbL, 0x086d3d2dL, 0x91646c97L, 0xe6635c01L,
+425: /* MUTANT (rep_const) */  0xe10e9818L, -1x7f6a0dbbL, 0x086d3d2dL, 0x91646c97L, 0xe6635c01L,
+425: /* MUTANT (rep_const) */  0xe10e9818L, 0x7f6a0dbbL, 1x086d3d2dL, 0x91646c97L, 0xe6635c01L,
+425: /* MUTANT (rep_const) */  0xe10e9818L, 0x7f6a0dbbL, -1x086d3d2dL, 0x91646c97L, 0xe6635c01L,
+425: /* MUTANT (rep_const) */  0xe10e9818L, 0x7f6a0dbbL, 0x086d3d2dL, 1x91646c97L, 0xe6635c01L,
+425: /* MUTANT (rep_const) */  0xe10e9818L, 0x7f6a0dbbL, 0x086d3d2dL, -1x91646c97L, 0xe6635c01L,
+425: /* MUTANT (rep_const) */  0xe10e9818L, 0x7f6a0dbbL, 0x086d3d2dL, 0x91646c97L, 1xe6635c01L,
+425: /* MUTANT (rep_const) */  0xe10e9818L, 0x7f6a0dbbL, 0x086d3d2dL, 0x91646c97L, -1xe6635c01L,
+426: /* MUTANT (rep_const) */  1x6b6b51f4L, 0x1c6c6162L, 0x856530d8L, 0xf262004eL, 0x6c0695edL,
+426: /* MUTANT (rep_const) */  -1x6b6b51f4L, 0x1c6c6162L, 0x856530d8L, 0xf262004eL, 0x6c0695edL,
+426: /* MUTANT (rep_const) */  0x6b6b51f4L, 1x1c6c6162L, 0x856530d8L, 0xf262004eL, 0x6c0695edL,
+426: /* MUTANT (rep_const) */  0x6b6b51f4L, -1x1c6c6162L, 0x856530d8L, 0xf262004eL, 0x6c0695edL,
+426: /* MUTANT (rep_const) */  0x6b6b51f4L, 0x1c6c6162L, 1x856530d8L, 0xf262004eL, 0x6c0695edL,
+426: /* MUTANT (rep_const) */  0x6b6b51f4L, 0x1c6c6162L, -1x856530d8L, 0xf262004eL, 0x6c0695edL,
+426: /* MUTANT (rep_const) */  0x6b6b51f4L, 0x1c6c6162L, 0x856530d8L, 1xf262004eL, 0x6c0695edL,
+426: /* MUTANT (rep_const) */  0x6b6b51f4L, 0x1c6c6162L, 0x856530d8L, -1xf262004eL, 0x6c0695edL,
+426: /* MUTANT (rep_const) */  0x6b6b51f4L, 0x1c6c6162L, 0x856530d8L, 0xf262004eL, 1x6c0695edL,
+426: /* MUTANT (rep_const) */  0x6b6b51f4L, 0x1c6c6162L, 0x856530d8L, 0xf262004eL, -1x6c0695edL,
+427: /* MUTANT (rep_const) */  1x1b01a57bL, 0x8208f4c1L, 0xf50fc457L, 0x65b0d9c6L, 0x12b7e950L,
+427: /* MUTANT (rep_const) */  -1x1b01a57bL, 0x8208f4c1L, 0xf50fc457L, 0x65b0d9c6L, 0x12b7e950L,
+427: /* MUTANT (rep_const) */  0x1b01a57bL, 1x8208f4c1L, 0xf50fc457L, 0x65b0d9c6L, 0x12b7e950L,
+427: /* MUTANT (rep_const) */  0x1b01a57bL, -1x8208f4c1L, 0xf50fc457L, 0x65b0d9c6L, 0x12b7e950L,
+427: /* MUTANT (rep_const) */  0x1b01a57bL, 0x8208f4c1L, 1xf50fc457L, 0x65b0d9c6L, 0x12b7e950L,
+427: /* MUTANT (rep_const) */  0x1b01a57bL, 0x8208f4c1L, -1xf50fc457L, 0x65b0d9c6L, 0x12b7e950L,
+427: /* MUTANT (rep_const) */  0x1b01a57bL, 0x8208f4c1L, 0xf50fc457L, 1x65b0d9c6L, 0x12b7e950L,
+427: /* MUTANT (rep_const) */  0x1b01a57bL, 0x8208f4c1L, 0xf50fc457L, -1x65b0d9c6L, 0x12b7e950L,
+427: /* MUTANT (rep_const) */  0x1b01a57bL, 0x8208f4c1L, 0xf50fc457L, 0x65b0d9c6L, 1x12b7e950L,
+427: /* MUTANT (rep_const) */  0x1b01a57bL, 0x8208f4c1L, 0xf50fc457L, 0x65b0d9c6L, -1x12b7e950L,
+428: /* MUTANT (rep_const) */  1x8bbeb8eaL, 0xfcb9887cL, 0x62dd1ddfL, 0x15da2d49L, 0x8cd37cf3L,
+428: /* MUTANT (rep_const) */  -1x8bbeb8eaL, 0xfcb9887cL, 0x62dd1ddfL, 0x15da2d49L, 0x8cd37cf3L,
+428: /* MUTANT (rep_const) */  0x8bbeb8eaL, 1xfcb9887cL, 0x62dd1ddfL, 0x15da2d49L, 0x8cd37cf3L,
+428: /* MUTANT (rep_const) */  0x8bbeb8eaL, -1xfcb9887cL, 0x62dd1ddfL, 0x15da2d49L, 0x8cd37cf3L,
+428: /* MUTANT (rep_const) */  0x8bbeb8eaL, 0xfcb9887cL, 1x62dd1ddfL, 0x15da2d49L, 0x8cd37cf3L,
+428: /* MUTANT (rep_const) */  0x8bbeb8eaL, 0xfcb9887cL, -1x62dd1ddfL, 0x15da2d49L, 0x8cd37cf3L,
+428: /* MUTANT (rep_const) */  0x8bbeb8eaL, 0xfcb9887cL, 0x62dd1ddfL, 1x15da2d49L, 0x8cd37cf3L,
+428: /* MUTANT (rep_const) */  0x8bbeb8eaL, 0xfcb9887cL, 0x62dd1ddfL, -1x15da2d49L, 0x8cd37cf3L,
+428: /* MUTANT (rep_const) */  0x8bbeb8eaL, 0xfcb9887cL, 0x62dd1ddfL, 0x15da2d49L, 1x8cd37cf3L,
+428: /* MUTANT (rep_const) */  0x8bbeb8eaL, 0xfcb9887cL, 0x62dd1ddfL, 0x15da2d49L, -1x8cd37cf3L,
+429: /* MUTANT (rep_const) */  1xfbd44c65L, 0x4db26158L, 0x3ab551ceL, 0xa3bc0074L, 0xd4bb30e2L,
+429: /* MUTANT (rep_const) */  -1xfbd44c65L, 0x4db26158L, 0x3ab551ceL, 0xa3bc0074L, 0xd4bb30e2L,
+429: /* MUTANT (rep_const) */  0xfbd44c65L, 1x4db26158L, 0x3ab551ceL, 0xa3bc0074L, 0xd4bb30e2L,
+429: /* MUTANT (rep_const) */  0xfbd44c65L, -1x4db26158L, 0x3ab551ceL, 0xa3bc0074L, 0xd4bb30e2L,
+429: /* MUTANT (rep_const) */  0xfbd44c65L, 0x4db26158L, 1x3ab551ceL, 0xa3bc0074L, 0xd4bb30e2L,
+429: /* MUTANT (rep_const) */  0xfbd44c65L, 0x4db26158L, -1x3ab551ceL, 0xa3bc0074L, 0xd4bb30e2L,
+429: /* MUTANT (rep_const) */  0xfbd44c65L, 0x4db26158L, 0x3ab551ceL, 1xa3bc0074L, 0xd4bb30e2L,
+429: /* MUTANT (rep_const) */  0xfbd44c65L, 0x4db26158L, 0x3ab551ceL, -1xa3bc0074L, 0xd4bb30e2L,
+429: /* MUTANT (rep_const) */  0xfbd44c65L, 0x4db26158L, 0x3ab551ceL, 0xa3bc0074L, 1xd4bb30e2L,
+429: /* MUTANT (rep_const) */  0xfbd44c65L, 0x4db26158L, 0x3ab551ceL, 0xa3bc0074L, -1xd4bb30e2L,
+430: /* MUTANT (rep_const) */  1x4adfa541L, 0x3dd895d7L, 0xa4d1c46dL, 0xd3d6f4fbL, 0x4369e96aL,
+430: /* MUTANT (rep_const) */  -1x4adfa541L, 0x3dd895d7L, 0xa4d1c46dL, 0xd3d6f4fbL, 0x4369e96aL,
+430: /* MUTANT (rep_const) */  0x4adfa541L, 1x3dd895d7L, 0xa4d1c46dL, 0xd3d6f4fbL, 0x4369e96aL,
+430: /* MUTANT (rep_const) */  0x4adfa541L, -1x3dd895d7L, 0xa4d1c46dL, 0xd3d6f4fbL, 0x4369e96aL,
+430: /* MUTANT (rep_const) */  0x4adfa541L, 0x3dd895d7L, 1xa4d1c46dL, 0xd3d6f4fbL, 0x4369e96aL,
+430: /* MUTANT (rep_const) */  0x4adfa541L, 0x3dd895d7L, -1xa4d1c46dL, 0xd3d6f4fbL, 0x4369e96aL,
+430: /* MUTANT (rep_const) */  0x4adfa541L, 0x3dd895d7L, 0xa4d1c46dL, 1xd3d6f4fbL, 0x4369e96aL,
+430: /* MUTANT (rep_const) */  0x4adfa541L, 0x3dd895d7L, 0xa4d1c46dL, -1xd3d6f4fbL, 0x4369e96aL,
+430: /* MUTANT (rep_const) */  0x4adfa541L, 0x3dd895d7L, 0xa4d1c46dL, 0xd3d6f4fbL, 1x4369e96aL,
+430: /* MUTANT (rep_const) */  0x4adfa541L, 0x3dd895d7L, 0xa4d1c46dL, 0xd3d6f4fbL, -1x4369e96aL,
+431: /* MUTANT (rep_const) */  1x346ed9fcL, 0xad678846L, 0xda60b8d0L, 0x44042d73L, 0x33031de5L,
+431: /* MUTANT (rep_const) */  -1x346ed9fcL, 0xad678846L, 0xda60b8d0L, 0x44042d73L, 0x33031de5L,
+431: /* MUTANT (rep_const) */  0x346ed9fcL, 1xad678846L, 0xda60b8d0L, 0x44042d73L, 0x33031de5L,
+431: /* MUTANT (rep_const) */  0x346ed9fcL, -1xad678846L, 0xda60b8d0L, 0x44042d73L, 0x33031de5L,
+431: /* MUTANT (rep_const) */  0x346ed9fcL, 0xad678846L, 1xda60b8d0L, 0x44042d73L, 0x33031de5L,
+431: /* MUTANT (rep_const) */  0x346ed9fcL, 0xad678846L, -1xda60b8d0L, 0x44042d73L, 0x33031de5L,
+431: /* MUTANT (rep_const) */  0x346ed9fcL, 0xad678846L, 0xda60b8d0L, 1x44042d73L, 0x33031de5L,
+431: /* MUTANT (rep_const) */  0x346ed9fcL, 0xad678846L, 0xda60b8d0L, -1x44042d73L, 0x33031de5L,
+431: /* MUTANT (rep_const) */  0x346ed9fcL, 0xad678846L, 0xda60b8d0L, 0x44042d73L, 1x33031de5L,
+431: /* MUTANT (rep_const) */  0x346ed9fcL, 0xad678846L, 0xda60b8d0L, 0x44042d73L, -1x33031de5L,
+432: /* MUTANT (rep_const) */  1xaa0a4c5fL, 0xdd0d7cc9L, 0x5005713cL, 0x270241aaL, 0xbe0b1010L,
+432: /* MUTANT (rep_const) */  -1xaa0a4c5fL, 0xdd0d7cc9L, 0x5005713cL, 0x270241aaL, 0xbe0b1010L,
+432: /* MUTANT (rep_const) */  0xaa0a4c5fL, 1xdd0d7cc9L, 0x5005713cL, 0x270241aaL, 0xbe0b1010L,
+432: /* MUTANT (rep_const) */  0xaa0a4c5fL, -1xdd0d7cc9L, 0x5005713cL, 0x270241aaL, 0xbe0b1010L,
+432: /* MUTANT (rep_const) */  0xaa0a4c5fL, 0xdd0d7cc9L, 1x5005713cL, 0x270241aaL, 0xbe0b1010L,
+432: /* MUTANT (rep_const) */  0xaa0a4c5fL, 0xdd0d7cc9L, -1x5005713cL, 0x270241aaL, 0xbe0b1010L,
+432: /* MUTANT (rep_const) */  0xaa0a4c5fL, 0xdd0d7cc9L, 0x5005713cL, 1x270241aaL, 0xbe0b1010L,
+432: /* MUTANT (rep_const) */  0xaa0a4c5fL, 0xdd0d7cc9L, 0x5005713cL, -1x270241aaL, 0xbe0b1010L,
+432: /* MUTANT (rep_const) */  0xaa0a4c5fL, 0xdd0d7cc9L, 0x5005713cL, 0x270241aaL, 1xbe0b1010L,
+432: /* MUTANT (rep_const) */  0xaa0a4c5fL, 0xdd0d7cc9L, 0x5005713cL, 0x270241aaL, -1xbe0b1010L,
+433: /* MUTANT (rep_const) */  1xc90c2086L, 0x5768b525L, 0x206f85b3L, 0xb966d409L, 0xce61e49fL,
+433: /* MUTANT (rep_const) */  -1xc90c2086L, 0x5768b525L, 0x206f85b3L, 0xb966d409L, 0xce61e49fL,
+433: /* MUTANT (rep_const) */  0xc90c2086L, 1x5768b525L, 0x206f85b3L, 0xb966d409L, 0xce61e49fL,
+433: /* MUTANT (rep_const) */  0xc90c2086L, -1x5768b525L, 0x206f85b3L, 0xb966d409L, 0xce61e49fL,
+433: /* MUTANT (rep_const) */  0xc90c2086L, 0x5768b525L, 1x206f85b3L, 0xb966d409L, 0xce61e49fL,
+433: /* MUTANT (rep_const) */  0xc90c2086L, 0x5768b525L, -1x206f85b3L, 0xb966d409L, 0xce61e49fL,
+433: /* MUTANT (rep_const) */  0xc90c2086L, 0x5768b525L, 0x206f85b3L, 1xb966d409L, 0xce61e49fL,
+433: /* MUTANT (rep_const) */  0xc90c2086L, 0x5768b525L, 0x206f85b3L, -1xb966d409L, 0xce61e49fL,
+433: /* MUTANT (rep_const) */  0xc90c2086L, 0x5768b525L, 0x206f85b3L, 0xb966d409L, 1xce61e49fL,
+433: /* MUTANT (rep_const) */  0xc90c2086L, 0x5768b525L, 0x206f85b3L, 0xb966d409L, -1xce61e49fL,
+434: /* MUTANT (rep_const) */  1x5edef90eL, 0x29d9c998L, 0xb0d09822L, 0xc7d7a8b4L, 0x59b33d17L,
+434: /* MUTANT (rep_const) */  -1x5edef90eL, 0x29d9c998L, 0xb0d09822L, 0xc7d7a8b4L, 0x59b33d17L,
+434: /* MUTANT (rep_const) */  0x5edef90eL, 1x29d9c998L, 0xb0d09822L, 0xc7d7a8b4L, 0x59b33d17L,
+434: /* MUTANT (rep_const) */  0x5edef90eL, -1x29d9c998L, 0xb0d09822L, 0xc7d7a8b4L, 0x59b33d17L,
+434: /* MUTANT (rep_const) */  0x5edef90eL, 0x29d9c998L, 1xb0d09822L, 0xc7d7a8b4L, 0x59b33d17L,
+434: /* MUTANT (rep_const) */  0x5edef90eL, 0x29d9c998L, -1xb0d09822L, 0xc7d7a8b4L, 0x59b33d17L,
+434: /* MUTANT (rep_const) */  0x5edef90eL, 0x29d9c998L, 0xb0d09822L, 1xc7d7a8b4L, 0x59b33d17L,
+434: /* MUTANT (rep_const) */  0x5edef90eL, 0x29d9c998L, 0xb0d09822L, -1xc7d7a8b4L, 0x59b33d17L,
+434: /* MUTANT (rep_const) */  0x5edef90eL, 0x29d9c998L, 0xb0d09822L, 0xc7d7a8b4L, 1x59b33d17L,
+434: /* MUTANT (rep_const) */  0x5edef90eL, 0x29d9c998L, 0xb0d09822L, 0xc7d7a8b4L, -1x59b33d17L,
+435: /* MUTANT (rep_const) */  1x2eb40d81L, 0xb7bd5c3bL, 0xc0ba6cadL, 0xedb88320L, 0x9abfb3b6L,
+435: /* MUTANT (rep_const) */  -1x2eb40d81L, 0xb7bd5c3bL, 0xc0ba6cadL, 0xedb88320L, 0x9abfb3b6L,
+435: /* MUTANT (rep_const) */  0x2eb40d81L, 1xb7bd5c3bL, 0xc0ba6cadL, 0xedb88320L, 0x9abfb3b6L,
+435: /* MUTANT (rep_const) */  0x2eb40d81L, -1xb7bd5c3bL, 0xc0ba6cadL, 0xedb88320L, 0x9abfb3b6L,
+435: /* MUTANT (rep_const) */  0x2eb40d81L, 0xb7bd5c3bL, 1xc0ba6cadL, 0xedb88320L, 0x9abfb3b6L,
+435: /* MUTANT (rep_const) */  0x2eb40d81L, 0xb7bd5c3bL, -1xc0ba6cadL, 0xedb88320L, 0x9abfb3b6L,
+435: /* MUTANT (rep_const) */  0x2eb40d81L, 0xb7bd5c3bL, 0xc0ba6cadL, 1xedb88320L, 0x9abfb3b6L,
+435: /* MUTANT (rep_const) */  0x2eb40d81L, 0xb7bd5c3bL, 0xc0ba6cadL, -1xedb88320L, 0x9abfb3b6L,
+435: /* MUTANT (rep_const) */  0x2eb40d81L, 0xb7bd5c3bL, 0xc0ba6cadL, 0xedb88320L, 1x9abfb3b6L,
+435: /* MUTANT (rep_const) */  0x2eb40d81L, 0xb7bd5c3bL, 0xc0ba6cadL, 0xedb88320L, -1x9abfb3b6L,
+436: /* MUTANT (rep_const) */  1x03b6e20cL, 0x74b1d29aL, 0xead54739L, 0x9dd277afL, 0x04db2615L,
+436: /* MUTANT (rep_const) */  -1x03b6e20cL, 0x74b1d29aL, 0xead54739L, 0x9dd277afL, 0x04db2615L,
+436: /* MUTANT (rep_const) */  0x03b6e20cL, 1x74b1d29aL, 0xead54739L, 0x9dd277afL, 0x04db2615L,
+436: /* MUTANT (rep_const) */  0x03b6e20cL, -1x74b1d29aL, 0xead54739L, 0x9dd277afL, 0x04db2615L,
+436: /* MUTANT (rep_const) */  0x03b6e20cL, 0x74b1d29aL, 1xead54739L, 0x9dd277afL, 0x04db2615L,
+436: /* MUTANT (rep_const) */  0x03b6e20cL, 0x74b1d29aL, -1xead54739L, 0x9dd277afL, 0x04db2615L,
+436: /* MUTANT (rep_const) */  0x03b6e20cL, 0x74b1d29aL, 0xead54739L, 1x9dd277afL, 0x04db2615L,
+436: /* MUTANT (rep_const) */  0x03b6e20cL, 0x74b1d29aL, 0xead54739L, -1x9dd277afL, 0x04db2615L,
+436: /* MUTANT (rep_const) */  0x03b6e20cL, 0x74b1d29aL, 0xead54739L, 0x9dd277afL, 1x04db2615L,
+436: /* MUTANT (rep_const) */  0x03b6e20cL, 0x74b1d29aL, 0xead54739L, 0x9dd277afL, -1x04db2615L,
+437: /* MUTANT (rep_const) */  1x73dc1683L, 0xe3630b12L, 0x94643b84L, 0x0d6d6a3eL, 0x7a6a5aa8L,
+437: /* MUTANT (rep_const) */  -1x73dc1683L, 0xe3630b12L, 0x94643b84L, 0x0d6d6a3eL, 0x7a6a5aa8L,
+437: /* MUTANT (rep_const) */  0x73dc1683L, 1xe3630b12L, 0x94643b84L, 0x0d6d6a3eL, 0x7a6a5aa8L,
+437: /* MUTANT (rep_const) */  0x73dc1683L, -1xe3630b12L, 0x94643b84L, 0x0d6d6a3eL, 0x7a6a5aa8L,
+437: /* MUTANT (rep_const) */  0x73dc1683L, 0xe3630b12L, 1x94643b84L, 0x0d6d6a3eL, 0x7a6a5aa8L,
+437: /* MUTANT (rep_const) */  0x73dc1683L, 0xe3630b12L, -1x94643b84L, 0x0d6d6a3eL, 0x7a6a5aa8L,
+437: /* MUTANT (rep_const) */  0x73dc1683L, 0xe3630b12L, 0x94643b84L, 1x0d6d6a3eL, 0x7a6a5aa8L,
+437: /* MUTANT (rep_const) */  0x73dc1683L, 0xe3630b12L, 0x94643b84L, -1x0d6d6a3eL, 0x7a6a5aa8L,
+437: /* MUTANT (rep_const) */  0x73dc1683L, 0xe3630b12L, 0x94643b84L, 0x0d6d6a3eL, 1x7a6a5aa8L,
+437: /* MUTANT (rep_const) */  0x73dc1683L, 0xe3630b12L, 0x94643b84L, 0x0d6d6a3eL, -1x7a6a5aa8L,
+438: /* MUTANT (rep_const) */  1xe40ecf0bL, 0x9309ff9dL, 0x0a00ae27L, 0x7d079eb1L, 0xf00f9344L,
+438: /* MUTANT (rep_const) */  -1xe40ecf0bL, 0x9309ff9dL, 0x0a00ae27L, 0x7d079eb1L, 0xf00f9344L,
+438: /* MUTANT (rep_const) */  0xe40ecf0bL, 1x9309ff9dL, 0x0a00ae27L, 0x7d079eb1L, 0xf00f9344L,
+438: /* MUTANT (rep_const) */  0xe40ecf0bL, -1x9309ff9dL, 0x0a00ae27L, 0x7d079eb1L, 0xf00f9344L,
+438: /* MUTANT (rep_const) */  0xe40ecf0bL, 0x9309ff9dL, 1x0a00ae27L, 0x7d079eb1L, 0xf00f9344L,
+438: /* MUTANT (rep_const) */  0xe40ecf0bL, 0x9309ff9dL, -1x0a00ae27L, 0x7d079eb1L, 0xf00f9344L,
+438: /* MUTANT (rep_const) */  0xe40ecf0bL, 0x9309ff9dL, 0x0a00ae27L, 1x7d079eb1L, 0xf00f9344L,
+438: /* MUTANT (rep_const) */  0xe40ecf0bL, 0x9309ff9dL, 0x0a00ae27L, -1x7d079eb1L, 0xf00f9344L,
+438: /* MUTANT (rep_const) */  0xe40ecf0bL, 0x9309ff9dL, 0x0a00ae27L, 0x7d079eb1L, 1xf00f9344L,
+438: /* MUTANT (rep_const) */  0xe40ecf0bL, 0x9309ff9dL, 0x0a00ae27L, 0x7d079eb1L, -1xf00f9344L,
+439: /* MUTANT (rep_const) */  1x8708a3d2L, 0x1e01f268L, 0x6906c2feL, 0xf762575dL, 0x806567cbL,
+439: /* MUTANT (rep_const) */  -1x8708a3d2L, 0x1e01f268L, 0x6906c2feL, 0xf762575dL, 0x806567cbL,
+439: /* MUTANT (rep_const) */  0x8708a3d2L, 1x1e01f268L, 0x6906c2feL, 0xf762575dL, 0x806567cbL,
+439: /* MUTANT (rep_const) */  0x8708a3d2L, -1x1e01f268L, 0x6906c2feL, 0xf762575dL, 0x806567cbL,
+439: /* MUTANT (rep_const) */  0x8708a3d2L, 0x1e01f268L, 1x6906c2feL, 0xf762575dL, 0x806567cbL,
+439: /* MUTANT (rep_const) */  0x8708a3d2L, 0x1e01f268L, -1x6906c2feL, 0xf762575dL, 0x806567cbL,
+439: /* MUTANT (rep_const) */  0x8708a3d2L, 0x1e01f268L, 0x6906c2feL, 1xf762575dL, 0x806567cbL,
+439: /* MUTANT (rep_const) */  0x8708a3d2L, 0x1e01f268L, 0x6906c2feL, -1xf762575dL, 0x806567cbL,
+439: /* MUTANT (rep_const) */  0x8708a3d2L, 0x1e01f268L, 0x6906c2feL, 0xf762575dL, 1x806567cbL,
+439: /* MUTANT (rep_const) */  0x8708a3d2L, 0x1e01f268L, 0x6906c2feL, 0xf762575dL, -1x806567cbL,
+440: /* MUTANT (rep_const) */  1x196c3671L, 0x6e6b06e7L, 0xfed41b76L, 0x89d32be0L, 0x10da7a5aL,
+440: /* MUTANT (rep_const) */  -1x196c3671L, 0x6e6b06e7L, 0xfed41b76L, 0x89d32be0L, 0x10da7a5aL,
+440: /* MUTANT (rep_const) */  0x196c3671L, 1x6e6b06e7L, 0xfed41b76L, 0x89d32be0L, 0x10da7a5aL,
+440: /* MUTANT (rep_const) */  0x196c3671L, -1x6e6b06e7L, 0xfed41b76L, 0x89d32be0L, 0x10da7a5aL,
+440: /* MUTANT (rep_const) */  0x196c3671L, 0x6e6b06e7L, 1xfed41b76L, 0x89d32be0L, 0x10da7a5aL,
+440: /* MUTANT (rep_const) */  0x196c3671L, 0x6e6b06e7L, -1xfed41b76L, 0x89d32be0L, 0x10da7a5aL,
+440: /* MUTANT (rep_const) */  0x196c3671L, 0x6e6b06e7L, 0xfed41b76L, 1x89d32be0L, 0x10da7a5aL,
+440: /* MUTANT (rep_const) */  0x196c3671L, 0x6e6b06e7L, 0xfed41b76L, -1x89d32be0L, 0x10da7a5aL,
+440: /* MUTANT (rep_const) */  0x196c3671L, 0x6e6b06e7L, 0xfed41b76L, 0x89d32be0L, 1x10da7a5aL,
+440: /* MUTANT (rep_const) */  0x196c3671L, 0x6e6b06e7L, 0xfed41b76L, 0x89d32be0L, -1x10da7a5aL,
+441: /* MUTANT (rep_const) */  1x67dd4accL, 0xf9b9df6fL, 0x8ebeeff9L, 0x17b7be43L, 0x60b08ed5L,
+441: /* MUTANT (rep_const) */  -1x67dd4accL, 0xf9b9df6fL, 0x8ebeeff9L, 0x17b7be43L, 0x60b08ed5L,
+441: /* MUTANT (rep_const) */  0x67dd4accL, 1xf9b9df6fL, 0x8ebeeff9L, 0x17b7be43L, 0x60b08ed5L,
+441: /* MUTANT (rep_const) */  0x67dd4accL, -1xf9b9df6fL, 0x8ebeeff9L, 0x17b7be43L, 0x60b08ed5L,
+441: /* MUTANT (rep_const) */  0x67dd4accL, 0xf9b9df6fL, 1x8ebeeff9L, 0x17b7be43L, 0x60b08ed5L,
+441: /* MUTANT (rep_const) */  0x67dd4accL, 0xf9b9df6fL, -1x8ebeeff9L, 0x17b7be43L, 0x60b08ed5L,
+441: /* MUTANT (rep_const) */  0x67dd4accL, 0xf9b9df6fL, 0x8ebeeff9L, 1x17b7be43L, 0x60b08ed5L,
+441: /* MUTANT (rep_const) */  0x67dd4accL, 0xf9b9df6fL, 0x8ebeeff9L, -1x17b7be43L, 0x60b08ed5L,
+441: /* MUTANT (rep_const) */  0x67dd4accL, 0xf9b9df6fL, 0x8ebeeff9L, 0x17b7be43L, 1x60b08ed5L,
+441: /* MUTANT (rep_const) */  0x67dd4accL, 0xf9b9df6fL, 0x8ebeeff9L, 0x17b7be43L, -1x60b08ed5L,
+442: /* MUTANT (rep_const) */  1xd6d6a3e8L, 0xa1d1937eL, 0x38d8c2c4L, 0x4fdff252L, 0xd1bb67f1L,
+442: /* MUTANT (rep_const) */  -1xd6d6a3e8L, 0xa1d1937eL, 0x38d8c2c4L, 0x4fdff252L, 0xd1bb67f1L,
+442: /* MUTANT (rep_const) */  0xd6d6a3e8L, 1xa1d1937eL, 0x38d8c2c4L, 0x4fdff252L, 0xd1bb67f1L,
+442: /* MUTANT (rep_const) */  0xd6d6a3e8L, -1xa1d1937eL, 0x38d8c2c4L, 0x4fdff252L, 0xd1bb67f1L,
+442: /* MUTANT (rep_const) */  0xd6d6a3e8L, 0xa1d1937eL, 1x38d8c2c4L, 0x4fdff252L, 0xd1bb67f1L,
+442: /* MUTANT (rep_const) */  0xd6d6a3e8L, 0xa1d1937eL, -1x38d8c2c4L, 0x4fdff252L, 0xd1bb67f1L,
+442: /* MUTANT (rep_const) */  0xd6d6a3e8L, 0xa1d1937eL, 0x38d8c2c4L, 1x4fdff252L, 0xd1bb67f1L,
+442: /* MUTANT (rep_const) */  0xd6d6a3e8L, 0xa1d1937eL, 0x38d8c2c4L, -1x4fdff252L, 0xd1bb67f1L,
+442: /* MUTANT (rep_const) */  0xd6d6a3e8L, 0xa1d1937eL, 0x38d8c2c4L, 0x4fdff252L, 1xd1bb67f1L,
+442: /* MUTANT (rep_const) */  0xd6d6a3e8L, 0xa1d1937eL, 0x38d8c2c4L, 0x4fdff252L, -1xd1bb67f1L,
+443: /* MUTANT (rep_const) */  1xa6bc5767L, 0x3fb506ddL, 0x48b2364bL, 0xd80d2bdaL, 0xaf0a1b4cL,
+443: /* MUTANT (rep_const) */  -1xa6bc5767L, 0x3fb506ddL, 0x48b2364bL, 0xd80d2bdaL, 0xaf0a1b4cL,
+443: /* MUTANT (rep_const) */  0xa6bc5767L, 1x3fb506ddL, 0x48b2364bL, 0xd80d2bdaL, 0xaf0a1b4cL,
+443: /* MUTANT (rep_const) */  0xa6bc5767L, -1x3fb506ddL, 0x48b2364bL, 0xd80d2bdaL, 0xaf0a1b4cL,
+443: /* MUTANT (rep_const) */  0xa6bc5767L, 0x3fb506ddL, 1x48b2364bL, 0xd80d2bdaL, 0xaf0a1b4cL,
+443: /* MUTANT (rep_const) */  0xa6bc5767L, 0x3fb506ddL, -1x48b2364bL, 0xd80d2bdaL, 0xaf0a1b4cL,
+443: /* MUTANT (rep_const) */  0xa6bc5767L, 0x3fb506ddL, 0x48b2364bL, 1xd80d2bdaL, 0xaf0a1b4cL,
+443: /* MUTANT (rep_const) */  0xa6bc5767L, 0x3fb506ddL, 0x48b2364bL, -1xd80d2bdaL, 0xaf0a1b4cL,
+443: /* MUTANT (rep_const) */  0xa6bc5767L, 0x3fb506ddL, 0x48b2364bL, 0xd80d2bdaL, 1xaf0a1b4cL,
+443: /* MUTANT (rep_const) */  0xa6bc5767L, 0x3fb506ddL, 0x48b2364bL, 0xd80d2bdaL, -1xaf0a1b4cL,
+444: /* MUTANT (rep_const) */  1x36034af6L, 0x41047a60L, 0xdf60efc3L, 0xa867df55L, 0x316e8eefL,
+444: /* MUTANT (rep_const) */  -1x36034af6L, 0x41047a60L, 0xdf60efc3L, 0xa867df55L, 0x316e8eefL,
+444: /* MUTANT (rep_const) */  0x36034af6L, 1x41047a60L, 0xdf60efc3L, 0xa867df55L, 0x316e8eefL,
+444: /* MUTANT (rep_const) */  0x36034af6L, -1x41047a60L, 0xdf60efc3L, 0xa867df55L, 0x316e8eefL,
+444: /* MUTANT (rep_const) */  0x36034af6L, 0x41047a60L, 1xdf60efc3L, 0xa867df55L, 0x316e8eefL,
+444: /* MUTANT (rep_const) */  0x36034af6L, 0x41047a60L, -1xdf60efc3L, 0xa867df55L, 0x316e8eefL,
+444: /* MUTANT (rep_const) */  0x36034af6L, 0x41047a60L, 0xdf60efc3L, 1xa867df55L, 0x316e8eefL,
+444: /* MUTANT (rep_const) */  0x36034af6L, 0x41047a60L, 0xdf60efc3L, -1xa867df55L, 0x316e8eefL,
+444: /* MUTANT (rep_const) */  0x36034af6L, 0x41047a60L, 0xdf60efc3L, 0xa867df55L, 1x316e8eefL,
+444: /* MUTANT (rep_const) */  0x36034af6L, 0x41047a60L, 0xdf60efc3L, 0xa867df55L, -1x316e8eefL,
+445: /* MUTANT (rep_const) */  1x4669be79L, 0xcb61b38cL, 0xbc66831aL, 0x256fd2a0L, 0x5268e236L,
+445: /* MUTANT (rep_const) */  -1x4669be79L, 0xcb61b38cL, 0xbc66831aL, 0x256fd2a0L, 0x5268e236L,
+445: /* MUTANT (rep_const) */  0x4669be79L, 1xcb61b38cL, 0xbc66831aL, 0x256fd2a0L, 0x5268e236L,
+445: /* MUTANT (rep_const) */  0x4669be79L, -1xcb61b38cL, 0xbc66831aL, 0x256fd2a0L, 0x5268e236L,
+445: /* MUTANT (rep_const) */  0x4669be79L, 0xcb61b38cL, 1xbc66831aL, 0x256fd2a0L, 0x5268e236L,
+445: /* MUTANT (rep_const) */  0x4669be79L, 0xcb61b38cL, -1xbc66831aL, 0x256fd2a0L, 0x5268e236L,
+445: /* MUTANT (rep_const) */  0x4669be79L, 0xcb61b38cL, 0xbc66831aL, 1x256fd2a0L, 0x5268e236L,
+445: /* MUTANT (rep_const) */  0x4669be79L, 0xcb61b38cL, 0xbc66831aL, -1x256fd2a0L, 0x5268e236L,
+445: /* MUTANT (rep_const) */  0x4669be79L, 0xcb61b38cL, 0xbc66831aL, 0x256fd2a0L, 1x5268e236L,
+445: /* MUTANT (rep_const) */  0x4669be79L, 0xcb61b38cL, 0xbc66831aL, 0x256fd2a0L, -1x5268e236L,
+446: /* MUTANT (rep_const) */  1xcc0c7795L, 0xbb0b4703L, 0x220216b9L, 0x5505262fL, 0xc5ba3bbeL,
+446: /* MUTANT (rep_const) */  -1xcc0c7795L, 0xbb0b4703L, 0x220216b9L, 0x5505262fL, 0xc5ba3bbeL,
+446: /* MUTANT (rep_const) */  0xcc0c7795L, 1xbb0b4703L, 0x220216b9L, 0x5505262fL, 0xc5ba3bbeL,
+446: /* MUTANT (rep_const) */  0xcc0c7795L, -1xbb0b4703L, 0x220216b9L, 0x5505262fL, 0xc5ba3bbeL,
+446: /* MUTANT (rep_const) */  0xcc0c7795L, 0xbb0b4703L, 1x220216b9L, 0x5505262fL, 0xc5ba3bbeL,
+446: /* MUTANT (rep_const) */  0xcc0c7795L, 0xbb0b4703L, -1x220216b9L, 0x5505262fL, 0xc5ba3bbeL,
+446: /* MUTANT (rep_const) */  0xcc0c7795L, 0xbb0b4703L, 0x220216b9L, 1x5505262fL, 0xc5ba3bbeL,
+446: /* MUTANT (rep_const) */  0xcc0c7795L, 0xbb0b4703L, 0x220216b9L, -1x5505262fL, 0xc5ba3bbeL,
+446: /* MUTANT (rep_const) */  0xcc0c7795L, 0xbb0b4703L, 0x220216b9L, 0x5505262fL, 1xc5ba3bbeL,
+446: /* MUTANT (rep_const) */  0xcc0c7795L, 0xbb0b4703L, 0x220216b9L, 0x5505262fL, -1xc5ba3bbeL,
+447: /* MUTANT (rep_const) */  1xb2bd0b28L, 0x2bb45a92L, 0x5cb36a04L, 0xc2d7ffa7L, 0xb5d0cf31L,
+447: /* MUTANT (rep_const) */  -1xb2bd0b28L, 0x2bb45a92L, 0x5cb36a04L, 0xc2d7ffa7L, 0xb5d0cf31L,
+447: /* MUTANT (rep_const) */  0xb2bd0b28L, 1x2bb45a92L, 0x5cb36a04L, 0xc2d7ffa7L, 0xb5d0cf31L,
+447: /* MUTANT (rep_const) */  0xb2bd0b28L, -1x2bb45a92L, 0x5cb36a04L, 0xc2d7ffa7L, 0xb5d0cf31L,
+447: /* MUTANT (rep_const) */  0xb2bd0b28L, 0x2bb45a92L, 1x5cb36a04L, 0xc2d7ffa7L, 0xb5d0cf31L,
+447: /* MUTANT (rep_const) */  0xb2bd0b28L, 0x2bb45a92L, -1x5cb36a04L, 0xc2d7ffa7L, 0xb5d0cf31L,
+447: /* MUTANT (rep_const) */  0xb2bd0b28L, 0x2bb45a92L, 0x5cb36a04L, 1xc2d7ffa7L, 0xb5d0cf31L,
+447: /* MUTANT (rep_const) */  0xb2bd0b28L, 0x2bb45a92L, 0x5cb36a04L, -1xc2d7ffa7L, 0xb5d0cf31L,
+447: /* MUTANT (rep_const) */  0xb2bd0b28L, 0x2bb45a92L, 0x5cb36a04L, 0xc2d7ffa7L, 1xb5d0cf31L,
+447: /* MUTANT (rep_const) */  0xb2bd0b28L, 0x2bb45a92L, 0x5cb36a04L, 0xc2d7ffa7L, -1xb5d0cf31L,
+448: /* MUTANT (rep_const) */  1x2cd99e8bL, 0x5bdeae1dL, 0x9b64c2b0L, 0xec63f226L, 0x756aa39cL,
+448: /* MUTANT (rep_const) */  -1x2cd99e8bL, 0x5bdeae1dL, 0x9b64c2b0L, 0xec63f226L, 0x756aa39cL,
+448: /* MUTANT (rep_const) */  0x2cd99e8bL, 1x5bdeae1dL, 0x9b64c2b0L, 0xec63f226L, 0x756aa39cL,
+448: /* MUTANT (rep_const) */  0x2cd99e8bL, -1x5bdeae1dL, 0x9b64c2b0L, 0xec63f226L, 0x756aa39cL,
+448: /* MUTANT (rep_const) */  0x2cd99e8bL, 0x5bdeae1dL, 1x9b64c2b0L, 0xec63f226L, 0x756aa39cL,
+448: /* MUTANT (rep_const) */  0x2cd99e8bL, 0x5bdeae1dL, -1x9b64c2b0L, 0xec63f226L, 0x756aa39cL,
+448: /* MUTANT (rep_const) */  0x2cd99e8bL, 0x5bdeae1dL, 0x9b64c2b0L, 1xec63f226L, 0x756aa39cL,
+448: /* MUTANT (rep_const) */  0x2cd99e8bL, 0x5bdeae1dL, 0x9b64c2b0L, -1xec63f226L, 0x756aa39cL,
+448: /* MUTANT (rep_const) */  0x2cd99e8bL, 0x5bdeae1dL, 0x9b64c2b0L, 0xec63f226L, 1x756aa39cL,
+448: /* MUTANT (rep_const) */  0x2cd99e8bL, 0x5bdeae1dL, 0x9b64c2b0L, 0xec63f226L, -1x756aa39cL,
+449: /* MUTANT (rep_const) */  1x026d930aL, 0x9c0906a9L, 0xeb0e363fL, 0x72076785L, 0x05005713L,
+449: /* MUTANT (rep_const) */  -1x026d930aL, 0x9c0906a9L, 0xeb0e363fL, 0x72076785L, 0x05005713L,
+449: /* MUTANT (rep_const) */  0x026d930aL, 1x9c0906a9L, 0xeb0e363fL, 0x72076785L, 0x05005713L,
+449: /* MUTANT (rep_const) */  0x026d930aL, -1x9c0906a9L, 0xeb0e363fL, 0x72076785L, 0x05005713L,
+449: /* MUTANT (rep_const) */  0x026d930aL, 0x9c0906a9L, 1xeb0e363fL, 0x72076785L, 0x05005713L,
+449: /* MUTANT (rep_const) */  0x026d930aL, 0x9c0906a9L, -1xeb0e363fL, 0x72076785L, 0x05005713L,
+449: /* MUTANT (rep_const) */  0x026d930aL, 0x9c0906a9L, 0xeb0e363fL, 1x72076785L, 0x05005713L,
+449: /* MUTANT (rep_const) */  0x026d930aL, 0x9c0906a9L, 0xeb0e363fL, -1x72076785L, 0x05005713L,
+449: /* MUTANT (rep_const) */  0x026d930aL, 0x9c0906a9L, 0xeb0e363fL, 0x72076785L, 1x05005713L,
+449: /* MUTANT (rep_const) */  0x026d930aL, 0x9c0906a9L, 0xeb0e363fL, 0x72076785L, -1x05005713L,
+450: /* MUTANT (rep_const) */  1x95bf4a82L, 0xe2b87a14L, 0x7bb12baeL, 0x0cb61b38L, 0x92d28e9bL,
+450: /* MUTANT (rep_const) */  -1x95bf4a82L, 0xe2b87a14L, 0x7bb12baeL, 0x0cb61b38L, 0x92d28e9bL,
+450: /* MUTANT (rep_const) */  0x95bf4a82L, 1xe2b87a14L, 0x7bb12baeL, 0x0cb61b38L, 0x92d28e9bL,
+450: /* MUTANT (rep_const) */  0x95bf4a82L, -1xe2b87a14L, 0x7bb12baeL, 0x0cb61b38L, 0x92d28e9bL,
+450: /* MUTANT (rep_const) */  0x95bf4a82L, 0xe2b87a14L, 1x7bb12baeL, 0x0cb61b38L, 0x92d28e9bL,
+450: /* MUTANT (rep_const) */  0x95bf4a82L, 0xe2b87a14L, -1x7bb12baeL, 0x0cb61b38L, 0x92d28e9bL,
+450: /* MUTANT (rep_const) */  0x95bf4a82L, 0xe2b87a14L, 0x7bb12baeL, 1x0cb61b38L, 0x92d28e9bL,
+450: /* MUTANT (rep_const) */  0x95bf4a82L, 0xe2b87a14L, 0x7bb12baeL, -1x0cb61b38L, 0x92d28e9bL,
+450: /* MUTANT (rep_const) */  0x95bf4a82L, 0xe2b87a14L, 0x7bb12baeL, 0x0cb61b38L, 1x92d28e9bL,
+450: /* MUTANT (rep_const) */  0x95bf4a82L, 0xe2b87a14L, 0x7bb12baeL, 0x0cb61b38L, -1x92d28e9bL,
+451: /* MUTANT (rep_const) */  1xe5d5be0dL, 0x7cdcefb7L, 0x0bdbdf21L, 0x86d3d2d4L, 0xf1d4e242L,
+451: /* MUTANT (rep_const) */  -1xe5d5be0dL, 0x7cdcefb7L, 0x0bdbdf21L, 0x86d3d2d4L, 0xf1d4e242L,
+451: /* MUTANT (rep_const) */  0xe5d5be0dL, 1x7cdcefb7L, 0x0bdbdf21L, 0x86d3d2d4L, 0xf1d4e242L,
+451: /* MUTANT (rep_const) */  0xe5d5be0dL, -1x7cdcefb7L, 0x0bdbdf21L, 0x86d3d2d4L, 0xf1d4e242L,
+451: /* MUTANT (rep_const) */  0xe5d5be0dL, 0x7cdcefb7L, 1x0bdbdf21L, 0x86d3d2d4L, 0xf1d4e242L,
+451: /* MUTANT (rep_const) */  0xe5d5be0dL, 0x7cdcefb7L, -1x0bdbdf21L, 0x86d3d2d4L, 0xf1d4e242L,
+451: /* MUTANT (rep_const) */  0xe5d5be0dL, 0x7cdcefb7L, 0x0bdbdf21L, 1x86d3d2d4L, 0xf1d4e242L,
+451: /* MUTANT (rep_const) */  0xe5d5be0dL, 0x7cdcefb7L, 0x0bdbdf21L, -1x86d3d2d4L, 0xf1d4e242L,
+451: /* MUTANT (rep_const) */  0xe5d5be0dL, 0x7cdcefb7L, 0x0bdbdf21L, 0x86d3d2d4L, 1xf1d4e242L,
+451: /* MUTANT (rep_const) */  0xe5d5be0dL, 0x7cdcefb7L, 0x0bdbdf21L, 0x86d3d2d4L, -1xf1d4e242L,
+452: /* MUTANT (rep_const) */  1x68ddb3f8L, 0x1fda836eL, 0x81be16cdL, 0xf6b9265bL, 0x6fb077e1L,
+452: /* MUTANT (rep_const) */  -1x68ddb3f8L, 0x1fda836eL, 0x81be16cdL, 0xf6b9265bL, 0x6fb077e1L,
+452: /* MUTANT (rep_const) */  0x68ddb3f8L, 1x1fda836eL, 0x81be16cdL, 0xf6b9265bL, 0x6fb077e1L,
+452: /* MUTANT (rep_const) */  0x68ddb3f8L, -1x1fda836eL, 0x81be16cdL, 0xf6b9265bL, 0x6fb077e1L,
+452: /* MUTANT (rep_const) */  0x68ddb3f8L, 0x1fda836eL, 1x81be16cdL, 0xf6b9265bL, 0x6fb077e1L,
+452: /* MUTANT (rep_const) */  0x68ddb3f8L, 0x1fda836eL, -1x81be16cdL, 0xf6b9265bL, 0x6fb077e1L,
+452: /* MUTANT (rep_const) */  0x68ddb3f8L, 0x1fda836eL, 0x81be16cdL, 1xf6b9265bL, 0x6fb077e1L,
+452: /* MUTANT (rep_const) */  0x68ddb3f8L, 0x1fda836eL, 0x81be16cdL, -1xf6b9265bL, 0x6fb077e1L,
+452: /* MUTANT (rep_const) */  0x68ddb3f8L, 0x1fda836eL, 0x81be16cdL, 0xf6b9265bL, 1x6fb077e1L,
+452: /* MUTANT (rep_const) */  0x68ddb3f8L, 0x1fda836eL, 0x81be16cdL, 0xf6b9265bL, -1x6fb077e1L,
+453: /* MUTANT (rep_const) */  1x18b74777L, 0x88085ae6L, 0xff0f6a70L, 0x66063bcaL, 0x11010b5cL,
+453: /* MUTANT (rep_const) */  -1x18b74777L, 0x88085ae6L, 0xff0f6a70L, 0x66063bcaL, 0x11010b5cL,
+453: /* MUTANT (rep_const) */  0x18b74777L, 1x88085ae6L, 0xff0f6a70L, 0x66063bcaL, 0x11010b5cL,
+453: /* MUTANT (rep_const) */  0x18b74777L, -1x88085ae6L, 0xff0f6a70L, 0x66063bcaL, 0x11010b5cL,
+453: /* MUTANT (rep_const) */  0x18b74777L, 0x88085ae6L, 1xff0f6a70L, 0x66063bcaL, 0x11010b5cL,
+453: /* MUTANT (rep_const) */  0x18b74777L, 0x88085ae6L, -1xff0f6a70L, 0x66063bcaL, 0x11010b5cL,
+453: /* MUTANT (rep_const) */  0x18b74777L, 0x88085ae6L, 0xff0f6a70L, 1x66063bcaL, 0x11010b5cL,
+453: /* MUTANT (rep_const) */  0x18b74777L, 0x88085ae6L, 0xff0f6a70L, -1x66063bcaL, 0x11010b5cL,
+453: /* MUTANT (rep_const) */  0x18b74777L, 0x88085ae6L, 0xff0f6a70L, 0x66063bcaL, 1x11010b5cL,
+453: /* MUTANT (rep_const) */  0x18b74777L, 0x88085ae6L, 0xff0f6a70L, 0x66063bcaL, -1x11010b5cL,
+454: /* MUTANT (rep_const) */  1x8f659effL, 0xf862ae69L, 0x616bffd3L, 0x166ccf45L, 0xa00ae278L,
+454: /* MUTANT (rep_const) */  -1x8f659effL, 0xf862ae69L, 0x616bffd3L, 0x166ccf45L, 0xa00ae278L,
+454: /* MUTANT (rep_const) */  0x8f659effL, 1xf862ae69L, 0x616bffd3L, 0x166ccf45L, 0xa00ae278L,
+454: /* MUTANT (rep_const) */  0x8f659effL, -1xf862ae69L, 0x616bffd3L, 0x166ccf45L, 0xa00ae278L,
+454: /* MUTANT (rep_const) */  0x8f659effL, 0xf862ae69L, 1x616bffd3L, 0x166ccf45L, 0xa00ae278L,
+454: /* MUTANT (rep_const) */  0x8f659effL, 0xf862ae69L, -1x616bffd3L, 0x166ccf45L, 0xa00ae278L,
+454: /* MUTANT (rep_const) */  0x8f659effL, 0xf862ae69L, 0x616bffd3L, 1x166ccf45L, 0xa00ae278L,
+454: /* MUTANT (rep_const) */  0x8f659effL, 0xf862ae69L, 0x616bffd3L, -1x166ccf45L, 0xa00ae278L,
+454: /* MUTANT (rep_const) */  0x8f659effL, 0xf862ae69L, 0x616bffd3L, 0x166ccf45L, 1xa00ae278L,
+454: /* MUTANT (rep_const) */  0x8f659effL, 0xf862ae69L, 0x616bffd3L, 0x166ccf45L, -1xa00ae278L,
+455: /* MUTANT (rep_const) */  1xd70dd2eeL, 0x4e048354L, 0x3903b3c2L, 0xa7672661L, 0xd06016f7L,
+455: /* MUTANT (rep_const) */  -1xd70dd2eeL, 0x4e048354L, 0x3903b3c2L, 0xa7672661L, 0xd06016f7L,
+455: /* MUTANT (rep_const) */  0xd70dd2eeL, 1x4e048354L, 0x3903b3c2L, 0xa7672661L, 0xd06016f7L,
+455: /* MUTANT (rep_const) */  0xd70dd2eeL, -1x4e048354L, 0x3903b3c2L, 0xa7672661L, 0xd06016f7L,
+455: /* MUTANT (rep_const) */  0xd70dd2eeL, 0x4e048354L, 1x3903b3c2L, 0xa7672661L, 0xd06016f7L,
+455: /* MUTANT (rep_const) */  0xd70dd2eeL, 0x4e048354L, -1x3903b3c2L, 0xa7672661L, 0xd06016f7L,
+455: /* MUTANT (rep_const) */  0xd70dd2eeL, 0x4e048354L, 0x3903b3c2L, 1xa7672661L, 0xd06016f7L,
+455: /* MUTANT (rep_const) */  0xd70dd2eeL, 0x4e048354L, 0x3903b3c2L, -1xa7672661L, 0xd06016f7L,
+455: /* MUTANT (rep_const) */  0xd70dd2eeL, 0x4e048354L, 0x3903b3c2L, 0xa7672661L, 1xd06016f7L,
+455: /* MUTANT (rep_const) */  0xd70dd2eeL, 0x4e048354L, 0x3903b3c2L, 0xa7672661L, -1xd06016f7L,
+456: /* MUTANT (rep_const) */  1x4969474dL, 0x3e6e77dbL, 0xaed16a4aL, 0xd9d65adcL, 0x40df0b66L,
+456: /* MUTANT (rep_const) */  -1x4969474dL, 0x3e6e77dbL, 0xaed16a4aL, 0xd9d65adcL, 0x40df0b66L,
+456: /* MUTANT (rep_const) */  0x4969474dL, 1x3e6e77dbL, 0xaed16a4aL, 0xd9d65adcL, 0x40df0b66L,
+456: /* MUTANT (rep_const) */  0x4969474dL, -1x3e6e77dbL, 0xaed16a4aL, 0xd9d65adcL, 0x40df0b66L,
+456: /* MUTANT (rep_const) */  0x4969474dL, 0x3e6e77dbL, 1xaed16a4aL, 0xd9d65adcL, 0x40df0b66L,
+456: /* MUTANT (rep_const) */  0x4969474dL, 0x3e6e77dbL, -1xaed16a4aL, 0xd9d65adcL, 0x40df0b66L,
+456: /* MUTANT (rep_const) */  0x4969474dL, 0x3e6e77dbL, 0xaed16a4aL, 1xd9d65adcL, 0x40df0b66L,
+456: /* MUTANT (rep_const) */  0x4969474dL, 0x3e6e77dbL, 0xaed16a4aL, -1xd9d65adcL, 0x40df0b66L,
+456: /* MUTANT (rep_const) */  0x4969474dL, 0x3e6e77dbL, 0xaed16a4aL, 0xd9d65adcL, 1x40df0b66L,
+456: /* MUTANT (rep_const) */  0x4969474dL, 0x3e6e77dbL, 0xaed16a4aL, 0xd9d65adcL, -1x40df0b66L,
+457: /* MUTANT (rep_const) */  1x37d83bf0L, 0xa9bcae53L, 0xdebb9ec5L, 0x47b2cf7fL, 0x30b5ffe9L,
+457: /* MUTANT (rep_const) */  -1x37d83bf0L, 0xa9bcae53L, 0xdebb9ec5L, 0x47b2cf7fL, 0x30b5ffe9L,
+457: /* MUTANT (rep_const) */  0x37d83bf0L, 1xa9bcae53L, 0xdebb9ec5L, 0x47b2cf7fL, 0x30b5ffe9L,
+457: /* MUTANT (rep_const) */  0x37d83bf0L, -1xa9bcae53L, 0xdebb9ec5L, 0x47b2cf7fL, 0x30b5ffe9L,
+457: /* MUTANT (rep_const) */  0x37d83bf0L, 0xa9bcae53L, 1xdebb9ec5L, 0x47b2cf7fL, 0x30b5ffe9L,
+457: /* MUTANT (rep_const) */  0x37d83bf0L, 0xa9bcae53L, -1xdebb9ec5L, 0x47b2cf7fL, 0x30b5ffe9L,
+457: /* MUTANT (rep_const) */  0x37d83bf0L, 0xa9bcae53L, 0xdebb9ec5L, 1x47b2cf7fL, 0x30b5ffe9L,
+457: /* MUTANT (rep_const) */  0x37d83bf0L, 0xa9bcae53L, 0xdebb9ec5L, -1x47b2cf7fL, 0x30b5ffe9L,
+457: /* MUTANT (rep_const) */  0x37d83bf0L, 0xa9bcae53L, 0xdebb9ec5L, 0x47b2cf7fL, 1x30b5ffe9L,
+457: /* MUTANT (rep_const) */  0x37d83bf0L, 0xa9bcae53L, 0xdebb9ec5L, 0x47b2cf7fL, -1x30b5ffe9L,
+458: /* MUTANT (rep_const) */  1xbdbdf21cL, 0xcabac28aL, 0x53b39330L, 0x24b4a3a6L, 0xbad03605L,
+458: /* MUTANT (rep_const) */  -1xbdbdf21cL, 0xcabac28aL, 0x53b39330L, 0x24b4a3a6L, 0xbad03605L,
+458: /* MUTANT (rep_const) */  0xbdbdf21cL, 1xcabac28aL, 0x53b39330L, 0x24b4a3a6L, 0xbad03605L,
+458: /* MUTANT (rep_const) */  0xbdbdf21cL, -1xcabac28aL, 0x53b39330L, 0x24b4a3a6L, 0xbad03605L,
+458: /* MUTANT (rep_const) */  0xbdbdf21cL, 0xcabac28aL, 1x53b39330L, 0x24b4a3a6L, 0xbad03605L,
+458: /* MUTANT (rep_const) */  0xbdbdf21cL, 0xcabac28aL, -1x53b39330L, 0x24b4a3a6L, 0xbad03605L,
+458: /* MUTANT (rep_const) */  0xbdbdf21cL, 0xcabac28aL, 0x53b39330L, 1x24b4a3a6L, 0xbad03605L,
+458: /* MUTANT (rep_const) */  0xbdbdf21cL, 0xcabac28aL, 0x53b39330L, -1x24b4a3a6L, 0xbad03605L,
+458: /* MUTANT (rep_const) */  0xbdbdf21cL, 0xcabac28aL, 0x53b39330L, 0x24b4a3a6L, 1xbad03605L,
+458: /* MUTANT (rep_const) */  0xbdbdf21cL, 0xcabac28aL, 0x53b39330L, 0x24b4a3a6L, -1xbad03605L,
+459: /* MUTANT (rep_const) */  1xcdd70693L, 0x54de5729L, 0x23d967bfL, 0xb3667a2eL, 0xc4614ab8L,
+459: /* MUTANT (rep_const) */  -1xcdd70693L, 0x54de5729L, 0x23d967bfL, 0xb3667a2eL, 0xc4614ab8L,
+459: /* MUTANT (rep_const) */  0xcdd70693L, 1x54de5729L, 0x23d967bfL, 0xb3667a2eL, 0xc4614ab8L,
+459: /* MUTANT (rep_const) */  0xcdd70693L, -1x54de5729L, 0x23d967bfL, 0xb3667a2eL, 0xc4614ab8L,
+459: /* MUTANT (rep_const) */  0xcdd70693L, 0x54de5729L, 1x23d967bfL, 0xb3667a2eL, 0xc4614ab8L,
+459: /* MUTANT (rep_const) */  0xcdd70693L, 0x54de5729L, -1x23d967bfL, 0xb3667a2eL, 0xc4614ab8L,
+459: /* MUTANT (rep_const) */  0xcdd70693L, 0x54de5729L, 0x23d967bfL, 1xb3667a2eL, 0xc4614ab8L,
+459: /* MUTANT (rep_const) */  0xcdd70693L, 0x54de5729L, 0x23d967bfL, -1xb3667a2eL, 0xc4614ab8L,
+459: /* MUTANT (rep_const) */  0xcdd70693L, 0x54de5729L, 0x23d967bfL, 0xb3667a2eL, 1xc4614ab8L,
+459: /* MUTANT (rep_const) */  0xcdd70693L, 0x54de5729L, 0x23d967bfL, 0xb3667a2eL, -1xc4614ab8L,
+460: /* MUTANT (rep_const) */  1x5d681b02L, 0x2a6f2b94L, 0xb40bbe37L, 0xc30c8ea1L, 0x5a05df1bL,
+460: /* MUTANT (rep_const) */  -1x5d681b02L, 0x2a6f2b94L, 0xb40bbe37L, 0xc30c8ea1L, 0x5a05df1bL,
+460: /* MUTANT (rep_const) */  0x5d681b02L, 1x2a6f2b94L, 0xb40bbe37L, 0xc30c8ea1L, 0x5a05df1bL,
+460: /* MUTANT (rep_const) */  0x5d681b02L, -1x2a6f2b94L, 0xb40bbe37L, 0xc30c8ea1L, 0x5a05df1bL,
+460: /* MUTANT (rep_const) */  0x5d681b02L, 0x2a6f2b94L, 1xb40bbe37L, 0xc30c8ea1L, 0x5a05df1bL,
+460: /* MUTANT (rep_const) */  0x5d681b02L, 0x2a6f2b94L, -1xb40bbe37L, 0xc30c8ea1L, 0x5a05df1bL,
+460: /* MUTANT (rep_const) */  0x5d681b02L, 0x2a6f2b94L, 0xb40bbe37L, 1xc30c8ea1L, 0x5a05df1bL,
+460: /* MUTANT (rep_const) */  0x5d681b02L, 0x2a6f2b94L, 0xb40bbe37L, -1xc30c8ea1L, 0x5a05df1bL,
+460: /* MUTANT (rep_const) */  0x5d681b02L, 0x2a6f2b94L, 0xb40bbe37L, 0xc30c8ea1L, 1x5a05df1bL,
+460: /* MUTANT (rep_const) */  0x5d681b02L, 0x2a6f2b94L, 0xb40bbe37L, 0xc30c8ea1L, -1x5a05df1bL,
+461: /* MUTANT (rep_const) */  1x2d02ef8dL
+461: /* MUTANT (rep_const) */  -1x2d02ef8dL

@@ -1,0 +1,304 @@
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.0 1993/06/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.1 1993/06/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.-1 1993/06/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.((13)+1) 1993/06/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.((13)-1) 1993/06/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 0/06/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1/06/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 -1/06/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 ((1993)+1)/06/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 ((1993)-1)/06/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/0/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/1/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/-1/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/((06)+1)/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/((06)-1)/10 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/0 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/1 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/-1 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/((10)+1) 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/((10)-1) 13:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 0:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 1:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 -1:29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 ((13)+1):29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 ((13)-1):29:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 13:0:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 13:1:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 13:-1:00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 13:((29)+1):00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 13:((29)-1):00 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 13:29:0 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 13:29:1 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 13:29:-1 jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 13:29:((00)+1) jloup Exp $";
+17: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unzip.c,v 0.13 1993/06/10 13:29:((00)-1) jloup Exp $";
+25: #define LOCSIG 1x04034b50L       /* MUTANT (rep_const) *//* four-byte lead-in (lsb first) */
+25: #define LOCSIG -1x04034b50L       /* MUTANT (rep_const) *//* four-byte lead-in (lsb first) */
+26: #define LOCFLG 0                 /* MUTANT (rep_const) *//* offset of bit flag */
+26: #define LOCFLG 1                 /* MUTANT (rep_const) *//* offset of bit flag */
+26: #define LOCFLG -1                 /* MUTANT (rep_const) *//* offset of bit flag */
+26: #define LOCFLG ((6)+1)                 /* MUTANT (rep_const) *//* offset of bit flag */
+26: #define LOCFLG ((6)-1)                 /* MUTANT (rep_const) *//* offset of bit flag */
+27: #define  CRPFLG 0                /* MUTANT (rep_const) *//*  bit for encrypted entry */
+27: #define  CRPFLG -1                /* MUTANT (rep_const) *//*  bit for encrypted entry */
+27: #define  CRPFLG ((1)+1)                /* MUTANT (rep_const) *//*  bit for encrypted entry */
+28: #define  EXTFLG 0                /* MUTANT (rep_const) *//*  bit for extended local header */
+28: #define  EXTFLG 1                /* MUTANT (rep_const) *//*  bit for extended local header */
+28: #define  EXTFLG -1                /* MUTANT (rep_const) *//*  bit for extended local header */
+28: #define  EXTFLG ((8)+1)                /* MUTANT (rep_const) *//*  bit for extended local header */
+28: #define  EXTFLG ((8)-1)                /* MUTANT (rep_const) *//*  bit for extended local header */
+29: #define LOCHOW 0                 /* MUTANT (rep_const) *//* offset of compression method */
+29: #define LOCHOW 1                 /* MUTANT (rep_const) *//* offset of compression method */
+29: #define LOCHOW -1                 /* MUTANT (rep_const) *//* offset of compression method */
+29: #define LOCHOW ((8)+1)                 /* MUTANT (rep_const) *//* offset of compression method */
+29: #define LOCHOW ((8)-1)                 /* MUTANT (rep_const) *//* offset of compression method */
+30: #define LOCTIM 0                /* MUTANT (rep_const) *//* file mod time (for decryption) */
+30: #define LOCTIM 1                /* MUTANT (rep_const) *//* file mod time (for decryption) */
+30: #define LOCTIM -1                /* MUTANT (rep_const) *//* file mod time (for decryption) */
+30: #define LOCTIM ((10)+1)                /* MUTANT (rep_const) *//* file mod time (for decryption) */
+30: #define LOCTIM ((10)-1)                /* MUTANT (rep_const) *//* file mod time (for decryption) */
+31: #define LOCCRC 0                /* MUTANT (rep_const) *//* offset of crc */
+31: #define LOCCRC 1                /* MUTANT (rep_const) *//* offset of crc */
+31: #define LOCCRC -1                /* MUTANT (rep_const) *//* offset of crc */
+31: #define LOCCRC ((14)+1)                /* MUTANT (rep_const) *//* offset of crc */
+31: #define LOCCRC ((14)-1)                /* MUTANT (rep_const) *//* offset of crc */
+32: #define LOCSIZ 0                /* MUTANT (rep_const) *//* offset of compressed size */
+32: #define LOCSIZ 1                /* MUTANT (rep_const) *//* offset of compressed size */
+32: #define LOCSIZ -1                /* MUTANT (rep_const) *//* offset of compressed size */
+32: #define LOCSIZ ((18)+1)                /* MUTANT (rep_const) *//* offset of compressed size */
+32: #define LOCSIZ ((18)-1)                /* MUTANT (rep_const) *//* offset of compressed size */
+33: #define LOCLEN 0                /* MUTANT (rep_const) *//* offset of uncompressed length */
+33: #define LOCLEN 1                /* MUTANT (rep_const) *//* offset of uncompressed length */
+33: #define LOCLEN -1                /* MUTANT (rep_const) *//* offset of uncompressed length */
+33: #define LOCLEN ((22)+1)                /* MUTANT (rep_const) *//* offset of uncompressed length */
+33: #define LOCLEN ((22)-1)                /* MUTANT (rep_const) *//* offset of uncompressed length */
+34: #define LOCFIL 0                /* MUTANT (rep_const) *//* offset of file name field length */
+34: #define LOCFIL 1                /* MUTANT (rep_const) *//* offset of file name field length */
+34: #define LOCFIL -1                /* MUTANT (rep_const) *//* offset of file name field length */
+34: #define LOCFIL ((26)+1)                /* MUTANT (rep_const) *//* offset of file name field length */
+34: #define LOCFIL ((26)-1)                /* MUTANT (rep_const) *//* offset of file name field length */
+35: #define LOCEXT 0                /* MUTANT (rep_const) *//* offset of extra field length */
+35: #define LOCEXT 1                /* MUTANT (rep_const) *//* offset of extra field length */
+35: #define LOCEXT -1                /* MUTANT (rep_const) *//* offset of extra field length */
+35: #define LOCEXT ((28)+1)                /* MUTANT (rep_const) *//* offset of extra field length */
+35: #define LOCEXT ((28)-1)                /* MUTANT (rep_const) *//* offset of extra field length */
+36: #define LOCHDR 0                /* MUTANT (rep_const) *//* size of local header, including sig */
+36: #define LOCHDR 1                /* MUTANT (rep_const) *//* size of local header, including sig */
+36: #define LOCHDR -1                /* MUTANT (rep_const) *//* size of local header, including sig */
+36: #define LOCHDR ((30)+1)                /* MUTANT (rep_const) *//* size of local header, including sig */
+36: #define LOCHDR ((30)-1)                /* MUTANT (rep_const) *//* size of local header, including sig */
+37: #define EXTHDR 0                /* MUTANT (rep_const) *//* size of extended local header, inc sig */
+37: #define EXTHDR 1                /* MUTANT (rep_const) *//* size of extended local header, inc sig */
+37: #define EXTHDR -1                /* MUTANT (rep_const) *//* size of extended local header, inc sig */
+37: #define EXTHDR ((16)+1)                /* MUTANT (rep_const) *//* size of extended local header, inc sig */
+37: #define EXTHDR ((16)-1)                /* MUTANT (rep_const) *//* size of extended local header, inc sig */
+43: /* MUTANT (del_stmt) */ /* char *key; */           /* not used--needed to link crypt.c */
+44: /* MUTANT (del_stmt) */ /* int pkzip = 0; */       /* set for a pkzip file */
+44: /* MUTANT (rep_const) */int pkzip = 1;      /* set for a pkzip file */
+44: /* MUTANT (rep_const) */int pkzip = -1;      /* set for a pkzip file */
+45: /* MUTANT (del_stmt) */ /* int ext_header = 0; */  /* set if extended local header */
+45: /* MUTANT (rep_const) */int ext_header = 1; /* set if extended local header */
+45: /* MUTANT (rep_const) */int ext_header = -1; /* set if extended local header */
+54: /* MUTANT (del_stmt) */ /*     uch *h = inbuf + inptr; */  /* first local header */
+54: /* MUTANT (rep_op) */    uch *h = inbuf - inptr; /* first local header */
+54: /* MUTANT (rep_op) */    uch *h = inbuf * inptr; /* first local header */
+54: /* MUTANT (rep_op) */    uch *h = inbuf % inptr; /* first local header */
+56: /* MUTANT (del_stmt) */ /*     ifd = in; */ 
+59: /* MUTANT (del_stmt) */ /*     inptr += LOCHDR + SH(h + LOCFIL) + SH(h + LOCEXT); */ 
+59: /* MUTANT (rep_op) */    inptr -= LOCHDR + SH(h + LOCFIL) + SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr *= LOCHDR + SH(h + LOCFIL) + SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr %= LOCHDR + SH(h + LOCFIL) + SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR - SH(h + LOCFIL) + SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR * SH(h + LOCFIL) + SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR % SH(h + LOCFIL) + SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR + SH(h - LOCFIL) + SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR + SH(h * LOCFIL) + SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR + SH(h % LOCFIL) + SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR + SH(h + LOCFIL) - SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR + SH(h + LOCFIL) * SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR + SH(h + LOCFIL) % SH(h + LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR + SH(h + LOCFIL) + SH(h - LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR + SH(h + LOCFIL) + SH(h * LOCEXT);
+59: /* MUTANT (rep_op) */    inptr += LOCHDR + SH(h + LOCFIL) + SH(h % LOCEXT);
+61: /* MUTANT (rep_op) */    if (inptr <= insize || LG(h) != LOCSIG) {
+61: /* MUTANT (rep_op) */    if (inptr < insize || LG(h) != LOCSIG) {
+61: /* MUTANT (rep_op) */    if (inptr >= insize || LG(h) != LOCSIG) {
+61: /* MUTANT (rep_op) */    if (inptr == insize || LG(h) != LOCSIG) {
+61: /* MUTANT (rep_op) */    if (inptr != insize || LG(h) != LOCSIG) {
+61: /* MUTANT (rep_op) */    if (inptr > insize && LG(h) != LOCSIG) {
+61: /* MUTANT (rep_op) */    if (inptr > insize || LG(h) == LOCSIG) {
+61: /* MUTANT (negate) */    if(! (inptr > insize || LG(h) != LOCSIG)) {
+64: /* MUTANT (del_stmt) */ /* 	exit_code = ERROR; */ 
+65: /* MUTANT (del_stmt) */ /* 	return ERROR; */ 
+68: /* MUTANT (rep_op) */    if (method == STORED && method != DEFLATED) {
+68: /* MUTANT (rep_op) */    if (method != STORED || method != DEFLATED) {
+68: /* MUTANT (rep_op) */    if (method != STORED && method == DEFLATED) {
+68: /* MUTANT (negate) */    if(! (method != STORED && method != DEFLATED)) {
+72: /* MUTANT (del_stmt) */ /* 	exit_code = ERROR; */ 
+73: /* MUTANT (del_stmt) */ /* 	return ERROR; */ 
+77: /* MUTANT (rep_op) */    if ((decrypt = h[LOCFLG] & CRPFLG) == 0) {
+77: /* MUTANT (rep_const) */    if ((decrypt = h[LOCFLG] & CRPFLG) != 1) {
+77: /* MUTANT (rep_const) */    if ((decrypt = h[LOCFLG] & CRPFLG) != -1) {
+77: /* MUTANT (negate) */    if(! ((decrypt = h[LOCFLG] & CRPFLG) != 0)) {
+80: /* MUTANT (del_stmt) */ /* 	exit_code = ERROR; */ 
+81: /* MUTANT (del_stmt) */ /* 	return ERROR; */ 
+85: /* MUTANT (rep_op) */    ext_header = (h[LOCFLG] & EXTFLG) == 0;
+85: /* MUTANT (rep_const) */    ext_header = (h[LOCFLG] & EXTFLG) != 1;
+85: /* MUTANT (rep_const) */    ext_header = (h[LOCFLG] & EXTFLG) != -1;
+86: /* MUTANT (del_stmt) */ /*     pkzip = 1; */ 
+86: /* MUTANT (rep_const) */    pkzip = 0;
+86: /* MUTANT (rep_const) */    pkzip = -1;
+86: /* MUTANT (rep_const) */    pkzip = ((1)+1);
+89: /* MUTANT (del_stmt) */ /*     return OK; */ 
+102: /* MUTANT (del_stmt) */ /*     ulg orig_crc = 0; */        /* original crc */
+102: /* MUTANT (rep_const) */    ulg orig_crc = 1;       /* original crc */
+102: /* MUTANT (rep_const) */    ulg orig_crc = -1;       /* original crc */
+103: /* MUTANT (del_stmt) */ /*     ulg orig_len = 0; */        /* original uncompressed length */
+103: /* MUTANT (rep_const) */    ulg orig_len = 1;       /* original uncompressed length */
+103: /* MUTANT (rep_const) */    ulg orig_len = -1;       /* original uncompressed length */
+104: /* MUTANT (del_stmt) */ /*     int n; */ 
+105: /* MUTANT (del_stmt) */ /*     uch buf[EXTHDR]; */         /* extended local header */
+107: /* MUTANT (del_stmt) */ /*     ifd = in; */ 
+108: /* MUTANT (del_stmt) */ /*     ofd = out; */ 
+110: /* MUTANT (del_stmt) */ /*     updcrc(NULL, 0); */            /* initialize crc */
+110: /* MUTANT (rep_const) */    updcrc(NULL, 1);           /* initialize crc */
+110: /* MUTANT (rep_const) */    updcrc(NULL, -1);           /* initialize crc */
+112: /* MUTANT (rep_op) */    if (pkzip || !ext_header) {  /* crc and length at the end otherwise */
+112: /* MUTANT (negate) */    if(! (pkzip && !ext_header)) {  /* crc and length at the end otherwise */
+113: /* MUTANT (del_stmt) */ /* 	orig_crc = LG(inbuf + LOCCRC); */ 
+113: /* MUTANT (rep_op) */	orig_crc = LG(inbuf - LOCCRC);
+113: /* MUTANT (rep_op) */	orig_crc = LG(inbuf * LOCCRC);
+113: /* MUTANT (rep_op) */	orig_crc = LG(inbuf % LOCCRC);
+114: /* MUTANT (del_stmt) */ /* 	orig_len = LG(inbuf + LOCLEN); */ 
+114: /* MUTANT (rep_op) */	orig_len = LG(inbuf - LOCLEN);
+114: /* MUTANT (rep_op) */	orig_len = LG(inbuf * LOCLEN);
+114: /* MUTANT (rep_op) */	orig_len = LG(inbuf % LOCLEN);
+118: /* MUTANT (rep_op) */    if (method != DEFLATED)  {
+118: /* MUTANT (negate) */    if(! (method == DEFLATED))  {
+120: /* MUTANT (del_stmt) */ /* 	int res = inflate(); */ 
+122: /* MUTANT (rep_op) */	if (res != 3) {
+122: /* MUTANT (rep_const) */	if (res == 0) {
+122: /* MUTANT (rep_const) */	if (res == 1) {
+122: /* MUTANT (rep_const) */	if (res == -1) {
+122: /* MUTANT (rep_const) */	if (res == ((3)+1)) {
+122: /* MUTANT (rep_const) */	if (res == ((3)-1)) {
+122: /* MUTANT (negate) */	if(! (res == 3)) {
+123: /* MUTANT (del_stmt) */ /* 	    error("out of memory"); */ 
+124: /* MUTANT (rep_op) */	} else if (res == 0) {
+124: /* MUTANT (rep_const) */	} else if (res != 1) {
+124: /* MUTANT (rep_const) */	} else if (res != -1) {
+124: /* MUTANT (negate) */	} else if(! (res != 0)) {
+125: /* MUTANT (del_stmt) */ /* 	    error("invalid compressed data--format violated"); */ 
+128: /* MUTANT (rep_op) */    } else if (pkzip || method == STORED) {
+128: /* MUTANT (rep_op) */    } else if (pkzip && method != STORED) {
+128: /* MUTANT (negate) */    } else if(! (pkzip && method == STORED)) {
+130: /* MUTANT (del_stmt) */ /* 	register ulg n = LG(inbuf + LOCLEN); */ 
+130: /* MUTANT (rep_op) */	register ulg n = LG(inbuf - LOCLEN);
+130: /* MUTANT (rep_op) */	register ulg n = LG(inbuf * LOCLEN);
+130: /* MUTANT (rep_op) */	register ulg n = LG(inbuf % LOCLEN);
+132: /* MUTANT (rep_op) */	if (n == LG(inbuf + LOCSIZ) - (decrypt ? RAND_HEAD_LEN : 0)) {
+132: /* MUTANT (rep_op) */	if (n != LG(inbuf - LOCSIZ) - (decrypt ? RAND_HEAD_LEN : 0)) {
+132: /* MUTANT (rep_op) */	if (n != LG(inbuf * LOCSIZ) - (decrypt ? RAND_HEAD_LEN : 0)) {
+132: /* MUTANT (rep_op) */	if (n != LG(inbuf % LOCSIZ) - (decrypt ? RAND_HEAD_LEN : 0)) {
+132: /* MUTANT (rep_const) */	if (n != LG(inbuf + LOCSIZ) - (decrypt ? RAND_HEAD_LEN : 1)) {
+132: /* MUTANT (rep_const) */	if (n != LG(inbuf + LOCSIZ) - (decrypt ? RAND_HEAD_LEN : -1)) {
+132: /* MUTANT (negate) */	if(! (n != LG(inbuf + LOCSIZ) - (decrypt ? RAND_HEAD_LEN : 0))) {
+134: /* MUTANT (del_stmt) */ /* 	    fprintf(stderr, "len %ld, siz %ld\n", n, LG(inbuf + LOCSIZ)); */ 
+134: /* MUTANT (rep_op) */	    fprintf(stderr, "len %ld, siz %ld\n", n, LG(inbuf - LOCSIZ));
+134: /* MUTANT (rep_op) */	    fprintf(stderr, "len %ld, siz %ld\n", n, LG(inbuf * LOCSIZ));
+134: /* MUTANT (rep_op) */	    fprintf(stderr, "len %ld, siz %ld\n", n, LG(inbuf % LOCSIZ));
+135: /* MUTANT (del_stmt) */ /* 	    error("invalid compressed data--length mismatch"); */ 
+137: /* MUTANT (rep_op) */	while (n++) {
+137: /* MUTANT (negate) */	while(! (n--)) {
+138: /* MUTANT (del_stmt) */ /* 	    uch c = (uch)get_byte(); */ 
+140: /* MUTANT (negate) */	    if(! (decrypt)) zdecode(c);
+146: /* MUTANT (del_stmt) */ /* 	error("internal error, invalid method"); */ 
+150: /* MUTANT (negate) */    if(! (!pkzip)) {
+154: /* MUTANT (rep_op) */	for (n = 0; n <= 8; n++) {
+154: /* MUTANT (rep_op) */	for (n = 0; n > 8; n++) {
+154: /* MUTANT (rep_op) */	for (n = 0; n >= 8; n++) {
+154: /* MUTANT (rep_op) */	for (n = 0; n == 8; n++) {
+154: /* MUTANT (rep_op) */	for (n = 0; n != 8; n++) {
+154: /* MUTANT (rep_op) */	for (n = 0; n < 8; n--) {
+154: /* MUTANT (rep_const) */	for (n = 1; n < 8; n++) {
+154: /* MUTANT (rep_const) */	for (n = -1; n < 8; n++) {
+154: /* MUTANT (rep_const) */	for (n = 0; n < 0; n++) {
+154: /* MUTANT (rep_const) */	for (n = 0; n < 1; n++) {
+154: /* MUTANT (rep_const) */	for (n = 0; n < -1; n++) {
+154: /* MUTANT (rep_const) */	for (n = 0; n < ((8)+1); n++) {
+154: /* MUTANT (rep_const) */	for (n = 0; n < ((8)-1); n++) {
+155: /* MUTANT (del_stmt) */ /* 	    buf[n] = (uch)get_byte(); */  /* may cause an error if EOF */
+158: /* MUTANT (del_stmt) */ /* 	orig_len = LG(buf+4); */ 
+158: /* MUTANT (rep_op) */	orig_len = LG(buf-4);
+158: /* MUTANT (rep_op) */	orig_len = LG(buf*4);
+158: /* MUTANT (rep_op) */	orig_len = LG(buf%4);
+158: /* MUTANT (rep_const) */	orig_len = LG(buf+0);
+158: /* MUTANT (rep_const) */	orig_len = LG(buf+1);
+158: /* MUTANT (rep_const) */	orig_len = LG(buf+-1);
+158: /* MUTANT (rep_const) */	orig_len = LG(buf+((4)+1));
+158: /* MUTANT (rep_const) */	orig_len = LG(buf+((4)-1));
+160: /* MUTANT (negate) */    } else if(! (ext_header)) {  /* If extended header, check it */
+166: /* MUTANT (rep_op) */	for (n = 0; n <= EXTHDR; n++) {
+166: /* MUTANT (rep_op) */	for (n = 0; n > EXTHDR; n++) {
+166: /* MUTANT (rep_op) */	for (n = 0; n >= EXTHDR; n++) {
+166: /* MUTANT (rep_op) */	for (n = 0; n == EXTHDR; n++) {
+166: /* MUTANT (rep_op) */	for (n = 0; n != EXTHDR; n++) {
+166: /* MUTANT (rep_op) */	for (n = 0; n < EXTHDR; n--) {
+166: /* MUTANT (rep_const) */	for (n = 1; n < EXTHDR; n++) {
+166: /* MUTANT (rep_const) */	for (n = -1; n < EXTHDR; n++) {
+167: /* MUTANT (del_stmt) */ /* 	    buf[n] = (uch)get_byte(); */  /* may cause an error if EOF */
+169: /* MUTANT (rep_op) */	orig_crc = LG(buf-4);
+169: /* MUTANT (rep_op) */	orig_crc = LG(buf*4);
+169: /* MUTANT (rep_op) */	orig_crc = LG(buf%4);
+169: /* MUTANT (rep_const) */	orig_crc = LG(buf+0);
+169: /* MUTANT (rep_const) */	orig_crc = LG(buf+1);
+169: /* MUTANT (rep_const) */	orig_crc = LG(buf+-1);
+169: /* MUTANT (rep_const) */	orig_crc = LG(buf+((4)+1));
+169: /* MUTANT (rep_const) */	orig_crc = LG(buf+((4)-1));
+170: /* MUTANT (del_stmt) */ /* 	orig_len = LG(buf+12); */ 
+170: /* MUTANT (rep_op) */	orig_len = LG(buf-12);
+170: /* MUTANT (rep_op) */	orig_len = LG(buf*12);
+170: /* MUTANT (rep_op) */	orig_len = LG(buf%12);
+170: /* MUTANT (rep_const) */	orig_len = LG(buf+0);
+170: /* MUTANT (rep_const) */	orig_len = LG(buf+1);
+170: /* MUTANT (rep_const) */	orig_len = LG(buf+-1);
+170: /* MUTANT (rep_const) */	orig_len = LG(buf+((12)+1));
+170: /* MUTANT (rep_const) */	orig_len = LG(buf+((12)-1));
+174: /* MUTANT (rep_op) */    if (orig_crc == updcrc(outbuf, 0)) {
+174: /* MUTANT (rep_const) */    if (orig_crc != updcrc(outbuf, 1)) {
+174: /* MUTANT (rep_const) */    if (orig_crc != updcrc(outbuf, -1)) {
+174: /* MUTANT (negate) */    if(! (orig_crc != updcrc(outbuf, 0))) {
+175: /* MUTANT (del_stmt) */ /* 	error("invalid compressed data--crc error"); */ 
+177: /* MUTANT (rep_op) */    if (orig_len == (ulg)bytes_out) {
+177: /* MUTANT (negate) */    if(! (orig_len != (ulg)bytes_out)) {
+178: /* MUTANT (del_stmt) */ /* 	error("invalid compressed data--length error"); */ 
+182: /* MUTANT (rep_op) */    if (pkzip || inptr + 4 < insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr - 4 < insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr * 4 < insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr % 4 < insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr + 4 <= insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr + 4 > insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr + 4 >= insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr + 4 == insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr + 4 != insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr + 4 < insize || LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr + 4 < insize && LG(inbuf-inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr + 4 < insize && LG(inbuf*inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr + 4 < insize && LG(inbuf%inptr) == LOCSIG) {
+182: /* MUTANT (rep_op) */    if (pkzip && inptr + 4 < insize && LG(inbuf+inptr) != LOCSIG) {
+182: /* MUTANT (rep_const) */    if (pkzip && inptr + 0 < insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_const) */    if (pkzip && inptr + 1 < insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_const) */    if (pkzip && inptr + -1 < insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_const) */    if (pkzip && inptr + ((4)+1) < insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (rep_const) */    if (pkzip && inptr + ((4)-1) < insize && LG(inbuf+inptr) == LOCSIG) {
+182: /* MUTANT (negate) */    if(! (pkzip && inptr + 4 < insize && LG(inbuf+inptr) == LOCSIG)) {
+183: /* MUTANT (negate) */	if(! (to_stdout)) {
+192: /* MUTANT (del_stmt) */ /* 	    exit_code = ERROR; */ 
+193: /* MUTANT (del_stmt) */ /* 	    ext_header = pkzip = 0; */ 
+193: /* MUTANT (rep_const) */	    ext_header = pkzip = 1;
+193: /* MUTANT (rep_const) */	    ext_header = pkzip = -1;
+194: /* MUTANT (del_stmt) */ /* 	    return ERROR; */ 
+197: /* MUTANT (rep_const) */    ext_header = pkzip = 1; /* for next file */
+197: /* MUTANT (rep_const) */    ext_header = pkzip = -1; /* for next file */
+198: /* MUTANT (del_stmt) */ /*     return OK; */ 

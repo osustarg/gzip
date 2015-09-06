@@ -1,0 +1,211 @@
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.0 1993/06/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.1 1993/06/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.-1 1993/06/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.((9)+1) 1993/06/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.((9)-1) 1993/06/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 0/06/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1/06/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 -1/06/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 ((1993)+1)/06/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 ((1993)-1)/06/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/0/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/1/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/-1/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/((06)+1)/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/((06)-1)/11 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/0 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/1 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/-1 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/((11)+1) 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/((11)-1) 10:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 0:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 1:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 -1:16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 ((10)+1):16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 ((10)-1):16:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 10:0:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 10:1:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 10:-1:58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 10:((16)+1):58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 10:((16)-1):58 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 10:16:0 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 10:16:1 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 10:16:-1 jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 10:16:((58)+1) jloup Exp $";
+63: /* MUTANT (rep_const) */static char rcsid[] = "$Id: bits.c,v 0.9 1993/06/11 10:16:((58)-1) jloup Exp $";
+72: /* MUTANT (del_stmt) */ /* local unsigned short bi_buf; */ 
+77: #define Buf_size (0 * 2*sizeof(char)) /* MUTANT (rep_const) */
+77: #define Buf_size (1 * 2*sizeof(char)) /* MUTANT (rep_const) */
+77: #define Buf_size (-1 * 2*sizeof(char)) /* MUTANT (rep_const) */
+77: #define Buf_size (((8)+1) * 2*sizeof(char)) /* MUTANT (rep_const) */
+77: #define Buf_size (((8)-1) * 2*sizeof(char)) /* MUTANT (rep_const) */
+77: #define Buf_size (8 * 0*sizeof(char)) /* MUTANT (rep_const) */
+77: #define Buf_size (8 * 1*sizeof(char)) /* MUTANT (rep_const) */
+77: #define Buf_size (8 * -1*sizeof(char)) /* MUTANT (rep_const) */
+77: #define Buf_size (8 * ((2)+1)*sizeof(char)) /* MUTANT (rep_const) */
+77: #define Buf_size (8 * ((2)-1)*sizeof(char)) /* MUTANT (rep_const) */
+87: /* MUTANT (del_stmt) */ /* int (*read_buf) OF((char *buf, unsigned size)); */ 
+100: /* MUTANT (del_stmt) */ /*     zfile  = zipfile; */ 
+101: /* MUTANT (del_stmt) */ /*     bi_buf = 0; */ 
+101: /* MUTANT (rep_const) */    bi_buf = 1;
+101: /* MUTANT (rep_const) */    bi_buf = -1;
+102: /* MUTANT (del_stmt) */ /*     bi_valid = 0; */ 
+102: /* MUTANT (rep_const) */    bi_valid = 1;
+102: /* MUTANT (rep_const) */    bi_valid = -1;
+104: /* MUTANT (rep_const) */    bits_sent = 1L;
+104: /* MUTANT (rep_const) */    bits_sent = -1L;
+110: /* MUTANT (rep_op) */    if (zfile == NO_FILE) {
+110: /* MUTANT (negate) */    if(! (zfile != NO_FILE)) {
+111: /* MUTANT (del_stmt) */ /* 	read_buf  = file_read; */ 
+121: /* MUTANT (del_stmt) */ /*     int length; */  /* number of bits */
+124: /* MUTANT (rep_const) */    Tracev((stderr," l %0d v %4x ", length, value));
+124: /* MUTANT (rep_const) */    Tracev((stderr," l %1d v %4x ", length, value));
+124: /* MUTANT (rep_const) */    Tracev((stderr," l %-1d v %4x ", length, value));
+124: /* MUTANT (rep_const) */    Tracev((stderr," l %((2)+1)d v %4x ", length, value));
+124: /* MUTANT (rep_const) */    Tracev((stderr," l %((2)-1)d v %4x ", length, value));
+124: /* MUTANT (rep_const) */    Tracev((stderr," l %2d v %0x ", length, value));
+124: /* MUTANT (rep_const) */    Tracev((stderr," l %2d v %1x ", length, value));
+124: /* MUTANT (rep_const) */    Tracev((stderr," l %2d v %-1x ", length, value));
+124: /* MUTANT (rep_const) */    Tracev((stderr," l %2d v %((4)+1)x ", length, value));
+124: /* MUTANT (rep_const) */    Tracev((stderr," l %2d v %((4)-1)x ", length, value));
+125: /* MUTANT (del_stmt) */ /*     Assert(length > 0 && length <= 15, "invalid length"); */ 
+125: /* MUTANT (rep_op) */    Assert(length <= 0 && length <= 15, "invalid length");
+125: /* MUTANT (rep_op) */    Assert(length < 0 && length <= 15, "invalid length");
+125: /* MUTANT (rep_op) */    Assert(length >= 0 && length <= 15, "invalid length");
+125: /* MUTANT (rep_op) */    Assert(length == 0 && length <= 15, "invalid length");
+125: /* MUTANT (rep_op) */    Assert(length != 0 && length <= 15, "invalid length");
+125: /* MUTANT (rep_op) */    Assert(length > 0 || length <= 15, "invalid length");
+125: /* MUTANT (rep_op) */    Assert(length > 0 && length < 15, "invalid length");
+125: /* MUTANT (rep_op) */    Assert(length > 0 && length > 15, "invalid length");
+125: /* MUTANT (rep_op) */    Assert(length > 0 && length >= 15, "invalid length");
+125: /* MUTANT (rep_op) */    Assert(length > 0 && length == 15, "invalid length");
+125: /* MUTANT (rep_op) */    Assert(length > 0 && length != 15, "invalid length");
+125: /* MUTANT (rep_const) */    Assert(length > 1 && length <= 15, "invalid length");
+125: /* MUTANT (rep_const) */    Assert(length > -1 && length <= 15, "invalid length");
+125: /* MUTANT (rep_const) */    Assert(length > 0 && length <= 0, "invalid length");
+125: /* MUTANT (rep_const) */    Assert(length > 0 && length <= 1, "invalid length");
+125: /* MUTANT (rep_const) */    Assert(length > 0 && length <= -1, "invalid length");
+125: /* MUTANT (rep_const) */    Assert(length > 0 && length <= ((15)+1), "invalid length");
+125: /* MUTANT (rep_const) */    Assert(length > 0 && length <= ((15)-1), "invalid length");
+126: /* MUTANT (del_stmt) */ /*     bits_sent += (ulg)length; */ 
+126: /* MUTANT (rep_op) */    bits_sent -= (ulg)length;
+126: /* MUTANT (rep_op) */    bits_sent *= (ulg)length;
+126: /* MUTANT (rep_op) */    bits_sent %= (ulg)length;
+132: /* MUTANT (rep_op) */    if (bi_valid <= (int)Buf_size - length) {
+132: /* MUTANT (rep_op) */    if (bi_valid < (int)Buf_size - length) {
+132: /* MUTANT (rep_op) */    if (bi_valid >= (int)Buf_size - length) {
+132: /* MUTANT (rep_op) */    if (bi_valid == (int)Buf_size - length) {
+132: /* MUTANT (rep_op) */    if (bi_valid != (int)Buf_size - length) {
+132: /* MUTANT (negate) */    if(! (bi_valid > (int)Buf_size - length)) {
+133: /* MUTANT (del_stmt) */ /*         bi_buf |= (value << bi_valid); */ 
+134: /* MUTANT (del_stmt) */ /*         put_short(bi_buf); */ 
+135: /* MUTANT (del_stmt) */ /*         bi_buf = (ush)value >> (Buf_size - bi_valid); */ 
+136: /* MUTANT (del_stmt) */ /*         bi_valid += length - Buf_size; */ 
+136: /* MUTANT (rep_op) */        bi_valid -= length - Buf_size;
+136: /* MUTANT (rep_op) */        bi_valid *= length - Buf_size;
+136: /* MUTANT (rep_op) */        bi_valid %= length - Buf_size;
+138: /* MUTANT (del_stmt) */ /*         bi_buf |= value << bi_valid; */ 
+139: /* MUTANT (del_stmt) */ /*         bi_valid += length; */ 
+139: /* MUTANT (rep_op) */        bi_valid -= length;
+139: /* MUTANT (rep_op) */        bi_valid *= length;
+139: /* MUTANT (rep_op) */        bi_valid %= length;
+150: /* MUTANT (del_stmt) */ /*     int len; */        /* its bit length */
+152: /* MUTANT (del_stmt) */ /*     register unsigned res = 0; */ 
+152: /* MUTANT (rep_const) */    register unsigned res = 1;
+152: /* MUTANT (rep_const) */    register unsigned res = -1;
+154: /* MUTANT (del_stmt) */ /*         res |= code & 1; */ 
+154: /* MUTANT (rep_const) */        res |= code & 0;
+154: /* MUTANT (rep_const) */        res |= code & -1;
+154: /* MUTANT (rep_const) */        res |= code & ((1)+1);
+155: /* MUTANT (del_stmt) */ /*         code >>= 1, res <<= 1; */ 
+155: /* MUTANT (rep_const) */        code >>= 0, res <<= 1;
+155: /* MUTANT (rep_const) */        code >>= -1, res <<= 1;
+155: /* MUTANT (rep_const) */        code >>= ((1)+1), res <<= 1;
+155: /* MUTANT (rep_const) */        code >>= 1, res <<= 0;
+155: /* MUTANT (rep_const) */        code >>= 1, res <<= -1;
+155: /* MUTANT (rep_const) */        code >>= 1, res <<= ((1)+1);
+156: /* MUTANT (del_stmt) */ /*     } while (--len > 0); */ 
+156: /* MUTANT (rep_op) */    } while (++len > 0);
+156: /* MUTANT (rep_op) */    } while (--len <= 0);
+156: /* MUTANT (rep_op) */    } while (--len < 0);
+156: /* MUTANT (rep_op) */    } while (--len >= 0);
+156: /* MUTANT (rep_op) */    } while (--len == 0);
+156: /* MUTANT (rep_op) */    } while (--len != 0);
+156: /* MUTANT (rep_const) */    } while (--len > 1);
+156: /* MUTANT (rep_const) */    } while (--len > -1);
+156: /* MUTANT (negate) */    } while(! (--len > 0));
+157: /* MUTANT (del_stmt) */ /*     return res >> 1; */ 
+157: /* MUTANT (rep_const) */    return res >> 0;
+157: /* MUTANT (rep_const) */    return res >> -1;
+157: /* MUTANT (rep_const) */    return res >> ((1)+1);
+165: /* MUTANT (rep_op) */    if (bi_valid <= 8) {
+165: /* MUTANT (rep_op) */    if (bi_valid < 8) {
+165: /* MUTANT (rep_op) */    if (bi_valid >= 8) {
+165: /* MUTANT (rep_op) */    if (bi_valid == 8) {
+165: /* MUTANT (rep_op) */    if (bi_valid != 8) {
+165: /* MUTANT (rep_const) */    if (bi_valid > 0) {
+165: /* MUTANT (rep_const) */    if (bi_valid > 1) {
+165: /* MUTANT (rep_const) */    if (bi_valid > -1) {
+165: /* MUTANT (rep_const) */    if (bi_valid > ((8)+1)) {
+165: /* MUTANT (rep_const) */    if (bi_valid > ((8)-1)) {
+165: /* MUTANT (negate) */    if(! (bi_valid > 8)) {
+166: /* MUTANT (del_stmt) */ /*         put_short(bi_buf); */ 
+167: /* MUTANT (rep_op) */    } else if (bi_valid <= 0) {
+167: /* MUTANT (rep_op) */    } else if (bi_valid < 0) {
+167: /* MUTANT (rep_op) */    } else if (bi_valid >= 0) {
+167: /* MUTANT (rep_op) */    } else if (bi_valid == 0) {
+167: /* MUTANT (rep_op) */    } else if (bi_valid != 0) {
+167: /* MUTANT (rep_const) */    } else if (bi_valid > 1) {
+167: /* MUTANT (rep_const) */    } else if (bi_valid > -1) {
+167: /* MUTANT (negate) */    } else if(! (bi_valid > 0)) {
+168: /* MUTANT (del_stmt) */ /*         put_byte(bi_buf); */ 
+170: /* MUTANT (rep_const) */    bi_buf = 1;
+170: /* MUTANT (rep_const) */    bi_buf = -1;
+171: /* MUTANT (del_stmt) */ /*     bi_valid = 0; */ 
+171: /* MUTANT (rep_const) */    bi_valid = 1;
+171: /* MUTANT (rep_const) */    bi_valid = -1;
+173: /* MUTANT (rep_op) */    bits_sent = (bits_sent-7) & ~7;
+173: /* MUTANT (rep_op) */    bits_sent = (bits_sent*7) & ~7;
+173: /* MUTANT (rep_op) */    bits_sent = (bits_sent%7) & ~7;
+173: /* MUTANT (rep_const) */    bits_sent = (bits_sent+0) & ~7;
+173: /* MUTANT (rep_const) */    bits_sent = (bits_sent+1) & ~7;
+173: /* MUTANT (rep_const) */    bits_sent = (bits_sent+-1) & ~7;
+173: /* MUTANT (rep_const) */    bits_sent = (bits_sent+((7)+1)) & ~7;
+173: /* MUTANT (rep_const) */    bits_sent = (bits_sent+((7)-1)) & ~7;
+173: /* MUTANT (rep_const) */    bits_sent = (bits_sent+7) & ~0;
+173: /* MUTANT (rep_const) */    bits_sent = (bits_sent+7) & ~1;
+173: /* MUTANT (rep_const) */    bits_sent = (bits_sent+7) & ~-1;
+173: /* MUTANT (rep_const) */    bits_sent = (bits_sent+7) & ~((7)+1);
+173: /* MUTANT (rep_const) */    bits_sent = (bits_sent+7) & ~((7)-1);
+183: /* MUTANT (del_stmt) */ /*     unsigned len; */      /* its length */
+184: /* MUTANT (del_stmt) */ /*     int      header; */   /* true if block header must be written */
+186: /* MUTANT (del_stmt) */ /*     bi_windup(); */               /* align on byte boundary */
+188: /* MUTANT (negate) */    if(! (header)) {
+189: /* MUTANT (del_stmt) */ /*         put_short((ush)len); */    
+190: /* MUTANT (del_stmt) */ /*         put_short((ush)~len); */ 
+192: /* MUTANT (rep_op) */        bits_sent -= 2*16;
+192: /* MUTANT (rep_op) */        bits_sent *= 2*16;
+192: /* MUTANT (rep_op) */        bits_sent %= 2*16;
+192: /* MUTANT (rep_const) */        bits_sent += 0*16;
+192: /* MUTANT (rep_const) */        bits_sent += 1*16;
+192: /* MUTANT (rep_const) */        bits_sent += -1*16;
+192: /* MUTANT (rep_const) */        bits_sent += ((2)+1)*16;
+192: /* MUTANT (rep_const) */        bits_sent += ((2)-1)*16;
+192: /* MUTANT (rep_const) */        bits_sent += 2*0;
+192: /* MUTANT (rep_const) */        bits_sent += 2*1;
+192: /* MUTANT (rep_const) */        bits_sent += 2*-1;
+192: /* MUTANT (rep_const) */        bits_sent += 2*((16)+1);
+192: /* MUTANT (rep_const) */        bits_sent += 2*((16)-1);
+196: /* MUTANT (rep_op) */    bits_sent -= (ulg)len<<3;
+196: /* MUTANT (rep_op) */    bits_sent *= (ulg)len<<3;
+196: /* MUTANT (rep_op) */    bits_sent %= (ulg)len<<3;
+196: /* MUTANT (rep_const) */    bits_sent += (ulg)len<<0;
+196: /* MUTANT (rep_const) */    bits_sent += (ulg)len<<1;
+196: /* MUTANT (rep_const) */    bits_sent += (ulg)len<<-1;
+196: /* MUTANT (rep_const) */    bits_sent += (ulg)len<<((3)+1);
+196: /* MUTANT (rep_const) */    bits_sent += (ulg)len<<((3)-1);
+198: /* MUTANT (rep_op) */    while (len++) {
+198: /* MUTANT (negate) */    while(! (len--)) {
+201: /* MUTANT (del_stmt) */ /* 	if (key) zencode(*buf, t); */ 
+201: /* MUTANT (negate) */	if(! (key)) zencode(*buf, t);
+203: /* MUTANT (rep_op) */	put_byte(*buf--);

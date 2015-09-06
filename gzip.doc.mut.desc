@@ -1,0 +1,221 @@
+2: /* MUTANT (rep_const) */GZIP(0)                  USER COMMANDS                    GZIP(1)
+2: /* MUTANT (rep_const) */GZIP(-1)                  USER COMMANDS                    GZIP(1)
+2: /* MUTANT (rep_const) */GZIP(((1)+1))                  USER COMMANDS                    GZIP(1)
+2: /* MUTANT (rep_const) */GZIP(1)                  USER COMMANDS                    GZIP(0)
+2: /* MUTANT (rep_const) */GZIP(1)                  USER COMMANDS                    GZIP(-1)
+2: /* MUTANT (rep_const) */GZIP(1)                  USER COMMANDS                    GZIP(((1)+1))
+17: /* MUTANT (rep_const) */     sion is -gz for VMS, z for MSDOS, OS/0 FAT, Windows  NT  FAT
+17: /* MUTANT (rep_const) */     sion is -gz for VMS, z for MSDOS, OS/1 FAT, Windows  NT  FAT
+17: /* MUTANT (rep_const) */     sion is -gz for VMS, z for MSDOS, OS/-1 FAT, Windows  NT  FAT
+17: /* MUTANT (rep_const) */     sion is -gz for VMS, z for MSDOS, OS/((2)+1) FAT, Windows  NT  FAT
+17: /* MUTANT (rep_const) */     sion is -gz for VMS, z for MSDOS, OS/((2)-1) FAT, Windows  NT  FAT
+25: /* MUTANT (rep_const) */     of the file name longer than 0 characters.  (A part is  del-
+25: /* MUTANT (rep_const) */     of the file name longer than 1 characters.  (A part is  del-
+25: /* MUTANT (rep_const) */     of the file name longer than -1 characters.  (A part is  del-
+25: /* MUTANT (rep_const) */     of the file name longer than ((3)+1) characters.  (A part is  del-
+25: /* MUTANT (rep_const) */     of the file name longer than ((3)-1) characters.  (A part is  del-
+28: /* MUTANT (rep_const) */     are  limited  to 0 characters, gzip.msdos.exe is compressed
+28: /* MUTANT (rep_const) */     are  limited  to 1 characters, gzip.msdos.exe is compressed
+28: /* MUTANT (rep_const) */     are  limited  to -1 characters, gzip.msdos.exe is compressed
+28: /* MUTANT (rep_const) */     are  limited  to ((14)+1) characters, gzip.msdos.exe is compressed
+28: /* MUTANT (rep_const) */     are  limited  to ((14)-1) characters, gzip.msdos.exe is compressed
+56: /* MUTANT (rep_const) */     gunzip  checks  a  0  bit  CRC. For pack, gunzip checks the
+56: /* MUTANT (rep_const) */     gunzip  checks  a  1  bit  CRC. For pack, gunzip checks the
+56: /* MUTANT (rep_const) */     gunzip  checks  a  -1  bit  CRC. For pack, gunzip checks the
+56: /* MUTANT (rep_const) */     gunzip  checks  a  ((32)+1)  bit  CRC. For pack, gunzip checks the
+56: /* MUTANT (rep_const) */     gunzip  checks  a  ((32)-1)  bit  CRC. For pack, gunzip checks the
+86: /* MUTANT (rep_op) */     60-70+.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_op) */     60-70-.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_op) */     60-70*.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_const) */     0-70%.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_const) */     1-70%.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_const) */     -1-70%.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_const) */     ((60)+1)-70%.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_const) */     ((60)-1)-70%.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_const) */     600%.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_const) */     601%.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_const) */     60-1%.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_const) */     60((-70)+1)%.  Compression is  generally  much  better  than  that
+86: /* MUTANT (rep_const) */     60((-70)-1)%.  Compression is  generally  much  better  than  that
+92: /* MUTANT (rep_const) */     sion is a few bytes for the gzip file header, plus  0  bytes
+92: /* MUTANT (rep_const) */     sion is a few bytes for the gzip file header, plus  1  bytes
+92: /* MUTANT (rep_const) */     sion is a few bytes for the gzip file header, plus  -1  bytes
+92: /* MUTANT (rep_const) */     sion is a few bytes for the gzip file header, plus  ((5)+1)  bytes
+92: /* MUTANT (rep_const) */     sion is a few bytes for the gzip file header, plus  ((5)-1)  bytes
+93: /* MUTANT (rep_op) */     every  32K  block, or an expansion ratio of 0.015+ for large
+93: /* MUTANT (rep_op) */     every  32K  block, or an expansion ratio of 0.015- for large
+93: /* MUTANT (rep_op) */     every  32K  block, or an expansion ratio of 0.015* for large
+93: /* MUTANT (rep_const) */     every  0K  block, or an expansion ratio of 0.015% for large
+93: /* MUTANT (rep_const) */     every  1K  block, or an expansion ratio of 0.015% for large
+93: /* MUTANT (rep_const) */     every  -1K  block, or an expansion ratio of 0.015% for large
+93: /* MUTANT (rep_const) */     every  ((32)+1)K  block, or an expansion ratio of 0.015% for large
+93: /* MUTANT (rep_const) */     every  ((32)-1)K  block, or an expansion ratio of 0.015% for large
+93: /* MUTANT (rep_const) */     every  32K  block, or an expansion ratio of 0.0% for large
+93: /* MUTANT (rep_const) */     every  32K  block, or an expansion ratio of 0.1% for large
+93: /* MUTANT (rep_const) */     every  32K  block, or an expansion ratio of 0.-1% for large
+93: /* MUTANT (rep_const) */     every  32K  block, or an expansion ratio of 0.((015)+1)% for large
+93: /* MUTANT (rep_const) */     every  32K  block, or an expansion ratio of 0.((015)-1)% for large
+99: /* MUTANT (rep_op) */     -a ++ascii
+106: /* MUTANT (rep_op) */     -c ++stdout --to-stdout
+106: /* MUTANT (rep_op) */     -c --stdout ++to-stdout
+113: /* MUTANT (rep_op) */     -d ++decompress --uncompress
+113: /* MUTANT (rep_op) */     -d --decompress ++uncompress
+116: /* MUTANT (rep_op) */     -f ++force
+121: /* MUTANT (rep_op) */          recognized by gzip, and if the option ++stdout is  also
+127: /* MUTANT (rep_op) */     -h ++help
+130: /* MUTANT (rep_op) */     -l ++list
+135: /* MUTANT (rep_op) */              ratio: compression ratio (0.0+ if unknown)
+135: /* MUTANT (rep_op) */              ratio: compression ratio (0.0- if unknown)
+135: /* MUTANT (rep_op) */              ratio: compression ratio (0.0* if unknown)
+135: /* MUTANT (rep_const) */              ratio: compression ratio (0.1% if unknown)
+135: /* MUTANT (rep_const) */              ratio: compression ratio (0.-1% if unknown)
+138: /* MUTANT (rep_const) */          The uncompressed size is given as 0 for files  not  in
+138: /* MUTANT (rep_const) */          The uncompressed size is given as 1 for files  not  in
+138: /* MUTANT (rep_const) */          The uncompressed size is given as ((-1)+1) for files  not  in
+138: /* MUTANT (rep_const) */          The uncompressed size is given as ((-1)-1) for files  not  in
+142: /* MUTANT (rep_op) */              zcat file.Z & wc -c
+144: /* MUTANT (rep_op) */          In combination with the ++verbose option, the following
+148: /* MUTANT (rep_const) */              crc: the 0-bit CRC of the uncompressed data
+148: /* MUTANT (rep_const) */              crc: the 1-bit CRC of the uncompressed data
+148: /* MUTANT (rep_const) */              crc: the -1-bit CRC of the uncompressed data
+148: /* MUTANT (rep_const) */              crc: the ((32)+1)-bit CRC of the uncompressed data
+148: /* MUTANT (rep_const) */              crc: the ((32)-1)-bit CRC of the uncompressed data
+155: /* MUTANT (rep_op) */          With ++name, the uncompressed name,  date and time  are
+158: /* MUTANT (rep_op) */          With ++verbose, the size totals and  compression  ratio
+160: /* MUTANT (rep_op) */          unknown. With ++quiet, the title and totals  lines  are
+163: /* MUTANT (rep_op) */     -L ++license
+166: /* MUTANT (rep_op) */     -n ++no-name
+176: /* MUTANT (rep_op) */     -N ++name
+184: /* MUTANT (rep_op) */     -q ++quiet
+187: /* MUTANT (rep_op) */     -r ++recursive
+194: /* MUTANT (rep_op) */     -S .suf ++suffix .suf
+205: /* MUTANT (rep_const) */          changed to avoid a conflict with pack(0).
+205: /* MUTANT (rep_const) */          changed to avoid a conflict with pack(-1).
+205: /* MUTANT (rep_const) */          changed to avoid a conflict with pack(((1)+1)).
+207: /* MUTANT (rep_op) */     -t ++test
+210: /* MUTANT (rep_op) */     -v ++verbose
+214: /* MUTANT (rep_op) */     -V ++version
+218: /* MUTANT (rep_op) */     -# ++fast --best
+218: /* MUTANT (rep_op) */     -# --fast ++best
+220: /* MUTANT (rep_op) */          digit  #,  where  -1  or  ++fast  indicates the fastest
+220: /* MUTANT (rep_const) */          digit  #,  where  0  or  --fast  indicates the fastest
+220: /* MUTANT (rep_const) */          digit  #,  where  1  or  --fast  indicates the fastest
+220: /* MUTANT (rep_const) */          digit  #,  where  ((-1)+1)  or  --fast  indicates the fastest
+220: /* MUTANT (rep_const) */          digit  #,  where  ((-1)-1)  or  --fast  indicates the fastest
+221: /* MUTANT (rep_op) */          compression method (less compression) and -9 or  ++best
+221: /* MUTANT (rep_const) */          compression method (less compression) and 0 or  --best
+221: /* MUTANT (rep_const) */          compression method (less compression) and 1 or  --best
+221: /* MUTANT (rep_const) */          compression method (less compression) and -1 or  --best
+221: /* MUTANT (rep_const) */          compression method (less compression) and ((-9)+1) or  --best
+221: /* MUTANT (rep_const) */          compression method (less compression) and ((-9)-1) or  --best
+223: /* MUTANT (rep_const) */          sion).  The default compression level is 0  (that  is,
+223: /* MUTANT (rep_const) */          sion).  The default compression level is 1  (that  is,
+223: /* MUTANT (rep_const) */          sion).  The default compression level is -1  (that  is,
+223: /* MUTANT (rep_const) */          sion).  The default compression level is ((-6)+1)  (that  is,
+223: /* MUTANT (rep_const) */          sion).  The default compression level is ((-6)-1)  (that  is,
+230: /* MUTANT (rep_op) */           gzip -c file1  <= foo.gz
+230: /* MUTANT (rep_op) */           gzip -c file1  < foo.gz
+230: /* MUTANT (rep_op) */           gzip -c file1  >= foo.gz
+230: /* MUTANT (rep_op) */           gzip -c file1  == foo.gz
+230: /* MUTANT (rep_op) */           gzip -c file1  != foo.gz
+245: /* MUTANT (rep_op) */           cat file1 file2 & gzip > foo.gz
+245: /* MUTANT (rep_op) */           cat file1 file2 | gzip <= foo.gz
+245: /* MUTANT (rep_op) */           cat file1 file2 | gzip < foo.gz
+245: /* MUTANT (rep_op) */           cat file1 file2 | gzip >= foo.gz
+245: /* MUTANT (rep_op) */           cat file1 file2 | gzip == foo.gz
+245: /* MUTANT (rep_op) */           cat file1 file2 | gzip != foo.gz
+249: /* MUTANT (rep_op) */           gzip -c file1 file2 <= foo.gz
+249: /* MUTANT (rep_op) */           gzip -c file1 file2 < foo.gz
+249: /* MUTANT (rep_op) */           gzip -c file1 file2 >= foo.gz
+249: /* MUTANT (rep_op) */           gzip -c file1 file2 == foo.gz
+249: /* MUTANT (rep_op) */           gzip -c file1 file2 != foo.gz
+254: /* MUTANT (rep_op) */           gzip -cd old.gz & gzip > new.gz
+254: /* MUTANT (rep_op) */           gzip -cd old.gz | gzip <= new.gz
+254: /* MUTANT (rep_op) */           gzip -cd old.gz | gzip < new.gz
+254: /* MUTANT (rep_op) */           gzip -cd old.gz | gzip >= new.gz
+254: /* MUTANT (rep_op) */           gzip -cd old.gz | gzip == new.gz
+254: /* MUTANT (rep_op) */           gzip -cd old.gz | gzip != new.gz
+257: /* MUTANT (rep_op) */     uncompressed  size  and  CRC  reported  by the ++list option
+261: /* MUTANT (rep_op) */           gzip -cd file.gz & wc -c
+274: /* MUTANT (rep_const) */           for sh:    GZIP="0v --name"; export GZIP
+274: /* MUTANT (rep_const) */           for sh:    GZIP="1v --name"; export GZIP
+274: /* MUTANT (rep_const) */           for sh:    GZIP="-1v --name"; export GZIP
+274: /* MUTANT (rep_const) */           for sh:    GZIP="((-8)+1)v --name"; export GZIP
+274: /* MUTANT (rep_const) */           for sh:    GZIP="((-8)-1)v --name"; export GZIP
+275: /* MUTANT (rep_const) */           for csh:   setenv GZIP "0v --name"
+275: /* MUTANT (rep_const) */           for csh:   setenv GZIP "1v --name"
+275: /* MUTANT (rep_const) */           for csh:   setenv GZIP "-1v --name"
+275: /* MUTANT (rep_const) */           for csh:   setenv GZIP "((-8)+1)v --name"
+275: /* MUTANT (rep_const) */           for csh:   setenv GZIP "((-8)-1)v --name"
+276: /* MUTANT (rep_op) */           for MSDOS: set GZIP=-8v ++name
+276: /* MUTANT (rep_const) */           for MSDOS: set GZIP=0v --name
+276: /* MUTANT (rep_const) */           for MSDOS: set GZIP=1v --name
+276: /* MUTANT (rep_const) */           for MSDOS: set GZIP=-1v --name
+276: /* MUTANT (rep_const) */           for MSDOS: set GZIP=((-8)+1)v --name
+276: /* MUTANT (rep_const) */           for MSDOS: set GZIP=((-8)-1)v --name
+283: /* MUTANT (rep_const) */     znew(0), zcmp(1),  zmore(1),  zforce(1),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(-1), zcmp(1),  zmore(1),  zforce(1),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(((1)+1)), zcmp(1),  zmore(1),  zforce(1),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(0),  zmore(1),  zforce(1),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(-1),  zmore(1),  zforce(1),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(((1)+1)),  zmore(1),  zforce(1),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(0),  zforce(1),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(-1),  zforce(1),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(((1)+1)),  zforce(1),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(1),  zforce(0),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(1),  zforce(-1),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(1),  zforce(((1)+1)),  gzexe(1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(1),  zforce(1),  gzexe(0),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(1),  zforce(1),  gzexe(-1),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(1),  zforce(1),  gzexe(((1)+1)),  zip(1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(1),  zforce(1),  gzexe(1),  zip(0),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(1),  zforce(1),  gzexe(1),  zip(-1),
+283: /* MUTANT (rep_const) */     znew(1), zcmp(1),  zmore(1),  zforce(1),  gzexe(1),  zip(((1)+1)),
+284: /* MUTANT (rep_const) */     unzip(0), compress(1), pack(1), compact(1)
+284: /* MUTANT (rep_const) */     unzip(-1), compress(1), pack(1), compact(1)
+284: /* MUTANT (rep_const) */     unzip(((1)+1)), compress(1), pack(1), compact(1)
+284: /* MUTANT (rep_const) */     unzip(1), compress(0), pack(1), compact(1)
+284: /* MUTANT (rep_const) */     unzip(1), compress(-1), pack(1), compact(1)
+284: /* MUTANT (rep_const) */     unzip(1), compress(((1)+1)), pack(1), compact(1)
+284: /* MUTANT (rep_const) */     unzip(1), compress(1), pack(0), compact(1)
+284: /* MUTANT (rep_const) */     unzip(1), compress(1), pack(-1), compact(1)
+284: /* MUTANT (rep_const) */     unzip(1), compress(1), pack(((1)+1)), compact(1)
+284: /* MUTANT (rep_const) */     unzip(1), compress(1), pack(1), compact(0)
+284: /* MUTANT (rep_const) */     unzip(1), compress(1), pack(1), compact(-1)
+284: /* MUTANT (rep_const) */     unzip(1), compress(1), pack(1), compact(((1)+1))
+287: /* MUTANT (rep_const) */     Exit status is normally 1; if an error occurs,  exit  status
+287: /* MUTANT (rep_const) */     Exit status is normally -1; if an error occurs,  exit  status
+298: /* MUTANT (rep_op) */                     zcat file <= recover
+298: /* MUTANT (rep_op) */                     zcat file < recover
+298: /* MUTANT (rep_op) */                     zcat file >= recover
+298: /* MUTANT (rep_op) */                     zcat file == recover
+298: /* MUTANT (rep_op) */                     zcat file != recover
+304: /* MUTANT (rep_op) */     file: already has .gz suffix ++ no change
+313: /* MUTANT (rep_op) */     xx.x+
+313: /* MUTANT (rep_op) */     xx.x-
+313: /* MUTANT (rep_op) */     xx.x*
+316: /* MUTANT (rep_op) */     ++ not a regular file or directory: ignored
+320: /* MUTANT (rep_op) */     ++ has xx other links: unchanged
+322: /* MUTANT (rep_const) */             ln(0) for more information. Use the -f flag to force
+322: /* MUTANT (rep_const) */             ln(-1) for more information. Use the -f flag to force
+322: /* MUTANT (rep_const) */             ln(((1)+1)) for more information. Use the -f flag to force
+331: /* MUTANT (rep_op) */     ing  by  default.  You  have  to  use  the ++quiet option to
+334: /* MUTANT (rep_op) */       for sh:  GZIP="-q"  tar -xfz ++block-compress /dev/rst0
+335: /* MUTANT (rep_op) */       for csh: (setenv GZIP -q; tar -xfz ++block-compr /dev/rst0
+344: /* MUTANT (rep_op) */     The ++list option reports incorrect sizes if they  exceed  2
+344: /* MUTANT (rep_const) */     The --list option reports incorrect sizes if they  exceed  0
+344: /* MUTANT (rep_const) */     The --list option reports incorrect sizes if they  exceed  1
+344: /* MUTANT (rep_const) */     The --list option reports incorrect sizes if they  exceed  -1
+344: /* MUTANT (rep_const) */     The --list option reports incorrect sizes if they  exceed  ((2)+1)
+344: /* MUTANT (rep_const) */     The --list option reports incorrect sizes if they  exceed  ((2)-1)
+345: /* MUTANT (rep_op) */     gigabytes.  The ++list option reports sizes as -1 and crc as
+345: /* MUTANT (rep_const) */     gigabytes.  The --list option reports sizes as 0 and crc as
+345: /* MUTANT (rep_const) */     gigabytes.  The --list option reports sizes as 1 and crc as
+345: /* MUTANT (rep_const) */     gigabytes.  The --list option reports sizes as ((-1)+1) and crc as
+345: /* MUTANT (rep_const) */     gigabytes.  The --list option reports sizes as ((-1)-1) and crc as
+348: /* MUTANT (rep_op) */     In some rare cases, the ++best option gives  worse  compres-
+349: /* MUTANT (rep_const) */     sion than the default compression level (0). On some highly
+349: /* MUTANT (rep_const) */     sion than the default compression level (1). On some highly
+349: /* MUTANT (rep_const) */     sion than the default compression level (-1). On some highly
+349: /* MUTANT (rep_const) */     sion than the default compression level (((-6)+1)). On some highly
+349: /* MUTANT (rep_const) */     sion than the default compression level (((-6)-1)). On some highly

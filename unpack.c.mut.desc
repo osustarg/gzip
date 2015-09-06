@@ -1,0 +1,325 @@
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.0 1993/06/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.1 1993/06/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.-1 1993/06/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.((4)+1) 1993/06/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.((4)-1) 1993/06/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 0/06/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1/06/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 -1/06/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 ((1993)+1)/06/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 ((1993)-1)/06/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/0/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/1/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/-1/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/((06)+1)/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/((06)-1)/11 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/0 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/1 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/-1 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/((11)+1) 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/((11)-1) 19:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 0:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 1:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 -1:25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 ((19)+1):25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 ((19)-1):25:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 19:0:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 19:1:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 19:-1:36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 19:((25)+1):36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 19:((25)-1):36 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 19:25:0 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 19:25:1 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 19:25:-1 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 19:25:((36)+1) jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: unpack.c,v 1.4 1993/06/11 19:25:((36)-1) jloup Exp $";
+18: #define MAX_BITLEN 0 /* MUTANT (rep_const) */
+18: #define MAX_BITLEN 1 /* MUTANT (rep_const) */
+18: #define MAX_BITLEN -1 /* MUTANT (rep_const) */
+18: #define MAX_BITLEN ((25)+1) /* MUTANT (rep_const) */
+18: #define MAX_BITLEN ((25)-1) /* MUTANT (rep_const) */
+24: #define LITERALS 0 /* MUTANT (rep_const) */
+24: #define LITERALS 1 /* MUTANT (rep_const) */
+24: #define LITERALS -1 /* MUTANT (rep_const) */
+24: #define LITERALS ((256)+1) /* MUTANT (rep_const) */
+24: #define LITERALS ((256)-1) /* MUTANT (rep_const) */
+27: #define MAX_PEEK 0 /* MUTANT (rep_const) */
+27: #define MAX_PEEK 1 /* MUTANT (rep_const) */
+27: #define MAX_PEEK -1 /* MUTANT (rep_const) */
+27: #define MAX_PEEK ((12)+1) /* MUTANT (rep_const) */
+27: #define MAX_PEEK ((12)-1) /* MUTANT (rep_const) */
+33: /* MUTANT (del_stmt) */ /* local int max_len; */         /* maximum bit length of Huffman codes */
+35: /* MUTANT (del_stmt) */ /* local uch literal[LITERALS]; */ 
+40: /* MUTANT (del_stmt) */ /* local int lit_base[MAX_BITLEN+1]; */ 
+40: /* MUTANT (rep_op) */local int lit_base[MAX_BITLEN-1];
+40: /* MUTANT (rep_op) */local int lit_base[MAX_BITLEN*1];
+40: /* MUTANT (rep_op) */local int lit_base[MAX_BITLEN%1];
+40: /* MUTANT (rep_const) */local int lit_base[MAX_BITLEN+0];
+40: /* MUTANT (rep_const) */local int lit_base[MAX_BITLEN+-1];
+40: /* MUTANT (rep_const) */local int lit_base[MAX_BITLEN+((1)+1)];
+46: /* MUTANT (del_stmt) */ /* local int leaves [MAX_BITLEN+1]; */  /* Number of leaves for each bit length */
+46: /* MUTANT (rep_op) */local int leaves [MAX_BITLEN-1]; /* Number of leaves for each bit length */
+46: /* MUTANT (rep_op) */local int leaves [MAX_BITLEN*1]; /* Number of leaves for each bit length */
+46: /* MUTANT (rep_op) */local int leaves [MAX_BITLEN%1]; /* Number of leaves for each bit length */
+46: /* MUTANT (rep_const) */local int leaves [MAX_BITLEN+0]; /* Number of leaves for each bit length */
+46: /* MUTANT (rep_const) */local int leaves [MAX_BITLEN+-1]; /* Number of leaves for each bit length */
+46: /* MUTANT (rep_const) */local int leaves [MAX_BITLEN+((1)+1)]; /* Number of leaves for each bit length */
+47: /* MUTANT (del_stmt) */ /* local int parents[MAX_BITLEN+1]; */  /* Number of parents for each bit length */
+47: /* MUTANT (rep_op) */local int parents[MAX_BITLEN-1]; /* Number of parents for each bit length */
+47: /* MUTANT (rep_op) */local int parents[MAX_BITLEN*1]; /* Number of parents for each bit length */
+47: /* MUTANT (rep_op) */local int parents[MAX_BITLEN%1]; /* Number of parents for each bit length */
+47: /* MUTANT (rep_const) */local int parents[MAX_BITLEN+0]; /* Number of parents for each bit length */
+47: /* MUTANT (rep_const) */local int parents[MAX_BITLEN+-1]; /* Number of parents for each bit length */
+47: /* MUTANT (rep_const) */local int parents[MAX_BITLEN+((1)+1)]; /* Number of parents for each bit length */
+49: /* MUTANT (del_stmt) */ /* local int peek_bits; */  /* Number of peek bits currently used */
+60: #if (0<<MAX_PEEK) > OUTBUFSIZ /* MUTANT (rep_const) */
+60: #if (-1<<MAX_PEEK) > OUTBUFSIZ /* MUTANT (rep_const) */
+60: #if (((1)+1)<<MAX_PEEK) > OUTBUFSIZ /* MUTANT (rep_const) */
+67: /* MUTANT (del_stmt) */ /* local int valid; */                   /* number of valid bits in bitbuf */
+77: /* MUTANT (rep_op) */  while (valid <= (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid += 8; \
+77: /* MUTANT (rep_op) */  while (valid > (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid += 8; \
+77: /* MUTANT (rep_op) */  while (valid >= (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid += 8; \
+77: /* MUTANT (rep_op) */  while (valid == (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid += 8; \
+77: /* MUTANT (rep_op) */  while (valid != (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid += 8; \
+77: /* MUTANT (rep_op) */  while (valid < (bits)) bitbuf = (bitbuf<<8) & (ulg)get_byte(), valid += 8; \
+77: /* MUTANT (rep_op) */  while (valid < (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid -= 8; \
+77: /* MUTANT (rep_op) */  while (valid < (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid *= 8; \
+77: /* MUTANT (rep_op) */  while (valid < (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid %= 8; \
+77: /* MUTANT (rep_const) */  while (valid < (bits)) bitbuf = (bitbuf<<0) | (ulg)get_byte(), valid += 8; \
+77: /* MUTANT (rep_const) */  while (valid < (bits)) bitbuf = (bitbuf<<1) | (ulg)get_byte(), valid += 8; \
+77: /* MUTANT (rep_const) */  while (valid < (bits)) bitbuf = (bitbuf<<-1) | (ulg)get_byte(), valid += 8; \
+77: /* MUTANT (rep_const) */  while (valid < (bits)) bitbuf = (bitbuf<<((8)+1)) | (ulg)get_byte(), valid += 8; \
+77: /* MUTANT (rep_const) */  while (valid < (bits)) bitbuf = (bitbuf<<((8)-1)) | (ulg)get_byte(), valid += 8; \
+77: /* MUTANT (rep_const) */  while (valid < (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid += 0; \
+77: /* MUTANT (rep_const) */  while (valid < (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid += 1; \
+77: /* MUTANT (rep_const) */  while (valid < (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid += -1; \
+77: /* MUTANT (rep_const) */  while (valid < (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid += ((8)+1); \
+77: /* MUTANT (rep_const) */  while (valid < (bits)) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid += ((8)-1); \
+77: /* MUTANT (negate) */  while(! (valid < (bits))) bitbuf = (bitbuf<<8) | (ulg)get_byte(), valid += 8; \
+84: #define clear_bitbuf() (valid = 1, bitbuf = 0) /* MUTANT (rep_const) */
+84: #define clear_bitbuf() (valid = -1, bitbuf = 0) /* MUTANT (rep_const) */
+84: #define clear_bitbuf() (valid = 0, bitbuf = 1) /* MUTANT (rep_const) */
+84: #define clear_bitbuf() (valid = 0, bitbuf = -1) /* MUTANT (rep_const) */
+89: /* MUTANT (del_stmt) */ /* local void build_tree OF((void)); */ 
+96: /* MUTANT (del_stmt) */ /*     int len; */   /* bit length */
+97: /* MUTANT (del_stmt) */ /*     int base; */  /* base offset for a sequence of leaves */
+98: /* MUTANT (del_stmt) */ /*     int n; */ 
+101: /* MUTANT (del_stmt) */ /*     orig_len = 0; */ 
+101: /* MUTANT (rep_const) */    orig_len = 1;
+101: /* MUTANT (rep_const) */    orig_len = -1;
+102: /* MUTANT (del_stmt) */ /*     for (n = 1; n <= 4; n++) orig_len = (orig_len << 8) | (ulg)get_byte(); */ 
+102: /* MUTANT (rep_op) */    for (n = 1; n < 4; n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_op) */    for (n = 1; n > 4; n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_op) */    for (n = 1; n >= 4; n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_op) */    for (n = 1; n == 4; n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_op) */    for (n = 1; n != 4; n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_op) */    for (n = 1; n <= 4; n--) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_op) */    for (n = 1; n <= 4; n++) orig_len = (orig_len << 8) & (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = 0; n <= 4; n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = -1; n <= 4; n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = ((1)+1); n <= 4; n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = 1; n <= 0; n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = 1; n <= 1; n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = 1; n <= -1; n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = 1; n <= ((4)+1); n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = 1; n <= ((4)-1); n++) orig_len = (orig_len << 8) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = 1; n <= 4; n++) orig_len = (orig_len << 0) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = 1; n <= 4; n++) orig_len = (orig_len << 1) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = 1; n <= 4; n++) orig_len = (orig_len << -1) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = 1; n <= 4; n++) orig_len = (orig_len << ((8)+1)) | (ulg)get_byte();
+102: /* MUTANT (rep_const) */    for (n = 1; n <= 4; n++) orig_len = (orig_len << ((8)-1)) | (ulg)get_byte();
+104: /* MUTANT (del_stmt) */ /*     max_len = (int)get_byte(); */  /* maximum bit length of Huffman codes */
+105: /* MUTANT (rep_op) */    if (max_len <= MAX_BITLEN) {
+105: /* MUTANT (rep_op) */    if (max_len < MAX_BITLEN) {
+105: /* MUTANT (rep_op) */    if (max_len >= MAX_BITLEN) {
+105: /* MUTANT (rep_op) */    if (max_len == MAX_BITLEN) {
+105: /* MUTANT (rep_op) */    if (max_len != MAX_BITLEN) {
+105: /* MUTANT (negate) */    if(! (max_len > MAX_BITLEN)) {
+106: /* MUTANT (del_stmt) */ /* 	error("invalid compressed data -- Huffman code > 32 bits"); */ 
+106: /* MUTANT (rep_const) */	error("invalid compressed data -- Huffman code > 0 bits");
+106: /* MUTANT (rep_const) */	error("invalid compressed data -- Huffman code > 1 bits");
+106: /* MUTANT (rep_const) */	error("invalid compressed data -- Huffman code > -1 bits");
+106: /* MUTANT (rep_const) */	error("invalid compressed data -- Huffman code > ((32)+1) bits");
+106: /* MUTANT (rep_const) */	error("invalid compressed data -- Huffman code > ((32)-1) bits");
+110: /* MUTANT (rep_const) */    n = 1;
+110: /* MUTANT (rep_const) */    n = -1;
+111: /* MUTANT (rep_op) */    for (len = 1; len < max_len; len++) {
+111: /* MUTANT (rep_op) */    for (len = 1; len > max_len; len++) {
+111: /* MUTANT (rep_op) */    for (len = 1; len >= max_len; len++) {
+111: /* MUTANT (rep_op) */    for (len = 1; len == max_len; len++) {
+111: /* MUTANT (rep_op) */    for (len = 1; len != max_len; len++) {
+111: /* MUTANT (rep_op) */    for (len = 1; len <= max_len; len--) {
+111: /* MUTANT (rep_const) */    for (len = 0; len <= max_len; len++) {
+111: /* MUTANT (rep_const) */    for (len = -1; len <= max_len; len++) {
+111: /* MUTANT (rep_const) */    for (len = ((1)+1); len <= max_len; len++) {
+112: /* MUTANT (del_stmt) */ /* 	leaves[len] = (int)get_byte(); */ 
+113: /* MUTANT (del_stmt) */ /* 	n += leaves[len]; */ 
+113: /* MUTANT (rep_op) */	n -= leaves[len];
+113: /* MUTANT (rep_op) */	n *= leaves[len];
+113: /* MUTANT (rep_op) */	n %= leaves[len];
+115: /* MUTANT (rep_op) */    if (n <= LITERALS) {
+115: /* MUTANT (rep_op) */    if (n < LITERALS) {
+115: /* MUTANT (rep_op) */    if (n >= LITERALS) {
+115: /* MUTANT (rep_op) */    if (n == LITERALS) {
+115: /* MUTANT (rep_op) */    if (n != LITERALS) {
+115: /* MUTANT (negate) */    if(! (n > LITERALS)) {
+116: /* MUTANT (del_stmt) */ /* 	error("too many leaves in Huffman tree"); */ 
+127: /* MUTANT (del_stmt) */ /*     leaves[max_len]++; */ 
+127: /* MUTANT (rep_op) */    leaves[max_len]--;
+130: /* MUTANT (del_stmt) */ /*     base = 0; */ 
+130: /* MUTANT (rep_const) */    base = 1;
+130: /* MUTANT (rep_const) */    base = -1;
+131: /* MUTANT (rep_op) */    for (len = 1; len < max_len; len++) {
+131: /* MUTANT (rep_op) */    for (len = 1; len > max_len; len++) {
+131: /* MUTANT (rep_op) */    for (len = 1; len >= max_len; len++) {
+131: /* MUTANT (rep_op) */    for (len = 1; len == max_len; len++) {
+131: /* MUTANT (rep_op) */    for (len = 1; len != max_len; len++) {
+131: /* MUTANT (rep_op) */    for (len = 1; len <= max_len; len--) {
+131: /* MUTANT (rep_const) */    for (len = 0; len <= max_len; len++) {
+131: /* MUTANT (rep_const) */    for (len = -1; len <= max_len; len++) {
+131: /* MUTANT (rep_const) */    for (len = ((1)+1); len <= max_len; len++) {
+133: /* MUTANT (del_stmt) */ /* 	lit_base[len] = base; */ 
+135: /* MUTANT (rep_op) */	for (n = leaves[len]; n <= 0; n--) {
+135: /* MUTANT (rep_op) */	for (n = leaves[len]; n < 0; n--) {
+135: /* MUTANT (rep_op) */	for (n = leaves[len]; n >= 0; n--) {
+135: /* MUTANT (rep_op) */	for (n = leaves[len]; n == 0; n--) {
+135: /* MUTANT (rep_op) */	for (n = leaves[len]; n != 0; n--) {
+135: /* MUTANT (rep_op) */	for (n = leaves[len]; n > 0; n++) {
+135: /* MUTANT (rep_const) */	for (n = leaves[len]; n > 1; n--) {
+135: /* MUTANT (rep_const) */	for (n = leaves[len]; n > -1; n--) {
+136: /* MUTANT (del_stmt) */ /* 	    literal[base++] = (uch)get_byte(); */ 
+136: /* MUTANT (rep_op) */	    literal[base--] = (uch)get_byte();
+139: /* MUTANT (rep_op) */    leaves[max_len]--; /* Now include the EOB code in the Huffman tree */
+147: /* MUTANT (del_stmt) */ /*     int nodes = 0; */  /* number of nodes (parents+leaves) at current bit length */
+147: /* MUTANT (rep_const) */    int nodes = 1; /* number of nodes (parents+leaves) at current bit length */
+147: /* MUTANT (rep_const) */    int nodes = -1; /* number of nodes (parents+leaves) at current bit length */
+148: /* MUTANT (del_stmt) */ /*     int len; */        /* current bit length */
+149: /* MUTANT (del_stmt) */ /*     uch *prefixp; */   /* pointer in prefix_len */
+151: /* MUTANT (rep_op) */    for (len = max_len; len <= 1; len--) {
+151: /* MUTANT (rep_op) */    for (len = max_len; len < 1; len--) {
+151: /* MUTANT (rep_op) */    for (len = max_len; len > 1; len--) {
+151: /* MUTANT (rep_op) */    for (len = max_len; len == 1; len--) {
+151: /* MUTANT (rep_op) */    for (len = max_len; len != 1; len--) {
+151: /* MUTANT (rep_op) */    for (len = max_len; len >= 1; len++) {
+151: /* MUTANT (rep_const) */    for (len = max_len; len >= 0; len--) {
+151: /* MUTANT (rep_const) */    for (len = max_len; len >= -1; len--) {
+151: /* MUTANT (rep_const) */    for (len = max_len; len >= ((1)+1); len--) {
+155: /* MUTANT (del_stmt) */ /* 	nodes >>= 1; */ 
+155: /* MUTANT (rep_const) */	nodes >>= 0;
+155: /* MUTANT (rep_const) */	nodes >>= -1;
+155: /* MUTANT (rep_const) */	nodes >>= ((1)+1);
+156: /* MUTANT (del_stmt) */ /* 	parents[len] = nodes; */ 
+160: /* MUTANT (del_stmt) */ /* 	lit_base[len] -= nodes; */ 
+160: /* MUTANT (rep_op) */	lit_base[len] += nodes;
+160: /* MUTANT (rep_op) */	lit_base[len] *= nodes;
+160: /* MUTANT (rep_op) */	lit_base[len] %= nodes;
+162: /* MUTANT (del_stmt) */ /* 	nodes += leaves[len]; */ 
+162: /* MUTANT (rep_op) */	nodes -= leaves[len];
+162: /* MUTANT (rep_op) */	nodes *= leaves[len];
+162: /* MUTANT (rep_op) */	nodes %= leaves[len];
+168: /* MUTANT (del_stmt) */ /*     prefixp = &prefix_len[1<<peek_bits]; */ 
+168: /* MUTANT (rep_const) */    prefixp = &prefix_len[0<<peek_bits];
+168: /* MUTANT (rep_const) */    prefixp = &prefix_len[-1<<peek_bits];
+168: /* MUTANT (rep_const) */    prefixp = &prefix_len[((1)+1)<<peek_bits];
+169: /* MUTANT (rep_op) */    for (len = 1; len < peek_bits; len++) {
+169: /* MUTANT (rep_op) */    for (len = 1; len > peek_bits; len++) {
+169: /* MUTANT (rep_op) */    for (len = 1; len >= peek_bits; len++) {
+169: /* MUTANT (rep_op) */    for (len = 1; len == peek_bits; len++) {
+169: /* MUTANT (rep_op) */    for (len = 1; len != peek_bits; len++) {
+169: /* MUTANT (rep_op) */    for (len = 1; len <= peek_bits; len--) {
+169: /* MUTANT (rep_const) */    for (len = 0; len <= peek_bits; len++) {
+169: /* MUTANT (rep_const) */    for (len = -1; len <= peek_bits; len++) {
+169: /* MUTANT (rep_const) */    for (len = ((1)+1); len <= peek_bits; len++) {
+170: /* MUTANT (del_stmt) */ /* 	int prefixes = leaves[len] << (peek_bits-len); */  /* may be 0 */
+171: /* MUTANT (del_stmt) */ /* 	while (prefixes--) *--prefixp = (uch)len; */ 
+171: /* MUTANT (rep_op) */	while (prefixes++) *--prefixp = (uch)len;
+171: /* MUTANT (negate) */	while(! (prefixes--)) *--prefixp = (uch)len;
+174: /* MUTANT (rep_op) */    while (prefixp <= prefix_len) *--prefixp = 0;
+174: /* MUTANT (rep_op) */    while (prefixp < prefix_len) *--prefixp = 0;
+174: /* MUTANT (rep_op) */    while (prefixp >= prefix_len) *--prefixp = 0;
+174: /* MUTANT (rep_op) */    while (prefixp == prefix_len) *--prefixp = 0;
+174: /* MUTANT (rep_op) */    while (prefixp != prefix_len) *--prefixp = 0;
+174: /* MUTANT (rep_const) */    while (prefixp > prefix_len) *--prefixp = 1;
+174: /* MUTANT (rep_const) */    while (prefixp > prefix_len) *--prefixp = -1;
+174: /* MUTANT (negate) */    while(! (prefixp > prefix_len)) *--prefixp = 0;
+188: /* MUTANT (del_stmt) */ /*     int len; */                 /* Bit length of current code */
+189: /* MUTANT (del_stmt) */ /*     unsigned eob; */            /* End Of Block code */
+190: /* MUTANT (del_stmt) */ /*     register unsigned peek; */  /* lookahead bits */
+191: /* MUTANT (del_stmt) */ /*     unsigned peek_mask; */      /* Mask for peek_bits bits */
+193: /* MUTANT (del_stmt) */ /*     ifd = in; */ 
+194: /* MUTANT (del_stmt) */ /*     ofd = out; */ 
+196: /* MUTANT (del_stmt) */ /*     read_tree(); */      /* Read the Huffman tree */
+197: /* MUTANT (del_stmt) */ /*     build_tree(); */     /* Build the prefix table */
+198: /* MUTANT (del_stmt) */ /*     clear_bitbuf(); */   /* Initialize bit input */
+199: /* MUTANT (del_stmt) */ /*     peek_mask = (1<<peek_bits)-1; */ 
+199: /* MUTANT (rep_const) */    peek_mask = (0<<peek_bits)-1;
+199: /* MUTANT (rep_const) */    peek_mask = (-1<<peek_bits)-1;
+199: /* MUTANT (rep_const) */    peek_mask = (((1)+1)<<peek_bits)-1;
+199: /* MUTANT (rep_const) */    peek_mask = (1<<peek_bits)0;
+199: /* MUTANT (rep_const) */    peek_mask = (1<<peek_bits)1;
+199: /* MUTANT (rep_const) */    peek_mask = (1<<peek_bits)((-1)+1);
+199: /* MUTANT (rep_const) */    peek_mask = (1<<peek_bits)((-1)-1);
+202: /* MUTANT (del_stmt) */ /*     eob = leaves[max_len]-1; */ 
+202: /* MUTANT (rep_const) */    eob = leaves[max_len]0;
+202: /* MUTANT (rep_const) */    eob = leaves[max_len]1;
+202: /* MUTANT (rep_const) */    eob = leaves[max_len]((-1)+1);
+202: /* MUTANT (rep_const) */    eob = leaves[max_len]((-1)-1);
+203: /* MUTANT (del_stmt) */ /*     Trace((stderr, "eob %d %x\n", max_len, eob)); */ 
+211: /* MUTANT (del_stmt) */ /* 	look_bits(peek, peek_bits, peek_mask); */ 
+212: /* MUTANT (del_stmt) */ /* 	len = prefix_len[peek]; */ 
+213: /* MUTANT (rep_op) */	if (len <= 0) {
+213: /* MUTANT (rep_op) */	if (len < 0) {
+213: /* MUTANT (rep_op) */	if (len >= 0) {
+213: /* MUTANT (rep_op) */	if (len == 0) {
+213: /* MUTANT (rep_op) */	if (len != 0) {
+213: /* MUTANT (rep_const) */	if (len > 1) {
+213: /* MUTANT (rep_const) */	if (len > -1) {
+213: /* MUTANT (negate) */	if(! (len > 0)) {
+214: /* MUTANT (del_stmt) */ /* 	    peek >>= peek_bits - len; */  /* discard the extra bits */
+217: /* MUTANT (del_stmt) */ /* 	    ulg mask = peek_mask; */ 
+218: /* MUTANT (del_stmt) */ /* 	    len = peek_bits; */ 
+220: /* MUTANT (del_stmt) */ /*                 len++, mask = (mask<<1)+1; */ 
+220: /* MUTANT (rep_op) */                len--, mask = (mask<<1)+1;
+220: /* MUTANT (rep_op) */                len++, mask = (mask<<1)-1;
+220: /* MUTANT (rep_op) */                len++, mask = (mask<<1)*1;
+220: /* MUTANT (rep_op) */                len++, mask = (mask<<1)%1;
+220: /* MUTANT (rep_const) */                len++, mask = (mask<<0)+1;
+220: /* MUTANT (rep_const) */                len++, mask = (mask<<-1)+1;
+220: /* MUTANT (rep_const) */                len++, mask = (mask<<((1)+1))+1;
+220: /* MUTANT (rep_const) */                len++, mask = (mask<<1)+0;
+220: /* MUTANT (rep_const) */                len++, mask = (mask<<1)+-1;
+220: /* MUTANT (rep_const) */                len++, mask = (mask<<1)+((1)+1);
+221: /* MUTANT (del_stmt) */ /* 		look_bits(peek, len, mask); */ 
+222: /* MUTANT (del_stmt) */ /* 	    } while (peek < (unsigned)parents[len]); */ 
+222: /* MUTANT (rep_op) */	    } while (peek <= (unsigned)parents[len]);
+222: /* MUTANT (rep_op) */	    } while (peek > (unsigned)parents[len]);
+222: /* MUTANT (rep_op) */	    } while (peek >= (unsigned)parents[len]);
+222: /* MUTANT (rep_op) */	    } while (peek == (unsigned)parents[len]);
+222: /* MUTANT (rep_op) */	    } while (peek != (unsigned)parents[len]);
+222: /* MUTANT (negate) */	    } while(! (peek < (unsigned)parents[len]));
+226: /* MUTANT (rep_op) */	if (peek != eob && len == max_len) break; /* end of file? */
+226: /* MUTANT (rep_op) */	if (peek == eob || len == max_len) break; /* end of file? */
+226: /* MUTANT (rep_op) */	if (peek == eob && len != max_len) break; /* end of file? */
+226: /* MUTANT (negate) */	if(! (peek == eob && len == max_len)) break; /* end of file? */
+227: /* MUTANT (del_stmt) */ /* 	put_ubyte(literal[peek+lit_base[len]]); */ 
+227: /* MUTANT (rep_op) */	put_ubyte(literal[peek-lit_base[len]]);
+227: /* MUTANT (rep_op) */	put_ubyte(literal[peek*lit_base[len]]);
+227: /* MUTANT (rep_op) */	put_ubyte(literal[peek%lit_base[len]]);
+228: /* MUTANT (rep_const) */	Tracev((stderr,"%0d %04x %c\n", len, peek,
+228: /* MUTANT (rep_const) */	Tracev((stderr,"%1d %04x %c\n", len, peek,
+228: /* MUTANT (rep_const) */	Tracev((stderr,"%-1d %04x %c\n", len, peek,
+228: /* MUTANT (rep_const) */	Tracev((stderr,"%((02)+1)d %04x %c\n", len, peek,
+228: /* MUTANT (rep_const) */	Tracev((stderr,"%((02)-1)d %04x %c\n", len, peek,
+228: /* MUTANT (rep_const) */	Tracev((stderr,"%02d %0x %c\n", len, peek,
+228: /* MUTANT (rep_const) */	Tracev((stderr,"%02d %1x %c\n", len, peek,
+228: /* MUTANT (rep_const) */	Tracev((stderr,"%02d %-1x %c\n", len, peek,
+228: /* MUTANT (rep_const) */	Tracev((stderr,"%02d %((04)+1)x %c\n", len, peek,
+228: /* MUTANT (rep_const) */	Tracev((stderr,"%02d %((04)-1)x %c\n", len, peek,
+229: /* MUTANT (rep_op) */		literal[peek-lit_base[len]]));
+229: /* MUTANT (rep_op) */		literal[peek*lit_base[len]]));
+229: /* MUTANT (rep_op) */		literal[peek%lit_base[len]]));
+230: /* MUTANT (del_stmt) */ /* 	skip_bits(len); */ 
+234: /* MUTANT (del_stmt) */ /*     Trace((stderr, "bytes_out %ld\n", bytes_out)); */ 
+235: /* MUTANT (rep_op) */    if (orig_len == (ulg)bytes_out) {
+235: /* MUTANT (negate) */    if(! (orig_len != (ulg)bytes_out)) {
+236: /* MUTANT (del_stmt) */ /* 	error("invalid compressed data--length error"); */ 

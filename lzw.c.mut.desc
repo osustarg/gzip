@@ -1,0 +1,47 @@
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.0 1993/06/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.1 1993/06/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.-1 1993/06/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.((9)+1) 1993/06/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.((9)-1) 1993/06/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 0/06/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1/06/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 -1/06/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 ((1993)+1)/06/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 ((1993)-1)/06/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/0/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/1/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/-1/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/((06)+1)/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/((06)-1)/10 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/0 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/1 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/-1 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/((10)+1) 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/((10)-1) 13:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 0:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 1:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 -1:27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 ((13)+1):27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 ((13)-1):27:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 13:0:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 13:1:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 13:-1:31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 13:((27)+1):31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 13:((27)-1):31 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 13:27:0 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 13:27:1 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 13:27:-1 jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 13:27:((31)+1) jloup Exp $";
+6: /* MUTANT (rep_const) */static char rcsid[] = "$Id: lzw.c,v 0.9 1993/06/10 13:27:((31)-1) jloup Exp $";
+13: /* MUTANT (rep_const) */static int msg_done = 1;
+13: /* MUTANT (rep_const) */static int msg_done = -1;
+19: /* MUTANT (del_stmt) */ /*     if (msg_done) return ERROR; */ 
+19: /* MUTANT (negate) */    if(! (msg_done)) return ERROR;
+20: /* MUTANT (del_stmt) */ /*     msg_done = 1; */ 
+20: /* MUTANT (rep_const) */    msg_done = 0;
+20: /* MUTANT (rep_const) */    msg_done = -1;
+20: /* MUTANT (rep_const) */    msg_done = ((1)+1);
+21: /* MUTANT (del_stmt) */ /*     fprintf(stderr,"output in compress .Z format not supported\n"); */ 
+22: /* MUTANT (rep_op) */    if (in == out) { /* avoid warnings on unused variables */
+22: /* MUTANT (negate) */    if(! (in != out)) { /* avoid warnings on unused variables */
+23: /* MUTANT (del_stmt) */ /*         exit_code = ERROR; */ 

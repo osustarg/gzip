@@ -1,0 +1,2084 @@
+13: /* MUTANT (rep_const) */"   Copyright (C) 0-1993 Jean-loup Gailly",
+13: /* MUTANT (rep_const) */"   Copyright (C) 1-1993 Jean-loup Gailly",
+13: /* MUTANT (rep_const) */"   Copyright (C) -1-1993 Jean-loup Gailly",
+13: /* MUTANT (rep_const) */"   Copyright (C) ((1992)+1)-1993 Jean-loup Gailly",
+13: /* MUTANT (rep_const) */"   Copyright (C) ((1992)-1)-1993 Jean-loup Gailly",
+13: /* MUTANT (rep_const) */"   Copyright (C) 19920 Jean-loup Gailly",
+13: /* MUTANT (rep_const) */"   Copyright (C) 19921 Jean-loup Gailly",
+13: /* MUTANT (rep_const) */"   Copyright (C) 1992-1 Jean-loup Gailly",
+13: /* MUTANT (rep_const) */"   Copyright (C) 1992((-1993)+1) Jean-loup Gailly",
+13: /* MUTANT (rep_const) */"   Copyright (C) 1992((-1993)-1) Jean-loup Gailly",
+16: /* MUTANT (rep_const) */"   the Free Software Foundation; either version 0, or (at your option)",
+16: /* MUTANT (rep_const) */"   the Free Software Foundation; either version 1, or (at your option)",
+16: /* MUTANT (rep_const) */"   the Free Software Foundation; either version -1, or (at your option)",
+16: /* MUTANT (rep_const) */"   the Free Software Foundation; either version ((2)+1), or (at your option)",
+16: /* MUTANT (rep_const) */"   the Free Software Foundation; either version ((2)-1), or (at your option)",
+26: /* MUTANT (rep_const) */"   Foundation, Inc., 0 Mass Ave, Cambridge, MA 02139, USA.",
+26: /* MUTANT (rep_const) */"   Foundation, Inc., 1 Mass Ave, Cambridge, MA 02139, USA.",
+26: /* MUTANT (rep_const) */"   Foundation, Inc., -1 Mass Ave, Cambridge, MA 02139, USA.",
+26: /* MUTANT (rep_const) */"   Foundation, Inc., ((675)+1) Mass Ave, Cambridge, MA 02139, USA.",
+26: /* MUTANT (rep_const) */"   Foundation, Inc., ((675)-1) Mass Ave, Cambridge, MA 02139, USA.",
+26: /* MUTANT (rep_const) */"   Foundation, Inc., 675 Mass Ave, Cambridge, MA 0, USA.",
+26: /* MUTANT (rep_const) */"   Foundation, Inc., 675 Mass Ave, Cambridge, MA 1, USA.",
+26: /* MUTANT (rep_const) */"   Foundation, Inc., 675 Mass Ave, Cambridge, MA -1, USA.",
+26: /* MUTANT (rep_const) */"   Foundation, Inc., 675 Mass Ave, Cambridge, MA ((02139)+1), USA.",
+26: /* MUTANT (rep_const) */"   Foundation, Inc., 675 Mass Ave, Cambridge, MA ((02139)-1), USA.",
+27: /* MUTANT (rep_const) */1};
+27: /* MUTANT (rep_const) */-1};
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.0 1993/06/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.1 1993/06/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.-1 1993/06/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.((24)+1) 1993/06/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.((24)-1) 1993/06/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 0/06/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1/06/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 -1/06/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 ((1993)+1)/06/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 ((1993)-1)/06/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/0/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/1/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/-1/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/((06)+1)/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/((06)-1)/24 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/0 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/1 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/-1 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/((24)+1) 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/((24)-1) 10:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 0:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 1:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 -1:52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 ((10)+1):52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 ((10)-1):52:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 10:0:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 10:1:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 10:-1:07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 10:((52)+1):07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 10:((52)-1):07 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 10:52:0 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 10:52:1 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 10:52:-1 jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 10:52:((07)+1) jloup Exp $";
+48: /* MUTANT (rep_const) */static char rcsid[] = "$Id: gzip.c,v 0.24 1993/06/24 10:52:((07)-1) jloup Exp $";
+124: /* MUTANT (del_stmt) */ /*          time_t actime; */ 
+125: /* MUTANT (del_stmt) */ /*          time_t modtime; */ 
+126: /* MUTANT (del_stmt) */ /*        }; */ 
+144: #  define  O_BINARY  1   /* MUTANT (rep_const) *//* creation mode for open() */
+144: #  define  O_BINARY  -1   /* MUTANT (rep_const) *//* creation mode for open() */
+159: #  define S_IRUSR 0 /* MUTANT (rep_const) */
+159: #  define S_IRUSR 1 /* MUTANT (rep_const) */
+159: #  define S_IRUSR -1 /* MUTANT (rep_const) */
+159: #  define S_IRUSR ((0400)+1) /* MUTANT (rep_const) */
+159: #  define S_IRUSR ((0400)-1) /* MUTANT (rep_const) */
+162: #  define S_IWUSR 0 /* MUTANT (rep_const) */
+162: #  define S_IWUSR 1 /* MUTANT (rep_const) */
+162: #  define S_IWUSR -1 /* MUTANT (rep_const) */
+162: #  define S_IWUSR ((0200)+1) /* MUTANT (rep_const) */
+162: #  define S_IWUSR ((0200)-1) /* MUTANT (rep_const) */
+167: #  define MAX_PATH_LEN   0  /* MUTANT (rep_const) *//* max pathname length */
+167: #  define MAX_PATH_LEN   1  /* MUTANT (rep_const) *//* max pathname length */
+167: #  define MAX_PATH_LEN   -1  /* MUTANT (rep_const) *//* max pathname length */
+167: #  define MAX_PATH_LEN   ((1024)+1)  /* MUTANT (rep_const) *//* max pathname length */
+167: #  define MAX_PATH_LEN   ((1024)-1)  /* MUTANT (rep_const) *//* max pathname length */
+171: #  define SEEK_END 0 /* MUTANT (rep_const) */
+171: #  define SEEK_END 1 /* MUTANT (rep_const) */
+171: #  define SEEK_END -1 /* MUTANT (rep_const) */
+171: #  define SEEK_END ((2)+1) /* MUTANT (rep_const) */
+171: #  define SEEK_END ((2)-1) /* MUTANT (rep_const) */
+176: /* MUTANT (del_stmt) */ /*   off_t lseek OF((int fd, off_t offset, int whence)); */ 
+188: /* MUTANT (rep_op) */DECLARE(uch, inbuf,  INBUFSIZ -INBUF_EXTRA);
+188: /* MUTANT (rep_op) */DECLARE(uch, inbuf,  INBUFSIZ *INBUF_EXTRA);
+188: /* MUTANT (rep_op) */DECLARE(uch, inbuf,  INBUFSIZ %INBUF_EXTRA);
+189: /* MUTANT (del_stmt) */ /* DECLARE(uch, outbuf, OUTBUFSIZ+OUTBUF_EXTRA); */ 
+189: /* MUTANT (rep_op) */DECLARE(uch, outbuf, OUTBUFSIZ-OUTBUF_EXTRA);
+189: /* MUTANT (rep_op) */DECLARE(uch, outbuf, OUTBUFSIZ*OUTBUF_EXTRA);
+189: /* MUTANT (rep_op) */DECLARE(uch, outbuf, OUTBUFSIZ%OUTBUF_EXTRA);
+190: /* MUTANT (del_stmt) */ /* DECLARE(ush, d_buf,  DIST_BUFSIZE); */ 
+191: /* MUTANT (del_stmt) */ /* DECLARE(uch, window, 2L*WSIZE); */ 
+191: /* MUTANT (rep_const) */DECLARE(uch, window, 0L*WSIZE);
+191: /* MUTANT (rep_const) */DECLARE(uch, window, 1L*WSIZE);
+191: /* MUTANT (rep_const) */DECLARE(uch, window, -1L*WSIZE);
+191: /* MUTANT (rep_const) */DECLARE(uch, window, ((2)+1)L*WSIZE);
+191: /* MUTANT (rep_const) */DECLARE(uch, window, ((2)-1)L*WSIZE);
+193: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix, 0L<<BITS);
+193: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix, -1L<<BITS);
+193: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix, ((1)+1)L<<BITS);
+195: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix0, 0L<<(BITS-1));
+195: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix0, -1L<<(BITS-1));
+195: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix0, ((1)+1)L<<(BITS-1));
+195: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix0, 1L<<(BITS-0));
+195: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix0, 1L<<(BITS--1));
+195: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix0, 1L<<(BITS-((1)+1)));
+196: /* MUTANT (del_stmt) */ /*     DECLARE(ush, tab_prefix1, 1L<<(BITS-1)); */ 
+196: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix1, 0L<<(BITS-1));
+196: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix1, -1L<<(BITS-1));
+196: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix1, ((1)+1)L<<(BITS-1));
+196: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix1, 1L<<(BITS-0));
+196: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix1, 1L<<(BITS--1));
+196: /* MUTANT (rep_const) */    DECLARE(ush, tab_prefix1, 1L<<(BITS-((1)+1)));
+201: /* MUTANT (rep_const) */int ascii = 1;        /* convert end-of-lines to local OS conventions */
+201: /* MUTANT (rep_const) */int ascii = -1;        /* convert end-of-lines to local OS conventions */
+202: /* MUTANT (del_stmt) */ /* int to_stdout = 0; */     /* output to stdout (-c) */
+202: /* MUTANT (rep_const) */int to_stdout = 1;    /* output to stdout (-c) */
+202: /* MUTANT (rep_const) */int to_stdout = -1;    /* output to stdout (-c) */
+203: /* MUTANT (del_stmt) */ /* int decompress = 0; */    /* decompress (-d) */
+203: /* MUTANT (rep_const) */int decompress = 1;   /* decompress (-d) */
+203: /* MUTANT (rep_const) */int decompress = -1;   /* decompress (-d) */
+204: /* MUTANT (del_stmt) */ /* int force = 0; */         /* don't ask questions, compress links (-f) */
+204: /* MUTANT (rep_const) */int force = 1;        /* don't ask questions, compress links (-f) */
+204: /* MUTANT (rep_const) */int force = -1;        /* don't ask questions, compress links (-f) */
+205: /* MUTANT (del_stmt) */ /* int no_name = -1; */      /* don't save or restore the original file name */
+205: /* MUTANT (rep_const) */int no_name = 0;     /* don't save or restore the original file name */
+205: /* MUTANT (rep_const) */int no_name = 1;     /* don't save or restore the original file name */
+205: /* MUTANT (rep_const) */int no_name = ((-1)+1);     /* don't save or restore the original file name */
+205: /* MUTANT (rep_const) */int no_name = ((-1)-1);     /* don't save or restore the original file name */
+206: /* MUTANT (del_stmt) */ /* int no_time = -1; */      /* don't save or restore the original file time */
+206: /* MUTANT (rep_const) */int no_time = 0;     /* don't save or restore the original file time */
+206: /* MUTANT (rep_const) */int no_time = 1;     /* don't save or restore the original file time */
+206: /* MUTANT (rep_const) */int no_time = ((-1)+1);     /* don't save or restore the original file time */
+206: /* MUTANT (rep_const) */int no_time = ((-1)-1);     /* don't save or restore the original file time */
+207: /* MUTANT (del_stmt) */ /* int recursive = 0; */     /* recurse through directories (-r) */
+207: /* MUTANT (rep_const) */int recursive = 1;    /* recurse through directories (-r) */
+207: /* MUTANT (rep_const) */int recursive = -1;    /* recurse through directories (-r) */
+208: /* MUTANT (del_stmt) */ /* int list = 0; */          /* list the file contents (-l) */
+208: /* MUTANT (rep_const) */int list = 1;         /* list the file contents (-l) */
+208: /* MUTANT (rep_const) */int list = -1;         /* list the file contents (-l) */
+209: /* MUTANT (del_stmt) */ /* int verbose = 0; */       /* be verbose (-v) */
+209: /* MUTANT (rep_const) */int verbose = 1;      /* be verbose (-v) */
+209: /* MUTANT (rep_const) */int verbose = -1;      /* be verbose (-v) */
+210: /* MUTANT (del_stmt) */ /* int quiet = 0; */         /* be very quiet (-q) */
+210: /* MUTANT (rep_const) */int quiet = 1;        /* be very quiet (-q) */
+210: /* MUTANT (rep_const) */int quiet = -1;        /* be very quiet (-q) */
+211: /* MUTANT (del_stmt) */ /* int do_lzw = 0; */        /* generate output compatible with old compress (-Z) */
+211: /* MUTANT (rep_const) */int do_lzw = 1;       /* generate output compatible with old compress (-Z) */
+211: /* MUTANT (rep_const) */int do_lzw = -1;       /* generate output compatible with old compress (-Z) */
+212: /* MUTANT (del_stmt) */ /* int test = 0; */          /* test .gz file integrity */
+212: /* MUTANT (rep_const) */int test = 1;         /* test .gz file integrity */
+212: /* MUTANT (rep_const) */int test = -1;         /* test .gz file integrity */
+213: /* MUTANT (del_stmt) */ /* int foreground; */        /* set if program run in foreground */
+214: /* MUTANT (del_stmt) */ /* char *progname; */        /* program name */
+215: /* MUTANT (del_stmt) */ /* int maxbits = BITS; */    /* max bits per code for LZW */
+216: /* MUTANT (del_stmt) */ /* int method = DEFLATED; */ /* compression method */
+217: /* MUTANT (del_stmt) */ /* int level = 6; */         /* compression level */
+217: /* MUTANT (rep_const) */int level = 0;        /* compression level */
+217: /* MUTANT (rep_const) */int level = 1;        /* compression level */
+217: /* MUTANT (rep_const) */int level = -1;        /* compression level */
+217: /* MUTANT (rep_const) */int level = ((6)+1);        /* compression level */
+217: /* MUTANT (rep_const) */int level = ((6)-1);        /* compression level */
+218: /* MUTANT (del_stmt) */ /* int exit_code = OK; */    /* program exit code */
+219: /* MUTANT (del_stmt) */ /* int save_orig_name; */    /* set if original name must be saved */
+220: /* MUTANT (del_stmt) */ /* int last_member; */       /* set for .zip and .Z files */
+221: /* MUTANT (del_stmt) */ /* int part_nb; */           /* number of parts in .gz file */
+222: /* MUTANT (del_stmt) */ /* long time_stamp; */       /* original time stamp (modification time) */
+223: /* MUTANT (del_stmt) */ /* long ifile_size; */       /* input file size, -1 for devices (debug only) */
+224: /* MUTANT (del_stmt) */ /* char *env; */             /* contents of GZIP env variable */
+225: /* MUTANT (del_stmt) */ /* char **args = NULL; */    /* argv pointer if GZIP env variable defined */
+226: /* MUTANT (del_stmt) */ /* char z_suffix[MAX_SUFFIX+1]; */  /* default suffix (can be set with --suffix) */
+226: /* MUTANT (rep_op) */char z_suffix[MAX_SUFFIX-1]; /* default suffix (can be set with --suffix) */
+226: /* MUTANT (rep_op) */char z_suffix[MAX_SUFFIX*1]; /* default suffix (can be set with --suffix) */
+226: /* MUTANT (rep_op) */char z_suffix[MAX_SUFFIX%1]; /* default suffix (can be set with --suffix) */
+226: /* MUTANT (rep_const) */char z_suffix[MAX_SUFFIX+0]; /* default suffix (can be set with --suffix) */
+226: /* MUTANT (rep_const) */char z_suffix[MAX_SUFFIX+-1]; /* default suffix (can be set with --suffix) */
+226: /* MUTANT (rep_const) */char z_suffix[MAX_SUFFIX+((1)+1)]; /* default suffix (can be set with --suffix) */
+227: /* MUTANT (del_stmt) */ /* int  z_len; */            /* strlen(z_suffix) */
+229: /* MUTANT (del_stmt) */ /* long bytes_in; */              /* number of input bytes */
+230: /* MUTANT (del_stmt) */ /* long bytes_out; */             /* number of output bytes */
+231: /* MUTANT (del_stmt) */ /* long total_in = 0; */          /* input bytes for all files */
+231: /* MUTANT (rep_const) */long total_in = 1;         /* input bytes for all files */
+231: /* MUTANT (rep_const) */long total_in = -1;         /* input bytes for all files */
+232: /* MUTANT (del_stmt) */ /* long total_out = 0; */         /* output bytes for all files */
+232: /* MUTANT (rep_const) */long total_out = 1;        /* output bytes for all files */
+232: /* MUTANT (rep_const) */long total_out = -1;        /* output bytes for all files */
+233: /* MUTANT (del_stmt) */ /* char ifname[MAX_PATH_LEN]; */  /* input file name */
+234: /* MUTANT (del_stmt) */ /* char ofname[MAX_PATH_LEN]; */  /* output file name */
+235: /* MUTANT (del_stmt) */ /* int  remove_ofname = 0; */ 	   /* remove output file on error */
+235: /* MUTANT (rep_const) */int  remove_ofname = 1;	   /* remove output file on error */
+235: /* MUTANT (rep_const) */int  remove_ofname = -1;	   /* remove output file on error */
+236: /* MUTANT (del_stmt) */ /* struct stat istat; */          /* status for input file */
+237: /* MUTANT (del_stmt) */ /* int  ifd; */                   /* input file descriptor */
+238: /* MUTANT (del_stmt) */ /* int  ofd; */                   /* output file descriptor */
+239: /* MUTANT (del_stmt) */ /* unsigned insize; */            /* valid bytes in inbuf */
+240: /* MUTANT (del_stmt) */ /* unsigned inptr; */             /* index of next byte to be processed in inbuf */
+241: /* MUTANT (del_stmt) */ /* unsigned outcnt; */            /* bytes in output buffer */
+246: /* MUTANT (rep_const) */    {"ascii",      1, 0, 'a'}, /* ascii text mode */
+246: /* MUTANT (rep_const) */    {"ascii",      -1, 0, 'a'}, /* ascii text mode */
+246: /* MUTANT (rep_const) */    {"ascii",      0, 1, 'a'}, /* ascii text mode */
+246: /* MUTANT (rep_const) */    {"ascii",      0, -1, 'a'}, /* ascii text mode */
+247: /* MUTANT (rep_const) */    {"to-stdout",  1, 0, 'c'}, /* write output on standard output */
+247: /* MUTANT (rep_const) */    {"to-stdout",  -1, 0, 'c'}, /* write output on standard output */
+247: /* MUTANT (rep_const) */    {"to-stdout",  0, 1, 'c'}, /* write output on standard output */
+247: /* MUTANT (rep_const) */    {"to-stdout",  0, -1, 'c'}, /* write output on standard output */
+248: /* MUTANT (rep_const) */    {"stdout",     1, 0, 'c'}, /* write output on standard output */
+248: /* MUTANT (rep_const) */    {"stdout",     -1, 0, 'c'}, /* write output on standard output */
+248: /* MUTANT (rep_const) */    {"stdout",     0, 1, 'c'}, /* write output on standard output */
+248: /* MUTANT (rep_const) */    {"stdout",     0, -1, 'c'}, /* write output on standard output */
+249: /* MUTANT (rep_const) */    {"decompress", 1, 0, 'd'}, /* decompress */
+249: /* MUTANT (rep_const) */    {"decompress", -1, 0, 'd'}, /* decompress */
+249: /* MUTANT (rep_const) */    {"decompress", 0, 1, 'd'}, /* decompress */
+249: /* MUTANT (rep_const) */    {"decompress", 0, -1, 'd'}, /* decompress */
+250: /* MUTANT (rep_const) */    {"uncompress", 1, 0, 'd'}, /* decompress */
+250: /* MUTANT (rep_const) */    {"uncompress", -1, 0, 'd'}, /* decompress */
+250: /* MUTANT (rep_const) */    {"uncompress", 0, 1, 'd'}, /* decompress */
+250: /* MUTANT (rep_const) */    {"uncompress", 0, -1, 'd'}, /* decompress */
+252: /* MUTANT (rep_const) */    {"force",      1, 0, 'f'}, /* force overwrite of output file */
+252: /* MUTANT (rep_const) */    {"force",      -1, 0, 'f'}, /* force overwrite of output file */
+252: /* MUTANT (rep_const) */    {"force",      0, 1, 'f'}, /* force overwrite of output file */
+252: /* MUTANT (rep_const) */    {"force",      0, -1, 'f'}, /* force overwrite of output file */
+253: /* MUTANT (rep_const) */    {"help",       1, 0, 'h'}, /* give help */
+253: /* MUTANT (rep_const) */    {"help",       -1, 0, 'h'}, /* give help */
+253: /* MUTANT (rep_const) */    {"help",       0, 1, 'h'}, /* give help */
+253: /* MUTANT (rep_const) */    {"help",       0, -1, 'h'}, /* give help */
+255: /* MUTANT (rep_const) */    {"list",       1, 0, 'l'}, /* list .gz file contents */
+255: /* MUTANT (rep_const) */    {"list",       -1, 0, 'l'}, /* list .gz file contents */
+255: /* MUTANT (rep_const) */    {"list",       0, 1, 'l'}, /* list .gz file contents */
+255: /* MUTANT (rep_const) */    {"list",       0, -1, 'l'}, /* list .gz file contents */
+256: /* MUTANT (rep_const) */    {"license",    1, 0, 'L'}, /* display software license */
+256: /* MUTANT (rep_const) */    {"license",    -1, 0, 'L'}, /* display software license */
+256: /* MUTANT (rep_const) */    {"license",    0, 1, 'L'}, /* display software license */
+256: /* MUTANT (rep_const) */    {"license",    0, -1, 'L'}, /* display software license */
+257: /* MUTANT (rep_const) */    {"no-name",    1, 0, 'n'}, /* don't save or restore original name & time */
+257: /* MUTANT (rep_const) */    {"no-name",    -1, 0, 'n'}, /* don't save or restore original name & time */
+257: /* MUTANT (rep_const) */    {"no-name",    0, 1, 'n'}, /* don't save or restore original name & time */
+257: /* MUTANT (rep_const) */    {"no-name",    0, -1, 'n'}, /* don't save or restore original name & time */
+258: /* MUTANT (rep_const) */    {"name",       1, 0, 'N'}, /* save or restore original name & time */
+258: /* MUTANT (rep_const) */    {"name",       -1, 0, 'N'}, /* save or restore original name & time */
+258: /* MUTANT (rep_const) */    {"name",       0, 1, 'N'}, /* save or restore original name & time */
+258: /* MUTANT (rep_const) */    {"name",       0, -1, 'N'}, /* save or restore original name & time */
+259: /* MUTANT (rep_const) */    {"quiet",      1, 0, 'q'}, /* quiet mode */
+259: /* MUTANT (rep_const) */    {"quiet",      -1, 0, 'q'}, /* quiet mode */
+259: /* MUTANT (rep_const) */    {"quiet",      0, 1, 'q'}, /* quiet mode */
+259: /* MUTANT (rep_const) */    {"quiet",      0, -1, 'q'}, /* quiet mode */
+260: /* MUTANT (rep_const) */    {"silent",     1, 0, 'q'}, /* quiet mode */
+260: /* MUTANT (rep_const) */    {"silent",     -1, 0, 'q'}, /* quiet mode */
+260: /* MUTANT (rep_const) */    {"silent",     0, 1, 'q'}, /* quiet mode */
+260: /* MUTANT (rep_const) */    {"silent",     0, -1, 'q'}, /* quiet mode */
+261: /* MUTANT (rep_const) */    {"recursive",  1, 0, 'r'}, /* recurse through directories */
+261: /* MUTANT (rep_const) */    {"recursive",  -1, 0, 'r'}, /* recurse through directories */
+261: /* MUTANT (rep_const) */    {"recursive",  0, 1, 'r'}, /* recurse through directories */
+261: /* MUTANT (rep_const) */    {"recursive",  0, -1, 'r'}, /* recurse through directories */
+262: /* MUTANT (rep_const) */    {"suffix",     0, 0, 'S'}, /* use given suffix instead of .gz */
+262: /* MUTANT (rep_const) */    {"suffix",     -1, 0, 'S'}, /* use given suffix instead of .gz */
+262: /* MUTANT (rep_const) */    {"suffix",     ((1)+1), 0, 'S'}, /* use given suffix instead of .gz */
+262: /* MUTANT (rep_const) */    {"suffix",     1, 1, 'S'}, /* use given suffix instead of .gz */
+262: /* MUTANT (rep_const) */    {"suffix",     1, -1, 'S'}, /* use given suffix instead of .gz */
+263: /* MUTANT (rep_const) */    {"test",       1, 0, 't'}, /* test compressed file integrity */
+263: /* MUTANT (rep_const) */    {"test",       -1, 0, 't'}, /* test compressed file integrity */
+263: /* MUTANT (rep_const) */    {"test",       0, 1, 't'}, /* test compressed file integrity */
+263: /* MUTANT (rep_const) */    {"test",       0, -1, 't'}, /* test compressed file integrity */
+264: /* MUTANT (rep_const) */    {"no-time",    1, 0, 'T'}, /* don't save or restore the time stamp */
+264: /* MUTANT (rep_const) */    {"no-time",    -1, 0, 'T'}, /* don't save or restore the time stamp */
+264: /* MUTANT (rep_const) */    {"no-time",    0, 1, 'T'}, /* don't save or restore the time stamp */
+264: /* MUTANT (rep_const) */    {"no-time",    0, -1, 'T'}, /* don't save or restore the time stamp */
+265: /* MUTANT (rep_const) */    {"verbose",    1, 0, 'v'}, /* verbose mode */
+265: /* MUTANT (rep_const) */    {"verbose",    -1, 0, 'v'}, /* verbose mode */
+265: /* MUTANT (rep_const) */    {"verbose",    0, 1, 'v'}, /* verbose mode */
+265: /* MUTANT (rep_const) */    {"verbose",    0, -1, 'v'}, /* verbose mode */
+266: /* MUTANT (rep_const) */    {"version",    1, 0, 'V'}, /* display version number */
+266: /* MUTANT (rep_const) */    {"version",    -1, 0, 'V'}, /* display version number */
+266: /* MUTANT (rep_const) */    {"version",    0, 1, 'V'}, /* display version number */
+266: /* MUTANT (rep_const) */    {"version",    0, -1, 'V'}, /* display version number */
+267: /* MUTANT (rep_const) */    {"fast",       1, 0, '1'}, /* compress faster */
+267: /* MUTANT (rep_const) */    {"fast",       -1, 0, '1'}, /* compress faster */
+267: /* MUTANT (rep_const) */    {"fast",       0, 1, '1'}, /* compress faster */
+267: /* MUTANT (rep_const) */    {"fast",       0, -1, '1'}, /* compress faster */
+267: /* MUTANT (rep_const) */    {"fast",       0, 0, '0'}, /* compress faster */
+267: /* MUTANT (rep_const) */    {"fast",       0, 0, '-1'}, /* compress faster */
+267: /* MUTANT (rep_const) */    {"fast",       0, 0, '((1)+1)'}, /* compress faster */
+268: /* MUTANT (rep_const) */    {"best",       1, 0, '9'}, /* compress better */
+268: /* MUTANT (rep_const) */    {"best",       -1, 0, '9'}, /* compress better */
+268: /* MUTANT (rep_const) */    {"best",       0, 1, '9'}, /* compress better */
+268: /* MUTANT (rep_const) */    {"best",       0, -1, '9'}, /* compress better */
+268: /* MUTANT (rep_const) */    {"best",       0, 0, '0'}, /* compress better */
+268: /* MUTANT (rep_const) */    {"best",       0, 0, '1'}, /* compress better */
+268: /* MUTANT (rep_const) */    {"best",       0, 0, '-1'}, /* compress better */
+268: /* MUTANT (rep_const) */    {"best",       0, 0, '((9)+1)'}, /* compress better */
+268: /* MUTANT (rep_const) */    {"best",       0, 0, '((9)-1)'}, /* compress better */
+269: /* MUTANT (rep_const) */    {"lzw",        1, 0, 'Z'}, /* make output compatible with old compress */
+269: /* MUTANT (rep_const) */    {"lzw",        -1, 0, 'Z'}, /* make output compatible with old compress */
+269: /* MUTANT (rep_const) */    {"lzw",        0, 1, 'Z'}, /* make output compatible with old compress */
+269: /* MUTANT (rep_const) */    {"lzw",        0, -1, 'Z'}, /* make output compatible with old compress */
+270: /* MUTANT (rep_const) */    {"bits",       0, 0, 'b'}, /* max number of bits per code (implies -Z) */
+270: /* MUTANT (rep_const) */    {"bits",       -1, 0, 'b'}, /* max number of bits per code (implies -Z) */
+270: /* MUTANT (rep_const) */    {"bits",       ((1)+1), 0, 'b'}, /* max number of bits per code (implies -Z) */
+270: /* MUTANT (rep_const) */    {"bits",       1, 1, 'b'}, /* max number of bits per code (implies -Z) */
+270: /* MUTANT (rep_const) */    {"bits",       1, -1, 'b'}, /* max number of bits per code (implies -Z) */
+271: /* MUTANT (rep_const) */    { 1, 0, 0, 0 }
+271: /* MUTANT (rep_const) */    { -1, 0, 0, 0 }
+271: /* MUTANT (rep_const) */    { 0, 1, 0, 0 }
+271: /* MUTANT (rep_const) */    { 0, -1, 0, 0 }
+271: /* MUTANT (rep_const) */    { 0, 0, 1, 0 }
+271: /* MUTANT (rep_const) */    { 0, 0, -1, 0 }
+271: /* MUTANT (rep_const) */    { 0, 0, 0, 1 }
+271: /* MUTANT (rep_const) */    { 0, 0, 0, -1 }
+276: /* MUTANT (del_stmt) */ /* local void usage        OF((void)); */ 
+277: /* MUTANT (del_stmt) */ /* local void help         OF((void)); */ 
+278: /* MUTANT (del_stmt) */ /* local void license      OF((void)); */ 
+279: /* MUTANT (del_stmt) */ /* local void version      OF((void)); */ 
+280: /* MUTANT (del_stmt) */ /* local void treat_stdin  OF((void)); */ 
+281: /* MUTANT (del_stmt) */ /* local void treat_file   OF((char *iname)); */ 
+282: /* MUTANT (del_stmt) */ /* local int create_outfile OF((void)); */ 
+283: /* MUTANT (del_stmt) */ /* local int  do_stat      OF((char *name, struct stat *sbuf)); */ 
+284: /* MUTANT (del_stmt) */ /* local char *get_suffix  OF((char *name)); */ 
+285: /* MUTANT (del_stmt) */ /* local int  get_istat    OF((char *iname, struct stat *sbuf)); */ 
+286: /* MUTANT (del_stmt) */ /* local int  make_ofname  OF((void)); */ 
+287: /* MUTANT (del_stmt) */ /* local int  same_file    OF((struct stat *stat1, struct stat *stat2)); */ 
+288: /* MUTANT (del_stmt) */ /* local int name_too_long OF((char *name, struct stat *statb)); */ 
+289: /* MUTANT (del_stmt) */ /* local void shorten_name  OF((char *name)); */ 
+290: /* MUTANT (del_stmt) */ /* local int  get_method   OF((int in)); */ 
+291: /* MUTANT (del_stmt) */ /* local void do_list      OF((int ifd, int method)); */ 
+292: /* MUTANT (del_stmt) */ /* local int  check_ofname OF((void)); */ 
+293: /* MUTANT (del_stmt) */ /* local void copy_stat    OF((struct stat *ifstat)); */ 
+294: /* MUTANT (del_stmt) */ /* local void do_exit      OF((int exitcode)); */ 
+295: /* MUTANT (del_stmt) */ /*       int main          OF((int argc, char **argv)); */ 
+296: /* MUTANT (del_stmt) */ /* int (*work) OF((int infile, int outfile)) = zip; */  /* function to call */
+305: #define strequ(s1, s2) (strcmp((s1),(s2)) == 1) /* MUTANT (rep_const) */
+305: #define strequ(s1, s2) (strcmp((s1),(s2)) == -1) /* MUTANT (rep_const) */
+354: /* MUTANT (rep_const) */ " 0 --fast        compress faster",
+354: /* MUTANT (rep_const) */ " 1 --fast        compress faster",
+354: /* MUTANT (rep_const) */ " ((-1)+1) --fast        compress faster",
+354: /* MUTANT (rep_const) */ " ((-1)-1) --fast        compress faster",
+355: /* MUTANT (rep_const) */ " 0 --best        compress better",
+355: /* MUTANT (rep_const) */ " 1 --best        compress better",
+355: /* MUTANT (rep_const) */ " -1 --best        compress better",
+355: /* MUTANT (rep_const) */ " ((-9)+1) --best        compress better",
+355: /* MUTANT (rep_const) */ " ((-9)-1) --best        compress better",
+361: /* MUTANT (rep_const) */  1};
+361: /* MUTANT (rep_const) */  -1};
+362: /* MUTANT (del_stmt) */ /*     char **p = help_msg; */ 
+364: /* MUTANT (del_stmt) */ /*     fprintf(stderr,"%s %s (%s)\n", progname, VERSION, REVDATE); */ 
+365: /* MUTANT (del_stmt) */ /*     usage(); */ 
+366: /* MUTANT (del_stmt) */ /*     while (*p) fprintf(stderr, "%s\n", *p++); */ 
+366: /* MUTANT (rep_op) */    while (*p) fprintf(stderr, "%s\n", *p--);
+366: /* MUTANT (negate) */    while(! (*p)) fprintf(stderr, "%s\n", *p++);
+372: /* MUTANT (del_stmt) */ /*     char **p = license_msg; */ 
+374: /* MUTANT (del_stmt) */ /*     fprintf(stderr,"%s %s (%s)\n", progname, VERSION, REVDATE); */ 
+375: /* MUTANT (del_stmt) */ /*     while (*p) fprintf(stderr, "%s\n", *p++); */ 
+375: /* MUTANT (rep_op) */    while (*p) fprintf(stderr, "%s\n", *p--);
+375: /* MUTANT (negate) */    while(! (*p)) fprintf(stderr, "%s\n", *p++);
+381: /* MUTANT (del_stmt) */ /*     fprintf(stderr,"%s %s (%s)\n", progname, VERSION, REVDATE); */ 
+383: /* MUTANT (del_stmt) */ /*     fprintf(stderr, "Compilation options:\n%s %s ", DIR_OPT, TIME_OPT); */ 
+426: /* MUTANT (del_stmt) */ /*     char **argv; */ 
+428: /* MUTANT (del_stmt) */ /*     int file_count; */      /* number of files to precess */
+429: /* MUTANT (del_stmt) */ /*     int proglen; */         /* length of progname */
+430: /* MUTANT (del_stmt) */ /*     int optc; */            /* current option */
+432: /* MUTANT (del_stmt) */ /*     EXPAND(argc, argv); */  /* wild card expansion if necessary */
+434: /* MUTANT (del_stmt) */ /*     progname = basename(argv[0]); */ 
+434: /* MUTANT (rep_const) */    progname = basename(argv[1]);
+434: /* MUTANT (rep_const) */    progname = basename(argv[-1]);
+435: /* MUTANT (del_stmt) */ /*     proglen = strlen(progname); */ 
+438: /* MUTANT (rep_op) */    if (proglen <= 4 && strequ(progname+proglen-4, ".exe")) {
+438: /* MUTANT (rep_op) */    if (proglen < 4 && strequ(progname+proglen-4, ".exe")) {
+438: /* MUTANT (rep_op) */    if (proglen >= 4 && strequ(progname+proglen-4, ".exe")) {
+438: /* MUTANT (rep_op) */    if (proglen == 4 && strequ(progname+proglen-4, ".exe")) {
+438: /* MUTANT (rep_op) */    if (proglen != 4 && strequ(progname+proglen-4, ".exe")) {
+438: /* MUTANT (rep_op) */    if (proglen > 4 || strequ(progname+proglen-4, ".exe")) {
+438: /* MUTANT (rep_op) */    if (proglen > 4 && strequ(progname-proglen-4, ".exe")) {
+438: /* MUTANT (rep_op) */    if (proglen > 4 && strequ(progname*proglen-4, ".exe")) {
+438: /* MUTANT (rep_op) */    if (proglen > 4 && strequ(progname%proglen-4, ".exe")) {
+438: /* MUTANT (rep_const) */    if (proglen > 0 && strequ(progname+proglen-4, ".exe")) {
+438: /* MUTANT (rep_const) */    if (proglen > 1 && strequ(progname+proglen-4, ".exe")) {
+438: /* MUTANT (rep_const) */    if (proglen > -1 && strequ(progname+proglen-4, ".exe")) {
+438: /* MUTANT (rep_const) */    if (proglen > ((4)+1) && strequ(progname+proglen-4, ".exe")) {
+438: /* MUTANT (rep_const) */    if (proglen > ((4)-1) && strequ(progname+proglen-4, ".exe")) {
+438: /* MUTANT (rep_const) */    if (proglen > 4 && strequ(progname+proglen-0, ".exe")) {
+438: /* MUTANT (rep_const) */    if (proglen > 4 && strequ(progname+proglen-1, ".exe")) {
+438: /* MUTANT (rep_const) */    if (proglen > 4 && strequ(progname+proglen--1, ".exe")) {
+438: /* MUTANT (rep_const) */    if (proglen > 4 && strequ(progname+proglen-((4)+1), ".exe")) {
+438: /* MUTANT (rep_const) */    if (proglen > 4 && strequ(progname+proglen-((4)-1), ".exe")) {
+438: /* MUTANT (negate) */    if(! (proglen > 4 && strequ(progname+proglen-4, ".exe"))) {
+439: /* MUTANT (del_stmt) */ /*         progname[proglen-4] = '\0'; */ 
+439: /* MUTANT (rep_const) */        progname[proglen-0] = '\0';
+439: /* MUTANT (rep_const) */        progname[proglen-1] = '\0';
+439: /* MUTANT (rep_const) */        progname[proglen--1] = '\0';
+439: /* MUTANT (rep_const) */        progname[proglen-((4)+1)] = '\0';
+439: /* MUTANT (rep_const) */        progname[proglen-((4)-1)] = '\0';
+439: /* MUTANT (rep_const) */        progname[proglen-4] = '\1';
+439: /* MUTANT (rep_const) */        progname[proglen-4] = '\-1';
+444: /* MUTANT (del_stmt) */ /*     if (env != NULL) args = argv; */ 
+444: /* MUTANT (rep_op) */    if (env == NULL) args = argv;
+444: /* MUTANT (negate) */    if(! (env != NULL)) args = argv;
+446: /* MUTANT (del_stmt) */ /*     foreground = signal(SIGINT, SIG_IGN) != SIG_IGN; */ 
+446: /* MUTANT (rep_op) */    foreground = signal(SIGINT, SIG_IGN) == SIG_IGN;
+447: /* MUTANT (negate) */    if(! (foreground)) {
+448: /* MUTANT (del_stmt) */ /* 	(void) signal (SIGINT, (sig_type)abort_gzip); */ 
+451: /* MUTANT (rep_op) */    if (signal(SIGTERM, SIG_IGN) == SIG_IGN) {
+451: /* MUTANT (negate) */    if(! (signal(SIGTERM, SIG_IGN) != SIG_IGN)) {
+452: /* MUTANT (del_stmt) */ /* 	(void) signal(SIGTERM, (sig_type)abort_gzip); */ 
+456: /* MUTANT (rep_op) */    if (signal(SIGHUP, SIG_IGN) == SIG_IGN) {
+456: /* MUTANT (negate) */    if(! (signal(SIGHUP, SIG_IGN) != SIG_IGN)) {
+457: /* MUTANT (del_stmt) */ /* 	(void) signal(SIGHUP,  (sig_type)abort_gzip); */ 
+469: /* MUTANT (rep_op) */    if (  strncmp(progname, "un",  2) != 0     /* ungzip, uncompress */
+469: /* MUTANT (rep_const) */    if (  strncmp(progname, "un",  0) == 0     /* ungzip, uncompress */
+469: /* MUTANT (rep_const) */    if (  strncmp(progname, "un",  1) == 0     /* ungzip, uncompress */
+469: /* MUTANT (rep_const) */    if (  strncmp(progname, "un",  -1) == 0     /* ungzip, uncompress */
+469: /* MUTANT (rep_const) */    if (  strncmp(progname, "un",  ((2)+1)) == 0     /* ungzip, uncompress */
+469: /* MUTANT (rep_const) */    if (  strncmp(progname, "un",  ((2)-1)) == 0     /* ungzip, uncompress */
+469: /* MUTANT (rep_const) */    if (  strncmp(progname, "un",  2) == 1     /* ungzip, uncompress */
+469: /* MUTANT (rep_const) */    if (  strncmp(progname, "un",  2) == -1     /* ungzip, uncompress */
+470: /* MUTANT (rep_op) */       && strncmp(progname, "gun", 3) == 0) {  /* gunzip */
+470: /* MUTANT (rep_op) */       || strncmp(progname, "gun", 3) != 0) {  /* gunzip */
+470: /* MUTANT (rep_const) */       || strncmp(progname, "gun", 0) == 0) {  /* gunzip */
+470: /* MUTANT (rep_const) */       || strncmp(progname, "gun", 1) == 0) {  /* gunzip */
+470: /* MUTANT (rep_const) */       || strncmp(progname, "gun", -1) == 0) {  /* gunzip */
+470: /* MUTANT (rep_const) */       || strncmp(progname, "gun", ((3)+1)) == 0) {  /* gunzip */
+470: /* MUTANT (rep_const) */       || strncmp(progname, "gun", ((3)-1)) == 0) {  /* gunzip */
+470: /* MUTANT (rep_const) */       || strncmp(progname, "gun", 3) == 1) {  /* gunzip */
+470: /* MUTANT (rep_const) */       || strncmp(progname, "gun", 3) == -1) {  /* gunzip */
+471: /* MUTANT (del_stmt) */ /* 	decompress = 1; */ 
+471: /* MUTANT (rep_const) */	decompress = 0;
+471: /* MUTANT (rep_const) */	decompress = -1;
+471: /* MUTANT (rep_const) */	decompress = ((1)+1);
+472: /* MUTANT (rep_op) */    } else if (strequ(progname-1, "cat")       /* zcat, pcat, gcat */
+472: /* MUTANT (rep_op) */    } else if (strequ(progname*1, "cat")       /* zcat, pcat, gcat */
+472: /* MUTANT (rep_op) */    } else if (strequ(progname%1, "cat")       /* zcat, pcat, gcat */
+472: /* MUTANT (rep_const) */    } else if (strequ(progname+0, "cat")       /* zcat, pcat, gcat */
+472: /* MUTANT (rep_const) */    } else if (strequ(progname+-1, "cat")       /* zcat, pcat, gcat */
+472: /* MUTANT (rep_const) */    } else if (strequ(progname+((1)+1), "cat")       /* zcat, pcat, gcat */
+473: /* MUTANT (rep_op) */	    && strequ(progname, "gzcat")) {    /* gzcat */
+474: /* MUTANT (del_stmt) */ /* 	decompress = to_stdout = 1; */ 
+474: /* MUTANT (rep_const) */	decompress = to_stdout = 0;
+474: /* MUTANT (rep_const) */	decompress = to_stdout = -1;
+474: /* MUTANT (rep_const) */	decompress = to_stdout = ((1)+1);
+478: /* MUTANT (rep_const) */    strncpy(z_suffix, Z_SUFFIX, sizeof(z_suffix)0);
+478: /* MUTANT (rep_const) */    strncpy(z_suffix, Z_SUFFIX, sizeof(z_suffix)1);
+478: /* MUTANT (rep_const) */    strncpy(z_suffix, Z_SUFFIX, sizeof(z_suffix)((-1)+1));
+478: /* MUTANT (rep_const) */    strncpy(z_suffix, Z_SUFFIX, sizeof(z_suffix)((-1)-1));
+479: /* MUTANT (del_stmt) */ /*     z_len = strlen(z_suffix); */ 
+482: /* MUTANT (rep_op) */				longopts, (int *)0)) == EOF) {
+482: /* MUTANT (rep_const) */				longopts, (int *)1)) != EOF) {
+482: /* MUTANT (rep_const) */				longopts, (int *)-1)) != EOF) {
+485: /* MUTANT (rep_const) */            ascii = 0; break;
+485: /* MUTANT (rep_const) */            ascii = -1; break;
+485: /* MUTANT (rep_const) */            ascii = ((1)+1); break;
+488: /* MUTANT (del_stmt) */ /* 	    break; */ 
+490: /* MUTANT (rep_const) */	    to_stdout = 0; break;
+490: /* MUTANT (rep_const) */	    to_stdout = -1; break;
+490: /* MUTANT (rep_const) */	    to_stdout = ((1)+1); break;
+492: /* MUTANT (rep_const) */	    decompress = 0; break;
+492: /* MUTANT (rep_const) */	    decompress = -1; break;
+492: /* MUTANT (rep_const) */	    decompress = ((1)+1); break;
+494: /* MUTANT (rep_op) */	    force--; break;
+498: /* MUTANT (rep_const) */	    list = decompress = to_stdout = 0; break;
+498: /* MUTANT (rep_const) */	    list = decompress = to_stdout = -1; break;
+498: /* MUTANT (rep_const) */	    list = decompress = to_stdout = ((1)+1); break;
+502: /* MUTANT (rep_const) */	    no_time = 0; break;
+502: /* MUTANT (rep_const) */	    no_time = -1; break;
+502: /* MUTANT (rep_const) */	    no_time = ((1)+1); break;
+504: /* MUTANT (rep_const) */	    no_time = 1; break;
+504: /* MUTANT (rep_const) */	    no_time = -1; break;
+506: /* MUTANT (rep_const) */	    no_name = no_time = 0; break;
+506: /* MUTANT (rep_const) */	    no_name = no_time = -1; break;
+506: /* MUTANT (rep_const) */	    no_name = no_time = ((1)+1); break;
+508: /* MUTANT (rep_const) */	    no_name = no_time = 1; break;
+508: /* MUTANT (rep_const) */	    no_name = no_time = -1; break;
+510: /* MUTANT (rep_const) */	    quiet = 0; verbose = 0; break;
+510: /* MUTANT (rep_const) */	    quiet = -1; verbose = 0; break;
+510: /* MUTANT (rep_const) */	    quiet = ((1)+1); verbose = 0; break;
+510: /* MUTANT (rep_const) */	    quiet = 1; verbose = 1; break;
+510: /* MUTANT (rep_const) */	    quiet = 1; verbose = -1; break;
+514: /* MUTANT (del_stmt) */ /* 	    usage(); */ 
+515: /* MUTANT (del_stmt) */ /* 	    do_exit(ERROR); */  break;
+515: /* MUTANT (del_stmt) */ /* 	    do_exit(ERROR); */  /*  break; */ 
+515: /* MUTANT (del_stmt) */	    do_exit(ERROR); /*  break; */ 
+517: /* MUTANT (rep_const) */	    recursive = 0; break;
+517: /* MUTANT (rep_const) */	    recursive = -1; break;
+517: /* MUTANT (rep_const) */	    recursive = ((1)+1); break;
+521: /* MUTANT (rep_op) */            if (*optarg != '.') optarg++;
+521: /* MUTANT (rep_op) */            if (*optarg == '.') optarg--;
+521: /* MUTANT (negate) */            if(! (*optarg == '.')) optarg++;
+524: /* MUTANT (del_stmt) */ /*             strcpy(z_suffix, optarg); */ 
+525: /* MUTANT (del_stmt) */ /*             break; */ 
+527: /* MUTANT (rep_const) */	    test = decompress = to_stdout = 0;
+527: /* MUTANT (rep_const) */	    test = decompress = to_stdout = -1;
+527: /* MUTANT (rep_const) */	    test = decompress = to_stdout = ((1)+1);
+528: /* MUTANT (del_stmt) */ /* 	    break; */ 
+530: /* MUTANT (rep_op) */	    verbose--; quiet = 0; break;
+530: /* MUTANT (rep_const) */	    verbose++; quiet = 1; break;
+530: /* MUTANT (rep_const) */	    verbose++; quiet = -1; break;
+535: /* MUTANT (rep_const) */	    do_lzw = 0; break;
+535: /* MUTANT (rep_const) */	    do_lzw = -1; break;
+535: /* MUTANT (rep_const) */	    do_lzw = ((1)+1); break;
+539: /* MUTANT (del_stmt) */ /* 	    usage(); */ 
+540: /* MUTANT (del_stmt) */ /* 	    do_exit(ERROR); */  break;
+540: /* MUTANT (del_stmt) */ /* 	    do_exit(ERROR); */  /*  break; */ 
+540: /* MUTANT (del_stmt) */	    do_exit(ERROR); /*  break; */ 
+542: /* MUTANT (rep_const) */	case '0':  case '2':  case '3':  case '4':
+542: /* MUTANT (rep_const) */	case '-1':  case '2':  case '3':  case '4':
+542: /* MUTANT (rep_const) */	case '((1)+1)':  case '2':  case '3':  case '4':
+542: /* MUTANT (rep_const) */	case '1':  case '0':  case '3':  case '4':
+542: /* MUTANT (rep_const) */	case '1':  case '1':  case '3':  case '4':
+542: /* MUTANT (rep_const) */	case '1':  case '-1':  case '3':  case '4':
+542: /* MUTANT (rep_const) */	case '1':  case '((2)+1)':  case '3':  case '4':
+542: /* MUTANT (rep_const) */	case '1':  case '((2)-1)':  case '3':  case '4':
+542: /* MUTANT (rep_const) */	case '1':  case '2':  case '0':  case '4':
+542: /* MUTANT (rep_const) */	case '1':  case '2':  case '1':  case '4':
+542: /* MUTANT (rep_const) */	case '1':  case '2':  case '-1':  case '4':
+542: /* MUTANT (rep_const) */	case '1':  case '2':  case '((3)+1)':  case '4':
+542: /* MUTANT (rep_const) */	case '1':  case '2':  case '((3)-1)':  case '4':
+542: /* MUTANT (rep_const) */	case '1':  case '2':  case '3':  case '0':
+542: /* MUTANT (rep_const) */	case '1':  case '2':  case '3':  case '1':
+542: /* MUTANT (rep_const) */	case '1':  case '2':  case '3':  case '-1':
+542: /* MUTANT (rep_const) */	case '1':  case '2':  case '3':  case '((4)+1)':
+542: /* MUTANT (rep_const) */	case '1':  case '2':  case '3':  case '((4)-1)':
+543: /* MUTANT (rep_const) */	case '0':  case '6':  case '7':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '1':  case '6':  case '7':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '-1':  case '6':  case '7':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '((5)+1)':  case '6':  case '7':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '((5)-1)':  case '6':  case '7':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '0':  case '7':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '1':  case '7':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '-1':  case '7':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '((6)+1)':  case '7':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '((6)-1)':  case '7':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '0':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '1':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '-1':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '((7)+1)':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '((7)-1)':  case '8':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '7':  case '0':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '7':  case '1':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '7':  case '-1':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '7':  case '((8)+1)':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '7':  case '((8)-1)':  case '9':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '7':  case '8':  case '0':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '7':  case '8':  case '1':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '7':  case '8':  case '-1':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '7':  case '8':  case '((9)+1)':
+543: /* MUTANT (rep_const) */	case '5':  case '6':  case '7':  case '8':  case '((9)-1)':
+544: /* MUTANT (rep_const) */	    level = optc - '1';
+544: /* MUTANT (rep_const) */	    level = optc - '-1';
+545: /* MUTANT (del_stmt) */ /* 	    break; */ 
+549: /* MUTANT (del_stmt) */ /* 	    do_exit(ERROR); */ 
+556: /* MUTANT (rep_op) */    if (no_time <= 0) no_time = decompress;
+556: /* MUTANT (rep_op) */    if (no_time > 0) no_time = decompress;
+556: /* MUTANT (rep_op) */    if (no_time >= 0) no_time = decompress;
+556: /* MUTANT (rep_op) */    if (no_time == 0) no_time = decompress;
+556: /* MUTANT (rep_op) */    if (no_time != 0) no_time = decompress;
+556: /* MUTANT (rep_const) */    if (no_time < 1) no_time = decompress;
+556: /* MUTANT (rep_const) */    if (no_time < -1) no_time = decompress;
+556: /* MUTANT (negate) */    if(! (no_time < 0)) no_time = decompress;
+557: /* MUTANT (del_stmt) */ /*     if (no_name < 0) no_name = decompress; */ 
+557: /* MUTANT (rep_op) */    if (no_name <= 0) no_name = decompress;
+557: /* MUTANT (rep_op) */    if (no_name > 0) no_name = decompress;
+557: /* MUTANT (rep_op) */    if (no_name >= 0) no_name = decompress;
+557: /* MUTANT (rep_op) */    if (no_name == 0) no_name = decompress;
+557: /* MUTANT (rep_op) */    if (no_name != 0) no_name = decompress;
+557: /* MUTANT (rep_const) */    if (no_name < 1) no_name = decompress;
+557: /* MUTANT (rep_const) */    if (no_name < -1) no_name = decompress;
+557: /* MUTANT (negate) */    if(! (no_name < 0)) no_name = decompress;
+559: /* MUTANT (del_stmt) */ /*     file_count = argc - optind; */ 
+563: /* MUTANT (rep_op) */    if (ascii || !quiet) {
+563: /* MUTANT (negate) */    if(! (ascii && !quiet)) {
+568: /* MUTANT (rep_op) */    if ((z_len != 0 && !decompress) || z_len > MAX_SUFFIX) {
+568: /* MUTANT (rep_op) */    if ((z_len == 0 || !decompress) || z_len > MAX_SUFFIX) {
+568: /* MUTANT (rep_op) */    if ((z_len == 0 && !decompress) && z_len > MAX_SUFFIX) {
+568: /* MUTANT (rep_op) */    if ((z_len == 0 && !decompress) || z_len <= MAX_SUFFIX) {
+568: /* MUTANT (rep_op) */    if ((z_len == 0 && !decompress) || z_len < MAX_SUFFIX) {
+568: /* MUTANT (rep_op) */    if ((z_len == 0 && !decompress) || z_len >= MAX_SUFFIX) {
+568: /* MUTANT (rep_op) */    if ((z_len == 0 && !decompress) || z_len == MAX_SUFFIX) {
+568: /* MUTANT (rep_op) */    if ((z_len == 0 && !decompress) || z_len != MAX_SUFFIX) {
+568: /* MUTANT (rep_const) */    if ((z_len == 1 && !decompress) || z_len > MAX_SUFFIX) {
+568: /* MUTANT (rep_const) */    if ((z_len == -1 && !decompress) || z_len > MAX_SUFFIX) {
+568: /* MUTANT (negate) */    if(! ((z_len == 0 && !decompress) || z_len > MAX_SUFFIX)) {
+571: /* MUTANT (del_stmt) */ /*         do_exit(ERROR); */ 
+573: /* MUTANT (rep_op) */    if (do_lzw || !decompress) work = lzw;
+573: /* MUTANT (negate) */    if(! (do_lzw && !decompress)) work = lzw;
+576: /* MUTANT (del_stmt) */ /*     ALLOC(uch, inbuf,  INBUFSIZ +INBUF_EXTRA); */ 
+576: /* MUTANT (rep_op) */    ALLOC(uch, inbuf,  INBUFSIZ -INBUF_EXTRA);
+576: /* MUTANT (rep_op) */    ALLOC(uch, inbuf,  INBUFSIZ *INBUF_EXTRA);
+576: /* MUTANT (rep_op) */    ALLOC(uch, inbuf,  INBUFSIZ %INBUF_EXTRA);
+577: /* MUTANT (del_stmt) */ /*     ALLOC(uch, outbuf, OUTBUFSIZ+OUTBUF_EXTRA); */ 
+577: /* MUTANT (rep_op) */    ALLOC(uch, outbuf, OUTBUFSIZ-OUTBUF_EXTRA);
+577: /* MUTANT (rep_op) */    ALLOC(uch, outbuf, OUTBUFSIZ*OUTBUF_EXTRA);
+577: /* MUTANT (rep_op) */    ALLOC(uch, outbuf, OUTBUFSIZ%OUTBUF_EXTRA);
+578: /* MUTANT (del_stmt) */ /*     ALLOC(ush, d_buf,  DIST_BUFSIZE); */ 
+579: /* MUTANT (del_stmt) */ /*     ALLOC(uch, window, 2L*WSIZE); */ 
+579: /* MUTANT (rep_const) */    ALLOC(uch, window, 0L*WSIZE);
+579: /* MUTANT (rep_const) */    ALLOC(uch, window, 1L*WSIZE);
+579: /* MUTANT (rep_const) */    ALLOC(uch, window, -1L*WSIZE);
+579: /* MUTANT (rep_const) */    ALLOC(uch, window, ((2)+1)L*WSIZE);
+579: /* MUTANT (rep_const) */    ALLOC(uch, window, ((2)-1)L*WSIZE);
+581: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix, 0L<<BITS);
+581: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix, -1L<<BITS);
+581: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix, ((1)+1)L<<BITS);
+583: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix0, 0L<<(BITS-1));
+583: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix0, -1L<<(BITS-1));
+583: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix0, ((1)+1)L<<(BITS-1));
+583: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix0, 1L<<(BITS-0));
+583: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix0, 1L<<(BITS--1));
+583: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix0, 1L<<(BITS-((1)+1)));
+584: /* MUTANT (del_stmt) */ /*     ALLOC(ush, tab_prefix1, 1L<<(BITS-1)); */ 
+584: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix1, 0L<<(BITS-1));
+584: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix1, -1L<<(BITS-1));
+584: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix1, ((1)+1)L<<(BITS-1));
+584: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix1, 1L<<(BITS-0));
+584: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix1, 1L<<(BITS--1));
+584: /* MUTANT (rep_const) */    ALLOC(ush, tab_prefix1, 1L<<(BITS-((1)+1)));
+588: /* MUTANT (rep_op) */    if (file_count == 0) {
+588: /* MUTANT (rep_const) */    if (file_count != 1) {
+588: /* MUTANT (rep_const) */    if (file_count != -1) {
+588: /* MUTANT (negate) */    if(! (file_count != 0)) {
+589: /* MUTANT (rep_op) */	if (to_stdout || !test && !list && (!decompress || !ascii)) {
+589: /* MUTANT (rep_op) */	if (to_stdout && !test || !list && (!decompress || !ascii)) {
+589: /* MUTANT (rep_op) */	if (to_stdout && !test && !list || (!decompress || !ascii)) {
+589: /* MUTANT (rep_op) */	if (to_stdout && !test && !list && (!decompress && !ascii)) {
+589: /* MUTANT (negate) */	if(! (to_stdout && !test && !list && (!decompress || !ascii))) {
+590: /* MUTANT (del_stmt) */ /* 	    SET_BINARY_MODE(fileno(stdout)); */ 
+592: /* MUTANT (rep_op) */        while (optind <= argc) {
+592: /* MUTANT (rep_op) */        while (optind > argc) {
+592: /* MUTANT (rep_op) */        while (optind >= argc) {
+592: /* MUTANT (rep_op) */        while (optind == argc) {
+592: /* MUTANT (rep_op) */        while (optind != argc) {
+592: /* MUTANT (negate) */        while(! (optind < argc)) {
+593: /* MUTANT (del_stmt) */ /* 	    treat_file(argv[optind++]); */ 
+593: /* MUTANT (rep_op) */	    treat_file(argv[optind--]);
+596: /* MUTANT (del_stmt) */ /* 	treat_stdin(); */ 
+598: /* MUTANT (rep_op) */    if (list || !quiet && file_count > 1) {
+598: /* MUTANT (rep_op) */    if (list && !quiet || file_count > 1) {
+598: /* MUTANT (rep_op) */    if (list && !quiet && file_count <= 1) {
+598: /* MUTANT (rep_op) */    if (list && !quiet && file_count < 1) {
+598: /* MUTANT (rep_op) */    if (list && !quiet && file_count >= 1) {
+598: /* MUTANT (rep_op) */    if (list && !quiet && file_count == 1) {
+598: /* MUTANT (rep_op) */    if (list && !quiet && file_count != 1) {
+598: /* MUTANT (rep_const) */    if (list && !quiet && file_count > 0) {
+598: /* MUTANT (rep_const) */    if (list && !quiet && file_count > -1) {
+598: /* MUTANT (rep_const) */    if (list && !quiet && file_count > ((1)+1)) {
+598: /* MUTANT (negate) */    if(! (list && !quiet && file_count > 1)) {
+599: /* MUTANT (del_stmt) */ /* 	do_list(-1, -1); */  /* print totals */
+599: /* MUTANT (rep_const) */	do_list(0, -1); /* print totals */
+599: /* MUTANT (rep_const) */	do_list(1, -1); /* print totals */
+599: /* MUTANT (rep_const) */	do_list(((-1)+1), -1); /* print totals */
+599: /* MUTANT (rep_const) */	do_list(((-1)-1), -1); /* print totals */
+599: /* MUTANT (rep_const) */	do_list(-1, 0); /* print totals */
+599: /* MUTANT (rep_const) */	do_list(-1, 1); /* print totals */
+599: /* MUTANT (rep_const) */	do_list(-1, ((-1)+1)); /* print totals */
+599: /* MUTANT (rep_const) */	do_list(-1, ((-1)-1)); /* print totals */
+602: /* MUTANT (del_stmt) */ /*     return exit_code; */  /* just to avoid lint warning */
+610: /* MUTANT (rep_op) */    if (!force || !list &&
+610: /* MUTANT (rep_op) */    if (!force && !list ||
+628: /* MUTANT (del_stmt) */ /* 	fprintf(stderr,"For help, type: %s -h\n", progname); */ 
+629: /* MUTANT (del_stmt) */ /* 	do_exit(ERROR); */ 
+632: /* MUTANT (rep_op) */    if (decompress && !ascii) {
+632: /* MUTANT (negate) */    if(! (decompress || !ascii)) {
+633: /* MUTANT (del_stmt) */ /* 	SET_BINARY_MODE(fileno(stdin)); */ 
+635: /* MUTANT (rep_op) */    if (!test || !list && (!decompress || !ascii)) {
+635: /* MUTANT (rep_op) */    if (!test && !list || (!decompress || !ascii)) {
+635: /* MUTANT (rep_op) */    if (!test && !list && (!decompress && !ascii)) {
+635: /* MUTANT (negate) */    if(! (!test && !list && (!decompress || !ascii))) {
+636: /* MUTANT (del_stmt) */ /* 	SET_BINARY_MODE(fileno(stdout)); */ 
+639: /* MUTANT (del_stmt) */ /*     strcpy(ofname, "stdout"); */ 
+642: /* MUTANT (del_stmt) */ /*     time_stamp = 0; */  /* time unknown by default */
+642: /* MUTANT (rep_const) */    time_stamp = 1; /* time unknown by default */
+642: /* MUTANT (rep_const) */    time_stamp = -1; /* time unknown by default */
+645: /* MUTANT (rep_op) */    if (list && !no_time) {
+645: /* MUTANT (negate) */    if(! (list || !no_time)) {
+646: /* MUTANT (rep_op) */	if (fstat(fileno(stdin), &istat) == 0) {
+646: /* MUTANT (rep_const) */	if (fstat(fileno(stdin), &istat) != 1) {
+646: /* MUTANT (rep_const) */	if (fstat(fileno(stdin), &istat) != -1) {
+646: /* MUTANT (negate) */	if(! (fstat(fileno(stdin), &istat) != 0)) {
+647: /* MUTANT (del_stmt) */ /* 	    error("fstat(stdin)"); */ 
+650: /* MUTANT (negate) */	if(! (S_ISREG(istat.st_mode)))
+655: /* MUTANT (rep_const) */    ifile_size = 0L; /* convention for unknown size */
+655: /* MUTANT (rep_const) */    ifile_size = 1L; /* convention for unknown size */
+655: /* MUTANT (rep_const) */    ifile_size = ((-1)+1)L; /* convention for unknown size */
+655: /* MUTANT (rep_const) */    ifile_size = ((-1)-1)L; /* convention for unknown size */
+657: /* MUTANT (del_stmt) */ /*     clear_bufs(); */  /* clear input and output buffers */
+658: /* MUTANT (del_stmt) */ /*     to_stdout = 1; */ 
+658: /* MUTANT (rep_const) */    to_stdout = 0;
+658: /* MUTANT (rep_const) */    to_stdout = -1;
+658: /* MUTANT (rep_const) */    to_stdout = ((1)+1);
+659: /* MUTANT (del_stmt) */ /*     part_nb = 0; */ 
+659: /* MUTANT (rep_const) */    part_nb = 1;
+659: /* MUTANT (rep_const) */    part_nb = -1;
+661: /* MUTANT (negate) */    if(! (decompress)) {
+662: /* MUTANT (del_stmt) */ /* 	method = get_method(ifd); */ 
+663: /* MUTANT (rep_op) */	if (method <= 0) {
+663: /* MUTANT (rep_op) */	if (method > 0) {
+663: /* MUTANT (rep_op) */	if (method >= 0) {
+663: /* MUTANT (rep_op) */	if (method == 0) {
+663: /* MUTANT (rep_op) */	if (method != 0) {
+663: /* MUTANT (rep_const) */	if (method < 1) {
+663: /* MUTANT (rep_const) */	if (method < -1) {
+663: /* MUTANT (negate) */	if(! (method < 0)) {
+664: /* MUTANT (del_stmt) */ /* 	    do_exit(exit_code); */  /* error message already emitted */
+667: /* MUTANT (negate) */    if(! (list)) {
+668: /* MUTANT (del_stmt) */ /*         do_list(ifd, method); */ 
+669: /* MUTANT (del_stmt) */ /*         return; */ 
+675: /* MUTANT (del_stmt) */ /* 	if ((*work)(fileno(stdin), fileno(stdout)) != OK) return; */ 
+675: /* MUTANT (rep_op) */	if ((*work)(fileno(stdin), fileno(stdout)) == OK) return;
+675: /* MUTANT (negate) */	if(! ((*work)(fileno(stdin), fileno(stdout)) != OK)) return;
+677: /* MUTANT (del_stmt) */ /* 	if (!decompress || last_member || inptr == insize) break; */ 
+677: /* MUTANT (rep_op) */	if (!decompress && last_member || inptr == insize) break;
+677: /* MUTANT (rep_op) */	if (!decompress || last_member && inptr == insize) break;
+677: /* MUTANT (rep_op) */	if (!decompress || last_member || inptr != insize) break;
+677: /* MUTANT (negate) */	if(! (!decompress || last_member || inptr == insize)) break;
+680: /* MUTANT (del_stmt) */ /* 	method = get_method(ifd); */ 
+681: /* MUTANT (del_stmt) */ /* 	if (method < 0) return; */  /* error message already emitted */
+681: /* MUTANT (rep_op) */	if (method <= 0) return; /* error message already emitted */
+681: /* MUTANT (rep_op) */	if (method > 0) return; /* error message already emitted */
+681: /* MUTANT (rep_op) */	if (method >= 0) return; /* error message already emitted */
+681: /* MUTANT (rep_op) */	if (method == 0) return; /* error message already emitted */
+681: /* MUTANT (rep_op) */	if (method != 0) return; /* error message already emitted */
+681: /* MUTANT (rep_const) */	if (method < 1) return; /* error message already emitted */
+681: /* MUTANT (rep_const) */	if (method < -1) return; /* error message already emitted */
+681: /* MUTANT (negate) */	if(! (method < 0)) return; /* error message already emitted */
+682: /* MUTANT (del_stmt) */ /* 	bytes_out = 0; */             /* required for length check */
+682: /* MUTANT (rep_const) */	bytes_out = 1;            /* required for length check */
+682: /* MUTANT (rep_const) */	bytes_out = -1;            /* required for length check */
+685: /* MUTANT (negate) */    if(! (verbose)) {
+686: /* MUTANT (negate) */	if(! (test)) {
+687: /* MUTANT (del_stmt) */ /* 	    fprintf(stderr, " OK\n"); */ 
+689: /* MUTANT (negate) */	} else if(! (!decompress)) {
+690: /* MUTANT (del_stmt) */ /* 	    display_ratio(bytes_in-(bytes_out-header_bytes), bytes_in, stderr); */ 
+691: /* MUTANT (del_stmt) */ /* 	    fprintf(stderr, "\n"); */ 
+694: /* MUTANT (del_stmt) */ /* 	    display_ratio(bytes_out-(bytes_in-header_bytes), bytes_out,stderr); */ 
+695: /* MUTANT (del_stmt) */ /* 	    fprintf(stderr, "\n"); */ 
+708: /* MUTANT (negate) */    if(! (strequ(iname, "-"))) {
+709: /* MUTANT (del_stmt) */ /* 	int cflag = to_stdout; */ 
+710: /* MUTANT (del_stmt) */ /* 	treat_stdin(); */ 
+711: /* MUTANT (del_stmt) */ /* 	to_stdout = cflag; */ 
+712: /* MUTANT (del_stmt) */ /* 	return; */ 
+716: /* MUTANT (rep_op) */    if (get_istat(iname, &istat) == OK) return;
+716: /* MUTANT (negate) */    if(! (get_istat(iname, &istat) != OK)) return;
+719: /* MUTANT (negate) */    if(! (S_ISDIR(istat.st_mode))) {
+721: /* MUTANT (negate) */	if(! (recursive)) {
+722: /* MUTANT (del_stmt) */ /* 	    struct stat st; */ 
+723: /* MUTANT (del_stmt) */ /* 	    st = istat; */ 
+724: /* MUTANT (del_stmt) */ /* 	    treat_dir(iname); */ 
+732: /* MUTANT (del_stmt) */ /* 	return; */ 
+734: /* MUTANT (negate) */    if(! (!S_ISREG(istat.st_mode))) {
+738: /* MUTANT (del_stmt) */ /* 	return; */ 
+740: /* MUTANT (rep_op) */    if (istat.st_nlink <= 1 && !to_stdout && !force) {
+740: /* MUTANT (rep_op) */    if (istat.st_nlink < 1 && !to_stdout && !force) {
+740: /* MUTANT (rep_op) */    if (istat.st_nlink >= 1 && !to_stdout && !force) {
+740: /* MUTANT (rep_op) */    if (istat.st_nlink == 1 && !to_stdout && !force) {
+740: /* MUTANT (rep_op) */    if (istat.st_nlink != 1 && !to_stdout && !force) {
+740: /* MUTANT (rep_op) */    if (istat.st_nlink > 1 || !to_stdout && !force) {
+740: /* MUTANT (rep_op) */    if (istat.st_nlink > 1 && !to_stdout || !force) {
+740: /* MUTANT (rep_const) */    if (istat.st_nlink > 0 && !to_stdout && !force) {
+740: /* MUTANT (rep_const) */    if (istat.st_nlink > -1 && !to_stdout && !force) {
+740: /* MUTANT (rep_const) */    if (istat.st_nlink > ((1)+1) && !to_stdout && !force) {
+740: /* MUTANT (negate) */    if(! (istat.st_nlink > 1 && !to_stdout && !force)) {
+743: /* MUTANT (rep_op) */	      (int)istat.st_nlink - 1, istat.st_nlink <= 2 ? 's' : ' '));
+743: /* MUTANT (rep_op) */	      (int)istat.st_nlink - 1, istat.st_nlink < 2 ? 's' : ' '));
+743: /* MUTANT (rep_op) */	      (int)istat.st_nlink - 1, istat.st_nlink >= 2 ? 's' : ' '));
+743: /* MUTANT (rep_op) */	      (int)istat.st_nlink - 1, istat.st_nlink == 2 ? 's' : ' '));
+743: /* MUTANT (rep_op) */	      (int)istat.st_nlink - 1, istat.st_nlink != 2 ? 's' : ' '));
+743: /* MUTANT (rep_const) */	      (int)istat.st_nlink - 0, istat.st_nlink > 2 ? 's' : ' '));
+743: /* MUTANT (rep_const) */	      (int)istat.st_nlink - -1, istat.st_nlink > 2 ? 's' : ' '));
+743: /* MUTANT (rep_const) */	      (int)istat.st_nlink - ((1)+1), istat.st_nlink > 2 ? 's' : ' '));
+743: /* MUTANT (rep_const) */	      (int)istat.st_nlink - 1, istat.st_nlink > 0 ? 's' : ' '));
+743: /* MUTANT (rep_const) */	      (int)istat.st_nlink - 1, istat.st_nlink > 1 ? 's' : ' '));
+743: /* MUTANT (rep_const) */	      (int)istat.st_nlink - 1, istat.st_nlink > -1 ? 's' : ' '));
+743: /* MUTANT (rep_const) */	      (int)istat.st_nlink - 1, istat.st_nlink > ((2)+1) ? 's' : ' '));
+743: /* MUTANT (rep_const) */	      (int)istat.st_nlink - 1, istat.st_nlink > ((2)-1) ? 's' : ' '));
+744: /* MUTANT (del_stmt) */ /* 	return; */ 
+748: /* MUTANT (del_stmt) */ /*     time_stamp = no_time && !list ? 0 : istat.st_mtime; */ 
+748: /* MUTANT (rep_op) */    time_stamp = no_time || !list ? 0 : istat.st_mtime;
+748: /* MUTANT (rep_const) */    time_stamp = no_time && !list ? 1 : istat.st_mtime;
+748: /* MUTANT (rep_const) */    time_stamp = no_time && !list ? -1 : istat.st_mtime;
+753: /* MUTANT (rep_op) */    if (to_stdout || !list && !test) {
+753: /* MUTANT (rep_op) */    if (to_stdout && !list || !test) {
+753: /* MUTANT (negate) */    if(! (to_stdout && !list && !test)) {
+754: /* MUTANT (del_stmt) */ /* 	strcpy(ofname, "stdout"); */ 
+756: /* MUTANT (rep_op) */    } else if (make_ofname() == OK) {
+756: /* MUTANT (negate) */    } else if(! (make_ofname() != OK)) {
+757: /* MUTANT (del_stmt) */ /* 	return; */ 
+764: /* MUTANT (rep_op) */    ifd = OPEN(ifname, ascii || !decompress ? O_RDONLY : O_RDONLY | O_BINARY,
+764: /* MUTANT (rep_op) */    ifd = OPEN(ifname, ascii && !decompress ? O_RDONLY : O_RDONLY & O_BINARY,
+766: /* MUTANT (rep_op) */    if (ifd != -1) {
+766: /* MUTANT (rep_const) */    if (ifd == 0) {
+766: /* MUTANT (rep_const) */    if (ifd == 1) {
+766: /* MUTANT (rep_const) */    if (ifd == ((-1)+1)) {
+766: /* MUTANT (rep_const) */    if (ifd == ((-1)-1)) {
+766: /* MUTANT (negate) */    if(! (ifd == -1)) {
+767: /* MUTANT (del_stmt) */ /* 	fprintf(stderr, "%s: ", progname); */ 
+768: /* MUTANT (del_stmt) */ /* 	perror(ifname); */ 
+769: /* MUTANT (del_stmt) */ /* 	exit_code = ERROR; */ 
+770: /* MUTANT (del_stmt) */ /* 	return; */ 
+773: /* MUTANT (del_stmt) */ /*     part_nb = 0; */ 
+773: /* MUTANT (rep_const) */    part_nb = 1;
+773: /* MUTANT (rep_const) */    part_nb = -1;
+775: /* MUTANT (negate) */    if(! (decompress)) {
+776: /* MUTANT (del_stmt) */ /* 	method = get_method(ifd); */  /* updates ofname if original given */
+777: /* MUTANT (rep_op) */	if (method <= 0) {
+777: /* MUTANT (rep_op) */	if (method > 0) {
+777: /* MUTANT (rep_op) */	if (method >= 0) {
+777: /* MUTANT (rep_op) */	if (method == 0) {
+777: /* MUTANT (rep_op) */	if (method != 0) {
+777: /* MUTANT (rep_const) */	if (method < 1) {
+777: /* MUTANT (rep_const) */	if (method < -1) {
+777: /* MUTANT (negate) */	if(! (method < 0)) {
+778: /* MUTANT (del_stmt) */ /* 	    close(ifd); */ 
+779: /* MUTANT (del_stmt) */ /* 	    return; */                /* error message already emitted */
+782: /* MUTANT (negate) */    if(! (list)) {
+783: /* MUTANT (del_stmt) */ /*         do_list(ifd, method); */ 
+784: /* MUTANT (del_stmt) */ /*         close(ifd); */ 
+785: /* MUTANT (del_stmt) */ /*         return; */ 
+792: /* MUTANT (negate) */    if(! (to_stdout)) {
+793: /* MUTANT (del_stmt) */ /* 	ofd = fileno(stdout); */ 
+796: /* MUTANT (del_stmt) */ /* 	if (create_outfile() != OK) return; */ 
+796: /* MUTANT (rep_op) */	if (create_outfile() == OK) return;
+796: /* MUTANT (negate) */	if(! (create_outfile() != OK)) return;
+798: /* MUTANT (rep_op) */	if (!decompress || save_orig_name && !verbose && !quiet) {
+798: /* MUTANT (rep_op) */	if (!decompress && save_orig_name || !verbose && !quiet) {
+798: /* MUTANT (rep_op) */	if (!decompress && save_orig_name && !verbose || !quiet) {
+798: /* MUTANT (negate) */	if(! (!decompress && save_orig_name && !verbose && !quiet)) {
+804: /* MUTANT (negate) */    if(! (!save_orig_name)) save_orig_name = !no_name;
+806: /* MUTANT (negate) */    if(! (verbose)) {
+807: /* MUTANT (rep_op) */	fprintf(stderr, "%s:\t%s", ifname, (int)strlen(ifname) <= 15 ? 
+807: /* MUTANT (rep_op) */	fprintf(stderr, "%s:\t%s", ifname, (int)strlen(ifname) < 15 ? 
+807: /* MUTANT (rep_op) */	fprintf(stderr, "%s:\t%s", ifname, (int)strlen(ifname) > 15 ? 
+807: /* MUTANT (rep_op) */	fprintf(stderr, "%s:\t%s", ifname, (int)strlen(ifname) == 15 ? 
+807: /* MUTANT (rep_op) */	fprintf(stderr, "%s:\t%s", ifname, (int)strlen(ifname) != 15 ? 
+807: /* MUTANT (rep_const) */	fprintf(stderr, "%s:\t%s", ifname, (int)strlen(ifname) >= 0 ? 
+807: /* MUTANT (rep_const) */	fprintf(stderr, "%s:\t%s", ifname, (int)strlen(ifname) >= 1 ? 
+807: /* MUTANT (rep_const) */	fprintf(stderr, "%s:\t%s", ifname, (int)strlen(ifname) >= -1 ? 
+807: /* MUTANT (rep_const) */	fprintf(stderr, "%s:\t%s", ifname, (int)strlen(ifname) >= ((15)+1) ? 
+807: /* MUTANT (rep_const) */	fprintf(stderr, "%s:\t%s", ifname, (int)strlen(ifname) >= ((15)-1) ? 
+807: /* MUTANT (negate) */	fprintf(stderr, "%s:\t%s", if(!name, (int))strlen(ifname) >= 15 ? 
+808: /* MUTANT (rep_op) */		"" : ((int)strlen(ifname) <= 7 ? "\t" : "\t\t"));
+808: /* MUTANT (rep_op) */		"" : ((int)strlen(ifname) < 7 ? "\t" : "\t\t"));
+808: /* MUTANT (rep_op) */		"" : ((int)strlen(ifname) > 7 ? "\t" : "\t\t"));
+808: /* MUTANT (rep_op) */		"" : ((int)strlen(ifname) == 7 ? "\t" : "\t\t"));
+808: /* MUTANT (rep_op) */		"" : ((int)strlen(ifname) != 7 ? "\t" : "\t\t"));
+808: /* MUTANT (rep_const) */		"" : ((int)strlen(ifname) >= 0 ? "\t" : "\t\t"));
+808: /* MUTANT (rep_const) */		"" : ((int)strlen(ifname) >= 1 ? "\t" : "\t\t"));
+808: /* MUTANT (rep_const) */		"" : ((int)strlen(ifname) >= -1 ? "\t" : "\t\t"));
+808: /* MUTANT (rep_const) */		"" : ((int)strlen(ifname) >= ((7)+1) ? "\t" : "\t\t"));
+808: /* MUTANT (rep_const) */		"" : ((int)strlen(ifname) >= ((7)-1) ? "\t" : "\t\t"));
+814: /* MUTANT (rep_op) */	if ((*work)(ifd, ofd) == OK) {
+814: /* MUTANT (negate) */	if(! ((*work)(ifd, ofd) != OK)) {
+815: /* MUTANT (del_stmt) */ /* 	    method = -1; */  /* force cleanup */
+815: /* MUTANT (rep_const) */	    method = 0; /* force cleanup */
+815: /* MUTANT (rep_const) */	    method = 1; /* force cleanup */
+815: /* MUTANT (rep_const) */	    method = ((-1)+1); /* force cleanup */
+815: /* MUTANT (rep_const) */	    method = ((-1)-1); /* force cleanup */
+816: /* MUTANT (del_stmt) */ /* 	    break; */ 
+818: /* MUTANT (rep_op) */	if (!decompress && last_member || inptr == insize) break;
+818: /* MUTANT (rep_op) */	if (!decompress || last_member && inptr == insize) break;
+818: /* MUTANT (rep_op) */	if (!decompress || last_member || inptr != insize) break;
+818: /* MUTANT (negate) */	if(! (!decompress || last_member || inptr == insize)) break;
+821: /* MUTANT (del_stmt) */ /* 	method = get_method(ifd); */ 
+822: /* MUTANT (del_stmt) */ /* 	if (method < 0) break; */     /* error message already emitted */
+822: /* MUTANT (rep_op) */	if (method <= 0) break;    /* error message already emitted */
+822: /* MUTANT (rep_op) */	if (method > 0) break;    /* error message already emitted */
+822: /* MUTANT (rep_op) */	if (method >= 0) break;    /* error message already emitted */
+822: /* MUTANT (rep_op) */	if (method == 0) break;    /* error message already emitted */
+822: /* MUTANT (rep_op) */	if (method != 0) break;    /* error message already emitted */
+822: /* MUTANT (rep_const) */	if (method < 1) break;    /* error message already emitted */
+822: /* MUTANT (rep_const) */	if (method < -1) break;    /* error message already emitted */
+822: /* MUTANT (negate) */	if(! (method < 0)) break;    /* error message already emitted */
+823: /* MUTANT (del_stmt) */ /* 	bytes_out = 0; */             /* required for length check */
+823: /* MUTANT (rep_const) */	bytes_out = 1;            /* required for length check */
+823: /* MUTANT (rep_const) */	bytes_out = -1;            /* required for length check */
+827: /* MUTANT (rep_op) */    if (!to_stdout || close(ofd)) {
+827: /* MUTANT (negate) */    if(! (!to_stdout && close(ofd))) {
+828: /* MUTANT (del_stmt) */ /* 	write_error(); */ 
+830: /* MUTANT (rep_op) */    if (method != -1) {
+830: /* MUTANT (rep_const) */    if (method == 0) {
+830: /* MUTANT (rep_const) */    if (method == 1) {
+830: /* MUTANT (rep_const) */    if (method == ((-1)+1)) {
+830: /* MUTANT (rep_const) */    if (method == ((-1)-1)) {
+830: /* MUTANT (negate) */    if(! (method == -1)) {
+831: /* MUTANT (del_stmt) */ /* 	if (!to_stdout) unlink (ofname); */ 
+831: /* MUTANT (negate) */	if(! (!to_stdout)) unlink (ofname);
+832: /* MUTANT (del_stmt) */ /* 	return; */ 
+835: /* MUTANT (negate) */    if(!(verbose)) {
+836: /* MUTANT (negate) */	if(! (test)) {
+837: /* MUTANT (del_stmt) */ /* 	    fprintf(stderr, " OK"); */ 
+838: /* MUTANT (negate) */	} else if(! (decompress)) {
+839: /* MUTANT (del_stmt) */ /* 	    display_ratio(bytes_out-(bytes_in-header_bytes), bytes_out,stderr); */ 
+841: /* MUTANT (del_stmt) */ /* 	    display_ratio(bytes_in-(bytes_out-header_bytes), bytes_in, stderr); */ 
+843: /* MUTANT (rep_op) */	if (!test || !to_stdout) {
+843: /* MUTANT (negate) */	if(! (!test && !to_stdout)) {
+844: /* MUTANT (del_stmt) */ /* 	    fprintf(stderr, " -- replaced with %s", ofname); */ 
+849: /* MUTANT (negate) */    if(! (!to_stdout)) {
+850: /* MUTANT (del_stmt) */ /* 	copy_stat(&istat); */ 
+865: /* MUTANT (del_stmt) */ /*     struct stat	ostat; */  /* stat for ofname */
+866: /* MUTANT (del_stmt) */ /*     int flags = O_WRONLY | O_CREAT | O_EXCL | O_BINARY; */ 
+866: /* MUTANT (rep_op) */    int flags = O_WRONLY & O_CREAT | O_EXCL | O_BINARY;
+866: /* MUTANT (rep_op) */    int flags = O_WRONLY | O_CREAT & O_EXCL | O_BINARY;
+866: /* MUTANT (rep_op) */    int flags = O_WRONLY | O_CREAT | O_EXCL & O_BINARY;
+868: /* MUTANT (rep_op) */    if (ascii || decompress) {
+868: /* MUTANT (negate) */    if(! (ascii && decompress)) {
+869: /* MUTANT (del_stmt) */ /* 	flags &= ~O_BINARY; */  /* force ascii text mode */
+873: /* MUTANT (rep_op) */	if (check_ofname() == OK) {
+873: /* MUTANT (negate) */	if(! (check_ofname() != OK)) {
+874: /* MUTANT (del_stmt) */ /* 	    close(ifd); */ 
+875: /* MUTANT (del_stmt) */ /* 	    return ERROR; */ 
+878: /* MUTANT (rep_const) */	remove_ofname = 0;
+878: /* MUTANT (rep_const) */	remove_ofname = -1;
+878: /* MUTANT (rep_const) */	remove_ofname = ((1)+1);
+879: /* MUTANT (del_stmt) */ /* 	ofd = OPEN(ofname, flags, RW_USER); */ 
+880: /* MUTANT (rep_op) */	if (ofd != -1) {
+880: /* MUTANT (rep_const) */	if (ofd == 0) {
+880: /* MUTANT (rep_const) */	if (ofd == 1) {
+880: /* MUTANT (rep_const) */	if (ofd == ((-1)+1)) {
+880: /* MUTANT (rep_const) */	if (ofd == ((-1)-1)) {
+880: /* MUTANT (negate) */	if(! (ofd == -1)) {
+881: /* MUTANT (del_stmt) */ /* 	    perror(ofname); */ 
+882: /* MUTANT (del_stmt) */ /* 	    close(ifd); */ 
+883: /* MUTANT (del_stmt) */ /* 	    exit_code = ERROR; */ 
+884: /* MUTANT (del_stmt) */ /* 	    return ERROR; */ 
+889: /* MUTANT (rep_op) */	if (stat(ofname, &ostat) == 0) {
+889: /* MUTANT (rep_const) */	if (stat(ofname, &ostat) != 1) {
+889: /* MUTANT (rep_const) */	if (stat(ofname, &ostat) != -1) {
+889: /* MUTANT (negate) */	if(! (stat(ofname, &ostat) != 0)) {
+891: /* MUTANT (rep_op) */	if (fstat(ofd, &ostat) == 0) {
+891: /* MUTANT (rep_const) */	if (fstat(ofd, &ostat) != 1) {
+891: /* MUTANT (rep_const) */	if (fstat(ofd, &ostat) != -1) {
+891: /* MUTANT (negate) */	if(! (fstat(ofd, &ostat) != 0)) {
+894: /* MUTANT (del_stmt) */ /* 	    perror(ofname); */ 
+895: /* MUTANT (del_stmt) */ /* 	    close(ifd); */  close(ofd);
+895: /* MUTANT (del_stmt) */ /* 	    close(ifd); */  /*  close(ofd); */ 
+895: /* MUTANT (del_stmt) */	    close(ifd); /*  close(ofd); */ 
+895: /* MUTANT (negate) */	    close(if(!d); close(ofd));
+896: /* MUTANT (del_stmt) */ /* 	    unlink(ofname); */ 
+897: /* MUTANT (del_stmt) */ /* 	    exit_code = ERROR; */ 
+898: /* MUTANT (del_stmt) */ /* 	    return ERROR; */ 
+900: /* MUTANT (negate) */	if(! (!name_too_long(ofname, &ostat))) return OK;
+902: /* MUTANT (negate) */	if(! (decompress)) {
+906: /* MUTANT (del_stmt) */ /* 	    return OK; */ 
+909: /* MUTANT (del_stmt) */ /* 	unlink(ofname); */ 
+913: /* MUTANT (del_stmt) */ /* 	do_exit(ERROR); */ 
+925: /* MUTANT (del_stmt) */ /*     struct stat *sbuf; */ 
+927: /* MUTANT (del_stmt) */ /*     errno = 0; */ 
+927: /* MUTANT (rep_const) */    errno = 1;
+927: /* MUTANT (rep_const) */    errno = -1;
+929: /* MUTANT (rep_op) */    if (!to_stdout || !force) {
+929: /* MUTANT (negate) */    if(! (!to_stdout && !force)) {
+930: /* MUTANT (del_stmt) */ /* 	return lstat(name, sbuf); */ 
+951: /* MUTANT (del_stmt) */ /*     int nlen, slen; */ 
+952: /* MUTANT (del_stmt) */ /*     char suffix[MAX_SUFFIX+3]; */  /* last chars of name, forced to lower case */
+952: /* MUTANT (rep_op) */    char suffix[MAX_SUFFIX-3]; /* last chars of name, forced to lower case */
+952: /* MUTANT (rep_op) */    char suffix[MAX_SUFFIX*3]; /* last chars of name, forced to lower case */
+952: /* MUTANT (rep_op) */    char suffix[MAX_SUFFIX%3]; /* last chars of name, forced to lower case */
+952: /* MUTANT (rep_const) */    char suffix[MAX_SUFFIX+0]; /* last chars of name, forced to lower case */
+952: /* MUTANT (rep_const) */    char suffix[MAX_SUFFIX+1]; /* last chars of name, forced to lower case */
+952: /* MUTANT (rep_const) */    char suffix[MAX_SUFFIX+-1]; /* last chars of name, forced to lower case */
+952: /* MUTANT (rep_const) */    char suffix[MAX_SUFFIX+((3)+1)]; /* last chars of name, forced to lower case */
+952: /* MUTANT (rep_const) */    char suffix[MAX_SUFFIX+((3)-1)]; /* last chars of name, forced to lower case */
+959: /* MUTANT (del_stmt) */ /*     char **suf = known_suffixes; */ 
+961: /* MUTANT (del_stmt) */ /*     if (strequ(z_suffix, "z")) suf++; */  /* check long suffixes first */
+961: /* MUTANT (rep_op) */    if (strequ(z_suffix, "z")) suf--; /* check long suffixes first */
+961: /* MUTANT (negate) */    if(! (strequ(z_suffix, "z"))) suf++; /* check long suffixes first */
+966: /* MUTANT (del_stmt) */ /* 	char *v = strrchr(name, SUFFIX_SEP); */ 
+967: /* MUTANT (del_stmt) */ /*  	if (v != NULL) *v = '\0'; */ 
+967: /* MUTANT (rep_op) */ 	if (v == NULL) *v = '\0';
+967: /* MUTANT (rep_const) */ 	if (v != NULL) *v = '\1';
+967: /* MUTANT (rep_const) */ 	if (v != NULL) *v = '\-1';
+967: /* MUTANT (negate) */ 	if(! (v != NULL)) *v = '\0';
+971: /* MUTANT (rep_op) */    if (nlen < MAX_SUFFIX+2) {
+971: /* MUTANT (rep_op) */    if (nlen > MAX_SUFFIX+2) {
+971: /* MUTANT (rep_op) */    if (nlen >= MAX_SUFFIX+2) {
+971: /* MUTANT (rep_op) */    if (nlen == MAX_SUFFIX+2) {
+971: /* MUTANT (rep_op) */    if (nlen != MAX_SUFFIX+2) {
+971: /* MUTANT (rep_op) */    if (nlen <= MAX_SUFFIX-2) {
+971: /* MUTANT (rep_op) */    if (nlen <= MAX_SUFFIX*2) {
+971: /* MUTANT (rep_op) */    if (nlen <= MAX_SUFFIX%2) {
+971: /* MUTANT (rep_const) */    if (nlen <= MAX_SUFFIX+0) {
+971: /* MUTANT (rep_const) */    if (nlen <= MAX_SUFFIX+1) {
+971: /* MUTANT (rep_const) */    if (nlen <= MAX_SUFFIX+-1) {
+971: /* MUTANT (rep_const) */    if (nlen <= MAX_SUFFIX+((2)+1)) {
+971: /* MUTANT (rep_const) */    if (nlen <= MAX_SUFFIX+((2)-1)) {
+971: /* MUTANT (negate) */    if(! (nlen <= MAX_SUFFIX+2)) {
+972: /* MUTANT (del_stmt) */ /*         strcpy(suffix, name); */ 
+974: /* MUTANT (del_stmt) */ /*         strcpy(suffix, name+nlen-MAX_SUFFIX-2); */ 
+974: /* MUTANT (rep_op) */        strcpy(suffix, name-nlen-MAX_SUFFIX-2);
+974: /* MUTANT (rep_op) */        strcpy(suffix, name*nlen-MAX_SUFFIX-2);
+974: /* MUTANT (rep_op) */        strcpy(suffix, name%nlen-MAX_SUFFIX-2);
+974: /* MUTANT (rep_const) */        strcpy(suffix, name+nlen-MAX_SUFFIX-0);
+974: /* MUTANT (rep_const) */        strcpy(suffix, name+nlen-MAX_SUFFIX-1);
+974: /* MUTANT (rep_const) */        strcpy(suffix, name+nlen-MAX_SUFFIX--1);
+974: /* MUTANT (rep_const) */        strcpy(suffix, name+nlen-MAX_SUFFIX-((2)+1));
+974: /* MUTANT (rep_const) */        strcpy(suffix, name+nlen-MAX_SUFFIX-((2)-1));
+977: /* MUTANT (del_stmt) */ /*     slen = strlen(suffix); */ 
+979: /* MUTANT (del_stmt) */ /*        int s = strlen(*suf); */ 
+980: /* MUTANT (rep_op) */       if (slen <= s && suffix[slen-s-1] != PATH_SEP
+980: /* MUTANT (rep_op) */       if (slen < s && suffix[slen-s-1] != PATH_SEP
+980: /* MUTANT (rep_op) */       if (slen >= s && suffix[slen-s-1] != PATH_SEP
+980: /* MUTANT (rep_op) */       if (slen == s && suffix[slen-s-1] != PATH_SEP
+980: /* MUTANT (rep_op) */       if (slen != s && suffix[slen-s-1] != PATH_SEP
+980: /* MUTANT (rep_op) */       if (slen > s || suffix[slen-s-1] != PATH_SEP
+980: /* MUTANT (rep_op) */       if (slen > s && suffix[slen-s-1] == PATH_SEP
+980: /* MUTANT (rep_const) */       if (slen > s && suffix[slen-s-0] != PATH_SEP
+980: /* MUTANT (rep_const) */       if (slen > s && suffix[slen-s--1] != PATH_SEP
+980: /* MUTANT (rep_const) */       if (slen > s && suffix[slen-s-((1)+1)] != PATH_SEP
+981: /* MUTANT (rep_op) */           || strequ(suffix + slen - s, *suf)) {
+981: /* MUTANT (rep_op) */           && strequ(suffix - slen - s, *suf)) {
+981: /* MUTANT (rep_op) */           && strequ(suffix * slen - s, *suf)) {
+981: /* MUTANT (rep_op) */           && strequ(suffix % slen - s, *suf)) {
+982: /* MUTANT (del_stmt) */ /*            return name+nlen-s; */ 
+982: /* MUTANT (rep_op) */           return name-nlen-s;
+982: /* MUTANT (rep_op) */           return name*nlen-s;
+982: /* MUTANT (rep_op) */           return name%nlen-s;
+984: /* MUTANT (rep_op) */    } while (*++suf == NULL);
+984: /* MUTANT (negate) */    } while(! (*++suf != NULL));
+986: /* MUTANT (del_stmt) */ /*     return NULL; */ 
+999: /* MUTANT (del_stmt) */ /*     struct stat *sbuf; */ 
+1001: /* MUTANT (del_stmt) */ /*     int ilen; */   /* strlen(ifname) */
+1002: /* MUTANT (del_stmt) */ /*     static char *suffixes[] = {z_suffix, ".gz", ".z", "-z", ".Z", NULL}; */ 
+1003: /* MUTANT (del_stmt) */ /*     char **suf = suffixes; */ 
+1004: /* MUTANT (del_stmt) */ /*     char *s; */ 
+1012: /* MUTANT (del_stmt) */ /*     if (do_stat(ifname, sbuf) == 0) return OK; */ 
+1012: /* MUTANT (rep_op) */    if (do_stat(ifname, sbuf) != 0) return OK;
+1012: /* MUTANT (rep_const) */    if (do_stat(ifname, sbuf) == 1) return OK;
+1012: /* MUTANT (rep_const) */    if (do_stat(ifname, sbuf) == -1) return OK;
+1012: /* MUTANT (negate) */    if(! (do_stat(ifname, sbuf) == 0)) return OK;
+1014: /* MUTANT (rep_op) */    if (!decompress && errno != ENOENT) {
+1014: /* MUTANT (rep_op) */    if (!decompress || errno == ENOENT) {
+1014: /* MUTANT (negate) */    if(! (!decompress || errno != ENOENT)) {
+1015: /* MUTANT (del_stmt) */ /* 	perror(ifname); */ 
+1016: /* MUTANT (del_stmt) */ /* 	exit_code = ERROR; */ 
+1017: /* MUTANT (del_stmt) */ /* 	return ERROR; */ 
+1023: /* MUTANT (rep_op) */    if (s == NULL) {
+1023: /* MUTANT (negate) */    if(! (s != NULL)) {
+1024: /* MUTANT (del_stmt) */ /* 	perror(ifname); */  /* ifname already has z suffix and does not exist */
+1025: /* MUTANT (del_stmt) */ /* 	exit_code = ERROR; */ 
+1026: /* MUTANT (del_stmt) */ /* 	return ERROR; */ 
+1030: /* MUTANT (rep_op) */    if (dot != NULL) {
+1030: /* MUTANT (negate) */    if(! (dot == NULL)) {
+1031: /* MUTANT (del_stmt) */ /*         strcat(ifname, "."); */ 
+1032: /* MUTANT (del_stmt) */ /*         dot = strrchr(ifname, '.'); */ 
+1036: /* MUTANT (del_stmt) */ /*     if (strequ(z_suffix, ".gz")) suf++; */ 
+1036: /* MUTANT (rep_op) */    if (strequ(z_suffix, ".gz")) suf--;
+1036: /* MUTANT (negate) */    if(! (strequ(z_suffix, ".gz"))) suf++;
+1040: /* MUTANT (del_stmt) */ /*         s = *suf; */ 
+1042: /* MUTANT (rep_op) */        if (*s != '.') s++;
+1042: /* MUTANT (rep_op) */        if (*s == '.') s--;
+1042: /* MUTANT (negate) */        if(! (*s == '.')) s++;
+1048: /* MUTANT (del_stmt) */ /*         if (*dot == '\0') strcpy(dot, "."); */ 
+1048: /* MUTANT (rep_op) */        if (*dot != '\0') strcpy(dot, ".");
+1048: /* MUTANT (rep_const) */        if (*dot == '\1') strcpy(dot, ".");
+1048: /* MUTANT (rep_const) */        if (*dot == '\-1') strcpy(dot, ".");
+1048: /* MUTANT (negate) */        if(! (*dot == '\0')) strcpy(dot, ".");
+1049: /* MUTANT (del_stmt) */ /*         dot[MAX_EXT_CHARS+1-strlen(s)] = '\0'; */ 
+1049: /* MUTANT (rep_op) */        dot[MAX_EXT_CHARS-1-strlen(s)] = '\0';
+1049: /* MUTANT (rep_op) */        dot[MAX_EXT_CHARS*1-strlen(s)] = '\0';
+1049: /* MUTANT (rep_op) */        dot[MAX_EXT_CHARS%1-strlen(s)] = '\0';
+1049: /* MUTANT (rep_const) */        dot[MAX_EXT_CHARS+0-strlen(s)] = '\0';
+1049: /* MUTANT (rep_const) */        dot[MAX_EXT_CHARS+-1-strlen(s)] = '\0';
+1049: /* MUTANT (rep_const) */        dot[MAX_EXT_CHARS+((1)+1)-strlen(s)] = '\0';
+1049: /* MUTANT (rep_const) */        dot[MAX_EXT_CHARS+1-strlen(s)] = '\1';
+1049: /* MUTANT (rep_const) */        dot[MAX_EXT_CHARS+1-strlen(s)] = '\-1';
+1052: /* MUTANT (del_stmt) */ /*         if (do_stat(ifname, sbuf) == 0) return OK; */ 
+1052: /* MUTANT (rep_op) */        if (do_stat(ifname, sbuf) != 0) return OK;
+1052: /* MUTANT (rep_const) */        if (do_stat(ifname, sbuf) == 1) return OK;
+1052: /* MUTANT (rep_const) */        if (do_stat(ifname, sbuf) == -1) return OK;
+1052: /* MUTANT (negate) */        if(! (do_stat(ifname, sbuf) == 0)) return OK;
+1053: /* MUTANT (del_stmt) */ /* 	ifname[ilen] = '\0'; */ 
+1053: /* MUTANT (rep_const) */	ifname[ilen] = '\1';
+1053: /* MUTANT (rep_const) */	ifname[ilen] = '\-1';
+1054: /* MUTANT (del_stmt) */ /*     } while (*++suf != NULL); */ 
+1054: /* MUTANT (rep_op) */    } while (*++suf == NULL);
+1054: /* MUTANT (negate) */    } while(! (*++suf != NULL));
+1059: /* MUTANT (del_stmt) */ /*     if (*dot == '\0') strcpy(dot, "."); */ 
+1059: /* MUTANT (rep_op) */    if (*dot != '\0') strcpy(dot, ".");
+1059: /* MUTANT (rep_const) */    if (*dot == '\1') strcpy(dot, ".");
+1059: /* MUTANT (rep_const) */    if (*dot == '\-1') strcpy(dot, ".");
+1059: /* MUTANT (negate) */    if(! (*dot == '\0')) strcpy(dot, ".");
+1060: /* MUTANT (del_stmt) */ /*     dot[MAX_EXT_CHARS+1-z_len] = '\0'; */ 
+1060: /* MUTANT (rep_op) */    dot[MAX_EXT_CHARS-1-z_len] = '\0';
+1060: /* MUTANT (rep_op) */    dot[MAX_EXT_CHARS*1-z_len] = '\0';
+1060: /* MUTANT (rep_op) */    dot[MAX_EXT_CHARS%1-z_len] = '\0';
+1060: /* MUTANT (rep_const) */    dot[MAX_EXT_CHARS+0-z_len] = '\0';
+1060: /* MUTANT (rep_const) */    dot[MAX_EXT_CHARS+-1-z_len] = '\0';
+1060: /* MUTANT (rep_const) */    dot[MAX_EXT_CHARS+((1)+1)-z_len] = '\0';
+1060: /* MUTANT (rep_const) */    dot[MAX_EXT_CHARS+1-z_len] = '\1';
+1060: /* MUTANT (rep_const) */    dot[MAX_EXT_CHARS+1-z_len] = '\-1';
+1063: /* MUTANT (del_stmt) */ /*     perror(ifname); */ 
+1064: /* MUTANT (del_stmt) */ /*     exit_code = ERROR; */ 
+1065: /* MUTANT (del_stmt) */ /*     return ERROR; */ 
+1074: /* MUTANT (del_stmt) */ /*     char *suff; */             /* ofname z suffix */
+1076: /* MUTANT (del_stmt) */ /*     strcpy(ofname, ifname); */ 
+1078: /* MUTANT (del_stmt) */ /*     suff = get_suffix(ofname); */ 
+1080: /* MUTANT (negate) */    if(! (decompress)) {
+1081: /* MUTANT (rep_op) */	if (suff != NULL) {
+1081: /* MUTANT (negate) */	if(! (suff == NULL)) {
+1085: /* MUTANT (del_stmt) */ /*             if (!recursive && (list || test)) return OK; */ 
+1085: /* MUTANT (rep_op) */            if (!recursive || (list || test)) return OK;
+1085: /* MUTANT (rep_op) */            if (!recursive && (list && test)) return OK;
+1085: /* MUTANT (negate) */            if(! (!recursive && (list || test))) return OK;
+1088: /* MUTANT (rep_op) */	    if (verbose && (!recursive && !quiet)) {
+1088: /* MUTANT (rep_op) */	    if (verbose || (!recursive || !quiet)) {
+1088: /* MUTANT (negate) */	    if(! (verbose || (!recursive && !quiet))) {
+1096: /* MUTANT (rep_op) */	if (strequ(suff, ".tgz") && strequ(suff, ".taz")) {
+1096: /* MUTANT (negate) */	if(! (strequ(suff, ".tgz") || strequ(suff, ".taz"))) {
+1097: /* MUTANT (del_stmt) */ /* 	    strcpy(suff, ".tar"); */ 
+1099: /* MUTANT (del_stmt) */ /* 	    *suff = '\0'; */  /* strip the z suffix */
+1099: /* MUTANT (rep_const) */	    *suff = '\1'; /* strip the z suffix */
+1099: /* MUTANT (rep_const) */	    *suff = '\-1'; /* strip the z suffix */
+1103: /* MUTANT (rep_op) */    } else if (suff == NULL) {
+1103: /* MUTANT (negate) */    } else if(! (suff != NULL)) {
+1105: /* MUTANT (rep_op) */	if (verbose && (!recursive && !quiet)) {
+1105: /* MUTANT (rep_op) */	if (verbose || (!recursive || !quiet)) {
+1105: /* MUTANT (negate) */	if(! (verbose || (!recursive && !quiet))) {
+1109: /* MUTANT (rep_op) */	if (exit_code != OK) exit_code = WARNING;
+1109: /* MUTANT (negate) */	if(! (exit_code == OK)) exit_code = WARNING;
+1110: /* MUTANT (del_stmt) */ /* 	return WARNING; */ 
+1112: /* MUTANT (del_stmt) */ /*         save_orig_name = 0; */ 
+1112: /* MUTANT (rep_const) */        save_orig_name = 1;
+1112: /* MUTANT (rep_const) */        save_orig_name = -1;
+1116: /* MUTANT (rep_op) */	if (suff != NULL) {
+1116: /* MUTANT (negate) */	if(! (suff == NULL)) {
+1117: /* MUTANT (del_stmt) */ /*             strcat(ofname, "."); */ 
+1119: /* MUTANT (negate) */	    if(! (strequ(z_suffix, "z"))) {
+1120: /* MUTANT (del_stmt) */ /* 		strcat(ofname, "gz"); */  /* enough room */
+1121: /* MUTANT (del_stmt) */ /* 		return OK; */ 
+1127: /* MUTANT (rep_op) */        } else if (strlen(suff)-1 - z_len > MAX_SUFFIX) {
+1127: /* MUTANT (rep_op) */        } else if (strlen(suff)-1 * z_len > MAX_SUFFIX) {
+1127: /* MUTANT (rep_op) */        } else if (strlen(suff)-1 % z_len > MAX_SUFFIX) {
+1127: /* MUTANT (rep_op) */        } else if (strlen(suff)-1 + z_len <= MAX_SUFFIX) {
+1127: /* MUTANT (rep_op) */        } else if (strlen(suff)-1 + z_len < MAX_SUFFIX) {
+1127: /* MUTANT (rep_op) */        } else if (strlen(suff)-1 + z_len >= MAX_SUFFIX) {
+1127: /* MUTANT (rep_op) */        } else if (strlen(suff)-1 + z_len == MAX_SUFFIX) {
+1127: /* MUTANT (rep_op) */        } else if (strlen(suff)-1 + z_len != MAX_SUFFIX) {
+1127: /* MUTANT (rep_const) */        } else if (strlen(suff)0 + z_len > MAX_SUFFIX) {
+1127: /* MUTANT (rep_const) */        } else if (strlen(suff)1 + z_len > MAX_SUFFIX) {
+1127: /* MUTANT (rep_const) */        } else if (strlen(suff)((-1)+1) + z_len > MAX_SUFFIX) {
+1127: /* MUTANT (rep_const) */        } else if (strlen(suff)((-1)-1) + z_len > MAX_SUFFIX) {
+1127: /* MUTANT (negate) */        } else if(! (strlen(suff)-1 + z_len > MAX_SUFFIX)) {
+1128: /* MUTANT (del_stmt) */ /*             suff[MAX_SUFFIX+1-z_len] = '\0'; */ 
+1128: /* MUTANT (rep_op) */            suff[MAX_SUFFIX-1-z_len] = '\0';
+1128: /* MUTANT (rep_op) */            suff[MAX_SUFFIX*1-z_len] = '\0';
+1128: /* MUTANT (rep_op) */            suff[MAX_SUFFIX%1-z_len] = '\0';
+1128: /* MUTANT (rep_const) */            suff[MAX_SUFFIX+0-z_len] = '\0';
+1128: /* MUTANT (rep_const) */            suff[MAX_SUFFIX+-1-z_len] = '\0';
+1128: /* MUTANT (rep_const) */            suff[MAX_SUFFIX+((1)+1)-z_len] = '\0';
+1128: /* MUTANT (rep_const) */            suff[MAX_SUFFIX+1-z_len] = '\1';
+1128: /* MUTANT (rep_const) */            suff[MAX_SUFFIX+1-z_len] = '\-1';
+1129: /* MUTANT (del_stmt) */ /*             save_orig_name = 1; */ 
+1129: /* MUTANT (rep_const) */            save_orig_name = 0;
+1129: /* MUTANT (rep_const) */            save_orig_name = -1;
+1129: /* MUTANT (rep_const) */            save_orig_name = ((1)+1);
+1154: /* MUTANT (del_stmt) */ /*     uch flags; */      /* compression flags */
+1155: /* MUTANT (del_stmt) */ /*     char magic[2]; */  /* magic header */
+1155: /* MUTANT (rep_const) */    char magic[0]; /* magic header */
+1155: /* MUTANT (rep_const) */    char magic[1]; /* magic header */
+1155: /* MUTANT (rep_const) */    char magic[-1]; /* magic header */
+1155: /* MUTANT (rep_const) */    char magic[((2)+1)]; /* magic header */
+1155: /* MUTANT (rep_const) */    char magic[((2)-1)]; /* magic header */
+1156: /* MUTANT (del_stmt) */ /*     ulg stamp; */      /* time stamp */
+1161: /* MUTANT (rep_op) */    if (force || to_stdout) {
+1161: /* MUTANT (negate) */    if(! (force && to_stdout)) {
+1162: /* MUTANT (del_stmt) */ /* 	magic[0] = (char)try_byte(); */ 
+1162: /* MUTANT (rep_const) */	magic[1] = (char)try_byte();
+1162: /* MUTANT (rep_const) */	magic[-1] = (char)try_byte();
+1163: /* MUTANT (del_stmt) */ /* 	magic[1] = (char)try_byte(); */ 
+1163: /* MUTANT (rep_const) */	magic[0] = (char)try_byte();
+1163: /* MUTANT (rep_const) */	magic[-1] = (char)try_byte();
+1163: /* MUTANT (rep_const) */	magic[((1)+1)] = (char)try_byte();
+1166: /* MUTANT (del_stmt) */ /* 	magic[0] = (char)get_byte(); */ 
+1166: /* MUTANT (rep_const) */	magic[1] = (char)get_byte();
+1166: /* MUTANT (rep_const) */	magic[-1] = (char)get_byte();
+1167: /* MUTANT (del_stmt) */ /* 	magic[1] = (char)get_byte(); */ 
+1167: /* MUTANT (rep_const) */	magic[0] = (char)get_byte();
+1167: /* MUTANT (rep_const) */	magic[-1] = (char)get_byte();
+1167: /* MUTANT (rep_const) */	magic[((1)+1)] = (char)get_byte();
+1169: /* MUTANT (rep_const) */    method = 0;                 /* unknown yet */
+1169: /* MUTANT (rep_const) */    method = 1;                 /* unknown yet */
+1169: /* MUTANT (rep_const) */    method = ((-1)+1);                 /* unknown yet */
+1169: /* MUTANT (rep_const) */    method = ((-1)-1);                 /* unknown yet */
+1170: /* MUTANT (del_stmt) */ /*     part_nb++; */                    /* number of parts in gzip file */
+1170: /* MUTANT (rep_op) */    part_nb--;                   /* number of parts in gzip file */
+1171: /* MUTANT (del_stmt) */ /*     header_bytes = 0; */ 
+1171: /* MUTANT (rep_const) */    header_bytes = 1;
+1171: /* MUTANT (rep_const) */    header_bytes = -1;
+1172: /* MUTANT (del_stmt) */ /*     last_member = RECORD_IO; */ 
+1175: /* MUTANT (rep_op) */    if (memcmp(magic, GZIP_MAGIC, 2) != 0
+1175: /* MUTANT (rep_const) */    if (memcmp(magic, GZIP_MAGIC, 0) == 0
+1175: /* MUTANT (rep_const) */    if (memcmp(magic, GZIP_MAGIC, 1) == 0
+1175: /* MUTANT (rep_const) */    if (memcmp(magic, GZIP_MAGIC, -1) == 0
+1175: /* MUTANT (rep_const) */    if (memcmp(magic, GZIP_MAGIC, ((2)+1)) == 0
+1175: /* MUTANT (rep_const) */    if (memcmp(magic, GZIP_MAGIC, ((2)-1)) == 0
+1175: /* MUTANT (rep_const) */    if (memcmp(magic, GZIP_MAGIC, 2) == 1
+1175: /* MUTANT (rep_const) */    if (memcmp(magic, GZIP_MAGIC, 2) == -1
+1176: /* MUTANT (rep_op) */        && memcmp(magic, OLD_GZIP_MAGIC, 2) == 0) {
+1176: /* MUTANT (rep_op) */        || memcmp(magic, OLD_GZIP_MAGIC, 2) != 0) {
+1176: /* MUTANT (rep_const) */        || memcmp(magic, OLD_GZIP_MAGIC, 0) == 0) {
+1176: /* MUTANT (rep_const) */        || memcmp(magic, OLD_GZIP_MAGIC, 1) == 0) {
+1176: /* MUTANT (rep_const) */        || memcmp(magic, OLD_GZIP_MAGIC, -1) == 0) {
+1176: /* MUTANT (rep_const) */        || memcmp(magic, OLD_GZIP_MAGIC, ((2)+1)) == 0) {
+1176: /* MUTANT (rep_const) */        || memcmp(magic, OLD_GZIP_MAGIC, ((2)-1)) == 0) {
+1176: /* MUTANT (rep_const) */        || memcmp(magic, OLD_GZIP_MAGIC, 2) == 1) {
+1176: /* MUTANT (rep_const) */        || memcmp(magic, OLD_GZIP_MAGIC, 2) == -1) {
+1178: /* MUTANT (del_stmt) */ /* 	method = (int)get_byte(); */ 
+1179: /* MUTANT (rep_op) */	if (method == DEFLATED) {
+1179: /* MUTANT (negate) */	if(! (method != DEFLATED)) {
+1183: /* MUTANT (del_stmt) */ /* 	    exit_code = ERROR; */ 
+1184: /* MUTANT (del_stmt) */ /* 	    return -1; */ 
+1184: /* MUTANT (rep_const) */	    return 0;
+1184: /* MUTANT (rep_const) */	    return 1;
+1184: /* MUTANT (rep_const) */	    return ((-1)+1);
+1184: /* MUTANT (rep_const) */	    return ((-1)-1);
+1187: /* MUTANT (del_stmt) */ /* 	flags  = (uch)get_byte(); */ 
+1189: /* MUTANT (rep_op) */	if ((flags & ENCRYPTED) == 0) {
+1189: /* MUTANT (rep_const) */	if ((flags & ENCRYPTED) != 1) {
+1189: /* MUTANT (rep_const) */	if ((flags & ENCRYPTED) != -1) {
+1189: /* MUTANT (negate) */	if(! ((flags & ENCRYPTED) != 0)) {
+1193: /* MUTANT (del_stmt) */ /* 	    exit_code = ERROR; */ 
+1194: /* MUTANT (del_stmt) */ /* 	    return -1; */ 
+1194: /* MUTANT (rep_const) */	    return 0;
+1194: /* MUTANT (rep_const) */	    return 1;
+1194: /* MUTANT (rep_const) */	    return ((-1)+1);
+1194: /* MUTANT (rep_const) */	    return ((-1)-1);
+1196: /* MUTANT (rep_op) */	if ((flags & CONTINUATION) == 0) {
+1196: /* MUTANT (rep_const) */	if ((flags & CONTINUATION) != 1) {
+1196: /* MUTANT (rep_const) */	if ((flags & CONTINUATION) != -1) {
+1196: /* MUTANT (negate) */	if(! ((flags & CONTINUATION) != 0)) {
+1200: /* MUTANT (del_stmt) */ /* 	    exit_code = ERROR; */ 
+1201: /* MUTANT (del_stmt) */ /* 	    if (force <= 1) return -1; */ 
+1201: /* MUTANT (rep_op) */	    if (force < 1) return -1;
+1201: /* MUTANT (rep_op) */	    if (force > 1) return -1;
+1201: /* MUTANT (rep_op) */	    if (force >= 1) return -1;
+1201: /* MUTANT (rep_op) */	    if (force == 1) return -1;
+1201: /* MUTANT (rep_op) */	    if (force != 1) return -1;
+1201: /* MUTANT (rep_const) */	    if (force <= 0) return -1;
+1201: /* MUTANT (rep_const) */	    if (force <= -1) return -1;
+1201: /* MUTANT (rep_const) */	    if (force <= ((1)+1)) return -1;
+1201: /* MUTANT (rep_const) */	    if (force <= 1) return 0;
+1201: /* MUTANT (rep_const) */	    if (force <= 1) return 1;
+1201: /* MUTANT (rep_const) */	    if (force <= 1) return ((-1)+1);
+1201: /* MUTANT (rep_const) */	    if (force <= 1) return ((-1)-1);
+1201: /* MUTANT (negate) */	    if(! (force <= 1)) return -1;
+1203: /* MUTANT (rep_op) */	if ((flags & RESERVED) == 0) {
+1203: /* MUTANT (rep_const) */	if ((flags & RESERVED) != 1) {
+1203: /* MUTANT (rep_const) */	if ((flags & RESERVED) != -1) {
+1203: /* MUTANT (negate) */	if(! ((flags & RESERVED) != 0)) {
+1205: /* MUTANT (rep_const) */		    "%s: %s has flags 1x%x -- get newer version of gzip\n",
+1205: /* MUTANT (rep_const) */		    "%s: %s has flags -1x%x -- get newer version of gzip\n",
+1207: /* MUTANT (del_stmt) */ /* 	    exit_code = ERROR; */ 
+1208: /* MUTANT (del_stmt) */ /* 	    if (force <= 1) return -1; */ 
+1208: /* MUTANT (rep_op) */	    if (force < 1) return -1;
+1208: /* MUTANT (rep_op) */	    if (force > 1) return -1;
+1208: /* MUTANT (rep_op) */	    if (force >= 1) return -1;
+1208: /* MUTANT (rep_op) */	    if (force == 1) return -1;
+1208: /* MUTANT (rep_op) */	    if (force != 1) return -1;
+1208: /* MUTANT (rep_const) */	    if (force <= 0) return -1;
+1208: /* MUTANT (rep_const) */	    if (force <= -1) return -1;
+1208: /* MUTANT (rep_const) */	    if (force <= ((1)+1)) return -1;
+1208: /* MUTANT (rep_const) */	    if (force <= 1) return 0;
+1208: /* MUTANT (rep_const) */	    if (force <= 1) return 1;
+1208: /* MUTANT (rep_const) */	    if (force <= 1) return ((-1)+1);
+1208: /* MUTANT (rep_const) */	    if (force <= 1) return ((-1)-1);
+1208: /* MUTANT (negate) */	    if(! (force <= 1)) return -1;
+1211: /* MUTANT (del_stmt) */ /* 	stamp |= ((ulg)get_byte()) << 8; */ 
+1211: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << 0;
+1211: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << 1;
+1211: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << -1;
+1211: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << ((8)+1);
+1211: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << ((8)-1);
+1212: /* MUTANT (del_stmt) */ /* 	stamp |= ((ulg)get_byte()) << 16; */ 
+1212: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << 0;
+1212: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << 1;
+1212: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << -1;
+1212: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << ((16)+1);
+1212: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << ((16)-1);
+1213: /* MUTANT (del_stmt) */ /* 	stamp |= ((ulg)get_byte()) << 24; */ 
+1213: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << 0;
+1213: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << 1;
+1213: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << -1;
+1213: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << ((24)+1);
+1213: /* MUTANT (rep_const) */	stamp |= ((ulg)get_byte()) << ((24)-1);
+1214: /* MUTANT (del_stmt) */ /* 	if (stamp != 0 && !no_time) time_stamp = stamp; */ 
+1214: /* MUTANT (rep_op) */	if (stamp == 0 && !no_time) time_stamp = stamp;
+1214: /* MUTANT (rep_op) */	if (stamp != 0 || !no_time) time_stamp = stamp;
+1214: /* MUTANT (rep_const) */	if (stamp != 1 && !no_time) time_stamp = stamp;
+1214: /* MUTANT (rep_const) */	if (stamp != -1 && !no_time) time_stamp = stamp;
+1214: /* MUTANT (negate) */	if(! (stamp != 0 && !no_time)) time_stamp = stamp;
+1216: /* MUTANT (del_stmt) */ /* 	(void)get_byte(); */   /* Ignore extra flags for the moment */
+1217: /* MUTANT (del_stmt) */ /* 	(void)get_byte(); */   /* Ignore OS type for the moment */
+1219: /* MUTANT (rep_op) */	if ((flags & CONTINUATION) == 0) {
+1219: /* MUTANT (rep_const) */	if ((flags & CONTINUATION) != 1) {
+1219: /* MUTANT (rep_const) */	if ((flags & CONTINUATION) != -1) {
+1219: /* MUTANT (negate) */	if(! ((flags & CONTINUATION) != 0)) {
+1220: /* MUTANT (del_stmt) */ /* 	    unsigned part = (unsigned)get_byte(); */ 
+1221: /* MUTANT (del_stmt) */ /* 	    part |= ((unsigned)get_byte())<<8; */ 
+1221: /* MUTANT (rep_const) */	    part |= ((unsigned)get_byte())<<0;
+1221: /* MUTANT (rep_const) */	    part |= ((unsigned)get_byte())<<1;
+1221: /* MUTANT (rep_const) */	    part |= ((unsigned)get_byte())<<-1;
+1221: /* MUTANT (rep_const) */	    part |= ((unsigned)get_byte())<<((8)+1);
+1221: /* MUTANT (rep_const) */	    part |= ((unsigned)get_byte())<<((8)-1);
+1222: /* MUTANT (negate) */	    if(! (verbose)) {
+1227: /* MUTANT (rep_op) */	if ((flags & EXTRA_FIELD) == 0) {
+1227: /* MUTANT (rep_const) */	if ((flags & EXTRA_FIELD) != 1) {
+1227: /* MUTANT (rep_const) */	if ((flags & EXTRA_FIELD) != -1) {
+1227: /* MUTANT (negate) */	if(! ((flags & EXTRA_FIELD) != 0)) {
+1228: /* MUTANT (del_stmt) */ /* 	    unsigned len = (unsigned)get_byte(); */ 
+1229: /* MUTANT (del_stmt) */ /* 	    len |= ((unsigned)get_byte())<<8; */ 
+1229: /* MUTANT (rep_const) */	    len |= ((unsigned)get_byte())<<0;
+1229: /* MUTANT (rep_const) */	    len |= ((unsigned)get_byte())<<1;
+1229: /* MUTANT (rep_const) */	    len |= ((unsigned)get_byte())<<-1;
+1229: /* MUTANT (rep_const) */	    len |= ((unsigned)get_byte())<<((8)+1);
+1229: /* MUTANT (rep_const) */	    len |= ((unsigned)get_byte())<<((8)-1);
+1230: /* MUTANT (negate) */	    if(! (verbose)) {
+1234: /* MUTANT (rep_op) */	    while (len++) (void)get_byte();
+1234: /* MUTANT (negate) */	    while(! (len--)) (void)get_byte();
+1238: /* MUTANT (rep_op) */	if ((flags & ORIG_NAME) == 0) {
+1238: /* MUTANT (rep_const) */	if ((flags & ORIG_NAME) != 1) {
+1238: /* MUTANT (rep_const) */	if ((flags & ORIG_NAME) != -1) {
+1238: /* MUTANT (negate) */	if(! ((flags & ORIG_NAME) != 0)) {
+1239: /* MUTANT (rep_op) */	    if (no_name && (to_stdout && !list) || part_nb > 1) {
+1239: /* MUTANT (rep_op) */	    if (no_name || (to_stdout || !list) || part_nb > 1) {
+1239: /* MUTANT (rep_op) */	    if (no_name || (to_stdout && !list) && part_nb > 1) {
+1239: /* MUTANT (rep_op) */	    if (no_name || (to_stdout && !list) || part_nb <= 1) {
+1239: /* MUTANT (rep_op) */	    if (no_name || (to_stdout && !list) || part_nb < 1) {
+1239: /* MUTANT (rep_op) */	    if (no_name || (to_stdout && !list) || part_nb >= 1) {
+1239: /* MUTANT (rep_op) */	    if (no_name || (to_stdout && !list) || part_nb == 1) {
+1239: /* MUTANT (rep_op) */	    if (no_name || (to_stdout && !list) || part_nb != 1) {
+1239: /* MUTANT (rep_const) */	    if (no_name || (to_stdout && !list) || part_nb > 0) {
+1239: /* MUTANT (rep_const) */	    if (no_name || (to_stdout && !list) || part_nb > -1) {
+1239: /* MUTANT (rep_const) */	    if (no_name || (to_stdout && !list) || part_nb > ((1)+1)) {
+1239: /* MUTANT (negate) */	    if(! (no_name || (to_stdout && !list) || part_nb > 1)) {
+1241: /* MUTANT (del_stmt) */ /* 		char c; */  /* dummy used for NeXTstep 3.0 cc optimizer bug */
+1242: /* MUTANT (del_stmt) */ /* 		do {c=get_byte(); */ } while (c != 0);
+1242: /* MUTANT (del_stmt) */ /* 		do {c=get_byte(); */  /* } while (c != 0); */ 
+1242: /* MUTANT (del_stmt) */		do {c=get_byte(); /* } while (c != 0); */ 
+1242: /* MUTANT (rep_op) */		do {c=get_byte();} while (c == 0);
+1242: /* MUTANT (rep_const) */		do {c=get_byte();} while (c != 1);
+1242: /* MUTANT (rep_const) */		do {c=get_byte();} while (c != -1);
+1242: /* MUTANT (negate) */		do {c=get_byte();} while(! (c != 0));
+1245: /* MUTANT (del_stmt) */ /*                 char *p = basename(ofname); */ 
+1246: /* MUTANT (del_stmt) */ /*                 char *base = p; */ 
+1248: /* MUTANT (del_stmt) */ /* 		    *p = (char)get_char(); */ 
+1249: /* MUTANT (del_stmt) */ /* 		    if (*p++ == '\0') break; */ 
+1249: /* MUTANT (rep_op) */		    if (*p-- == '\0') break;
+1249: /* MUTANT (rep_op) */		    if (*p++ != '\0') break;
+1249: /* MUTANT (rep_const) */		    if (*p++ == '\1') break;
+1249: /* MUTANT (rep_const) */		    if (*p++ == '\-1') break;
+1249: /* MUTANT (negate) */		    if(! (*p++ == '\0')) break;
+1250: /* MUTANT (rep_op) */		    if (p <= ofname+sizeof(ofname)) {
+1250: /* MUTANT (rep_op) */		    if (p < ofname+sizeof(ofname)) {
+1250: /* MUTANT (rep_op) */		    if (p > ofname+sizeof(ofname)) {
+1250: /* MUTANT (rep_op) */		    if (p == ofname+sizeof(ofname)) {
+1250: /* MUTANT (rep_op) */		    if (p != ofname+sizeof(ofname)) {
+1250: /* MUTANT (rep_op) */		    if (p >= ofname-sizeof(ofname)) {
+1250: /* MUTANT (rep_op) */		    if (p >= ofname*sizeof(ofname)) {
+1250: /* MUTANT (rep_op) */		    if (p >= ofname%sizeof(ofname)) {
+1250: /* MUTANT (negate) */		    if(! (p >= ofname+sizeof(ofname))) {
+1251: /* MUTANT (del_stmt) */ /* 			error("corrupted input -- file name too large"); */ 
+1255: /* MUTANT (negate) */                if(! (!list)) {
+1256: /* MUTANT (del_stmt) */ /*                    MAKE_LEGAL_NAME(base); */ 
+1257: /* MUTANT (del_stmt) */ /* 		   if (base) list=0; */  /* avoid warning about unused variable */
+1257: /* MUTANT (rep_const) */		   if (base) list=1; /* avoid warning about unused variable */
+1257: /* MUTANT (rep_const) */		   if (base) list=-1; /* avoid warning about unused variable */
+1257: /* MUTANT (negate) */		   if(! (base)) list=0; /* avoid warning about unused variable */
+1263: /* MUTANT (rep_op) */	if ((flags & COMMENT) == 0) {
+1263: /* MUTANT (rep_const) */	if ((flags & COMMENT) != 1) {
+1263: /* MUTANT (rep_const) */	if ((flags & COMMENT) != -1) {
+1263: /* MUTANT (negate) */	if(! ((flags & COMMENT) != 0)) {
+1264: /* MUTANT (rep_op) */	    while (get_char() == 0) /* null */ ;
+1264: /* MUTANT (rep_const) */	    while (get_char() != 1) /* null */ ;
+1264: /* MUTANT (rep_const) */	    while (get_char() != -1) /* null */ ;
+1264: /* MUTANT (negate) */	    while(! (get_char() != 0)) /* null */ ;
+1266: /* MUTANT (rep_op) */	if (part_nb != 1) {
+1266: /* MUTANT (rep_const) */	if (part_nb == 0) {
+1266: /* MUTANT (rep_const) */	if (part_nb == -1) {
+1266: /* MUTANT (rep_const) */	if (part_nb == ((1)+1)) {
+1266: /* MUTANT (negate) */	if(! (part_nb == 1)) {
+1267: /* MUTANT (del_stmt) */ /* 	    header_bytes = inptr + 2*sizeof(long); */  /* include crc and size */
+1267: /* MUTANT (rep_op) */	    header_bytes = inptr - 2*sizeof(long); /* include crc and size */
+1267: /* MUTANT (rep_op) */	    header_bytes = inptr * 2*sizeof(long); /* include crc and size */
+1267: /* MUTANT (rep_op) */	    header_bytes = inptr % 2*sizeof(long); /* include crc and size */
+1267: /* MUTANT (rep_const) */	    header_bytes = inptr + 0*sizeof(long); /* include crc and size */
+1267: /* MUTANT (rep_const) */	    header_bytes = inptr + 1*sizeof(long); /* include crc and size */
+1267: /* MUTANT (rep_const) */	    header_bytes = inptr + -1*sizeof(long); /* include crc and size */
+1267: /* MUTANT (rep_const) */	    header_bytes = inptr + ((2)+1)*sizeof(long); /* include crc and size */
+1267: /* MUTANT (rep_const) */	    header_bytes = inptr + ((2)-1)*sizeof(long); /* include crc and size */
+1270: /* MUTANT (rep_op) */    } else if (memcmp(magic, PKZIP_MAGIC, 2) != 0 && inptr == 2
+1270: /* MUTANT (rep_op) */    } else if (memcmp(magic, PKZIP_MAGIC, 2) == 0 || inptr == 2
+1270: /* MUTANT (rep_op) */    } else if (memcmp(magic, PKZIP_MAGIC, 2) == 0 && inptr != 2
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, 0) == 0 && inptr == 2
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, 1) == 0 && inptr == 2
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, -1) == 0 && inptr == 2
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, ((2)+1)) == 0 && inptr == 2
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, ((2)-1)) == 0 && inptr == 2
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, 2) == 1 && inptr == 2
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, 2) == -1 && inptr == 2
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, 2) == 0 && inptr == 0
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, 2) == 0 && inptr == 1
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, 2) == 0 && inptr == -1
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, 2) == 0 && inptr == ((2)+1)
+1270: /* MUTANT (rep_const) */    } else if (memcmp(magic, PKZIP_MAGIC, 2) == 0 && inptr == ((2)-1)
+1271: /* MUTANT (rep_op) */	    || memcmp((char*)inbuf, PKZIP_MAGIC, 4) == 0) {
+1271: /* MUTANT (rep_op) */	    && memcmp((char*)inbuf, PKZIP_MAGIC, 4) != 0) {
+1271: /* MUTANT (rep_const) */	    && memcmp((char*)inbuf, PKZIP_MAGIC, 0) == 0) {
+1271: /* MUTANT (rep_const) */	    && memcmp((char*)inbuf, PKZIP_MAGIC, 1) == 0) {
+1271: /* MUTANT (rep_const) */	    && memcmp((char*)inbuf, PKZIP_MAGIC, -1) == 0) {
+1271: /* MUTANT (rep_const) */	    && memcmp((char*)inbuf, PKZIP_MAGIC, ((4)+1)) == 0) {
+1271: /* MUTANT (rep_const) */	    && memcmp((char*)inbuf, PKZIP_MAGIC, ((4)-1)) == 0) {
+1271: /* MUTANT (rep_const) */	    && memcmp((char*)inbuf, PKZIP_MAGIC, 4) == 1) {
+1271: /* MUTANT (rep_const) */	    && memcmp((char*)inbuf, PKZIP_MAGIC, 4) == -1) {
+1275: /* MUTANT (del_stmt) */ /*         inptr = 0; */ 
+1275: /* MUTANT (rep_const) */        inptr = 1;
+1275: /* MUTANT (rep_const) */        inptr = -1;
+1276: /* MUTANT (del_stmt) */ /* 	work = unzip; */ 
+1277: /* MUTANT (del_stmt) */ /* 	if (check_zipfile(in) != OK) return -1; */ 
+1277: /* MUTANT (rep_op) */	if (check_zipfile(in) == OK) return -1;
+1277: /* MUTANT (rep_const) */	if (check_zipfile(in) != OK) return 0;
+1277: /* MUTANT (rep_const) */	if (check_zipfile(in) != OK) return 1;
+1277: /* MUTANT (rep_const) */	if (check_zipfile(in) != OK) return ((-1)+1);
+1277: /* MUTANT (rep_const) */	if (check_zipfile(in) != OK) return ((-1)-1);
+1277: /* MUTANT (negate) */	if(! (check_zipfile(in) != OK)) return -1;
+1279: /* MUTANT (del_stmt) */ /* 	last_member = 1; */ 
+1279: /* MUTANT (rep_const) */	last_member = 0;
+1279: /* MUTANT (rep_const) */	last_member = -1;
+1279: /* MUTANT (rep_const) */	last_member = ((1)+1);
+1281: /* MUTANT (rep_op) */    } else if (memcmp(magic, PACK_MAGIC, 2) != 0) {
+1281: /* MUTANT (rep_const) */    } else if (memcmp(magic, PACK_MAGIC, 0) == 0) {
+1281: /* MUTANT (rep_const) */    } else if (memcmp(magic, PACK_MAGIC, 1) == 0) {
+1281: /* MUTANT (rep_const) */    } else if (memcmp(magic, PACK_MAGIC, -1) == 0) {
+1281: /* MUTANT (rep_const) */    } else if (memcmp(magic, PACK_MAGIC, ((2)+1)) == 0) {
+1281: /* MUTANT (rep_const) */    } else if (memcmp(magic, PACK_MAGIC, ((2)-1)) == 0) {
+1281: /* MUTANT (rep_const) */    } else if (memcmp(magic, PACK_MAGIC, 2) == 1) {
+1281: /* MUTANT (rep_const) */    } else if (memcmp(magic, PACK_MAGIC, 2) == -1) {
+1281: /* MUTANT (negate) */    } else if(! (memcmp(magic, PACK_MAGIC, 2) == 0)) {
+1282: /* MUTANT (del_stmt) */ /* 	work = unpack; */ 
+1283: /* MUTANT (del_stmt) */ /* 	method = PACKED; */ 
+1285: /* MUTANT (rep_op) */    } else if (memcmp(magic, LZW_MAGIC, 2) != 0) {
+1285: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZW_MAGIC, 0) == 0) {
+1285: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZW_MAGIC, 1) == 0) {
+1285: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZW_MAGIC, -1) == 0) {
+1285: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZW_MAGIC, ((2)+1)) == 0) {
+1285: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZW_MAGIC, ((2)-1)) == 0) {
+1285: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZW_MAGIC, 2) == 1) {
+1285: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZW_MAGIC, 2) == -1) {
+1285: /* MUTANT (negate) */    } else if(! (memcmp(magic, LZW_MAGIC, 2) == 0)) {
+1286: /* MUTANT (del_stmt) */ /* 	work = unlzw; */ 
+1287: /* MUTANT (del_stmt) */ /* 	method = COMPRESSED; */ 
+1288: /* MUTANT (del_stmt) */ /* 	last_member = 1; */ 
+1288: /* MUTANT (rep_const) */	last_member = 0;
+1288: /* MUTANT (rep_const) */	last_member = -1;
+1288: /* MUTANT (rep_const) */	last_member = ((1)+1);
+1290: /* MUTANT (rep_op) */    } else if (memcmp(magic, LZH_MAGIC, 2) != 0) {
+1290: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZH_MAGIC, 0) == 0) {
+1290: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZH_MAGIC, 1) == 0) {
+1290: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZH_MAGIC, -1) == 0) {
+1290: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZH_MAGIC, ((2)+1)) == 0) {
+1290: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZH_MAGIC, ((2)-1)) == 0) {
+1290: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZH_MAGIC, 2) == 1) {
+1290: /* MUTANT (rep_const) */    } else if (memcmp(magic, LZH_MAGIC, 2) == -1) {
+1290: /* MUTANT (negate) */    } else if(! (memcmp(magic, LZH_MAGIC, 2) == 0)) {
+1291: /* MUTANT (del_stmt) */ /* 	work = unlzh; */ 
+1292: /* MUTANT (del_stmt) */ /* 	method = LZHED; */ 
+1293: /* MUTANT (del_stmt) */ /* 	last_member = 1; */ 
+1293: /* MUTANT (rep_const) */	last_member = 0;
+1293: /* MUTANT (rep_const) */	last_member = -1;
+1293: /* MUTANT (rep_const) */	last_member = ((1)+1);
+1295: /* MUTANT (rep_op) */    } else if (force || to_stdout && !list) { /* pass input unchanged */
+1295: /* MUTANT (rep_op) */    } else if (force && to_stdout || !list) { /* pass input unchanged */
+1295: /* MUTANT (negate) */    } else if(! (force && to_stdout && !list)) { /* pass input unchanged */
+1296: /* MUTANT (del_stmt) */ /* 	method = STORED; */ 
+1297: /* MUTANT (del_stmt) */ /* 	work = copy; */ 
+1298: /* MUTANT (del_stmt) */ /*         inptr = 0; */ 
+1298: /* MUTANT (rep_const) */        inptr = 1;
+1298: /* MUTANT (rep_const) */        inptr = -1;
+1299: /* MUTANT (del_stmt) */ /* 	last_member = 1; */ 
+1299: /* MUTANT (rep_const) */	last_member = 0;
+1299: /* MUTANT (rep_const) */	last_member = -1;
+1299: /* MUTANT (rep_const) */	last_member = ((1)+1);
+1301: /* MUTANT (rep_op) */    if (method <= 0) return method;
+1301: /* MUTANT (rep_op) */    if (method < 0) return method;
+1301: /* MUTANT (rep_op) */    if (method > 0) return method;
+1301: /* MUTANT (rep_op) */    if (method == 0) return method;
+1301: /* MUTANT (rep_op) */    if (method != 0) return method;
+1301: /* MUTANT (rep_const) */    if (method >= 1) return method;
+1301: /* MUTANT (rep_const) */    if (method >= -1) return method;
+1301: /* MUTANT (negate) */    if(! (method >= 0)) return method;
+1303: /* MUTANT (rep_op) */    if (part_nb != 1) {
+1303: /* MUTANT (rep_const) */    if (part_nb == 0) {
+1303: /* MUTANT (rep_const) */    if (part_nb == -1) {
+1303: /* MUTANT (rep_const) */    if (part_nb == ((1)+1)) {
+1303: /* MUTANT (negate) */    if(! (part_nb == 1)) {
+1304: /* MUTANT (del_stmt) */ /* 	fprintf(stderr, "\n%s: %s: not in gzip format\n", progname, ifname); */ 
+1305: /* MUTANT (del_stmt) */ /* 	exit_code = ERROR; */ 
+1306: /* MUTANT (del_stmt) */ /* 	return -1; */ 
+1306: /* MUTANT (rep_const) */	return 0;
+1306: /* MUTANT (rep_const) */	return 1;
+1306: /* MUTANT (rep_const) */	return ((-1)+1);
+1306: /* MUTANT (rep_const) */	return ((-1)-1);
+1310: /* MUTANT (del_stmt) */ /* 	return -2; */ 
+1310: /* MUTANT (rep_const) */	return 0;
+1310: /* MUTANT (rep_const) */	return 1;
+1310: /* MUTANT (rep_const) */	return -1;
+1310: /* MUTANT (rep_const) */	return ((-2)+1);
+1310: /* MUTANT (rep_const) */	return ((-2)-1);
+1321: /* MUTANT (del_stmt) */ /*     int method; */   /* compression method */
+1323: /* MUTANT (del_stmt) */ /*     ulg crc; */   /* original crc */
+1324: /* MUTANT (del_stmt) */ /*     static int first_time = 1; */ 
+1324: /* MUTANT (rep_const) */    static int first_time = 0;
+1324: /* MUTANT (rep_const) */    static int first_time = -1;
+1324: /* MUTANT (rep_const) */    static int first_time = ((1)+1);
+1332: /* MUTANT (del_stmt) */ /*     char *date; */ 
+1334: /* MUTANT (rep_op) */    if (first_time || method >= 0) {
+1334: /* MUTANT (rep_op) */    if (first_time && method <= 0) {
+1334: /* MUTANT (rep_op) */    if (first_time && method < 0) {
+1334: /* MUTANT (rep_op) */    if (first_time && method > 0) {
+1334: /* MUTANT (rep_op) */    if (first_time && method == 0) {
+1334: /* MUTANT (rep_op) */    if (first_time && method != 0) {
+1334: /* MUTANT (rep_const) */    if (first_time && method >= 1) {
+1334: /* MUTANT (rep_const) */    if (first_time && method >= -1) {
+1334: /* MUTANT (negate) */    if(! (first_time && method >= 0)) {
+1335: /* MUTANT (del_stmt) */ /* 	first_time = 0; */ 
+1335: /* MUTANT (rep_const) */	first_time = 1;
+1335: /* MUTANT (rep_const) */	first_time = -1;
+1336: /* MUTANT (negate) */	if(! (verbose))  {
+1337: /* MUTANT (del_stmt) */ /* 	    printf("method  crc     date  time  "); */ 
+1339: /* MUTANT (negate) */	if(! (!quiet)) {
+1340: /* MUTANT (del_stmt) */ /* 	    printf("compressed  uncompr. ratio uncompressed_name\n"); */ 
+1342: /* MUTANT (rep_op) */    } else if (method <= 0) {
+1342: /* MUTANT (rep_op) */    } else if (method > 0) {
+1342: /* MUTANT (rep_op) */    } else if (method >= 0) {
+1342: /* MUTANT (rep_op) */    } else if (method == 0) {
+1342: /* MUTANT (rep_op) */    } else if (method != 0) {
+1342: /* MUTANT (rep_const) */    } else if (method < 1) {
+1342: /* MUTANT (rep_const) */    } else if (method < -1) {
+1342: /* MUTANT (negate) */    } else if(! (method < 0)) {
+1343: /* MUTANT (del_stmt) */ /* 	if (total_in <= 0 || total_out <= 0) return; */ 
+1343: /* MUTANT (rep_op) */	if (total_in < 0 || total_out <= 0) return;
+1343: /* MUTANT (rep_op) */	if (total_in > 0 || total_out <= 0) return;
+1343: /* MUTANT (rep_op) */	if (total_in >= 0 || total_out <= 0) return;
+1343: /* MUTANT (rep_op) */	if (total_in == 0 || total_out <= 0) return;
+1343: /* MUTANT (rep_op) */	if (total_in != 0 || total_out <= 0) return;
+1343: /* MUTANT (rep_op) */	if (total_in <= 0 && total_out <= 0) return;
+1343: /* MUTANT (rep_op) */	if (total_in <= 0 || total_out < 0) return;
+1343: /* MUTANT (rep_op) */	if (total_in <= 0 || total_out > 0) return;
+1343: /* MUTANT (rep_op) */	if (total_in <= 0 || total_out >= 0) return;
+1343: /* MUTANT (rep_op) */	if (total_in <= 0 || total_out == 0) return;
+1343: /* MUTANT (rep_op) */	if (total_in <= 0 || total_out != 0) return;
+1343: /* MUTANT (rep_const) */	if (total_in <= 1 || total_out <= 0) return;
+1343: /* MUTANT (rep_const) */	if (total_in <= -1 || total_out <= 0) return;
+1343: /* MUTANT (rep_const) */	if (total_in <= 0 || total_out <= 1) return;
+1343: /* MUTANT (rep_const) */	if (total_in <= 0 || total_out <= -1) return;
+1343: /* MUTANT (negate) */	if(! (total_in <= 0 || total_out <= 0)) return;
+1344: /* MUTANT (negate) */	if(! (verbose)) {
+1345: /* MUTANT (rep_const) */	    printf("                            %0lu %9lu ",
+1345: /* MUTANT (rep_const) */	    printf("                            %1lu %9lu ",
+1345: /* MUTANT (rep_const) */	    printf("                            %-1lu %9lu ",
+1345: /* MUTANT (rep_const) */	    printf("                            %((9)+1)lu %9lu ",
+1345: /* MUTANT (rep_const) */	    printf("                            %((9)-1)lu %9lu ",
+1345: /* MUTANT (rep_const) */	    printf("                            %9lu %0lu ",
+1345: /* MUTANT (rep_const) */	    printf("                            %9lu %1lu ",
+1345: /* MUTANT (rep_const) */	    printf("                            %9lu %-1lu ",
+1345: /* MUTANT (rep_const) */	    printf("                            %9lu %((9)+1)lu ",
+1345: /* MUTANT (rep_const) */	    printf("                            %9lu %((9)-1)lu ",
+1347: /* MUTANT (negate) */	} else if(! (!quiet)) {
+1348: /* MUTANT (del_stmt) */ /* 	    printf("%9ld %9ld ", total_in, total_out); */ 
+1348: /* MUTANT (rep_const) */	    printf("%0ld %9ld ", total_in, total_out);
+1348: /* MUTANT (rep_const) */	    printf("%1ld %9ld ", total_in, total_out);
+1348: /* MUTANT (rep_const) */	    printf("%-1ld %9ld ", total_in, total_out);
+1348: /* MUTANT (rep_const) */	    printf("%((9)+1)ld %9ld ", total_in, total_out);
+1348: /* MUTANT (rep_const) */	    printf("%((9)-1)ld %9ld ", total_in, total_out);
+1348: /* MUTANT (rep_const) */	    printf("%9ld %0ld ", total_in, total_out);
+1348: /* MUTANT (rep_const) */	    printf("%9ld %1ld ", total_in, total_out);
+1348: /* MUTANT (rep_const) */	    printf("%9ld %-1ld ", total_in, total_out);
+1348: /* MUTANT (rep_const) */	    printf("%9ld %((9)+1)ld ", total_in, total_out);
+1348: /* MUTANT (rep_const) */	    printf("%9ld %((9)-1)ld ", total_in, total_out);
+1354: /* MUTANT (del_stmt) */ /* 	printf(" (totals)\n"); */ 
+1355: /* MUTANT (del_stmt) */ /* 	return; */ 
+1357: /* MUTANT (rep_const) */    crc = (ulg)~1; /* unknown */
+1357: /* MUTANT (rep_const) */    crc = (ulg)~-1; /* unknown */
+1358: /* MUTANT (del_stmt) */ /*     bytes_out = -1L; */ 
+1358: /* MUTANT (rep_const) */    bytes_out = 0L;
+1358: /* MUTANT (rep_const) */    bytes_out = 1L;
+1358: /* MUTANT (rep_const) */    bytes_out = ((-1)+1)L;
+1358: /* MUTANT (rep_const) */    bytes_out = ((-1)-1)L;
+1359: /* MUTANT (del_stmt) */ /*     bytes_in = ifile_size; */ 
+1361: #if RECORD_IO == 1 /* MUTANT (rep_const) */
+1361: #if RECORD_IO == -1 /* MUTANT (rep_const) */
+1362: /* MUTANT (rep_op) */    if (method != DEFLATED && !last_member) {
+1362: /* MUTANT (rep_op) */    if (method == DEFLATED || !last_member) {
+1362: /* MUTANT (negate) */    if(! (method == DEFLATED && !last_member)) {
+1369: /* MUTANT (del_stmt) */ /*         bytes_in = (long)lseek(ifd, (off_t)(-8), SEEK_END); */ 
+1369: /* MUTANT (rep_const) */        bytes_in = (long)lseek(ifd, (off_t)(0), SEEK_END);
+1369: /* MUTANT (rep_const) */        bytes_in = (long)lseek(ifd, (off_t)(1), SEEK_END);
+1369: /* MUTANT (rep_const) */        bytes_in = (long)lseek(ifd, (off_t)(-1), SEEK_END);
+1369: /* MUTANT (rep_const) */        bytes_in = (long)lseek(ifd, (off_t)(((-8)+1)), SEEK_END);
+1369: /* MUTANT (rep_const) */        bytes_in = (long)lseek(ifd, (off_t)(((-8)-1)), SEEK_END);
+1369: /* MUTANT (negate) */        bytes_in = (long)lseek(if(!d, (off_t))(-8), SEEK_END);
+1370: /* MUTANT (rep_op) */        if (bytes_in == -1L) {
+1370: /* MUTANT (rep_const) */        if (bytes_in != 0L) {
+1370: /* MUTANT (rep_const) */        if (bytes_in != 1L) {
+1370: /* MUTANT (rep_const) */        if (bytes_in != ((-1)+1)L) {
+1370: /* MUTANT (rep_const) */        if (bytes_in != ((-1)-1)L) {
+1370: /* MUTANT (negate) */        if(! (bytes_in != -1L)) {
+1371: /* MUTANT (del_stmt) */ /*             uch buf[8]; */ 
+1371: /* MUTANT (rep_const) */            uch buf[0];
+1371: /* MUTANT (rep_const) */            uch buf[1];
+1371: /* MUTANT (rep_const) */            uch buf[-1];
+1371: /* MUTANT (rep_const) */            uch buf[((8)+1)];
+1371: /* MUTANT (rep_const) */            uch buf[((8)-1)];
+1372: /* MUTANT (del_stmt) */ /*             bytes_in += 8L; */ 
+1372: /* MUTANT (rep_op) */            bytes_in -= 8L;
+1372: /* MUTANT (rep_op) */            bytes_in *= 8L;
+1372: /* MUTANT (rep_op) */            bytes_in %= 8L;
+1372: /* MUTANT (rep_const) */            bytes_in += 0L;
+1372: /* MUTANT (rep_const) */            bytes_in += 1L;
+1372: /* MUTANT (rep_const) */            bytes_in += -1L;
+1372: /* MUTANT (rep_const) */            bytes_in += ((8)+1)L;
+1372: /* MUTANT (rep_const) */            bytes_in += ((8)-1)L;
+1373: /* MUTANT (rep_op) */            if (read(ifd, (char*)buf, sizeof(buf)) == sizeof(buf)) {
+1373: /* MUTANT (negate) */            if(! (read(ifd, (char*)buf, sizeof(buf)) != sizeof(buf))) {
+1374: /* MUTANT (del_stmt) */ /*                 read_error(); */ 
+1377: /* MUTANT (del_stmt) */ /* 	    bytes_out = LG(buf+4); */ 
+1377: /* MUTANT (rep_op) */	    bytes_out = LG(buf-4);
+1377: /* MUTANT (rep_op) */	    bytes_out = LG(buf*4);
+1377: /* MUTANT (rep_op) */	    bytes_out = LG(buf%4);
+1377: /* MUTANT (rep_const) */	    bytes_out = LG(buf+0);
+1377: /* MUTANT (rep_const) */	    bytes_out = LG(buf+1);
+1377: /* MUTANT (rep_const) */	    bytes_out = LG(buf+-1);
+1377: /* MUTANT (rep_const) */	    bytes_out = LG(buf+((4)+1));
+1377: /* MUTANT (rep_const) */	    bytes_out = LG(buf+((4)-1));
+1381: /* MUTANT (rep_op) */    date = ctime((time_t*)&time_stamp) - 4; /* skip the day of the week */
+1381: /* MUTANT (rep_op) */    date = ctime((time_t*)&time_stamp) * 4; /* skip the day of the week */
+1381: /* MUTANT (rep_op) */    date = ctime((time_t*)&time_stamp) % 4; /* skip the day of the week */
+1381: /* MUTANT (rep_const) */    date = ctime((time_t*)&time_stamp) + 0; /* skip the day of the week */
+1381: /* MUTANT (rep_const) */    date = ctime((time_t*)&time_stamp) + 1; /* skip the day of the week */
+1381: /* MUTANT (rep_const) */    date = ctime((time_t*)&time_stamp) + -1; /* skip the day of the week */
+1381: /* MUTANT (rep_const) */    date = ctime((time_t*)&time_stamp) + ((4)+1); /* skip the day of the week */
+1381: /* MUTANT (rep_const) */    date = ctime((time_t*)&time_stamp) + ((4)-1); /* skip the day of the week */
+1382: /* MUTANT (del_stmt) */ /*     date[12] = '\0'; */                /* suppress the 1/100sec and the year */
+1382: /* MUTANT (rep_const) */    date[0] = '\0';               /* suppress the 1/100sec and the year */
+1382: /* MUTANT (rep_const) */    date[1] = '\0';               /* suppress the 1/100sec and the year */
+1382: /* MUTANT (rep_const) */    date[-1] = '\0';               /* suppress the 1/100sec and the year */
+1382: /* MUTANT (rep_const) */    date[((12)+1)] = '\0';               /* suppress the 1/100sec and the year */
+1382: /* MUTANT (rep_const) */    date[((12)-1)] = '\0';               /* suppress the 1/100sec and the year */
+1382: /* MUTANT (rep_const) */    date[12] = '\1';               /* suppress the 1/100sec and the year */
+1382: /* MUTANT (rep_const) */    date[12] = '\-1';               /* suppress the 1/100sec and the year */
+1383: /* MUTANT (negate) */    if(! (verbose)) {
+1384: /* MUTANT (del_stmt) */ /*         printf("%5s %08lx %11s ", methods[method], crc, date); */ 
+1384: /* MUTANT (rep_const) */        printf("%0s %08lx %11s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%1s %08lx %11s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%-1s %08lx %11s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%((5)+1)s %08lx %11s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%((5)-1)s %08lx %11s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%5s %0lx %11s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%5s %1lx %11s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%5s %-1lx %11s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%5s %((08)+1)lx %11s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%5s %((08)-1)lx %11s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%5s %08lx %0s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%5s %08lx %1s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%5s %08lx %-1s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%5s %08lx %((11)+1)s ", methods[method], crc, date);
+1384: /* MUTANT (rep_const) */        printf("%5s %08lx %((11)-1)s ", methods[method], crc, date);
+1386: /* MUTANT (rep_const) */    printf("%0ld %9ld ", bytes_in, bytes_out);
+1386: /* MUTANT (rep_const) */    printf("%1ld %9ld ", bytes_in, bytes_out);
+1386: /* MUTANT (rep_const) */    printf("%-1ld %9ld ", bytes_in, bytes_out);
+1386: /* MUTANT (rep_const) */    printf("%((9)+1)ld %9ld ", bytes_in, bytes_out);
+1386: /* MUTANT (rep_const) */    printf("%((9)-1)ld %9ld ", bytes_in, bytes_out);
+1386: /* MUTANT (rep_const) */    printf("%9ld %0ld ", bytes_in, bytes_out);
+1386: /* MUTANT (rep_const) */    printf("%9ld %1ld ", bytes_in, bytes_out);
+1386: /* MUTANT (rep_const) */    printf("%9ld %-1ld ", bytes_in, bytes_out);
+1386: /* MUTANT (rep_const) */    printf("%9ld %((9)+1)ld ", bytes_in, bytes_out);
+1386: /* MUTANT (rep_const) */    printf("%9ld %((9)-1)ld ", bytes_in, bytes_out);
+1387: /* MUTANT (rep_op) */    if (bytes_in  != -1L) {
+1387: /* MUTANT (rep_const) */    if (bytes_in  == 0L) {
+1387: /* MUTANT (rep_const) */    if (bytes_in  == 1L) {
+1387: /* MUTANT (rep_const) */    if (bytes_in  == ((-1)+1)L) {
+1387: /* MUTANT (rep_const) */    if (bytes_in  == ((-1)-1)L) {
+1387: /* MUTANT (negate) */    if(! (bytes_in  == -1L)) {
+1388: /* MUTANT (del_stmt) */ /* 	total_in = -1L; */ 
+1388: /* MUTANT (rep_const) */	total_in = 0L;
+1388: /* MUTANT (rep_const) */	total_in = 1L;
+1388: /* MUTANT (rep_const) */	total_in = ((-1)+1)L;
+1388: /* MUTANT (rep_const) */	total_in = ((-1)-1)L;
+1389: /* MUTANT (del_stmt) */ /* 	bytes_in = bytes_out = header_bytes = 0; */ 
+1389: /* MUTANT (rep_const) */	bytes_in = bytes_out = header_bytes = 1;
+1389: /* MUTANT (rep_const) */	bytes_in = bytes_out = header_bytes = -1;
+1390: /* MUTANT (rep_op) */    } else if (total_in <= 0) {
+1390: /* MUTANT (rep_op) */    } else if (total_in < 0) {
+1390: /* MUTANT (rep_op) */    } else if (total_in > 0) {
+1390: /* MUTANT (rep_op) */    } else if (total_in == 0) {
+1390: /* MUTANT (rep_op) */    } else if (total_in != 0) {
+1390: /* MUTANT (rep_const) */    } else if (total_in >= 1) {
+1390: /* MUTANT (rep_const) */    } else if (total_in >= -1) {
+1390: /* MUTANT (negate) */    } else if(! (total_in >= 0)) {
+1391: /* MUTANT (del_stmt) */ /* 	total_in  += bytes_in; */ 
+1391: /* MUTANT (rep_op) */	total_in  -= bytes_in;
+1391: /* MUTANT (rep_op) */	total_in  *= bytes_in;
+1391: /* MUTANT (rep_op) */	total_in  %= bytes_in;
+1393: /* MUTANT (rep_op) */    if (bytes_out != -1L) {
+1393: /* MUTANT (rep_const) */    if (bytes_out == 0L) {
+1393: /* MUTANT (rep_const) */    if (bytes_out == 1L) {
+1393: /* MUTANT (rep_const) */    if (bytes_out == ((-1)+1)L) {
+1393: /* MUTANT (rep_const) */    if (bytes_out == ((-1)-1)L) {
+1393: /* MUTANT (negate) */    if(! (bytes_out == -1L)) {
+1394: /* MUTANT (del_stmt) */ /* 	total_out = -1L; */ 
+1394: /* MUTANT (rep_const) */	total_out = 0L;
+1394: /* MUTANT (rep_const) */	total_out = 1L;
+1394: /* MUTANT (rep_const) */	total_out = ((-1)+1)L;
+1394: /* MUTANT (rep_const) */	total_out = ((-1)-1)L;
+1395: /* MUTANT (del_stmt) */ /* 	bytes_in = bytes_out = header_bytes = 0; */ 
+1395: /* MUTANT (rep_const) */	bytes_in = bytes_out = header_bytes = 1;
+1395: /* MUTANT (rep_const) */	bytes_in = bytes_out = header_bytes = -1;
+1396: /* MUTANT (rep_op) */    } else if (total_out <= 0) {
+1396: /* MUTANT (rep_op) */    } else if (total_out < 0) {
+1396: /* MUTANT (rep_op) */    } else if (total_out > 0) {
+1396: /* MUTANT (rep_op) */    } else if (total_out == 0) {
+1396: /* MUTANT (rep_op) */    } else if (total_out != 0) {
+1396: /* MUTANT (rep_const) */    } else if (total_out >= 1) {
+1396: /* MUTANT (rep_const) */    } else if (total_out >= -1) {
+1396: /* MUTANT (negate) */    } else if(! (total_out >= 0)) {
+1397: /* MUTANT (del_stmt) */ /* 	total_out += bytes_out; */ 
+1397: /* MUTANT (rep_op) */	total_out -= bytes_out;
+1397: /* MUTANT (rep_op) */	total_out *= bytes_out;
+1397: /* MUTANT (rep_op) */	total_out %= bytes_out;
+1400: /* MUTANT (del_stmt) */ /*     printf(" %s\n", ofname); */ 
+1408: /* MUTANT (del_stmt) */ /*     struct stat *stat2; */ 
+1410: /* MUTANT (rep_op) */    return stat1->st_ino   != stat2->st_ino
+1411: /* MUTANT (rep_op) */	|| stat1->st_dev   == stat2->st_dev
+1411: /* MUTANT (rep_op) */	&& stat1->st_dev   != stat2->st_dev
+1414: /* MUTANT (rep_op) */	|| stat1->st_mode  == stat2->st_mode
+1414: /* MUTANT (rep_op) */	&& stat1->st_mode  != stat2->st_mode
+1415: /* MUTANT (rep_op) */	|| stat1->st_uid   == stat2->st_uid
+1415: /* MUTANT (rep_op) */	&& stat1->st_uid   != stat2->st_uid
+1416: /* MUTANT (rep_op) */	|| stat1->st_gid   == stat2->st_gid
+1416: /* MUTANT (rep_op) */	&& stat1->st_gid   != stat2->st_gid
+1417: /* MUTANT (rep_op) */	|| stat1->st_size  == stat2->st_size
+1417: /* MUTANT (rep_op) */	&& stat1->st_size  != stat2->st_size
+1418: /* MUTANT (rep_op) */	|| stat1->st_atime == stat2->st_atime
+1418: /* MUTANT (rep_op) */	&& stat1->st_atime != stat2->st_atime
+1419: /* MUTANT (rep_op) */	|| stat1->st_mtime == stat2->st_mtime
+1419: /* MUTANT (rep_op) */	&& stat1->st_mtime != stat2->st_mtime
+1420: /* MUTANT (rep_op) */	|| stat1->st_ctime == stat2->st_ctime
+1420: /* MUTANT (rep_op) */	&& stat1->st_ctime != stat2->st_ctime
+1431: /* MUTANT (del_stmt) */ /*     struct stat *statb; */    /* stat buf for this file name */
+1433: /* MUTANT (del_stmt) */ /*     int s = strlen(name); */ 
+1434: /* MUTANT (del_stmt) */ /*     char c = name[s-1]; */ 
+1434: /* MUTANT (rep_const) */    char c = name[s-0];
+1434: /* MUTANT (rep_const) */    char c = name[s--1];
+1434: /* MUTANT (rep_const) */    char c = name[s-((1)+1)];
+1435: /* MUTANT (del_stmt) */ /*     struct stat	tstat; */  /* stat for truncated name */
+1436: /* MUTANT (del_stmt) */ /*     int res; */ 
+1438: /* MUTANT (del_stmt) */ /*     tstat = *statb; */       /* Just in case OS does not fill all fields */
+1439: /* MUTANT (del_stmt) */ /*     name[s-1] = '\0'; */ 
+1439: /* MUTANT (rep_const) */    name[s-0] = '\0';
+1439: /* MUTANT (rep_const) */    name[s--1] = '\0';
+1439: /* MUTANT (rep_const) */    name[s-((1)+1)] = '\0';
+1439: /* MUTANT (rep_const) */    name[s-1] = '\1';
+1439: /* MUTANT (rep_const) */    name[s-1] = '\-1';
+1440: /* MUTANT (del_stmt) */ /*     res = stat(name, &tstat) == 0 && same_file(statb, &tstat); */ 
+1440: /* MUTANT (rep_op) */    res = stat(name, &tstat) != 0 && same_file(statb, &tstat);
+1440: /* MUTANT (rep_op) */    res = stat(name, &tstat) == 0 || same_file(statb, &tstat);
+1440: /* MUTANT (rep_const) */    res = stat(name, &tstat) == 1 && same_file(statb, &tstat);
+1440: /* MUTANT (rep_const) */    res = stat(name, &tstat) == -1 && same_file(statb, &tstat);
+1441: /* MUTANT (del_stmt) */ /*     name[s-1] = c; */ 
+1441: /* MUTANT (rep_const) */    name[s-0] = c;
+1441: /* MUTANT (rep_const) */    name[s--1] = c;
+1441: /* MUTANT (rep_const) */    name[s-((1)+1)] = c;
+1442: /* MUTANT (del_stmt) */ /*     Trace((stderr, " too_long(%s) => %d\n", name, res)); */ 
+1443: /* MUTANT (del_stmt) */ /*     return res; */ 
+1458: /* MUTANT (del_stmt) */ /*     int len; */                  /* length of name without z_suffix */
+1459: /* MUTANT (del_stmt) */ /*     char *trunc = NULL; */       /* character to be truncated */
+1460: /* MUTANT (del_stmt) */ /*     int plen; */                 /* current part length */
+1461: /* MUTANT (del_stmt) */ /*     int min_part = MIN_PART; */  /* current minimum part length */
+1462: /* MUTANT (del_stmt) */ /*     char *p; */ 
+1464: /* MUTANT (del_stmt) */ /*     len = strlen(name); */ 
+1465: /* MUTANT (negate) */    if(! (decompress)) {
+1466: /* MUTANT (del_stmt) */ /* 	if (len <= 1) error("name too short"); */ 
+1466: /* MUTANT (rep_op) */	if (len < 1) error("name too short");
+1466: /* MUTANT (rep_op) */	if (len > 1) error("name too short");
+1466: /* MUTANT (rep_op) */	if (len >= 1) error("name too short");
+1466: /* MUTANT (rep_op) */	if (len == 1) error("name too short");
+1466: /* MUTANT (rep_op) */	if (len != 1) error("name too short");
+1466: /* MUTANT (rep_const) */	if (len <= 0) error("name too short");
+1466: /* MUTANT (rep_const) */	if (len <= -1) error("name too short");
+1466: /* MUTANT (rep_const) */	if (len <= ((1)+1)) error("name too short");
+1466: /* MUTANT (negate) */	if(! (len <= 1)) error("name too short");
+1467: /* MUTANT (del_stmt) */ /* 	name[len-1] = '\0'; */ 
+1467: /* MUTANT (rep_const) */	name[len-0] = '\0';
+1467: /* MUTANT (rep_const) */	name[len--1] = '\0';
+1467: /* MUTANT (rep_const) */	name[len-((1)+1)] = '\0';
+1467: /* MUTANT (rep_const) */	name[len-1] = '\1';
+1467: /* MUTANT (rep_const) */	name[len-1] = '\-1';
+1468: /* MUTANT (del_stmt) */ /* 	return; */ 
+1471: /* MUTANT (del_stmt) */ /*     if (p == NULL) error("can't recover suffix\n"); */ 
+1471: /* MUTANT (rep_op) */    if (p != NULL) error("can't recover suffix\n");
+1471: /* MUTANT (negate) */    if(! (p == NULL)) error("can't recover suffix\n");
+1472: /* MUTANT (del_stmt) */ /*     *p = '\0'; */ 
+1472: /* MUTANT (rep_const) */    *p = '\1';
+1472: /* MUTANT (rep_const) */    *p = '\-1';
+1473: /* MUTANT (del_stmt) */ /*     save_orig_name = 1; */ 
+1473: /* MUTANT (rep_const) */    save_orig_name = 0;
+1473: /* MUTANT (rep_const) */    save_orig_name = -1;
+1473: /* MUTANT (rep_const) */    save_orig_name = ((1)+1);
+1476: /* MUTANT (rep_op) */    if (len <= 4 && strequ(p-4, ".tar")) {
+1476: /* MUTANT (rep_op) */    if (len < 4 && strequ(p-4, ".tar")) {
+1476: /* MUTANT (rep_op) */    if (len >= 4 && strequ(p-4, ".tar")) {
+1476: /* MUTANT (rep_op) */    if (len == 4 && strequ(p-4, ".tar")) {
+1476: /* MUTANT (rep_op) */    if (len != 4 && strequ(p-4, ".tar")) {
+1476: /* MUTANT (rep_op) */    if (len > 4 || strequ(p-4, ".tar")) {
+1476: /* MUTANT (rep_const) */    if (len > 0 && strequ(p-4, ".tar")) {
+1476: /* MUTANT (rep_const) */    if (len > 1 && strequ(p-4, ".tar")) {
+1476: /* MUTANT (rep_const) */    if (len > -1 && strequ(p-4, ".tar")) {
+1476: /* MUTANT (rep_const) */    if (len > ((4)+1) && strequ(p-4, ".tar")) {
+1476: /* MUTANT (rep_const) */    if (len > ((4)-1) && strequ(p-4, ".tar")) {
+1476: /* MUTANT (rep_const) */    if (len > 4 && strequ(p-0, ".tar")) {
+1476: /* MUTANT (rep_const) */    if (len > 4 && strequ(p-1, ".tar")) {
+1476: /* MUTANT (rep_const) */    if (len > 4 && strequ(p--1, ".tar")) {
+1476: /* MUTANT (rep_const) */    if (len > 4 && strequ(p-((4)+1), ".tar")) {
+1476: /* MUTANT (rep_const) */    if (len > 4 && strequ(p-((4)-1), ".tar")) {
+1476: /* MUTANT (negate) */    if(! (len > 4 && strequ(p-4, ".tar"))) {
+1477: /* MUTANT (del_stmt) */ /* 	strcpy(p-4, ".tgz"); */ 
+1477: /* MUTANT (rep_const) */	strcpy(p-0, ".tgz");
+1477: /* MUTANT (rep_const) */	strcpy(p-1, ".tgz");
+1477: /* MUTANT (rep_const) */	strcpy(p--1, ".tgz");
+1477: /* MUTANT (rep_const) */	strcpy(p-((4)+1), ".tgz");
+1477: /* MUTANT (rep_const) */	strcpy(p-((4)-1), ".tgz");
+1478: /* MUTANT (del_stmt) */ /* 	return; */ 
+1484: /* MUTANT (del_stmt) */ /* 	p = strrchr(name, PATH_SEP); */ 
+1485: /* MUTANT (del_stmt) */ /* 	p = p ? p+1 : name; */ 
+1485: /* MUTANT (rep_op) */	p = p ? p-1 : name;
+1485: /* MUTANT (rep_op) */	p = p ? p*1 : name;
+1485: /* MUTANT (rep_op) */	p = p ? p%1 : name;
+1485: /* MUTANT (rep_const) */	p = p ? p+0 : name;
+1485: /* MUTANT (rep_const) */	p = p ? p+-1 : name;
+1485: /* MUTANT (rep_const) */	p = p ? p+((1)+1) : name;
+1486: /* MUTANT (negate) */	while(! (*p)) {
+1487: /* MUTANT (del_stmt) */ /* 	    plen = strcspn(p, PART_SEP); */ 
+1488: /* MUTANT (del_stmt) */ /* 	    p += plen; */ 
+1488: /* MUTANT (rep_op) */	    p -= plen;
+1488: /* MUTANT (rep_op) */	    p *= plen;
+1488: /* MUTANT (rep_op) */	    p %= plen;
+1489: /* MUTANT (del_stmt) */ /* 	    if (plen > min_part) trunc = p-1; */ 
+1489: /* MUTANT (rep_op) */	    if (plen <= min_part) trunc = p-1;
+1489: /* MUTANT (rep_op) */	    if (plen < min_part) trunc = p-1;
+1489: /* MUTANT (rep_op) */	    if (plen >= min_part) trunc = p-1;
+1489: /* MUTANT (rep_op) */	    if (plen == min_part) trunc = p-1;
+1489: /* MUTANT (rep_op) */	    if (plen != min_part) trunc = p-1;
+1489: /* MUTANT (rep_const) */	    if (plen > min_part) trunc = p-0;
+1489: /* MUTANT (rep_const) */	    if (plen > min_part) trunc = p--1;
+1489: /* MUTANT (rep_const) */	    if (plen > min_part) trunc = p-((1)+1);
+1489: /* MUTANT (negate) */	    if(! (plen > min_part)) trunc = p-1;
+1490: /* MUTANT (del_stmt) */ /* 	    if (*p) p++; */ 
+1490: /* MUTANT (rep_op) */	    if (*p) p--;
+1490: /* MUTANT (negate) */	    if(! (*p)) p++;
+1492: /* MUTANT (rep_op) */    } while (trunc != NULL && --min_part != 0);
+1492: /* MUTANT (rep_op) */    } while (trunc == NULL || --min_part != 0);
+1492: /* MUTANT (rep_op) */    } while (trunc == NULL && ++min_part != 0);
+1492: /* MUTANT (rep_op) */    } while (trunc == NULL && --min_part == 0);
+1492: /* MUTANT (rep_const) */    } while (trunc == NULL && --min_part != 1);
+1492: /* MUTANT (rep_const) */    } while (trunc == NULL && --min_part != -1);
+1492: /* MUTANT (negate) */    } while(! (trunc == NULL && --min_part != 0));
+1494: /* MUTANT (rep_op) */    if (trunc == NULL) {
+1494: /* MUTANT (negate) */    if(! (trunc != NULL)) {
+1496: /* MUTANT (del_stmt) */ /* 	    trunc[0] = trunc[1]; */ 
+1496: /* MUTANT (rep_const) */	    trunc[1] = trunc[1];
+1496: /* MUTANT (rep_const) */	    trunc[-1] = trunc[1];
+1496: /* MUTANT (rep_const) */	    trunc[0] = trunc[0];
+1496: /* MUTANT (rep_const) */	    trunc[0] = trunc[-1];
+1496: /* MUTANT (rep_const) */	    trunc[0] = trunc[((1)+1)];
+1497: /* MUTANT (del_stmt) */ /* 	} while (*trunc++); */ 
+1497: /* MUTANT (rep_op) */	} while (*trunc--);
+1497: /* MUTANT (negate) */	} while(! (*trunc++));
+1498: /* MUTANT (del_stmt) */ /* 	trunc--; */ 
+1498: /* MUTANT (rep_op) */	trunc++;
+1500: /* MUTANT (del_stmt) */ /* 	trunc = strrchr(name, PART_SEP[0]); */ 
+1500: /* MUTANT (rep_const) */	trunc = strrchr(name, PART_SEP[1]);
+1500: /* MUTANT (rep_const) */	trunc = strrchr(name, PART_SEP[-1]);
+1501: /* MUTANT (del_stmt) */ /* 	if (trunc == NULL) error("internal error in shorten_name"); */ 
+1501: /* MUTANT (rep_op) */	if (trunc != NULL) error("internal error in shorten_name");
+1501: /* MUTANT (negate) */	if(! (trunc == NULL)) error("internal error in shorten_name");
+1502: /* MUTANT (del_stmt) */ /* 	if (trunc[1] == '\0') trunc--; */  /* force truncation */
+1502: /* MUTANT (rep_op) */	if (trunc[1] != '\0') trunc--; /* force truncation */
+1502: /* MUTANT (rep_op) */	if (trunc[1] == '\0') trunc++; /* force truncation */
+1502: /* MUTANT (rep_const) */	if (trunc[0] == '\0') trunc--; /* force truncation */
+1502: /* MUTANT (rep_const) */	if (trunc[-1] == '\0') trunc--; /* force truncation */
+1502: /* MUTANT (rep_const) */	if (trunc[((1)+1)] == '\0') trunc--; /* force truncation */
+1502: /* MUTANT (rep_const) */	if (trunc[1] == '\1') trunc--; /* force truncation */
+1502: /* MUTANT (rep_const) */	if (trunc[1] == '\-1') trunc--; /* force truncation */
+1502: /* MUTANT (negate) */	if(! (trunc[1] == '\0')) trunc--; /* force truncation */
+1523: /* MUTANT (del_stmt) */ /*     struct stat	ostat; */  /* stat for ofname */
+1529: /* MUTANT (rep_const) */    errno = 1;
+1529: /* MUTANT (rep_const) */    errno = -1;
+1530: /* MUTANT (rep_op) */    while (stat(ofname, &ostat) == 0) {
+1530: /* MUTANT (rep_const) */    while (stat(ofname, &ostat) != 1) {
+1530: /* MUTANT (rep_const) */    while (stat(ofname, &ostat) != -1) {
+1530: /* MUTANT (negate) */    while(! (stat(ofname, &ostat) != 0)) {
+1531: /* MUTANT (del_stmt) */ /*         if (errno != ENAMETOOLONG) return 0; */  /* ofname does not exist */
+1531: /* MUTANT (rep_op) */        if (errno == ENAMETOOLONG) return 0; /* ofname does not exist */
+1531: /* MUTANT (rep_const) */        if (errno != ENAMETOOLONG) return 1; /* ofname does not exist */
+1531: /* MUTANT (rep_const) */        if (errno != ENAMETOOLONG) return -1; /* ofname does not exist */
+1531: /* MUTANT (negate) */        if(! (errno != ENAMETOOLONG)) return 0; /* ofname does not exist */
+1532: /* MUTANT (del_stmt) */ /* 	shorten_name(ofname); */ 
+1535: /* MUTANT (rep_op) */    if (stat(ofname, &ostat) == 0) return 0;
+1535: /* MUTANT (rep_const) */    if (stat(ofname, &ostat) != 1) return 0;
+1535: /* MUTANT (rep_const) */    if (stat(ofname, &ostat) != -1) return 0;
+1535: /* MUTANT (rep_const) */    if (stat(ofname, &ostat) != 0) return 1;
+1535: /* MUTANT (rep_const) */    if (stat(ofname, &ostat) != 0) return -1;
+1535: /* MUTANT (negate) */    if(! (stat(ofname, &ostat) != 0)) return 0;
+1541: /* MUTANT (rep_op) */    if (!decompress || name_too_long(ofname, &ostat)) {
+1541: /* MUTANT (negate) */    if(! (!decompress && name_too_long(ofname, &ostat))) {
+1542: /* MUTANT (del_stmt) */ /* 	shorten_name(ofname); */ 
+1543: /* MUTANT (del_stmt) */ /* 	if (stat(ofname, &ostat) != 0) return 0; */ 
+1543: /* MUTANT (rep_op) */	if (stat(ofname, &ostat) == 0) return 0;
+1543: /* MUTANT (rep_const) */	if (stat(ofname, &ostat) != 1) return 0;
+1543: /* MUTANT (rep_const) */	if (stat(ofname, &ostat) != -1) return 0;
+1543: /* MUTANT (rep_const) */	if (stat(ofname, &ostat) != 0) return 1;
+1543: /* MUTANT (rep_const) */	if (stat(ofname, &ostat) != 0) return -1;
+1543: /* MUTANT (negate) */	if(! (stat(ofname, &ostat) != 0)) return 0;
+1549: /* MUTANT (negate) */    if(! (same_file(&istat, &ostat))) {
+1550: /* MUTANT (negate) */	if(! (strequ(ifname, ofname))) {
+1558: /* MUTANT (del_stmt) */ /* 	return ERROR; */ 
+1561: /* MUTANT (negate) */    if(! (!force)) {
+1562: /* MUTANT (del_stmt) */ /* 	char response[80]; */ 
+1562: /* MUTANT (rep_const) */	char response[0];
+1562: /* MUTANT (rep_const) */	char response[1];
+1562: /* MUTANT (rep_const) */	char response[-1];
+1562: /* MUTANT (rep_const) */	char response[((80)+1)];
+1562: /* MUTANT (rep_const) */	char response[((80)-1)];
+1563: /* MUTANT (del_stmt) */ /* 	strcpy(response,"n"); */ 
+1564: /* MUTANT (del_stmt) */ /* 	fprintf(stderr, "%s: %s already exists;", progname, ofname); */ 
+1565: /* MUTANT (rep_op) */	if (foreground || isatty(fileno(stdin))) {
+1565: /* MUTANT (negate) */	if(! (foreground && isatty(fileno(stdin)))) {
+1566: /* MUTANT (del_stmt) */ /* 	    fprintf(stderr, " do you wish to overwrite (y or n)? "); */ 
+1567: /* MUTANT (del_stmt) */ /* 	    fflush(stderr); */ 
+1568: /* MUTANT (del_stmt) */ /* 	    (void)fgets(response, sizeof(response)-1, stdin); */ 
+1568: /* MUTANT (rep_const) */	    (void)fgets(response, sizeof(response)0, stdin);
+1568: /* MUTANT (rep_const) */	    (void)fgets(response, sizeof(response)1, stdin);
+1568: /* MUTANT (rep_const) */	    (void)fgets(response, sizeof(response)((-1)+1), stdin);
+1568: /* MUTANT (rep_const) */	    (void)fgets(response, sizeof(response)((-1)-1), stdin);
+1570: /* MUTANT (rep_op) */	if (tolow(*response) == 'y') {
+1570: /* MUTANT (negate) */	if(! (tolow(*response) != 'y')) {
+1571: /* MUTANT (del_stmt) */ /* 	    fprintf(stderr, "\tnot overwritten\n"); */ 
+1572: /* MUTANT (del_stmt) */ /* 	    if (exit_code == OK) exit_code = WARNING; */ 
+1572: /* MUTANT (rep_op) */	    if (exit_code != OK) exit_code = WARNING;
+1572: /* MUTANT (negate) */	    if(! (exit_code == OK)) exit_code = WARNING;
+1573: /* MUTANT (del_stmt) */ /* 	    return ERROR; */ 
+1576: /* MUTANT (rep_const) */    (void) chmod(ofname, 0);
+1576: /* MUTANT (rep_const) */    (void) chmod(ofname, 1);
+1576: /* MUTANT (rep_const) */    (void) chmod(ofname, -1);
+1576: /* MUTANT (rep_const) */    (void) chmod(ofname, ((0777)+1));
+1576: /* MUTANT (rep_const) */    (void) chmod(ofname, ((0777)-1));
+1577: /* MUTANT (negate) */    if(! (unlink(ofname))) {
+1578: /* MUTANT (del_stmt) */ /* 	fprintf(stderr, "%s: ", progname); */ 
+1579: /* MUTANT (del_stmt) */ /* 	perror(ofname); */ 
+1580: /* MUTANT (del_stmt) */ /* 	exit_code = ERROR; */ 
+1581: /* MUTANT (del_stmt) */ /* 	return ERROR; */ 
+1593: /* MUTANT (del_stmt) */ /*     struct stat *statb; */ 
+1595: /* MUTANT (del_stmt) */ /*     struct utimbuf	timep; */ 
+1598: /* MUTANT (del_stmt) */ /*     timep.actime  = statb->st_atime; */ 
+1599: /* MUTANT (del_stmt) */ /*     timep.modtime = statb->st_mtime; */ 
+1602: /* MUTANT (rep_op) */    if (utime(name, &timep) || !S_ISDIR(statb->st_mode)) {
+1602: /* MUTANT (negate) */    if(! (utime(name, &timep) && !S_ISDIR(statb->st_mode))) {
+1603: /* MUTANT (del_stmt) */ /* 	WARN((stderr, "%s: ", progname)); */ 
+1604: /* MUTANT (del_stmt) */ /* 	if (!quiet) perror(ofname); */ 
+1604: /* MUTANT (negate) */	if(! (!quiet)) perror(ofname);
+1618: /* MUTANT (rep_op) */    if (decompress || time_stamp != 0 && ifstat->st_mtime != time_stamp) {
+1618: /* MUTANT (rep_op) */    if (decompress && time_stamp == 0 && ifstat->st_mtime != time_stamp) {
+1618: /* MUTANT (rep_op) */    if (decompress && time_stamp != 0 || ifstat->st_mtime != time_stamp) {
+1618: /* MUTANT (rep_op) */    if (decompress && time_stamp != 0 && ifstat->st_mtime == time_stamp) {
+1618: /* MUTANT (rep_const) */    if (decompress && time_stamp != 1 && ifstat->st_mtime != time_stamp) {
+1618: /* MUTANT (rep_const) */    if (decompress && time_stamp != -1 && ifstat->st_mtime != time_stamp) {
+1618: /* MUTANT (negate) */    if(! (decompress && time_stamp != 0 && ifstat->st_mtime != time_stamp)) {
+1619: /* MUTANT (del_stmt) */ /* 	ifstat->st_mtime = time_stamp; */ 
+1620: /* MUTANT (rep_op) */	if (verbose <= 1) {
+1620: /* MUTANT (rep_op) */	if (verbose < 1) {
+1620: /* MUTANT (rep_op) */	if (verbose >= 1) {
+1620: /* MUTANT (rep_op) */	if (verbose == 1) {
+1620: /* MUTANT (rep_op) */	if (verbose != 1) {
+1620: /* MUTANT (rep_const) */	if (verbose > 0) {
+1620: /* MUTANT (rep_const) */	if (verbose > -1) {
+1620: /* MUTANT (rep_const) */	if (verbose > ((1)+1)) {
+1620: /* MUTANT (negate) */	if(! (verbose > 1)) {
+1621: /* MUTANT (del_stmt) */ /* 	    fprintf(stderr, "%s: time stamp restored\n", ofname); */ 
+1627: /* MUTANT (rep_const) */    if (chmod(ofname, ifstat->st_mode & 0)) {
+1627: /* MUTANT (rep_const) */    if (chmod(ofname, ifstat->st_mode & 1)) {
+1627: /* MUTANT (rep_const) */    if (chmod(ofname, ifstat->st_mode & -1)) {
+1627: /* MUTANT (rep_const) */    if (chmod(ofname, ifstat->st_mode & ((07777)+1))) {
+1627: /* MUTANT (rep_const) */    if (chmod(ofname, ifstat->st_mode & ((07777)-1))) {
+1627: /* MUTANT (negate) */    if(! (chmod(ofname, ifstat->st_mode & 07777))) {
+1628: /* MUTANT (del_stmt) */ /* 	WARN((stderr, "%s: ", progname)); */ 
+1629: /* MUTANT (del_stmt) */ /* 	if (!quiet) perror(ofname); */ 
+1629: /* MUTANT (negate) */	if(! (!quiet)) perror(ofname);
+1634: /* MUTANT (rep_const) */    remove_ofname = 1;
+1634: /* MUTANT (rep_const) */    remove_ofname = -1;
+1636: /* MUTANT (del_stmt) */ /*     (void) chmod(ifname, 0777); */ 
+1636: /* MUTANT (rep_const) */    (void) chmod(ifname, 0);
+1636: /* MUTANT (rep_const) */    (void) chmod(ifname, 1);
+1636: /* MUTANT (rep_const) */    (void) chmod(ifname, -1);
+1636: /* MUTANT (rep_const) */    (void) chmod(ifname, ((0777)+1));
+1636: /* MUTANT (rep_const) */    (void) chmod(ifname, ((0777)-1));
+1637: /* MUTANT (negate) */    if(! (unlink(ifname))) {
+1638: /* MUTANT (del_stmt) */ /* 	WARN((stderr, "%s: ", progname)); */ 
+1639: /* MUTANT (del_stmt) */ /* 	if (!quiet) perror(ifname); */ 
+1639: /* MUTANT (negate) */	if(! (!quiet)) perror(ifname);
+1651: /* MUTANT (del_stmt) */ /*     dir_type *dp; */ 
+1652: /* MUTANT (del_stmt) */ /*     DIR      *dirp; */ 
+1653: /* MUTANT (del_stmt) */ /*     char     nbuf[MAX_PATH_LEN]; */ 
+1654: /* MUTANT (del_stmt) */ /*     int      len; */ 
+1656: /* MUTANT (del_stmt) */ /*     dirp = opendir(dir); */ 
+1658: /* MUTANT (rep_op) */    if (dirp != NULL) {
+1658: /* MUTANT (negate) */    if(! (dirp == NULL)) {
+1659: /* MUTANT (del_stmt) */ /* 	fprintf(stderr, "%s: %s unreadable\n", progname, dir); */ 
+1660: /* MUTANT (del_stmt) */ /* 	exit_code = ERROR; */ 
+1661: /* MUTANT (del_stmt) */ /* 	return ; */ 
+1679: /* MUTANT (rep_op) */    while ((dp = readdir(dirp)) == NULL) {
+1679: /* MUTANT (negate) */    while(! ((dp = readdir(dirp)) != NULL)) {
+1681: /* MUTANT (rep_op) */	if (strequ(dp->d_name,".") && strequ(dp->d_name,"..")) {
+1681: /* MUTANT (negate) */	if(! (strequ(dp->d_name,".") || strequ(dp->d_name,".."))) {
+1682: /* MUTANT (del_stmt) */ /* 	    continue; */ 
+1685: /* MUTANT (rep_op) */	if (len - NLENGTH(dp) + 1 < MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_op) */	if (len * NLENGTH(dp) + 1 < MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_op) */	if (len % NLENGTH(dp) + 1 < MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_op) */	if (len + NLENGTH(dp) - 1 < MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_op) */	if (len + NLENGTH(dp) * 1 < MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_op) */	if (len + NLENGTH(dp) % 1 < MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_op) */	if (len + NLENGTH(dp) + 1 <= MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_op) */	if (len + NLENGTH(dp) + 1 > MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_op) */	if (len + NLENGTH(dp) + 1 >= MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_op) */	if (len + NLENGTH(dp) + 1 == MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_op) */	if (len + NLENGTH(dp) + 1 != MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_const) */	if (len + NLENGTH(dp) + 0 < MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_const) */	if (len + NLENGTH(dp) + -1 < MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_const) */	if (len + NLENGTH(dp) + ((1)+1) < MAX_PATH_LEN - 1) {
+1685: /* MUTANT (rep_const) */	if (len + NLENGTH(dp) + 1 < MAX_PATH_LEN - 0) {
+1685: /* MUTANT (rep_const) */	if (len + NLENGTH(dp) + 1 < MAX_PATH_LEN - -1) {
+1685: /* MUTANT (rep_const) */	if (len + NLENGTH(dp) + 1 < MAX_PATH_LEN - ((1)+1)) {
+1685: /* MUTANT (negate) */	if(! (len + NLENGTH(dp) + 1 < MAX_PATH_LEN - 1)) {
+1686: /* MUTANT (del_stmt) */ /* 	    strcpy(nbuf,dir); */ 
+1687: /* MUTANT (rep_op) */	    if (len == 0 /* dir = "" means current dir on Amiga */
+1687: /* MUTANT (rep_const) */	    if (len != 1 /* dir = "" means current dir on Amiga */
+1687: /* MUTANT (rep_const) */	    if (len != -1 /* dir = "" means current dir on Amiga */
+1689: /* MUTANT (rep_op) */		|| dir[len-1] != PATH_SEP2
+1689: /* MUTANT (rep_op) */		&& dir[len-1] == PATH_SEP2
+1689: /* MUTANT (rep_const) */		&& dir[len-0] != PATH_SEP2
+1689: /* MUTANT (rep_const) */		&& dir[len--1] != PATH_SEP2
+1689: /* MUTANT (rep_const) */		&& dir[len-((1)+1)] != PATH_SEP2
+1692: /* MUTANT (rep_op) */		|| dir[len-1] != PATH_SEP3
+1692: /* MUTANT (rep_op) */		&& dir[len-1] == PATH_SEP3
+1692: /* MUTANT (rep_const) */		&& dir[len-0] != PATH_SEP3
+1692: /* MUTANT (rep_const) */		&& dir[len--1] != PATH_SEP3
+1692: /* MUTANT (rep_const) */		&& dir[len-((1)+1)] != PATH_SEP3
+1695: /* MUTANT (del_stmt) */ /* 		nbuf[len++] = PATH_SEP; */ 
+1695: /* MUTANT (rep_op) */		nbuf[len--] = PATH_SEP;
+1697: /* MUTANT (rep_op) */	    strcpy(nbuf-len, dp->d_name);
+1697: /* MUTANT (rep_op) */	    strcpy(nbuf*len, dp->d_name);
+1697: /* MUTANT (rep_op) */	    strcpy(nbuf%len, dp->d_name);
+1698: /* MUTANT (del_stmt) */ /* 	    treat_file(nbuf); */ 
+1702: /* MUTANT (del_stmt) */ /* 	    exit_code = ERROR; */ 
+1715: /* MUTANT (del_stmt) */ /*     static int in_exit = 0; */ 
+1715: /* MUTANT (rep_const) */    static int in_exit = 1;
+1715: /* MUTANT (rep_const) */    static int in_exit = -1;
+1717: /* MUTANT (del_stmt) */ /*     if (in_exit) exit(exitcode); */ 
+1717: /* MUTANT (negate) */    if(! (in_exit)) exit(exitcode);
+1718: /* MUTANT (del_stmt) */ /*     in_exit = 1; */ 
+1718: /* MUTANT (rep_const) */    in_exit = 0;
+1718: /* MUTANT (rep_const) */    in_exit = -1;
+1718: /* MUTANT (rep_const) */    in_exit = ((1)+1);
+1719: /* MUTANT (del_stmt) */ /*     if (env != NULL)  free(env),  env  = NULL; */ 
+1719: /* MUTANT (rep_op) */    if (env == NULL)  free(env),  env  = NULL;
+1719: /* MUTANT (negate) */    if(! (env != NULL))  free(env),  env  = NULL;
+1720: /* MUTANT (del_stmt) */ /*     if (args != NULL) free((char*)args), args = NULL; */ 
+1720: /* MUTANT (rep_op) */    if (args == NULL) free((char*)args), args = NULL;
+1720: /* MUTANT (negate) */    if(! (args != NULL)) free((char*)args), args = NULL;
+1721: /* MUTANT (del_stmt) */ /*     FREE(inbuf); */ 
+1722: /* MUTANT (del_stmt) */ /*     FREE(outbuf); */ 
+1723: /* MUTANT (del_stmt) */ /*     FREE(d_buf); */ 
+1724: /* MUTANT (del_stmt) */ /*     FREE(window); */ 
+1729: /* MUTANT (del_stmt) */ /*     FREE(tab_prefix1); */ 
+1739: /* MUTANT (negate) */   if(! (remove_ofname)) {
+1740: /* MUTANT (del_stmt) */ /*        close(ofd); */ 
+1741: /* MUTANT (del_stmt) */ /*        unlink (ofname); */ 

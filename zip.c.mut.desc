@@ -1,0 +1,124 @@
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.0 1993/06/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.1 1993/06/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.-1 1993/06/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.((17)+1) 1993/06/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.((17)-1) 1993/06/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 0/06/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1/06/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 -1/06/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 ((1993)+1)/06/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 ((1993)-1)/06/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/0/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/1/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/-1/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/((06)+1)/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/((06)-1)/10 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/0 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/1 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/-1 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/((10)+1) 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/((10)-1) 13:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 0:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 1:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 -1:29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 ((13)+1):29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 ((13)-1):29:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 13:0:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 13:1:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 13:-1:25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 13:((29)+1):25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 13:((29)-1):25 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 13:29:0 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 13:29:1 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 13:29:-1 jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 13:29:((25)+1) jloup Exp $";
+8: /* MUTANT (rep_const) */static char rcsid[] = "$Id: zip.c,v 0.17 1993/06/10 13:29:((25)-1) jloup Exp $";
+26: /* MUTANT (del_stmt) */ /* long header_bytes; */    /* number of bytes in gzip header */
+36: /* MUTANT (del_stmt) */ /*     uch  flags = 0; */          /* general purpose bit flags */
+36: /* MUTANT (rep_const) */    uch  flags = 1;         /* general purpose bit flags */
+36: /* MUTANT (rep_const) */    uch  flags = -1;         /* general purpose bit flags */
+37: /* MUTANT (del_stmt) */ /*     ush  attr = 0; */           /* ascii/binary flag */
+37: /* MUTANT (rep_const) */    ush  attr = 1;          /* ascii/binary flag */
+37: /* MUTANT (rep_const) */    ush  attr = -1;          /* ascii/binary flag */
+38: /* MUTANT (del_stmt) */ /*     ush  deflate_flags = 0; */  /* pkzip -es, -en or -ex equivalent */
+38: /* MUTANT (rep_const) */    ush  deflate_flags = 1; /* pkzip -es, -en or -ex equivalent */
+38: /* MUTANT (rep_const) */    ush  deflate_flags = -1; /* pkzip -es, -en or -ex equivalent */
+40: /* MUTANT (del_stmt) */ /*     ifd = in; */ 
+41: /* MUTANT (del_stmt) */ /*     ofd = out; */ 
+42: /* MUTANT (del_stmt) */ /*     outcnt = 0; */ 
+42: /* MUTANT (rep_const) */    outcnt = 1;
+42: /* MUTANT (rep_const) */    outcnt = -1;
+46: /* MUTANT (del_stmt) */ /*     method = DEFLATED; */ 
+47: /* MUTANT (del_stmt) */ /*     put_byte(GZIP_MAGIC[0]); */  /* magic header */
+47: /* MUTANT (rep_const) */    put_byte(GZIP_MAGIC[1]); /* magic header */
+47: /* MUTANT (rep_const) */    put_byte(GZIP_MAGIC[-1]); /* magic header */
+48: /* MUTANT (del_stmt) */ /*     put_byte(GZIP_MAGIC[1]); */ 
+48: /* MUTANT (rep_const) */    put_byte(GZIP_MAGIC[0]);
+48: /* MUTANT (rep_const) */    put_byte(GZIP_MAGIC[-1]);
+48: /* MUTANT (rep_const) */    put_byte(GZIP_MAGIC[((1)+1)]);
+49: /* MUTANT (del_stmt) */ /*     put_byte(DEFLATED); */       /* compression method */
+51: /* MUTANT (negate) */    if(! (save_orig_name)) {
+52: /* MUTANT (del_stmt) */ /* 	flags |= ORIG_NAME; */ 
+55: /* MUTANT (del_stmt) */ /*     put_long(time_stamp); */ 
+58: /* MUTANT (del_stmt) */ /*     crc = updcrc(0, 0); */ 
+58: /* MUTANT (rep_const) */    crc = updcrc(1, 0);
+58: /* MUTANT (rep_const) */    crc = updcrc(-1, 0);
+58: /* MUTANT (rep_const) */    crc = updcrc(0, 1);
+58: /* MUTANT (rep_const) */    crc = updcrc(0, -1);
+60: /* MUTANT (del_stmt) */ /*     bi_init(out); */ 
+61: /* MUTANT (del_stmt) */ /*     ct_init(&attr, &method); */ 
+62: /* MUTANT (del_stmt) */ /*     lm_init(level, &deflate_flags); */ 
+64: /* MUTANT (del_stmt) */ /*     put_byte((uch)deflate_flags); */  /* extra flags */
+65: /* MUTANT (del_stmt) */ /*     put_byte(OS_CODE); */             /* OS identifier */
+67: /* MUTANT (negate) */    if(! (save_orig_name)) {
+68: /* MUTANT (del_stmt) */ /* 	char *p = basename(ifname); */  /* Don't save the directory part. */
+70: /* MUTANT (del_stmt) */ /* 	    put_char(*p); */ 
+71: /* MUTANT (del_stmt) */ /* 	} while (*p++); */ 
+71: /* MUTANT (rep_op) */	} while (*p--);
+71: /* MUTANT (negate) */	} while(! (*p++));
+75: /* MUTANT (del_stmt) */ /*     (void)deflate(); */ 
+81: /* MUTANT (rep_op) */    if (ifile_size == -1L && isize != (ulg)ifile_size) {
+81: /* MUTANT (rep_op) */    if (ifile_size != -1L || isize != (ulg)ifile_size) {
+81: /* MUTANT (rep_op) */    if (ifile_size != -1L && isize == (ulg)ifile_size) {
+81: /* MUTANT (rep_const) */    if (ifile_size != 0L && isize != (ulg)ifile_size) {
+81: /* MUTANT (rep_const) */    if (ifile_size != 1L && isize != (ulg)ifile_size) {
+81: /* MUTANT (rep_const) */    if (ifile_size != ((-1)+1)L && isize != (ulg)ifile_size) {
+81: /* MUTANT (rep_const) */    if (ifile_size != ((-1)-1)L && isize != (ulg)ifile_size) {
+81: /* MUTANT (negate) */    if(! (ifile_size != -1L && isize != (ulg)ifile_size)) {
+82: /* MUTANT (del_stmt) */ /* 	Trace((stderr, " actual=%ld, read=%ld ", ifile_size, isize)); */ 
+90: /* MUTANT (del_stmt) */ /*     put_long(isize); */ 
+91: /* MUTANT (del_stmt) */ /*     header_bytes += 2*sizeof(long); */ 
+91: /* MUTANT (rep_op) */    header_bytes -= 2*sizeof(long);
+91: /* MUTANT (rep_op) */    header_bytes *= 2*sizeof(long);
+91: /* MUTANT (rep_op) */    header_bytes %= 2*sizeof(long);
+91: /* MUTANT (rep_const) */    header_bytes += 0*sizeof(long);
+91: /* MUTANT (rep_const) */    header_bytes += 1*sizeof(long);
+91: /* MUTANT (rep_const) */    header_bytes += -1*sizeof(long);
+91: /* MUTANT (rep_const) */    header_bytes += ((2)+1)*sizeof(long);
+91: /* MUTANT (rep_const) */    header_bytes += ((2)-1)*sizeof(long);
+93: /* MUTANT (del_stmt) */ /*     flush_outbuf(); */ 
+94: /* MUTANT (del_stmt) */ /*     return OK; */ 
+105: /* MUTANT (del_stmt) */ /*     unsigned size; */ 
+107: /* MUTANT (del_stmt) */ /*     unsigned len; */ 
+109: /* MUTANT (del_stmt) */ /*     Assert(insize == 0, "inbuf not empty"); */ 
+109: /* MUTANT (rep_op) */    Assert(insize != 0, "inbuf not empty");
+109: /* MUTANT (rep_const) */    Assert(insize == 1, "inbuf not empty");
+109: /* MUTANT (rep_const) */    Assert(insize == -1, "inbuf not empty");
+111: /* MUTANT (del_stmt) */ /*     len = read(ifd, buf, size); */ 
+112: /* MUTANT (del_stmt) */ /*     if (len == (unsigned)(-1) || len == 0) return (int)len; */ 
+112: /* MUTANT (rep_op) */    if (len != (unsigned)(-1) || len == 0) return (int)len;
+112: /* MUTANT (rep_op) */    if (len == (unsigned)(-1) && len == 0) return (int)len;
+112: /* MUTANT (rep_op) */    if (len == (unsigned)(-1) || len != 0) return (int)len;
+112: /* MUTANT (rep_const) */    if (len == (unsigned)(0) || len == 0) return (int)len;
+112: /* MUTANT (rep_const) */    if (len == (unsigned)(1) || len == 0) return (int)len;
+112: /* MUTANT (rep_const) */    if (len == (unsigned)(((-1)+1)) || len == 0) return (int)len;
+112: /* MUTANT (rep_const) */    if (len == (unsigned)(((-1)-1)) || len == 0) return (int)len;
+112: /* MUTANT (rep_const) */    if (len == (unsigned)(-1) || len == 1) return (int)len;
+112: /* MUTANT (rep_const) */    if (len == (unsigned)(-1) || len == -1) return (int)len;
+112: /* MUTANT (negate) */    if(! (len == (unsigned)(-1) || len == 0)) return (int)len;
+114: /* MUTANT (del_stmt) */ /*     crc = updcrc((uch*)buf, len); */ 
+115: /* MUTANT (del_stmt) */ /*     isize += (ulg)len; */ 
+115: /* MUTANT (rep_op) */    isize -= (ulg)len;
+115: /* MUTANT (rep_op) */    isize *= (ulg)len;
+115: /* MUTANT (rep_op) */    isize %= (ulg)len;
+116: /* MUTANT (del_stmt) */ /*     return (int)len; */ 

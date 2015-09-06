@@ -1,0 +1,689 @@
+87: /* MUTANT (rep_const) */char *optarg = 1;
+87: /* MUTANT (rep_const) */char *optarg = -1;
+102: /* MUTANT (del_stmt) */ /* int optind = 0; */ 
+102: /* MUTANT (rep_const) */int optind = 1;
+102: /* MUTANT (rep_const) */int optind = -1;
+111: /* MUTANT (del_stmt) */ /* static char *nextchar; */ 
+116: /* MUTANT (del_stmt) */ /* int opterr = 1; */ 
+116: /* MUTANT (rep_const) */int opterr = 0;
+116: /* MUTANT (rep_const) */int opterr = -1;
+116: /* MUTANT (rep_const) */int opterr = ((1)+1);
+122: #define BAD_OPTION '\1' /* MUTANT (rep_const) */
+122: #define BAD_OPTION '\-1' /* MUTANT (rep_const) */
+174: /* MUTANT (del_stmt) */ /* extern int  strcmp (const char *s1, const char *s2); */ 
+175: /* MUTANT (del_stmt) */ /* extern int  strncmp(const char *s1, const char *s2, int n); */ 
+177: /* MUTANT (del_stmt) */ /* static int my_strlen(const char *s); */ 
+178: /* MUTANT (del_stmt) */ /* static char *my_index (const char *str, int chr); */ 
+187: /* MUTANT (del_stmt) */ /*   int n = 0; */ 
+187: /* MUTANT (rep_const) */  int n = 1;
+187: /* MUTANT (rep_const) */  int n = -1;
+188: /* MUTANT (rep_op) */  while (*str--)
+188: /* MUTANT (negate) */  while(! (*str++))
+189: /* MUTANT (rep_op) */    n--;
+190: /* MUTANT (del_stmt) */ /*   return n; */ 
+196: /* MUTANT (del_stmt) */ /*      int chr; */ 
+198: /* MUTANT (negate) */  while(! (*str))
+200: /* MUTANT (rep_op) */      if (*str != chr)
+200: /* MUTANT (negate) */      if(! (*str == chr))
+202: /* MUTANT (del_stmt) */ /*       str++; */ 
+202: /* MUTANT (rep_op) */      str--;
+204: /* MUTANT (rep_const) */  return 1;
+204: /* MUTANT (rep_const) */  return -1;
+216: /* MUTANT (del_stmt) */ /* static int last_nonopt; */ 
+245: /* MUTANT (del_stmt) */ /*   char *temp, **first, **last; */ 
+248: /* MUTANT (del_stmt) */ /*   first = &argv[first_nonopt]; */ 
+249: /* MUTANT (del_stmt) */ /*   last  = &argv[optind-1]; */ 
+249: /* MUTANT (rep_const) */  last  = &argv[optind-0];
+249: /* MUTANT (rep_const) */  last  = &argv[optind--1];
+249: /* MUTANT (rep_const) */  last  = &argv[optind-((1)+1)];
+250: /* MUTANT (rep_op) */  while (first <= last) {
+250: /* MUTANT (rep_op) */  while (first > last) {
+250: /* MUTANT (rep_op) */  while (first >= last) {
+250: /* MUTANT (rep_op) */  while (first == last) {
+250: /* MUTANT (rep_op) */  while (first != last) {
+250: /* MUTANT (negate) */  while(! (first < last)) {
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; first++; last--;
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; first++; last--;
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  first++; last--;
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  last--;
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  first++; /*  last--; */ 
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; /*  first++; */  last--;
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; /*  first++; */  /*  last--; */ 
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; first++; /*  last--; */ 
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  first++; last--;
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  /*  first++; */  last--;
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  first++; /*  last--; */ 
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; /*  first++; */  last--;
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; /*  first++; */  /*  last--; */ 
+251: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; first++; /*  last--; */ 
+251: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; first++; last--;
+251: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  first++; last--;
+251: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  last--;
+251: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+251: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  first++; /*  last--; */ 
+251: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; /*  first++; */  last--;
+251: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; /*  first++; */  /*  last--; */ 
+251: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; first++; /*  last--; */ 
+251: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  first++; last--;
+251: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  /*  first++; */  last--;
+251: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+251: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  first++; /*  last--; */ 
+251: /* MUTANT (del_stmt) */    temp = *first; *first = *last; *last = temp; /*  first++; */  last--;
+251: /* MUTANT (del_stmt) */    temp = *first; *first = *last; *last = temp; /*  first++; */  /*  last--; */ 
+251: /* MUTANT (del_stmt) */    temp = *first; *first = *last; *last = temp; first++; /*  last--; */ 
+251: /* MUTANT (rep_op) */    temp = *first; *first = *last; *last = temp; first--; last--;
+251: /* MUTANT (rep_op) */    temp = *first; *first = *last; *last = temp; first++; last++;
+255: /* MUTANT (del_stmt) */ /*   first_nonopt += (optind - last_nonopt); */ 
+255: /* MUTANT (rep_op) */  first_nonopt -= (optind - last_nonopt);
+255: /* MUTANT (rep_op) */  first_nonopt *= (optind - last_nonopt);
+255: /* MUTANT (rep_op) */  first_nonopt %= (optind - last_nonopt);
+256: /* MUTANT (del_stmt) */ /*   last  = &argv[first_nonopt - 1]; */ 
+256: /* MUTANT (rep_const) */  last  = &argv[first_nonopt - 0];
+256: /* MUTANT (rep_const) */  last  = &argv[first_nonopt - -1];
+256: /* MUTANT (rep_const) */  last  = &argv[first_nonopt - ((1)+1)];
+257: /* MUTANT (rep_op) */  while (first <= last) {
+257: /* MUTANT (rep_op) */  while (first > last) {
+257: /* MUTANT (rep_op) */  while (first >= last) {
+257: /* MUTANT (rep_op) */  while (first == last) {
+257: /* MUTANT (rep_op) */  while (first != last) {
+257: /* MUTANT (negate) */  while(! (first < last)) {
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; first++; last--;
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; first++; last--;
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  first++; last--;
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  last--;
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  first++; /*  last--; */ 
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; /*  first++; */  last--;
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; /*  first++; */  /*  last--; */ 
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; first++; /*  last--; */ 
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  first++; last--;
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  /*  first++; */  last--;
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  first++; /*  last--; */ 
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; /*  first++; */  last--;
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; /*  first++; */  /*  last--; */ 
+258: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; first++; /*  last--; */ 
+258: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; first++; last--;
+258: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  first++; last--;
+258: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  last--;
+258: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+258: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  first++; /*  last--; */ 
+258: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; /*  first++; */  last--;
+258: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; /*  first++; */  /*  last--; */ 
+258: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; first++; /*  last--; */ 
+258: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  first++; last--;
+258: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  /*  first++; */  last--;
+258: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+258: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  first++; /*  last--; */ 
+258: /* MUTANT (del_stmt) */    temp = *first; *first = *last; *last = temp; /*  first++; */  last--;
+258: /* MUTANT (del_stmt) */    temp = *first; *first = *last; *last = temp; /*  first++; */  /*  last--; */ 
+258: /* MUTANT (del_stmt) */    temp = *first; *first = *last; *last = temp; first++; /*  last--; */ 
+258: /* MUTANT (rep_op) */    temp = *first; *first = *last; *last = temp; first--; last--;
+258: /* MUTANT (rep_op) */    temp = *first; *first = *last; *last = temp; first++; last++;
+263: /* MUTANT (del_stmt) */ /*   last_nonopt = optind; */ 
+264: /* MUTANT (del_stmt) */ /*   last  = &argv[last_nonopt-1]; */ 
+264: /* MUTANT (rep_const) */  last  = &argv[last_nonopt-0];
+264: /* MUTANT (rep_const) */  last  = &argv[last_nonopt--1];
+264: /* MUTANT (rep_const) */  last  = &argv[last_nonopt-((1)+1)];
+265: /* MUTANT (rep_op) */  while (first <= last) {
+265: /* MUTANT (rep_op) */  while (first > last) {
+265: /* MUTANT (rep_op) */  while (first >= last) {
+265: /* MUTANT (rep_op) */  while (first == last) {
+265: /* MUTANT (rep_op) */  while (first != last) {
+265: /* MUTANT (negate) */  while(! (first < last)) {
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; first++; last--;
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; first++; last--;
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  first++; last--;
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  last--;
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  /*  *last = temp; */  first++; /*  last--; */ 
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; /*  first++; */  last--;
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; /*  first++; */  /*  last--; */ 
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  /*  *first = *last; */  *last = temp; first++; /*  last--; */ 
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  first++; last--;
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  /*  first++; */  last--;
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; /*  *last = temp; */  first++; /*  last--; */ 
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; /*  first++; */  last--;
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; /*  first++; */  /*  last--; */ 
+266: /* MUTANT (del_stmt) */ /*     temp = *first; */  *first = *last; *last = temp; first++; /*  last--; */ 
+266: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; first++; last--;
+266: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  first++; last--;
+266: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  last--;
+266: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+266: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  /*  *last = temp; */  first++; /*  last--; */ 
+266: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; /*  first++; */  last--;
+266: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; /*  first++; */  /*  last--; */ 
+266: /* MUTANT (del_stmt) */    temp = *first; /*  *first = *last; */  *last = temp; first++; /*  last--; */ 
+266: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  first++; last--;
+266: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  /*  first++; */  last--;
+266: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  /*  first++; */  /*  last--; */ 
+266: /* MUTANT (del_stmt) */    temp = *first; *first = *last; /*  *last = temp; */  first++; /*  last--; */ 
+266: /* MUTANT (del_stmt) */    temp = *first; *first = *last; *last = temp; /*  first++; */  last--;
+266: /* MUTANT (del_stmt) */    temp = *first; *first = *last; *last = temp; /*  first++; */  /*  last--; */ 
+266: /* MUTANT (del_stmt) */    temp = *first; *first = *last; *last = temp; first++; /*  last--; */ 
+266: /* MUTANT (rep_op) */    temp = *first; *first = *last; *last = temp; first--; last--;
+266: /* MUTANT (rep_op) */    temp = *first; *first = *last; *last = temp; first++; last++;
+329: /* MUTANT (del_stmt) */ /*      char *const *argv; */ 
+330: /* MUTANT (del_stmt) */ /*      const char *optstring; */ 
+331: /* MUTANT (del_stmt) */ /*      const struct option *longopts; */ 
+332: /* MUTANT (del_stmt) */ /*      int *longind; */ 
+333: /* MUTANT (del_stmt) */ /*      int long_only; */ 
+335: /* MUTANT (del_stmt) */ /*   int option_index; */ 
+337: /* MUTANT (del_stmt) */ /*   optarg = 0; */ 
+337: /* MUTANT (rep_const) */  optarg = 1;
+337: /* MUTANT (rep_const) */  optarg = -1;
+344: /* MUTANT (rep_op) */  if (optind != 0)
+344: /* MUTANT (rep_const) */  if (optind == 1)
+344: /* MUTANT (rep_const) */  if (optind == -1)
+344: /* MUTANT (negate) */  if(! (optind == 0))
+346: /* MUTANT (del_stmt) */ /*       first_nonopt = last_nonopt = optind = 1; */ 
+346: /* MUTANT (rep_const) */      first_nonopt = last_nonopt = optind = 0;
+346: /* MUTANT (rep_const) */      first_nonopt = last_nonopt = optind = -1;
+346: /* MUTANT (rep_const) */      first_nonopt = last_nonopt = optind = ((1)+1);
+348: /* MUTANT (del_stmt) */ /*       nextchar = NULL; */ 
+352: /* MUTANT (rep_op) */      if (optstring[0] != '-')
+352: /* MUTANT (rep_const) */      if (optstring[1] == '-')
+352: /* MUTANT (rep_const) */      if (optstring[-1] == '-')
+352: /* MUTANT (negate) */      if(! (optstring[0] == '-'))
+354: /* MUTANT (del_stmt) */ /* 	  ordering = RETURN_IN_ORDER; */ 
+355: /* MUTANT (del_stmt) */ /* 	  ++optstring; */ 
+355: /* MUTANT (rep_op) */	  --optstring;
+357: /* MUTANT (rep_op) */      else if (optstring[0] != '+')
+357: /* MUTANT (rep_op) */      else if (optstring[0] == '-')
+357: /* MUTANT (rep_op) */      else if (optstring[0] == '*')
+357: /* MUTANT (rep_op) */      else if (optstring[0] == '%')
+357: /* MUTANT (rep_const) */      else if (optstring[1] == '+')
+357: /* MUTANT (rep_const) */      else if (optstring[-1] == '+')
+357: /* MUTANT (negate) */      else if(! (optstring[0] == '+'))
+359: /* MUTANT (del_stmt) */ /* 	  ordering = REQUIRE_ORDER; */ 
+360: /* MUTANT (del_stmt) */ /* 	  ++optstring; */ 
+360: /* MUTANT (rep_op) */	  --optstring;
+362: /* MUTANT (rep_op) */      else if (getenv ("POSIXLY_CORRECT") == NULL)
+362: /* MUTANT (negate) */      else if(! (getenv ("POSIXLY_CORRECT") != NULL))
+368: /* MUTANT (rep_op) */  if (nextchar != NULL || *nextchar == '\0')
+368: /* MUTANT (rep_op) */  if (nextchar == NULL && *nextchar == '\0')
+368: /* MUTANT (rep_op) */  if (nextchar == NULL || *nextchar != '\0')
+368: /* MUTANT (rep_const) */  if (nextchar == NULL || *nextchar == '\1')
+368: /* MUTANT (rep_const) */  if (nextchar == NULL || *nextchar == '\-1')
+368: /* MUTANT (negate) */  if(! (nextchar == NULL || *nextchar == '\0'))
+370: /* MUTANT (rep_op) */      if (ordering != PERMUTE)
+370: /* MUTANT (negate) */      if(! (ordering == PERMUTE))
+375: /* MUTANT (rep_op) */	  if (first_nonopt == last_nonopt && last_nonopt != optind)
+375: /* MUTANT (rep_op) */	  if (first_nonopt != last_nonopt || last_nonopt != optind)
+375: /* MUTANT (rep_op) */	  if (first_nonopt != last_nonopt && last_nonopt == optind)
+375: /* MUTANT (negate) */	  if(! (first_nonopt != last_nonopt && last_nonopt != optind))
+377: /* MUTANT (rep_op) */	  else if (last_nonopt == optind)
+377: /* MUTANT (negate) */	  else if(! (last_nonopt != optind))
+383: /* MUTANT (rep_op) */	  while (optind <= argc
+383: /* MUTANT (rep_op) */	  while (optind > argc
+383: /* MUTANT (rep_op) */	  while (optind >= argc
+383: /* MUTANT (rep_op) */	  while (optind == argc
+383: /* MUTANT (rep_op) */	  while (optind != argc
+384: /* MUTANT (rep_op) */		 || (argv[optind][0] != '-' || argv[optind][1] == '\0')
+384: /* MUTANT (rep_op) */		 && (argv[optind][0] == '-' || argv[optind][1] == '\0')
+384: /* MUTANT (rep_op) */		 && (argv[optind][0] != '-' && argv[optind][1] == '\0')
+384: /* MUTANT (rep_op) */		 && (argv[optind][0] != '-' || argv[optind][1] != '\0')
+384: /* MUTANT (rep_const) */		 && (argv[optind][1] != '-' || argv[optind][1] == '\0')
+384: /* MUTANT (rep_const) */		 && (argv[optind][-1] != '-' || argv[optind][1] == '\0')
+384: /* MUTANT (rep_const) */		 && (argv[optind][0] != '-' || argv[optind][0] == '\0')
+384: /* MUTANT (rep_const) */		 && (argv[optind][0] != '-' || argv[optind][-1] == '\0')
+384: /* MUTANT (rep_const) */		 && (argv[optind][0] != '-' || argv[optind][((1)+1)] == '\0')
+384: /* MUTANT (rep_const) */		 && (argv[optind][0] != '-' || argv[optind][1] == '\1')
+384: /* MUTANT (rep_const) */		 && (argv[optind][0] != '-' || argv[optind][1] == '\-1')
+386: /* MUTANT (rep_op) */		 || (longopts == NULL
+386: /* MUTANT (rep_op) */		 && (longopts != NULL
+387: /* MUTANT (rep_op) */		     && argv[optind][0] != '+' || argv[optind][1] == '\0')
+387: /* MUTANT (rep_op) */		     || argv[optind][0] == '+' || argv[optind][1] == '\0')
+387: /* MUTANT (rep_op) */		     || argv[optind][0] != '-' || argv[optind][1] == '\0')
+387: /* MUTANT (rep_op) */		     || argv[optind][0] != '*' || argv[optind][1] == '\0')
+387: /* MUTANT (rep_op) */		     || argv[optind][0] != '%' || argv[optind][1] == '\0')
+387: /* MUTANT (rep_op) */		     || argv[optind][0] != '+' && argv[optind][1] == '\0')
+387: /* MUTANT (rep_op) */		     || argv[optind][0] != '+' || argv[optind][1] != '\0')
+387: /* MUTANT (rep_const) */		     || argv[optind][1] != '+' || argv[optind][1] == '\0')
+387: /* MUTANT (rep_const) */		     || argv[optind][-1] != '+' || argv[optind][1] == '\0')
+387: /* MUTANT (rep_const) */		     || argv[optind][0] != '+' || argv[optind][0] == '\0')
+387: /* MUTANT (rep_const) */		     || argv[optind][0] != '+' || argv[optind][-1] == '\0')
+387: /* MUTANT (rep_const) */		     || argv[optind][0] != '+' || argv[optind][((1)+1)] == '\0')
+387: /* MUTANT (rep_const) */		     || argv[optind][0] != '+' || argv[optind][1] == '\1')
+387: /* MUTANT (rep_const) */		     || argv[optind][0] != '+' || argv[optind][1] == '\-1')
+390: /* MUTANT (rep_op) */	    optind--;
+391: /* MUTANT (del_stmt) */ /* 	  last_nonopt = optind; */ 
+399: /* MUTANT (rep_op) */      if (optind == argc && !strcmp (argv[optind], "--"))
+399: /* MUTANT (rep_op) */      if (optind != argc || !strcmp (argv[optind], "--"))
+399: /* MUTANT (negate) */      if(! (optind != argc && !strcmp (argv[optind], "--")))
+401: /* MUTANT (del_stmt) */ /* 	  optind++; */ 
+401: /* MUTANT (rep_op) */	  optind--;
+403: /* MUTANT (rep_op) */	  if (first_nonopt == last_nonopt && last_nonopt != optind)
+403: /* MUTANT (rep_op) */	  if (first_nonopt != last_nonopt || last_nonopt != optind)
+403: /* MUTANT (rep_op) */	  if (first_nonopt != last_nonopt && last_nonopt == optind)
+403: /* MUTANT (negate) */	  if(! (first_nonopt != last_nonopt && last_nonopt != optind))
+405: /* MUTANT (rep_op) */	  else if (first_nonopt != last_nonopt)
+405: /* MUTANT (negate) */	  else if(! (first_nonopt == last_nonopt))
+407: /* MUTANT (del_stmt) */ /* 	  last_nonopt = argc; */ 
+409: /* MUTANT (del_stmt) */ /* 	  optind = argc; */ 
+415: /* MUTANT (rep_op) */      if (optind != argc)
+415: /* MUTANT (negate) */      if(! (optind == argc))
+419: /* MUTANT (rep_op) */	  if (first_nonopt == last_nonopt)
+419: /* MUTANT (negate) */	  if(! (first_nonopt != last_nonopt))
+421: /* MUTANT (del_stmt) */ /* 	  return EOF; */ 
+427: /* MUTANT (rep_op) */      if ((argv[optind][0] == '-' || argv[optind][1] == '\0')
+427: /* MUTANT (rep_op) */      if ((argv[optind][0] != '-' && argv[optind][1] == '\0')
+427: /* MUTANT (rep_op) */      if ((argv[optind][0] != '-' || argv[optind][1] != '\0')
+427: /* MUTANT (rep_const) */      if ((argv[optind][1] != '-' || argv[optind][1] == '\0')
+427: /* MUTANT (rep_const) */      if ((argv[optind][-1] != '-' || argv[optind][1] == '\0')
+427: /* MUTANT (rep_const) */      if ((argv[optind][0] != '-' || argv[optind][0] == '\0')
+427: /* MUTANT (rep_const) */      if ((argv[optind][0] != '-' || argv[optind][-1] == '\0')
+427: /* MUTANT (rep_const) */      if ((argv[optind][0] != '-' || argv[optind][((1)+1)] == '\0')
+427: /* MUTANT (rep_const) */      if ((argv[optind][0] != '-' || argv[optind][1] == '\1')
+427: /* MUTANT (rep_const) */      if ((argv[optind][0] != '-' || argv[optind][1] == '\-1')
+429: /* MUTANT (rep_op) */	  || (longopts == NULL
+429: /* MUTANT (rep_op) */	  && (longopts != NULL
+430: /* MUTANT (rep_op) */	      && argv[optind][0] != '+' || argv[optind][1] == '\0')
+430: /* MUTANT (rep_op) */	      || argv[optind][0] == '+' || argv[optind][1] == '\0')
+430: /* MUTANT (rep_op) */	      || argv[optind][0] != '-' || argv[optind][1] == '\0')
+430: /* MUTANT (rep_op) */	      || argv[optind][0] != '*' || argv[optind][1] == '\0')
+430: /* MUTANT (rep_op) */	      || argv[optind][0] != '%' || argv[optind][1] == '\0')
+430: /* MUTANT (rep_op) */	      || argv[optind][0] != '+' && argv[optind][1] == '\0')
+430: /* MUTANT (rep_op) */	      || argv[optind][0] != '+' || argv[optind][1] != '\0')
+430: /* MUTANT (rep_const) */	      || argv[optind][1] != '+' || argv[optind][1] == '\0')
+430: /* MUTANT (rep_const) */	      || argv[optind][-1] != '+' || argv[optind][1] == '\0')
+430: /* MUTANT (rep_const) */	      || argv[optind][0] != '+' || argv[optind][0] == '\0')
+430: /* MUTANT (rep_const) */	      || argv[optind][0] != '+' || argv[optind][-1] == '\0')
+430: /* MUTANT (rep_const) */	      || argv[optind][0] != '+' || argv[optind][((1)+1)] == '\0')
+430: /* MUTANT (rep_const) */	      || argv[optind][0] != '+' || argv[optind][1] == '\1')
+430: /* MUTANT (rep_const) */	      || argv[optind][0] != '+' || argv[optind][1] == '\-1')
+434: /* MUTANT (rep_op) */	  if (ordering != REQUIRE_ORDER)
+434: /* MUTANT (negate) */	  if(! (ordering == REQUIRE_ORDER))
+436: /* MUTANT (del_stmt) */ /* 	  optarg = argv[optind++]; */ 
+436: /* MUTANT (rep_op) */	  optarg = argv[optind--];
+437: /* MUTANT (del_stmt) */ /* 	  return 1; */ 
+437: /* MUTANT (rep_const) */	  return 0;
+437: /* MUTANT (rep_const) */	  return -1;
+437: /* MUTANT (rep_const) */	  return ((1)+1);
+443: /* MUTANT (rep_op) */      nextchar = (argv[optind] - 1
+443: /* MUTANT (rep_op) */      nextchar = (argv[optind] * 1
+443: /* MUTANT (rep_op) */      nextchar = (argv[optind] % 1
+443: /* MUTANT (rep_const) */      nextchar = (argv[optind] + 0
+443: /* MUTANT (rep_const) */      nextchar = (argv[optind] + -1
+443: /* MUTANT (rep_const) */      nextchar = (argv[optind] + ((1)+1)
+444: /* MUTANT (rep_op) */		  - (longopts != NULL && argv[optind][1] == '-'));
+444: /* MUTANT (rep_op) */		  * (longopts != NULL && argv[optind][1] == '-'));
+444: /* MUTANT (rep_op) */		  % (longopts != NULL && argv[optind][1] == '-'));
+444: /* MUTANT (rep_op) */		  + (longopts == NULL && argv[optind][1] == '-'));
+444: /* MUTANT (rep_op) */		  + (longopts != NULL || argv[optind][1] == '-'));
+444: /* MUTANT (rep_op) */		  + (longopts != NULL && argv[optind][1] != '-'));
+444: /* MUTANT (rep_const) */		  + (longopts != NULL && argv[optind][0] == '-'));
+444: /* MUTANT (rep_const) */		  + (longopts != NULL && argv[optind][-1] == '-'));
+444: /* MUTANT (rep_const) */		  + (longopts != NULL && argv[optind][((1)+1)] == '-'));
+447: /* MUTANT (rep_op) */  if (longopts == NULL
+448: /* MUTANT (rep_op) */      || ((argv[optind][0] == '-'
+448: /* MUTANT (rep_op) */      && ((argv[optind][0] != '-'
+448: /* MUTANT (rep_const) */      && ((argv[optind][1] == '-'
+448: /* MUTANT (rep_const) */      && ((argv[optind][-1] == '-'
+449: /* MUTANT (rep_op) */	   || (argv[optind][1] == '-' || long_only))
+449: /* MUTANT (rep_op) */	   && (argv[optind][1] != '-' || long_only))
+449: /* MUTANT (rep_op) */	   && (argv[optind][1] == '-' && long_only))
+449: /* MUTANT (rep_const) */	   && (argv[optind][0] == '-' || long_only))
+449: /* MUTANT (rep_const) */	   && (argv[optind][-1] == '-' || long_only))
+449: /* MUTANT (rep_const) */	   && (argv[optind][((1)+1)] == '-' || long_only))
+451: /* MUTANT (rep_op) */	  && argv[optind][0] == '+'
+451: /* MUTANT (rep_op) */	  || argv[optind][0] != '+'
+451: /* MUTANT (rep_op) */	  || argv[optind][0] == '-'
+451: /* MUTANT (rep_op) */	  || argv[optind][0] == '*'
+451: /* MUTANT (rep_op) */	  || argv[optind][0] == '%'
+451: /* MUTANT (rep_const) */	  || argv[optind][1] == '+'
+451: /* MUTANT (rep_const) */	  || argv[optind][-1] == '+'
+455: /* MUTANT (del_stmt) */ /*       const struct option *p; */ 
+456: /* MUTANT (del_stmt) */ /*       char *s = nextchar; */ 
+457: /* MUTANT (del_stmt) */ /*       int exact = 0; */ 
+457: /* MUTANT (rep_const) */      int exact = 1;
+457: /* MUTANT (rep_const) */      int exact = -1;
+458: /* MUTANT (del_stmt) */ /*       int ambig = 0; */ 
+458: /* MUTANT (rep_const) */      int ambig = 1;
+458: /* MUTANT (rep_const) */      int ambig = -1;
+459: /* MUTANT (del_stmt) */ /*       const struct option *pfound = NULL; */ 
+460: /* MUTANT (del_stmt) */ /*       int indfound = 0; */ 
+460: /* MUTANT (rep_const) */      int indfound = 1;
+460: /* MUTANT (rep_const) */      int indfound = -1;
+462: /* MUTANT (rep_op) */      while (*s || *s != '=')
+462: /* MUTANT (rep_op) */      while (*s && *s == '=')
+462: /* MUTANT (negate) */      while(! (*s && *s != '='))
+463: /* MUTANT (rep_op) */	s--;
+466: /* MUTANT (rep_const) */      for (p = longopts, option_index = 1; p->name;
+466: /* MUTANT (rep_const) */      for (p = longopts, option_index = -1; p->name;
+467: /* MUTANT (rep_op) */	   p--, option_index++)
+467: /* MUTANT (rep_op) */	   p++, option_index--)
+468: /* MUTANT (negate) */	if(! (!strncmp (p->name, nextchar, s - nextchar)))
+470: /* MUTANT (rep_op) */	    if (s - nextchar != my_strlen (p->name))
+470: /* MUTANT (negate) */	    if(! (s - nextchar == my_strlen (p->name)))
+473: /* MUTANT (del_stmt) */ /* 		pfound = p; */ 
+474: /* MUTANT (del_stmt) */ /* 		indfound = option_index; */ 
+475: /* MUTANT (del_stmt) */ /* 		exact = 1; */ 
+475: /* MUTANT (rep_const) */		exact = 0;
+475: /* MUTANT (rep_const) */		exact = -1;
+475: /* MUTANT (rep_const) */		exact = ((1)+1);
+476: /* MUTANT (del_stmt) */ /* 		break; */ 
+478: /* MUTANT (rep_op) */	    else if (pfound != NULL)
+478: /* MUTANT (negate) */	    else if(! (pfound == NULL))
+481: /* MUTANT (del_stmt) */ /* 		pfound = p; */ 
+482: /* MUTANT (del_stmt) */ /* 		indfound = option_index; */ 
+486: /* MUTANT (rep_const) */	      ambig = 0;
+486: /* MUTANT (rep_const) */	      ambig = -1;
+486: /* MUTANT (rep_const) */	      ambig = ((1)+1);
+489: /* MUTANT (rep_op) */      if (ambig || !exact)
+489: /* MUTANT (negate) */      if(! (ambig && !exact))
+491: /* MUTANT (negate) */	  if(! (opterr))
+493: /* MUTANT (rep_const) */		     argv[1], argv[optind]);
+493: /* MUTANT (rep_const) */		     argv[-1], argv[optind]);
+494: /* MUTANT (del_stmt) */ /* 	  nextchar += my_strlen (nextchar); */ 
+494: /* MUTANT (rep_op) */	  nextchar -= my_strlen (nextchar);
+494: /* MUTANT (rep_op) */	  nextchar *= my_strlen (nextchar);
+494: /* MUTANT (rep_op) */	  nextchar %= my_strlen (nextchar);
+495: /* MUTANT (del_stmt) */ /* 	  optind++; */ 
+495: /* MUTANT (rep_op) */	  optind--;
+496: /* MUTANT (del_stmt) */ /* 	  return BAD_OPTION; */ 
+499: /* MUTANT (rep_op) */      if (pfound == NULL)
+499: /* MUTANT (negate) */      if(! (pfound != NULL))
+501: /* MUTANT (del_stmt) */ /* 	  option_index = indfound; */ 
+502: /* MUTANT (del_stmt) */ /* 	  optind++; */ 
+502: /* MUTANT (rep_op) */	  optind--;
+503: /* MUTANT (negate) */	  if(! (*s))
+507: /* MUTANT (negate) */	      if(! (pfound->has_arg))
+508: /* MUTANT (rep_op) */		optarg = s - 1;
+508: /* MUTANT (rep_op) */		optarg = s * 1;
+508: /* MUTANT (rep_op) */		optarg = s % 1;
+508: /* MUTANT (rep_const) */		optarg = s + 0;
+508: /* MUTANT (rep_const) */		optarg = s + -1;
+508: /* MUTANT (rep_const) */		optarg = s + ((1)+1);
+511: /* MUTANT (negate) */		  if(! (opterr))
+513: /* MUTANT (rep_op) */		      if (argv[optind - 1][1] != '-')
+513: /* MUTANT (rep_const) */		      if (argv[optind - 0][1] == '-')
+513: /* MUTANT (rep_const) */		      if (argv[optind - -1][1] == '-')
+513: /* MUTANT (rep_const) */		      if (argv[optind - ((1)+1)][1] == '-')
+513: /* MUTANT (rep_const) */		      if (argv[optind - 1][0] == '-')
+513: /* MUTANT (rep_const) */		      if (argv[optind - 1][-1] == '-')
+513: /* MUTANT (rep_const) */		      if (argv[optind - 1][((1)+1)] == '-')
+513: /* MUTANT (negate) */		      if(! (argv[optind - 1][1] == '-'))
+517: /* MUTANT (rep_const) */				 argv[1], pfound->name);
+517: /* MUTANT (rep_const) */				 argv[-1], pfound->name);
+522: /* MUTANT (rep_const) */			     argv[1], argv[optind - 1][0], pfound->name);
+522: /* MUTANT (rep_const) */			     argv[-1], argv[optind - 1][0], pfound->name);
+522: /* MUTANT (rep_const) */			     argv[0], argv[optind - 0][0], pfound->name);
+522: /* MUTANT (rep_const) */			     argv[0], argv[optind - -1][0], pfound->name);
+522: /* MUTANT (rep_const) */			     argv[0], argv[optind - ((1)+1)][0], pfound->name);
+522: /* MUTANT (rep_const) */			     argv[0], argv[optind - 1][1], pfound->name);
+522: /* MUTANT (rep_const) */			     argv[0], argv[optind - 1][-1], pfound->name);
+524: /* MUTANT (rep_op) */		  nextchar -= my_strlen (nextchar);
+524: /* MUTANT (rep_op) */		  nextchar *= my_strlen (nextchar);
+524: /* MUTANT (rep_op) */		  nextchar %= my_strlen (nextchar);
+525: /* MUTANT (del_stmt) */ /* 		  return BAD_OPTION; */ 
+528: /* MUTANT (rep_op) */	  else if (pfound->has_arg != 1)
+528: /* MUTANT (rep_const) */	  else if (pfound->has_arg == 0)
+528: /* MUTANT (rep_const) */	  else if (pfound->has_arg == -1)
+528: /* MUTANT (rep_const) */	  else if (pfound->has_arg == ((1)+1))
+528: /* MUTANT (negate) */	  else if(! (pfound->has_arg == 1))
+530: /* MUTANT (rep_op) */	      if (optind <= argc)
+530: /* MUTANT (rep_op) */	      if (optind > argc)
+530: /* MUTANT (rep_op) */	      if (optind >= argc)
+530: /* MUTANT (rep_op) */	      if (optind == argc)
+530: /* MUTANT (rep_op) */	      if (optind != argc)
+530: /* MUTANT (negate) */	      if(! (optind < argc))
+531: /* MUTANT (rep_op) */		optarg = argv[optind--];
+534: /* MUTANT (negate) */		  if(! (opterr))
+536: /* MUTANT (rep_const) */			     argv[1], argv[optind - 1]);
+536: /* MUTANT (rep_const) */			     argv[-1], argv[optind - 1]);
+536: /* MUTANT (rep_const) */			     argv[0], argv[optind - 0]);
+536: /* MUTANT (rep_const) */			     argv[0], argv[optind - -1]);
+536: /* MUTANT (rep_const) */			     argv[0], argv[optind - ((1)+1)]);
+537: /* MUTANT (del_stmt) */ /* 		  nextchar += my_strlen (nextchar); */ 
+537: /* MUTANT (rep_op) */		  nextchar -= my_strlen (nextchar);
+537: /* MUTANT (rep_op) */		  nextchar *= my_strlen (nextchar);
+537: /* MUTANT (rep_op) */		  nextchar %= my_strlen (nextchar);
+538: /* MUTANT (del_stmt) */ /* 		  return optstring[0] == ':' ? ':' : BAD_OPTION; */ 
+538: /* MUTANT (rep_op) */		  return optstring[0] != ':' ? ':' : BAD_OPTION;
+538: /* MUTANT (rep_const) */		  return optstring[1] == ':' ? ':' : BAD_OPTION;
+538: /* MUTANT (rep_const) */		  return optstring[-1] == ':' ? ':' : BAD_OPTION;
+541: /* MUTANT (rep_op) */	  nextchar -= my_strlen (nextchar);
+541: /* MUTANT (rep_op) */	  nextchar *= my_strlen (nextchar);
+541: /* MUTANT (rep_op) */	  nextchar %= my_strlen (nextchar);
+542: /* MUTANT (rep_op) */	  if (longind == NULL)
+542: /* MUTANT (negate) */	  if(! (longind != NULL))
+544: /* MUTANT (negate) */	  if(! (pfound->flag))
+546: /* MUTANT (del_stmt) */ /* 	      *(pfound->flag) = pfound->val; */ 
+547: /* MUTANT (del_stmt) */ /* 	      return 0; */ 
+547: /* MUTANT (rep_const) */	      return 1;
+547: /* MUTANT (rep_const) */	      return -1;
+555: /* MUTANT (rep_op) */      if (!long_only && argv[optind][1] == '-'
+555: /* MUTANT (rep_op) */      if (!long_only || argv[optind][1] != '-'
+555: /* MUTANT (rep_const) */      if (!long_only || argv[optind][0] == '-'
+555: /* MUTANT (rep_const) */      if (!long_only || argv[optind][-1] == '-'
+555: /* MUTANT (rep_const) */      if (!long_only || argv[optind][((1)+1)] == '-'
+557: /* MUTANT (rep_op) */	  && argv[optind][0] == '+'
+557: /* MUTANT (rep_op) */	  || argv[optind][0] != '+'
+557: /* MUTANT (rep_op) */	  || argv[optind][0] == '-'
+557: /* MUTANT (rep_op) */	  || argv[optind][0] == '*'
+557: /* MUTANT (rep_op) */	  || argv[optind][0] == '%'
+557: /* MUTANT (rep_const) */	  || argv[optind][1] == '+'
+557: /* MUTANT (rep_const) */	  || argv[optind][-1] == '+'
+559: /* MUTANT (rep_op) */	  && my_index (optstring, *nextchar) == NULL)
+559: /* MUTANT (rep_op) */	  || my_index (optstring, *nextchar) != NULL)
+561: /* MUTANT (negate) */	  if(! (opterr))
+563: /* MUTANT (rep_op) */	      if (argv[optind][1] != '-')
+563: /* MUTANT (rep_const) */	      if (argv[optind][0] == '-')
+563: /* MUTANT (rep_const) */	      if (argv[optind][-1] == '-')
+563: /* MUTANT (rep_const) */	      if (argv[optind][((1)+1)] == '-')
+563: /* MUTANT (negate) */	      if(! (argv[optind][1] == '-'))
+566: /* MUTANT (rep_const) */			 argv[1], nextchar);
+566: /* MUTANT (rep_const) */			 argv[-1], nextchar);
+570: /* MUTANT (rep_const) */			 argv[1], argv[optind][0], nextchar);
+570: /* MUTANT (rep_const) */			 argv[-1], argv[optind][0], nextchar);
+570: /* MUTANT (rep_const) */			 argv[0], argv[optind][1], nextchar);
+570: /* MUTANT (rep_const) */			 argv[0], argv[optind][-1], nextchar);
+573: /* MUTANT (del_stmt) */ /* 	  optind++; */ 
+573: /* MUTANT (rep_op) */	  optind--;
+574: /* MUTANT (del_stmt) */ /* 	  return BAD_OPTION; */ 
+581: /* MUTANT (del_stmt) */ /*     char c = *nextchar++; */ 
+581: /* MUTANT (rep_op) */    char c = *nextchar--;
+582: /* MUTANT (del_stmt) */ /*     char *temp = my_index (optstring, c); */ 
+585: /* MUTANT (rep_op) */    if (*nextchar != '\0')
+585: /* MUTANT (rep_const) */    if (*nextchar == '\1')
+585: /* MUTANT (rep_const) */    if (*nextchar == '\-1')
+585: /* MUTANT (negate) */    if(! (*nextchar == '\0'))
+586: /* MUTANT (rep_op) */      --optind;
+588: /* MUTANT (rep_op) */    if (temp != NULL || c == ':')
+588: /* MUTANT (rep_op) */    if (temp == NULL && c == ':')
+588: /* MUTANT (rep_op) */    if (temp == NULL || c != ':')
+588: /* MUTANT (negate) */    if(! (temp == NULL || c == ':'))
+590: /* MUTANT (negate) */	if(! (opterr))
+592: #if 1 /* MUTANT (rep_const) */
+592: #if -1 /* MUTANT (rep_const) */
+593: /* MUTANT (rep_op) */	    if (c <= 040 || c >= 0177)
+593: /* MUTANT (rep_op) */	    if (c > 040 || c >= 0177)
+593: /* MUTANT (rep_op) */	    if (c >= 040 || c >= 0177)
+593: /* MUTANT (rep_op) */	    if (c == 040 || c >= 0177)
+593: /* MUTANT (rep_op) */	    if (c != 040 || c >= 0177)
+593: /* MUTANT (rep_op) */	    if (c < 040 && c >= 0177)
+593: /* MUTANT (rep_op) */	    if (c < 040 || c <= 0177)
+593: /* MUTANT (rep_op) */	    if (c < 040 || c < 0177)
+593: /* MUTANT (rep_op) */	    if (c < 040 || c > 0177)
+593: /* MUTANT (rep_op) */	    if (c < 040 || c == 0177)
+593: /* MUTANT (rep_op) */	    if (c < 040 || c != 0177)
+593: /* MUTANT (rep_const) */	    if (c < 0 || c >= 0177)
+593: /* MUTANT (rep_const) */	    if (c < 1 || c >= 0177)
+593: /* MUTANT (rep_const) */	    if (c < -1 || c >= 0177)
+593: /* MUTANT (rep_const) */	    if (c < ((040)+1) || c >= 0177)
+593: /* MUTANT (rep_const) */	    if (c < ((040)-1) || c >= 0177)
+593: /* MUTANT (rep_const) */	    if (c < 040 || c >= 0)
+593: /* MUTANT (rep_const) */	    if (c < 040 || c >= 1)
+593: /* MUTANT (rep_const) */	    if (c < 040 || c >= -1)
+593: /* MUTANT (rep_const) */	    if (c < 040 || c >= ((0177)+1))
+593: /* MUTANT (rep_const) */	    if (c < 040 || c >= ((0177)-1))
+593: /* MUTANT (negate) */	    if(! (c < 040 || c >= 0177))
+594: /* MUTANT (rep_const) */	      fprintf (stderr, "%s: unrecognized option, character code 1%o\n",
+594: /* MUTANT (rep_const) */	      fprintf (stderr, "%s: unrecognized option, character code -1%o\n",
+595: /* MUTANT (rep_const) */		       argv[1], c);
+595: /* MUTANT (rep_const) */		       argv[-1], c);
+597: /* MUTANT (rep_const) */	      fprintf (stderr, "%s: unrecognized option `-%c'\n", argv[1], c);
+597: /* MUTANT (rep_const) */	      fprintf (stderr, "%s: unrecognized option `-%c'\n", argv[-1], c);
+600: /* MUTANT (rep_const) */	    fprintf (stderr, "%s: illegal option -- %c\n", argv[1], c);
+600: /* MUTANT (rep_const) */	    fprintf (stderr, "%s: illegal option -- %c\n", argv[-1], c);
+604: /* MUTANT (del_stmt) */ /* 	return BAD_OPTION; */ 
+606: /* MUTANT (rep_op) */    if (temp[1] != ':')
+606: /* MUTANT (rep_const) */    if (temp[0] == ':')
+606: /* MUTANT (rep_const) */    if (temp[-1] == ':')
+606: /* MUTANT (rep_const) */    if (temp[((1)+1)] == ':')
+606: /* MUTANT (negate) */    if(! (temp[1] == ':'))
+608: /* MUTANT (rep_op) */	if (temp[2] != ':')
+608: /* MUTANT (rep_const) */	if (temp[0] == ':')
+608: /* MUTANT (rep_const) */	if (temp[1] == ':')
+608: /* MUTANT (rep_const) */	if (temp[-1] == ':')
+608: /* MUTANT (rep_const) */	if (temp[((2)+1)] == ':')
+608: /* MUTANT (rep_const) */	if (temp[((2)-1)] == ':')
+608: /* MUTANT (negate) */	if(! (temp[2] == ':'))
+611: /* MUTANT (rep_op) */	    if (*nextchar == '\0')
+611: /* MUTANT (rep_const) */	    if (*nextchar != '\1')
+611: /* MUTANT (rep_const) */	    if (*nextchar != '\-1')
+611: /* MUTANT (negate) */	    if(! (*nextchar != '\0'))
+613: /* MUTANT (del_stmt) */ /* 		optarg = nextchar; */ 
+614: /* MUTANT (del_stmt) */ /* 		optind++; */ 
+614: /* MUTANT (rep_op) */		optind--;
+617: /* MUTANT (rep_const) */	      optarg = 1;
+617: /* MUTANT (rep_const) */	      optarg = -1;
+618: /* MUTANT (del_stmt) */ /* 	    nextchar = NULL; */ 
+623: /* MUTANT (rep_op) */	    if (*nextchar == '\0')
+623: /* MUTANT (rep_const) */	    if (*nextchar != '\1')
+623: /* MUTANT (rep_const) */	    if (*nextchar != '\-1')
+623: /* MUTANT (negate) */	    if(! (*nextchar != '\0'))
+625: /* MUTANT (del_stmt) */ /* 		optarg = nextchar; */ 
+628: /* MUTANT (del_stmt) */ /* 		optind++; */ 
+628: /* MUTANT (rep_op) */		optind--;
+630: /* MUTANT (rep_op) */	    else if (optind != argc)
+630: /* MUTANT (negate) */	    else if(! (optind == argc))
+632: /* MUTANT (negate) */		if(! (opterr))
+634: #if 1 /* MUTANT (rep_const) */
+634: #if -1 /* MUTANT (rep_const) */
+636: /* MUTANT (rep_const) */			     argv[1], c);
+636: /* MUTANT (rep_const) */			     argv[-1], c);
+640: /* MUTANT (rep_const) */			     argv[1], c);
+640: /* MUTANT (rep_const) */			     argv[-1], c);
+644: /* MUTANT (rep_op) */		if (optstring[0] != ':')
+644: /* MUTANT (rep_const) */		if (optstring[1] == ':')
+644: /* MUTANT (rep_const) */		if (optstring[-1] == ':')
+644: /* MUTANT (negate) */		if(! (optstring[0] == ':'))
+652: /* MUTANT (rep_op) */	      optarg = argv[optind--];
+653: /* MUTANT (del_stmt) */ /* 	    nextchar = NULL; */ 
+663: /* MUTANT (del_stmt) */ /*      char *const *argv; */ 
+664: /* MUTANT (del_stmt) */ /*      const char *optstring; */ 
+667: /* MUTANT (rep_const) */			   (const struct option *) 1,
+667: /* MUTANT (rep_const) */			   (const struct option *) -1,
+668: /* MUTANT (rep_const) */			   (int *) 1,
+668: /* MUTANT (rep_const) */			   (int *) -1,
+669: /* MUTANT (rep_const) */			   1);
+669: /* MUTANT (rep_const) */			   -1);
+675: /* MUTANT (del_stmt) */ /*      char *const *argv; */ 
+676: /* MUTANT (del_stmt) */ /*      const char *options; */ 
+677: /* MUTANT (del_stmt) */ /*      const struct option *long_options; */ 
+678: /* MUTANT (del_stmt) */ /*      int *opt_index; */ 
+680: /* MUTANT (del_stmt) */ /*   return _getopt_internal (argc, argv, options, long_options, opt_index, 0); */ 
+680: /* MUTANT (rep_const) */  return _getopt_internal (argc, argv, options, long_options, opt_index, 1);
+680: /* MUTANT (rep_const) */  return _getopt_internal (argc, argv, options, long_options, opt_index, -1);
+693: /* MUTANT (del_stmt) */ /*      char **argv; */ 
+695: /* MUTANT (del_stmt) */ /*   int c; */ 
+696: /* MUTANT (del_stmt) */ /*   int digit_optind = 0; */ 
+696: /* MUTANT (rep_const) */  int digit_optind = 1;
+696: /* MUTANT (rep_const) */  int digit_optind = -1;
+698: /* MUTANT (rep_const) */  while (0)
+698: /* MUTANT (rep_const) */  while (-1)
+698: /* MUTANT (rep_const) */  while (((1)+1))
+698: /* MUTANT (negate) */  while(! (1))
+700: /* MUTANT (del_stmt) */ /*       int this_option_optind = optind ? optind : 1; */ 
+700: /* MUTANT (rep_const) */      int this_option_optind = optind ? optind : 0;
+700: /* MUTANT (rep_const) */      int this_option_optind = optind ? optind : -1;
+700: /* MUTANT (rep_const) */      int this_option_optind = optind ? optind : ((1)+1);
+702: /* MUTANT (del_stmt) */ /*       c = getopt (argc, argv, "abc:d:0123456789"); */ 
+702: /* MUTANT (rep_const) */      c = getopt (argc, argv, "abc:d:0");
+702: /* MUTANT (rep_const) */      c = getopt (argc, argv, "abc:d:1");
+702: /* MUTANT (rep_const) */      c = getopt (argc, argv, "abc:d:-1");
+702: /* MUTANT (rep_const) */      c = getopt (argc, argv, "abc:d:((0123456789)+1)");
+702: /* MUTANT (rep_const) */      c = getopt (argc, argv, "abc:d:((0123456789)-1)");
+703: /* MUTANT (rep_op) */      if (c != EOF)
+703: /* MUTANT (negate) */      if(! (c == EOF))
+708: /* MUTANT (rep_const) */	case '1':
+708: /* MUTANT (rep_const) */	case '-1':
+709: /* MUTANT (rep_const) */	case '0':
+709: /* MUTANT (rep_const) */	case '-1':
+709: /* MUTANT (rep_const) */	case '((1)+1)':
+710: /* MUTANT (rep_const) */	case '0':
+710: /* MUTANT (rep_const) */	case '1':
+710: /* MUTANT (rep_const) */	case '-1':
+710: /* MUTANT (rep_const) */	case '((2)+1)':
+710: /* MUTANT (rep_const) */	case '((2)-1)':
+711: /* MUTANT (rep_const) */	case '0':
+711: /* MUTANT (rep_const) */	case '1':
+711: /* MUTANT (rep_const) */	case '-1':
+711: /* MUTANT (rep_const) */	case '((3)+1)':
+711: /* MUTANT (rep_const) */	case '((3)-1)':
+712: /* MUTANT (rep_const) */	case '0':
+712: /* MUTANT (rep_const) */	case '1':
+712: /* MUTANT (rep_const) */	case '-1':
+712: /* MUTANT (rep_const) */	case '((4)+1)':
+712: /* MUTANT (rep_const) */	case '((4)-1)':
+713: /* MUTANT (rep_const) */	case '0':
+713: /* MUTANT (rep_const) */	case '1':
+713: /* MUTANT (rep_const) */	case '-1':
+713: /* MUTANT (rep_const) */	case '((5)+1)':
+713: /* MUTANT (rep_const) */	case '((5)-1)':
+714: /* MUTANT (rep_const) */	case '0':
+714: /* MUTANT (rep_const) */	case '1':
+714: /* MUTANT (rep_const) */	case '-1':
+714: /* MUTANT (rep_const) */	case '((6)+1)':
+714: /* MUTANT (rep_const) */	case '((6)-1)':
+715: /* MUTANT (rep_const) */	case '0':
+715: /* MUTANT (rep_const) */	case '1':
+715: /* MUTANT (rep_const) */	case '-1':
+715: /* MUTANT (rep_const) */	case '((7)+1)':
+715: /* MUTANT (rep_const) */	case '((7)-1)':
+716: /* MUTANT (rep_const) */	case '0':
+716: /* MUTANT (rep_const) */	case '1':
+716: /* MUTANT (rep_const) */	case '-1':
+716: /* MUTANT (rep_const) */	case '((8)+1)':
+716: /* MUTANT (rep_const) */	case '((8)-1)':
+717: /* MUTANT (rep_const) */	case '0':
+717: /* MUTANT (rep_const) */	case '1':
+717: /* MUTANT (rep_const) */	case '-1':
+717: /* MUTANT (rep_const) */	case '((9)+1)':
+717: /* MUTANT (rep_const) */	case '((9)-1)':
+718: /* MUTANT (rep_op) */	  if (digit_optind == 0 && digit_optind != this_option_optind)
+718: /* MUTANT (rep_op) */	  if (digit_optind != 0 || digit_optind != this_option_optind)
+718: /* MUTANT (rep_op) */	  if (digit_optind != 0 && digit_optind == this_option_optind)
+718: /* MUTANT (rep_const) */	  if (digit_optind != 1 && digit_optind != this_option_optind)
+718: /* MUTANT (rep_const) */	  if (digit_optind != -1 && digit_optind != this_option_optind)
+718: /* MUTANT (negate) */	  if(! (digit_optind != 0 && digit_optind != this_option_optind))
+720: /* MUTANT (del_stmt) */ /* 	  digit_optind = this_option_optind; */ 
+721: /* MUTANT (del_stmt) */ /* 	  printf ("option %c\n", c); */ 
+722: /* MUTANT (del_stmt) */ /* 	  break; */ 
+726: /* MUTANT (del_stmt) */ /* 	  break; */ 
+730: /* MUTANT (del_stmt) */ /* 	  break; */ 
+734: /* MUTANT (del_stmt) */ /* 	  break; */ 
+740: /* MUTANT (rep_const) */	  printf ("?? getopt returned character code 1%o ??\n", c);
+740: /* MUTANT (rep_const) */	  printf ("?? getopt returned character code -1%o ??\n", c);
+744: /* MUTANT (rep_op) */  if (optind <= argc)
+744: /* MUTANT (rep_op) */  if (optind > argc)
+744: /* MUTANT (rep_op) */  if (optind >= argc)
+744: /* MUTANT (rep_op) */  if (optind == argc)
+744: /* MUTANT (rep_op) */  if (optind != argc)
+744: /* MUTANT (negate) */  if(! (optind < argc))
+746: /* MUTANT (del_stmt) */ /*       printf ("non-option ARGV-elements: "); */ 
+747: /* MUTANT (rep_op) */      while (optind <= argc)
+747: /* MUTANT (rep_op) */      while (optind > argc)
+747: /* MUTANT (rep_op) */      while (optind >= argc)
+747: /* MUTANT (rep_op) */      while (optind == argc)
+747: /* MUTANT (rep_op) */      while (optind != argc)
+747: /* MUTANT (negate) */      while(! (optind < argc))
+748: /* MUTANT (rep_op) */	printf ("%s ", argv[optind--]);
+749: /* MUTANT (del_stmt) */ /*       printf ("\n"); */ 
+752: /* MUTANT (rep_const) */  exit (1);
+752: /* MUTANT (rep_const) */  exit (-1);

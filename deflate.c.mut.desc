@@ -1,0 +1,923 @@
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.0 1993/06/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.1 1993/06/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.-1 1993/06/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.((15)+1) 1993/06/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.((15)-1) 1993/06/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 0/06/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1/06/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 -1/06/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 ((1993)+1)/06/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 ((1993)-1)/06/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/0/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/1/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/-1/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/((06)+1)/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/((06)-1)/24 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/0 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/1 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/-1 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/((24)+1) 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/((24)-1) 10:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 0:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 1:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 -1:53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 ((10)+1):53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 ((10)-1):53:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 10:0:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 10:1:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 10:-1:53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 10:((53)+1):53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 10:((53)-1):53 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 10:53:0 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 10:53:1 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 10:53:-1 jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 10:53:((53)+1) jloup Exp $";
+71: /* MUTANT (rep_const) */static char rcsid[] = "$Id: deflate.c,v 0.15 1993/06/24 10:53:((53)-1) jloup Exp $";
+87: #   define HASH_BITS  0   /* MUTANT (rep_const) *//* Number of bits used to hash strings */
+87: #   define HASH_BITS  1   /* MUTANT (rep_const) *//* Number of bits used to hash strings */
+87: #   define HASH_BITS  -1   /* MUTANT (rep_const) *//* Number of bits used to hash strings */
+87: #   define HASH_BITS  ((13)+1)   /* MUTANT (rep_const) *//* Number of bits used to hash strings */
+87: #   define HASH_BITS  ((13)-1)   /* MUTANT (rep_const) *//* Number of bits used to hash strings */
+90: #   define HASH_BITS  0 /* MUTANT (rep_const) */
+90: #   define HASH_BITS  1 /* MUTANT (rep_const) */
+90: #   define HASH_BITS  -1 /* MUTANT (rep_const) */
+90: #   define HASH_BITS  ((14)+1) /* MUTANT (rep_const) */
+90: #   define HASH_BITS  ((14)-1) /* MUTANT (rep_const) */
+93: #   define HASH_BITS  0 /* MUTANT (rep_const) */
+93: #   define HASH_BITS  1 /* MUTANT (rep_const) */
+93: #   define HASH_BITS  -1 /* MUTANT (rep_const) */
+93: #   define HASH_BITS  ((15)+1) /* MUTANT (rep_const) */
+93: #   define HASH_BITS  ((15)-1) /* MUTANT (rep_const) */
+100: #if (WSIZE<<0) > (1<<BITS) /* MUTANT (rep_const) */
+100: #if (WSIZE<<-1) > (1<<BITS) /* MUTANT (rep_const) */
+100: #if (WSIZE<<((1)+1)) > (1<<BITS) /* MUTANT (rep_const) */
+100: #if (WSIZE<<1) > (0<<BITS) /* MUTANT (rep_const) */
+100: #if (WSIZE<<1) > (-1<<BITS) /* MUTANT (rep_const) */
+100: #if (WSIZE<<1) > (((1)+1)<<BITS) /* MUTANT (rep_const) */
+103: #if HASH_BITS > BITS-0 /* MUTANT (rep_const) */
+103: #if HASH_BITS > BITS--1 /* MUTANT (rep_const) */
+103: #if HASH_BITS > BITS-((1)+1) /* MUTANT (rep_const) */
+107: #define HASH_SIZE (unsigned)(0<<HASH_BITS) /* MUTANT (rep_const) */
+107: #define HASH_SIZE (unsigned)(-1<<HASH_BITS) /* MUTANT (rep_const) */
+107: #define HASH_SIZE (unsigned)(((1)+1)<<HASH_BITS) /* MUTANT (rep_const) */
+108: #define HASH_MASK (HASH_SIZE-0) /* MUTANT (rep_const) */
+108: #define HASH_MASK (HASH_SIZE--1) /* MUTANT (rep_const) */
+108: #define HASH_MASK (HASH_SIZE-((1)+1)) /* MUTANT (rep_const) */
+109: #define WMASK     (WSIZE-0) /* MUTANT (rep_const) */
+109: #define WMASK     (WSIZE--1) /* MUTANT (rep_const) */
+109: #define WMASK     (WSIZE-((1)+1)) /* MUTANT (rep_const) */
+112: #define NIL 1 /* MUTANT (rep_const) */
+112: #define NIL -1 /* MUTANT (rep_const) */
+115: #define FAST 0 /* MUTANT (rep_const) */
+115: #define FAST 1 /* MUTANT (rep_const) */
+115: #define FAST -1 /* MUTANT (rep_const) */
+115: #define FAST ((4)+1) /* MUTANT (rep_const) */
+115: #define FAST ((4)-1) /* MUTANT (rep_const) */
+116: #define SLOW 0 /* MUTANT (rep_const) */
+116: #define SLOW 1 /* MUTANT (rep_const) */
+116: #define SLOW -1 /* MUTANT (rep_const) */
+116: #define SLOW ((2)+1) /* MUTANT (rep_const) */
+116: #define SLOW ((2)-1) /* MUTANT (rep_const) */
+120: #  define TOO_FAR 0 /* MUTANT (rep_const) */
+120: #  define TOO_FAR 1 /* MUTANT (rep_const) */
+120: #  define TOO_FAR -1 /* MUTANT (rep_const) */
+120: #  define TOO_FAR ((4096)+1) /* MUTANT (rep_const) */
+120: #  define TOO_FAR ((4096)-1) /* MUTANT (rep_const) */
+129: /* MUTANT (del_stmt) */ /* typedef unsigned IPos; */ 
+154: /* MUTANT (del_stmt) */ /* ulg window_size = (ulg)2*WSIZE; */ 
+154: /* MUTANT (rep_const) */ulg window_size = (ulg)0*WSIZE;
+154: /* MUTANT (rep_const) */ulg window_size = (ulg)1*WSIZE;
+154: /* MUTANT (rep_const) */ulg window_size = (ulg)-1*WSIZE;
+154: /* MUTANT (rep_const) */ulg window_size = (ulg)((2)+1)*WSIZE;
+154: /* MUTANT (rep_const) */ulg window_size = (ulg)((2)-1)*WSIZE;
+159: /* MUTANT (del_stmt) */ /* long block_start; */ 
+164: /* MUTANT (del_stmt) */ /* local unsigned ins_h; */   /* hash index of string to be inserted */
+166: #define H_SHIFT  ((HASH_BITS+MIN_MATCH-0)/MIN_MATCH) /* MUTANT (rep_const) */
+166: #define H_SHIFT  ((HASH_BITS+MIN_MATCH--1)/MIN_MATCH) /* MUTANT (rep_const) */
+166: #define H_SHIFT  ((HASH_BITS+MIN_MATCH-((1)+1))/MIN_MATCH) /* MUTANT (rep_const) */
+178: /* MUTANT (del_stmt) */ /*       unsigned near strstart; */       /* start of string to insert */
+179: /* MUTANT (del_stmt) */ /*       unsigned near match_start; */    /* start of matching string */
+180: /* MUTANT (del_stmt) */ /* local int           eofile; */         /* flag set at end of input file */
+181: /* MUTANT (del_stmt) */ /* local unsigned      lookahead; */      /* number of valid bytes ahead in window */
+183: /* MUTANT (del_stmt) */ /* unsigned near max_chain_length; */ 
+188: /* MUTANT (del_stmt) */ /* local unsigned int max_lazy_match; */ 
+202: /* MUTANT (del_stmt) */ /* unsigned near good_match; */ 
+213: /* MUTANT (del_stmt) */ /*    ush good_length; */  /* reduce lazy search above this match length */
+214: /* MUTANT (del_stmt) */ /*    ush max_lazy; */     /* do not perform lazy search above this match length */
+215: /* MUTANT (del_stmt) */ /*    ush nice_length; */  /* quit search above this match length */
+216: /* MUTANT (del_stmt) */ /*    ush max_chain; */ 
+217: /* MUTANT (del_stmt) */ /* } config; */ 
+225: /* MUTANT (rep_const) */local config configuration_table[0] = {
+225: /* MUTANT (rep_const) */local config configuration_table[1] = {
+225: /* MUTANT (rep_const) */local config configuration_table[-1] = {
+225: /* MUTANT (rep_const) */local config configuration_table[((10)+1)] = {
+225: /* MUTANT (rep_const) */local config configuration_table[((10)-1)] = {
+244: #define EQUAL 1 /* MUTANT (rep_const) */
+244: #define EQUAL -1 /* MUTANT (rep_const) */
+251: /* MUTANT (del_stmt) */ /* local ulg deflate_fast   OF((void)); */ 
+253: /* MUTANT (del_stmt) */ /*       int  longest_match OF((IPos cur_match)); */ 
+279: /* MUTANT (rep_op) */   (UPDATE_HASH(ins_h, window[(s) - MIN_MATCH-1]), \
+279: /* MUTANT (rep_op) */   (UPDATE_HASH(ins_h, window[(s) * MIN_MATCH-1]), \
+279: /* MUTANT (rep_op) */   (UPDATE_HASH(ins_h, window[(s) % MIN_MATCH-1]), \
+279: /* MUTANT (rep_const) */   (UPDATE_HASH(ins_h, window[(s) + MIN_MATCH-0]), \
+279: /* MUTANT (rep_const) */   (UPDATE_HASH(ins_h, window[(s) + MIN_MATCH--1]), \
+279: /* MUTANT (rep_const) */   (UPDATE_HASH(ins_h, window[(s) + MIN_MATCH-((1)+1)]), \
+288: /* MUTANT (del_stmt) */ /*     ush *flags; */      /* general purpose bit flag */
+290: /* MUTANT (del_stmt) */ /*     register unsigned j; */ 
+292: /* MUTANT (del_stmt) */ /*     if (pack_level < 1 || pack_level > 9) error("bad pack level"); */ 
+292: /* MUTANT (rep_op) */    if (pack_level <= 1 || pack_level > 9) error("bad pack level");
+292: /* MUTANT (rep_op) */    if (pack_level > 1 || pack_level > 9) error("bad pack level");
+292: /* MUTANT (rep_op) */    if (pack_level >= 1 || pack_level > 9) error("bad pack level");
+292: /* MUTANT (rep_op) */    if (pack_level == 1 || pack_level > 9) error("bad pack level");
+292: /* MUTANT (rep_op) */    if (pack_level != 1 || pack_level > 9) error("bad pack level");
+292: /* MUTANT (rep_op) */    if (pack_level < 1 && pack_level > 9) error("bad pack level");
+292: /* MUTANT (rep_op) */    if (pack_level < 1 || pack_level <= 9) error("bad pack level");
+292: /* MUTANT (rep_op) */    if (pack_level < 1 || pack_level < 9) error("bad pack level");
+292: /* MUTANT (rep_op) */    if (pack_level < 1 || pack_level >= 9) error("bad pack level");
+292: /* MUTANT (rep_op) */    if (pack_level < 1 || pack_level == 9) error("bad pack level");
+292: /* MUTANT (rep_op) */    if (pack_level < 1 || pack_level != 9) error("bad pack level");
+292: /* MUTANT (rep_const) */    if (pack_level < 0 || pack_level > 9) error("bad pack level");
+292: /* MUTANT (rep_const) */    if (pack_level < -1 || pack_level > 9) error("bad pack level");
+292: /* MUTANT (rep_const) */    if (pack_level < ((1)+1) || pack_level > 9) error("bad pack level");
+292: /* MUTANT (rep_const) */    if (pack_level < 1 || pack_level > 0) error("bad pack level");
+292: /* MUTANT (rep_const) */    if (pack_level < 1 || pack_level > 1) error("bad pack level");
+292: /* MUTANT (rep_const) */    if (pack_level < 1 || pack_level > -1) error("bad pack level");
+292: /* MUTANT (rep_const) */    if (pack_level < 1 || pack_level > ((9)+1)) error("bad pack level");
+292: /* MUTANT (rep_const) */    if (pack_level < 1 || pack_level > ((9)-1)) error("bad pack level");
+292: /* MUTANT (negate) */    if(! (pack_level < 1 || pack_level > 9)) error("bad pack level");
+293: /* MUTANT (del_stmt) */ /*     compr_level = pack_level; */ 
+296: #if defined(MAXSEG_64K) && HASH_BITS == 0 /* MUTANT (rep_const) */
+296: #if defined(MAXSEG_64K) && HASH_BITS == 1 /* MUTANT (rep_const) */
+296: #if defined(MAXSEG_64K) && HASH_BITS == -1 /* MUTANT (rep_const) */
+296: #if defined(MAXSEG_64K) && HASH_BITS == ((15)+1) /* MUTANT (rep_const) */
+296: #if defined(MAXSEG_64K) && HASH_BITS == ((15)-1) /* MUTANT (rep_const) */
+297: /* MUTANT (rep_op) */    for (j = 0;  j <= HASH_SIZE; j++) head[j] = NIL;
+297: /* MUTANT (rep_op) */    for (j = 0;  j > HASH_SIZE; j++) head[j] = NIL;
+297: /* MUTANT (rep_op) */    for (j = 0;  j >= HASH_SIZE; j++) head[j] = NIL;
+297: /* MUTANT (rep_op) */    for (j = 0;  j == HASH_SIZE; j++) head[j] = NIL;
+297: /* MUTANT (rep_op) */    for (j = 0;  j != HASH_SIZE; j++) head[j] = NIL;
+297: /* MUTANT (rep_op) */    for (j = 0;  j < HASH_SIZE; j--) head[j] = NIL;
+297: /* MUTANT (rep_const) */    for (j = 1;  j < HASH_SIZE; j++) head[j] = NIL;
+297: /* MUTANT (rep_const) */    for (j = -1;  j < HASH_SIZE; j++) head[j] = NIL;
+306: /* MUTANT (del_stmt) */ /*     good_match       = configuration_table[pack_level].good_length; */ 
+311: /* MUTANT (rep_op) */    if (pack_level != 1) {
+311: /* MUTANT (rep_const) */    if (pack_level == 0) {
+311: /* MUTANT (rep_const) */    if (pack_level == -1) {
+311: /* MUTANT (rep_const) */    if (pack_level == ((1)+1)) {
+311: /* MUTANT (negate) */    if(! (pack_level == 1)) {
+312: /* MUTANT (del_stmt) */ /*        *flags |= FAST; */ 
+313: /* MUTANT (rep_op) */    } else if (pack_level != 9) {
+313: /* MUTANT (rep_const) */    } else if (pack_level == 0) {
+313: /* MUTANT (rep_const) */    } else if (pack_level == 1) {
+313: /* MUTANT (rep_const) */    } else if (pack_level == -1) {
+313: /* MUTANT (rep_const) */    } else if (pack_level == ((9)+1)) {
+313: /* MUTANT (rep_const) */    } else if (pack_level == ((9)-1)) {
+313: /* MUTANT (negate) */    } else if(! (pack_level == 9)) {
+314: /* MUTANT (del_stmt) */ /*        *flags |= SLOW; */ 
+318: /* MUTANT (rep_const) */    strstart = 1;
+318: /* MUTANT (rep_const) */    strstart = -1;
+319: /* MUTANT (del_stmt) */ /*     block_start = 0L; */ 
+319: /* MUTANT (rep_const) */    block_start = 1L;
+319: /* MUTANT (rep_const) */    block_start = -1L;
+325: /* MUTANT (rep_op) */			 sizeof(int) < 2 ? (unsigned)WSIZE : 2*WSIZE);
+325: /* MUTANT (rep_op) */			 sizeof(int) > 2 ? (unsigned)WSIZE : 2*WSIZE);
+325: /* MUTANT (rep_op) */			 sizeof(int) >= 2 ? (unsigned)WSIZE : 2*WSIZE);
+325: /* MUTANT (rep_op) */			 sizeof(int) == 2 ? (unsigned)WSIZE : 2*WSIZE);
+325: /* MUTANT (rep_op) */			 sizeof(int) != 2 ? (unsigned)WSIZE : 2*WSIZE);
+325: /* MUTANT (rep_const) */			 sizeof(int) <= 0 ? (unsigned)WSIZE : 2*WSIZE);
+325: /* MUTANT (rep_const) */			 sizeof(int) <= 1 ? (unsigned)WSIZE : 2*WSIZE);
+325: /* MUTANT (rep_const) */			 sizeof(int) <= -1 ? (unsigned)WSIZE : 2*WSIZE);
+325: /* MUTANT (rep_const) */			 sizeof(int) <= ((2)+1) ? (unsigned)WSIZE : 2*WSIZE);
+325: /* MUTANT (rep_const) */			 sizeof(int) <= ((2)-1) ? (unsigned)WSIZE : 2*WSIZE);
+325: /* MUTANT (rep_const) */			 sizeof(int) <= 2 ? (unsigned)WSIZE : 0*WSIZE);
+325: /* MUTANT (rep_const) */			 sizeof(int) <= 2 ? (unsigned)WSIZE : 1*WSIZE);
+325: /* MUTANT (rep_const) */			 sizeof(int) <= 2 ? (unsigned)WSIZE : -1*WSIZE);
+325: /* MUTANT (rep_const) */			 sizeof(int) <= 2 ? (unsigned)WSIZE : ((2)+1)*WSIZE);
+325: /* MUTANT (rep_const) */			 sizeof(int) <= 2 ? (unsigned)WSIZE : ((2)-1)*WSIZE);
+327: /* MUTANT (rep_op) */    if (lookahead != 0 || lookahead == (unsigned)EOF) {
+327: /* MUTANT (rep_op) */    if (lookahead == 0 && lookahead == (unsigned)EOF) {
+327: /* MUTANT (rep_op) */    if (lookahead == 0 || lookahead != (unsigned)EOF) {
+327: /* MUTANT (rep_const) */    if (lookahead == 1 || lookahead == (unsigned)EOF) {
+327: /* MUTANT (rep_const) */    if (lookahead == -1 || lookahead == (unsigned)EOF) {
+327: /* MUTANT (negate) */    if(! (lookahead == 0 || lookahead == (unsigned)EOF)) {
+328: /* MUTANT (del_stmt) */ /*        eofile = 1, lookahead = 0; */ 
+328: /* MUTANT (rep_const) */       eofile = 0, lookahead = 0;
+328: /* MUTANT (rep_const) */       eofile = -1, lookahead = 0;
+328: /* MUTANT (rep_const) */       eofile = ((1)+1), lookahead = 0;
+328: /* MUTANT (rep_const) */       eofile = 1, lookahead = 1;
+328: /* MUTANT (rep_const) */       eofile = 1, lookahead = -1;
+329: /* MUTANT (del_stmt) */ /*        return; */ 
+331: /* MUTANT (rep_const) */    eofile = 1;
+331: /* MUTANT (rep_const) */    eofile = -1;
+335: /* MUTANT (del_stmt) */ /*     while (lookahead < MIN_LOOKAHEAD && !eofile) fill_window(); */ 
+335: /* MUTANT (rep_op) */    while (lookahead <= MIN_LOOKAHEAD && !eofile) fill_window();
+335: /* MUTANT (rep_op) */    while (lookahead > MIN_LOOKAHEAD && !eofile) fill_window();
+335: /* MUTANT (rep_op) */    while (lookahead >= MIN_LOOKAHEAD && !eofile) fill_window();
+335: /* MUTANT (rep_op) */    while (lookahead == MIN_LOOKAHEAD && !eofile) fill_window();
+335: /* MUTANT (rep_op) */    while (lookahead != MIN_LOOKAHEAD && !eofile) fill_window();
+335: /* MUTANT (rep_op) */    while (lookahead < MIN_LOOKAHEAD || !eofile) fill_window();
+335: /* MUTANT (negate) */    while(! (lookahead < MIN_LOOKAHEAD && !eofile)) fill_window();
+337: /* MUTANT (del_stmt) */ /*     ins_h = 0; */ 
+337: /* MUTANT (rep_const) */    ins_h = 1;
+337: /* MUTANT (rep_const) */    ins_h = -1;
+338: /* MUTANT (del_stmt) */ /*     for (j=0; j<MIN_MATCH-1; j++) UPDATE_HASH(ins_h, window[j]); */ 
+338: /* MUTANT (rep_op) */    for (j=0; j<=MIN_MATCH-1; j++) UPDATE_HASH(ins_h, window[j]);
+338: /* MUTANT (rep_op) */    for (j=0; j>MIN_MATCH-1; j++) UPDATE_HASH(ins_h, window[j]);
+338: /* MUTANT (rep_op) */    for (j=0; j>=MIN_MATCH-1; j++) UPDATE_HASH(ins_h, window[j]);
+338: /* MUTANT (rep_op) */    for (j=0; j==MIN_MATCH-1; j++) UPDATE_HASH(ins_h, window[j]);
+338: /* MUTANT (rep_op) */    for (j=0; j!=MIN_MATCH-1; j++) UPDATE_HASH(ins_h, window[j]);
+338: /* MUTANT (rep_op) */    for (j=0; j<MIN_MATCH-1; j--) UPDATE_HASH(ins_h, window[j]);
+338: /* MUTANT (rep_const) */    for (j=1; j<MIN_MATCH-1; j++) UPDATE_HASH(ins_h, window[j]);
+338: /* MUTANT (rep_const) */    for (j=-1; j<MIN_MATCH-1; j++) UPDATE_HASH(ins_h, window[j]);
+338: /* MUTANT (rep_const) */    for (j=0; j<MIN_MATCH-0; j++) UPDATE_HASH(ins_h, window[j]);
+338: /* MUTANT (rep_const) */    for (j=0; j<MIN_MATCH--1; j++) UPDATE_HASH(ins_h, window[j]);
+338: /* MUTANT (rep_const) */    for (j=0; j<MIN_MATCH-((1)+1); j++) UPDATE_HASH(ins_h, window[j]);
+360: /* MUTANT (del_stmt) */ /*     unsigned chain_length = max_chain_length; */    /* max hash chain length */
+361: /* MUTANT (del_stmt) */ /*     register uch *scan = window + strstart; */      /* current string */
+361: /* MUTANT (rep_op) */    register uch *scan = window - strstart;     /* current string */
+361: /* MUTANT (rep_op) */    register uch *scan = window * strstart;     /* current string */
+361: /* MUTANT (rep_op) */    register uch *scan = window % strstart;     /* current string */
+362: /* MUTANT (del_stmt) */ /*     register uch *match; */                         /* matched string */
+363: /* MUTANT (del_stmt) */ /*     register int len; */                            /* length of current match */
+364: /* MUTANT (del_stmt) */ /*     int best_len = prev_length; */                  /* best match length so far */
+365: /* MUTANT (del_stmt) */ /*     IPos limit = strstart > (IPos)MAX_DIST ? strstart - (IPos)MAX_DIST : NIL; */ 
+365: /* MUTANT (rep_op) */    IPos limit = strstart <= (IPos)MAX_DIST ? strstart - (IPos)MAX_DIST : NIL;
+365: /* MUTANT (rep_op) */    IPos limit = strstart < (IPos)MAX_DIST ? strstart - (IPos)MAX_DIST : NIL;
+365: /* MUTANT (rep_op) */    IPos limit = strstart >= (IPos)MAX_DIST ? strstart - (IPos)MAX_DIST : NIL;
+365: /* MUTANT (rep_op) */    IPos limit = strstart == (IPos)MAX_DIST ? strstart - (IPos)MAX_DIST : NIL;
+365: /* MUTANT (rep_op) */    IPos limit = strstart != (IPos)MAX_DIST ? strstart - (IPos)MAX_DIST : NIL;
+373: #if HASH_BITS < 0 || MAX_MATCH != 258 /* MUTANT (rep_const) */
+373: #if HASH_BITS < 1 || MAX_MATCH != 258 /* MUTANT (rep_const) */
+373: #if HASH_BITS < -1 || MAX_MATCH != 258 /* MUTANT (rep_const) */
+373: #if HASH_BITS < ((8)+1) || MAX_MATCH != 258 /* MUTANT (rep_const) */
+373: #if HASH_BITS < ((8)-1) || MAX_MATCH != 258 /* MUTANT (rep_const) */
+373: #if HASH_BITS < 8 || MAX_MATCH != 0 /* MUTANT (rep_const) */
+373: #if HASH_BITS < 8 || MAX_MATCH != 1 /* MUTANT (rep_const) */
+373: #if HASH_BITS < 8 || MAX_MATCH != -1 /* MUTANT (rep_const) */
+373: #if HASH_BITS < 8 || MAX_MATCH != ((258)+1) /* MUTANT (rep_const) */
+373: #if HASH_BITS < 8 || MAX_MATCH != ((258)-1) /* MUTANT (rep_const) */
+381: /* MUTANT (rep_op) */    register uch *strend = window - strstart + MAX_MATCH - 1;
+381: /* MUTANT (rep_op) */    register uch *strend = window * strstart + MAX_MATCH - 1;
+381: /* MUTANT (rep_op) */    register uch *strend = window % strstart + MAX_MATCH - 1;
+381: /* MUTANT (rep_op) */    register uch *strend = window + strstart - MAX_MATCH - 1;
+381: /* MUTANT (rep_op) */    register uch *strend = window + strstart * MAX_MATCH - 1;
+381: /* MUTANT (rep_op) */    register uch *strend = window + strstart % MAX_MATCH - 1;
+381: /* MUTANT (rep_const) */    register uch *strend = window + strstart + MAX_MATCH - 0;
+381: /* MUTANT (rep_const) */    register uch *strend = window + strstart + MAX_MATCH - -1;
+381: /* MUTANT (rep_const) */    register uch *strend = window + strstart + MAX_MATCH - ((1)+1);
+382: /* MUTANT (del_stmt) */ /*     register ush scan_start = *(ush*)scan; */ 
+383: /* MUTANT (del_stmt) */ /*     register ush scan_end   = *(ush*)(scan+best_len-1); */ 
+383: /* MUTANT (rep_op) */    register ush scan_end   = *(ush*)(scan-best_len-1);
+383: /* MUTANT (rep_op) */    register ush scan_end   = *(ush*)(scan*best_len-1);
+383: /* MUTANT (rep_op) */    register ush scan_end   = *(ush*)(scan%best_len-1);
+383: /* MUTANT (rep_const) */    register ush scan_end   = *(ush*)(scan+best_len-0);
+383: /* MUTANT (rep_const) */    register ush scan_end   = *(ush*)(scan+best_len--1);
+383: /* MUTANT (rep_const) */    register ush scan_end   = *(ush*)(scan+best_len-((1)+1));
+385: /* MUTANT (rep_op) */    register uch *strend = window - strstart + MAX_MATCH;
+385: /* MUTANT (rep_op) */    register uch *strend = window * strstart + MAX_MATCH;
+385: /* MUTANT (rep_op) */    register uch *strend = window % strstart + MAX_MATCH;
+385: /* MUTANT (rep_op) */    register uch *strend = window + strstart - MAX_MATCH;
+385: /* MUTANT (rep_op) */    register uch *strend = window + strstart * MAX_MATCH;
+385: /* MUTANT (rep_op) */    register uch *strend = window + strstart % MAX_MATCH;
+386: /* MUTANT (del_stmt) */ /*     register uch scan_end1  = scan[best_len-1]; */ 
+386: /* MUTANT (rep_const) */    register uch scan_end1  = scan[best_len-0];
+386: /* MUTANT (rep_const) */    register uch scan_end1  = scan[best_len--1];
+386: /* MUTANT (rep_const) */    register uch scan_end1  = scan[best_len-((1)+1)];
+387: /* MUTANT (del_stmt) */ /*     register uch scan_end   = scan[best_len]; */ 
+391: /* MUTANT (rep_op) */    if (prev_length <= good_match) {
+391: /* MUTANT (rep_op) */    if (prev_length < good_match) {
+391: /* MUTANT (rep_op) */    if (prev_length > good_match) {
+391: /* MUTANT (rep_op) */    if (prev_length == good_match) {
+391: /* MUTANT (rep_op) */    if (prev_length != good_match) {
+391: /* MUTANT (negate) */    if(! (prev_length >= good_match)) {
+392: /* MUTANT (del_stmt) */ /*         chain_length >>= 2; */ 
+392: /* MUTANT (rep_const) */        chain_length >>= 0;
+392: /* MUTANT (rep_const) */        chain_length >>= 1;
+392: /* MUTANT (rep_const) */        chain_length >>= -1;
+392: /* MUTANT (rep_const) */        chain_length >>= ((2)+1);
+392: /* MUTANT (rep_const) */        chain_length >>= ((2)-1);
+394: /* MUTANT (rep_op) */    Assert(strstart < window_size-MIN_LOOKAHEAD, "insufficient lookahead");
+394: /* MUTANT (rep_op) */    Assert(strstart > window_size-MIN_LOOKAHEAD, "insufficient lookahead");
+394: /* MUTANT (rep_op) */    Assert(strstart >= window_size-MIN_LOOKAHEAD, "insufficient lookahead");
+394: /* MUTANT (rep_op) */    Assert(strstart == window_size-MIN_LOOKAHEAD, "insufficient lookahead");
+394: /* MUTANT (rep_op) */    Assert(strstart != window_size-MIN_LOOKAHEAD, "insufficient lookahead");
+397: /* MUTANT (del_stmt) */ /*         Assert(cur_match < strstart, "no future"); */ 
+397: /* MUTANT (rep_op) */        Assert(cur_match <= strstart, "no future");
+397: /* MUTANT (rep_op) */        Assert(cur_match > strstart, "no future");
+397: /* MUTANT (rep_op) */        Assert(cur_match >= strstart, "no future");
+397: /* MUTANT (rep_op) */        Assert(cur_match == strstart, "no future");
+397: /* MUTANT (rep_op) */        Assert(cur_match != strstart, "no future");
+398: /* MUTANT (del_stmt) */ /*         match = window + cur_match; */ 
+398: /* MUTANT (rep_op) */        match = window - cur_match;
+398: /* MUTANT (rep_op) */        match = window * cur_match;
+398: /* MUTANT (rep_op) */        match = window % cur_match;
+403: #if (defined(UNALIGNED_OK) && MAX_MATCH == 0) /* MUTANT (rep_const) */
+403: #if (defined(UNALIGNED_OK) && MAX_MATCH == 1) /* MUTANT (rep_const) */
+403: #if (defined(UNALIGNED_OK) && MAX_MATCH == -1) /* MUTANT (rep_const) */
+403: #if (defined(UNALIGNED_OK) && MAX_MATCH == ((258)+1)) /* MUTANT (rep_const) */
+403: #if (defined(UNALIGNED_OK) && MAX_MATCH == ((258)-1)) /* MUTANT (rep_const) */
+407: /* MUTANT (rep_op) */        if (*(ush*)(match-best_len-1) != scan_end ||
+407: /* MUTANT (rep_op) */        if (*(ush*)(match*best_len-1) != scan_end ||
+407: /* MUTANT (rep_op) */        if (*(ush*)(match%best_len-1) != scan_end ||
+407: /* MUTANT (rep_op) */        if (*(ush*)(match+best_len-1) == scan_end ||
+407: /* MUTANT (rep_op) */        if (*(ush*)(match+best_len-1) != scan_end &&
+407: /* MUTANT (rep_const) */        if (*(ush*)(match+best_len-0) != scan_end ||
+407: /* MUTANT (rep_const) */        if (*(ush*)(match+best_len--1) != scan_end ||
+407: /* MUTANT (rep_const) */        if (*(ush*)(match+best_len-((1)+1)) != scan_end ||
+408: /* MUTANT (rep_op) */            *(ush*)match == scan_start) continue;
+419: /* MUTANT (del_stmt) */ /*         scan++, match++; */ 
+419: /* MUTANT (rep_op) */        scan--, match++;
+419: /* MUTANT (rep_op) */        scan++, match--;
+421: /* MUTANT (rep_op) */        } while (*(ush*)(scan-=2) == *(ush*)(match+=2) &&
+421: /* MUTANT (rep_op) */        } while (*(ush*)(scan*=2) == *(ush*)(match+=2) &&
+421: /* MUTANT (rep_op) */        } while (*(ush*)(scan%=2) == *(ush*)(match+=2) &&
+421: /* MUTANT (rep_op) */        } while (*(ush*)(scan+=2) != *(ush*)(match+=2) &&
+421: /* MUTANT (rep_op) */        } while (*(ush*)(scan+=2) == *(ush*)(match-=2) &&
+421: /* MUTANT (rep_op) */        } while (*(ush*)(scan+=2) == *(ush*)(match*=2) &&
+421: /* MUTANT (rep_op) */        } while (*(ush*)(scan+=2) == *(ush*)(match%=2) &&
+421: /* MUTANT (rep_op) */        } while (*(ush*)(scan+=2) == *(ush*)(match+=2) ||
+421: /* MUTANT (rep_const) */        } while (*(ush*)(scan+=0) == *(ush*)(match+=2) &&
+421: /* MUTANT (rep_const) */        } while (*(ush*)(scan+=1) == *(ush*)(match+=2) &&
+421: /* MUTANT (rep_const) */        } while (*(ush*)(scan+=-1) == *(ush*)(match+=2) &&
+421: /* MUTANT (rep_const) */        } while (*(ush*)(scan+=((2)+1)) == *(ush*)(match+=2) &&
+421: /* MUTANT (rep_const) */        } while (*(ush*)(scan+=((2)-1)) == *(ush*)(match+=2) &&
+421: /* MUTANT (rep_const) */        } while (*(ush*)(scan+=2) == *(ush*)(match+=0) &&
+421: /* MUTANT (rep_const) */        } while (*(ush*)(scan+=2) == *(ush*)(match+=1) &&
+421: /* MUTANT (rep_const) */        } while (*(ush*)(scan+=2) == *(ush*)(match+=-1) &&
+421: /* MUTANT (rep_const) */        } while (*(ush*)(scan+=2) == *(ush*)(match+=((2)+1)) &&
+421: /* MUTANT (rep_const) */        } while (*(ush*)(scan+=2) == *(ush*)(match+=((2)-1)) &&
+422: /* MUTANT (rep_op) */                 *(ush*)(scan-=2) == *(ush*)(match+=2) &&
+422: /* MUTANT (rep_op) */                 *(ush*)(scan*=2) == *(ush*)(match+=2) &&
+422: /* MUTANT (rep_op) */                 *(ush*)(scan%=2) == *(ush*)(match+=2) &&
+422: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) != *(ush*)(match+=2) &&
+422: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match-=2) &&
+422: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match*=2) &&
+422: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match%=2) &&
+422: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match+=2) ||
+422: /* MUTANT (rep_const) */                 *(ush*)(scan+=0) == *(ush*)(match+=2) &&
+422: /* MUTANT (rep_const) */                 *(ush*)(scan+=1) == *(ush*)(match+=2) &&
+422: /* MUTANT (rep_const) */                 *(ush*)(scan+=-1) == *(ush*)(match+=2) &&
+422: /* MUTANT (rep_const) */                 *(ush*)(scan+=((2)+1)) == *(ush*)(match+=2) &&
+422: /* MUTANT (rep_const) */                 *(ush*)(scan+=((2)-1)) == *(ush*)(match+=2) &&
+422: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=0) &&
+422: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=1) &&
+422: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=-1) &&
+422: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=((2)+1)) &&
+422: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=((2)-1)) &&
+423: /* MUTANT (rep_op) */                 *(ush*)(scan-=2) == *(ush*)(match+=2) &&
+423: /* MUTANT (rep_op) */                 *(ush*)(scan*=2) == *(ush*)(match+=2) &&
+423: /* MUTANT (rep_op) */                 *(ush*)(scan%=2) == *(ush*)(match+=2) &&
+423: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) != *(ush*)(match+=2) &&
+423: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match-=2) &&
+423: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match*=2) &&
+423: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match%=2) &&
+423: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match+=2) ||
+423: /* MUTANT (rep_const) */                 *(ush*)(scan+=0) == *(ush*)(match+=2) &&
+423: /* MUTANT (rep_const) */                 *(ush*)(scan+=1) == *(ush*)(match+=2) &&
+423: /* MUTANT (rep_const) */                 *(ush*)(scan+=-1) == *(ush*)(match+=2) &&
+423: /* MUTANT (rep_const) */                 *(ush*)(scan+=((2)+1)) == *(ush*)(match+=2) &&
+423: /* MUTANT (rep_const) */                 *(ush*)(scan+=((2)-1)) == *(ush*)(match+=2) &&
+423: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=0) &&
+423: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=1) &&
+423: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=-1) &&
+423: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=((2)+1)) &&
+423: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=((2)-1)) &&
+424: /* MUTANT (rep_op) */                 *(ush*)(scan-=2) == *(ush*)(match+=2) &&
+424: /* MUTANT (rep_op) */                 *(ush*)(scan*=2) == *(ush*)(match+=2) &&
+424: /* MUTANT (rep_op) */                 *(ush*)(scan%=2) == *(ush*)(match+=2) &&
+424: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) != *(ush*)(match+=2) &&
+424: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match-=2) &&
+424: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match*=2) &&
+424: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match%=2) &&
+424: /* MUTANT (rep_op) */                 *(ush*)(scan+=2) == *(ush*)(match+=2) ||
+424: /* MUTANT (rep_const) */                 *(ush*)(scan+=0) == *(ush*)(match+=2) &&
+424: /* MUTANT (rep_const) */                 *(ush*)(scan+=1) == *(ush*)(match+=2) &&
+424: /* MUTANT (rep_const) */                 *(ush*)(scan+=-1) == *(ush*)(match+=2) &&
+424: /* MUTANT (rep_const) */                 *(ush*)(scan+=((2)+1)) == *(ush*)(match+=2) &&
+424: /* MUTANT (rep_const) */                 *(ush*)(scan+=((2)-1)) == *(ush*)(match+=2) &&
+424: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=0) &&
+424: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=1) &&
+424: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=-1) &&
+424: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=((2)+1)) &&
+424: /* MUTANT (rep_const) */                 *(ush*)(scan+=2) == *(ush*)(match+=((2)-1)) &&
+425: /* MUTANT (rep_op) */                 scan <= strend);
+425: /* MUTANT (rep_op) */                 scan > strend);
+425: /* MUTANT (rep_op) */                 scan >= strend);
+425: /* MUTANT (rep_op) */                 scan == strend);
+425: /* MUTANT (rep_op) */                 scan != strend);
+429: /* MUTANT (del_stmt) */ /*         Assert(scan <= window+(unsigned)(window_size-1), "wild scan"); */ 
+429: /* MUTANT (rep_op) */        Assert(scan < window+(unsigned)(window_size-1), "wild scan");
+429: /* MUTANT (rep_op) */        Assert(scan > window+(unsigned)(window_size-1), "wild scan");
+429: /* MUTANT (rep_op) */        Assert(scan >= window+(unsigned)(window_size-1), "wild scan");
+429: /* MUTANT (rep_op) */        Assert(scan == window+(unsigned)(window_size-1), "wild scan");
+429: /* MUTANT (rep_op) */        Assert(scan != window+(unsigned)(window_size-1), "wild scan");
+429: /* MUTANT (rep_op) */        Assert(scan <= window-(unsigned)(window_size-1), "wild scan");
+429: /* MUTANT (rep_op) */        Assert(scan <= window*(unsigned)(window_size-1), "wild scan");
+429: /* MUTANT (rep_op) */        Assert(scan <= window%(unsigned)(window_size-1), "wild scan");
+429: /* MUTANT (rep_const) */        Assert(scan <= window+(unsigned)(window_size-0), "wild scan");
+429: /* MUTANT (rep_const) */        Assert(scan <= window+(unsigned)(window_size--1), "wild scan");
+429: /* MUTANT (rep_const) */        Assert(scan <= window+(unsigned)(window_size-((1)+1)), "wild scan");
+430: /* MUTANT (del_stmt) */ /*         if (*scan == *match) scan++; */ 
+430: /* MUTANT (rep_op) */        if (*scan != *match) scan++;
+430: /* MUTANT (rep_op) */        if (*scan == *match) scan--;
+430: /* MUTANT (negate) */        if(! (*scan == *match)) scan++;
+432: /* MUTANT (del_stmt) */ /*         len = (MAX_MATCH - 1) - (int)(strend-scan); */ 
+432: /* MUTANT (rep_const) */        len = (MAX_MATCH - 0) - (int)(strend-scan);
+432: /* MUTANT (rep_const) */        len = (MAX_MATCH - -1) - (int)(strend-scan);
+432: /* MUTANT (rep_const) */        len = (MAX_MATCH - ((1)+1)) - (int)(strend-scan);
+433: /* MUTANT (del_stmt) */ /*         scan = strend - (MAX_MATCH-1); */ 
+433: /* MUTANT (rep_const) */        scan = strend - (MAX_MATCH-0);
+433: /* MUTANT (rep_const) */        scan = strend - (MAX_MATCH--1);
+433: /* MUTANT (rep_const) */        scan = strend - (MAX_MATCH-((1)+1));
+437: /* MUTANT (rep_op) */        if (match[best_len]   == scan_end  ||
+437: /* MUTANT (rep_op) */        if (match[best_len]   != scan_end  &&
+438: /* MUTANT (rep_op) */            match[best_len-1] == scan_end1 ||
+438: /* MUTANT (rep_op) */            match[best_len-1] != scan_end1 &&
+438: /* MUTANT (rep_const) */            match[best_len-0] != scan_end1 ||
+438: /* MUTANT (rep_const) */            match[best_len--1] != scan_end1 ||
+438: /* MUTANT (rep_const) */            match[best_len-((1)+1)] != scan_end1 ||
+439: /* MUTANT (rep_op) */            *match            == *scan     ||
+439: /* MUTANT (rep_op) */            *match            != *scan     &&
+440: /* MUTANT (rep_op) */            *++match          == scan[1])      continue;
+440: /* MUTANT (rep_const) */            *++match          != scan[0])      continue;
+440: /* MUTANT (rep_const) */            *++match          != scan[-1])      continue;
+440: /* MUTANT (rep_const) */            *++match          != scan[((1)+1)])      continue;
+448: /* MUTANT (del_stmt) */ /*         scan += 2, match++; */ 
+448: /* MUTANT (rep_op) */        scan -= 2, match++;
+448: /* MUTANT (rep_op) */        scan *= 2, match++;
+448: /* MUTANT (rep_op) */        scan %= 2, match++;
+448: /* MUTANT (rep_op) */        scan += 2, match--;
+448: /* MUTANT (rep_const) */        scan += 0, match++;
+448: /* MUTANT (rep_const) */        scan += 1, match++;
+448: /* MUTANT (rep_const) */        scan += -1, match++;
+448: /* MUTANT (rep_const) */        scan += ((2)+1), match++;
+448: /* MUTANT (rep_const) */        scan += ((2)-1), match++;
+454: /* MUTANT (rep_op) */        } while (*++scan != *++match && *++scan == *++match &&
+454: /* MUTANT (rep_op) */        } while (*++scan == *++match || *++scan == *++match &&
+454: /* MUTANT (rep_op) */        } while (*++scan == *++match && *++scan != *++match &&
+454: /* MUTANT (rep_op) */        } while (*++scan == *++match && *++scan == *++match ||
+455: /* MUTANT (rep_op) */                 *++scan != *++match && *++scan == *++match &&
+455: /* MUTANT (rep_op) */                 *++scan == *++match || *++scan == *++match &&
+455: /* MUTANT (rep_op) */                 *++scan == *++match && *++scan != *++match &&
+455: /* MUTANT (rep_op) */                 *++scan == *++match && *++scan == *++match ||
+456: /* MUTANT (rep_op) */                 *++scan != *++match && *++scan == *++match &&
+456: /* MUTANT (rep_op) */                 *++scan == *++match || *++scan == *++match &&
+456: /* MUTANT (rep_op) */                 *++scan == *++match && *++scan != *++match &&
+456: /* MUTANT (rep_op) */                 *++scan == *++match && *++scan == *++match ||
+457: /* MUTANT (rep_op) */                 *++scan != *++match && *++scan == *++match &&
+457: /* MUTANT (rep_op) */                 *++scan == *++match || *++scan == *++match &&
+457: /* MUTANT (rep_op) */                 *++scan == *++match && *++scan != *++match &&
+457: /* MUTANT (rep_op) */                 *++scan == *++match && *++scan == *++match ||
+458: /* MUTANT (rep_op) */                 scan <= strend);
+458: /* MUTANT (rep_op) */                 scan > strend);
+458: /* MUTANT (rep_op) */                 scan >= strend);
+458: /* MUTANT (rep_op) */                 scan == strend);
+458: /* MUTANT (rep_op) */                 scan != strend);
+460: /* MUTANT (del_stmt) */ /*         len = MAX_MATCH - (int)(strend - scan); */ 
+461: /* MUTANT (del_stmt) */ /*         scan = strend - MAX_MATCH; */ 
+465: /* MUTANT (rep_op) */        if (len <= best_len) {
+465: /* MUTANT (rep_op) */        if (len < best_len) {
+465: /* MUTANT (rep_op) */        if (len >= best_len) {
+465: /* MUTANT (rep_op) */        if (len == best_len) {
+465: /* MUTANT (rep_op) */        if (len != best_len) {
+465: /* MUTANT (negate) */        if(! (len > best_len)) {
+466: /* MUTANT (del_stmt) */ /*             match_start = cur_match; */ 
+467: /* MUTANT (del_stmt) */ /*             best_len = len; */ 
+468: /* MUTANT (del_stmt) */ /*             if (len >= nice_match) break; */ 
+468: /* MUTANT (rep_op) */            if (len <= nice_match) break;
+468: /* MUTANT (rep_op) */            if (len < nice_match) break;
+468: /* MUTANT (rep_op) */            if (len > nice_match) break;
+468: /* MUTANT (rep_op) */            if (len == nice_match) break;
+468: /* MUTANT (rep_op) */            if (len != nice_match) break;
+468: /* MUTANT (negate) */            if(! (len >= nice_match)) break;
+470: /* MUTANT (rep_op) */            scan_end = *(ush*)(scan-best_len-1);
+470: /* MUTANT (rep_op) */            scan_end = *(ush*)(scan*best_len-1);
+470: /* MUTANT (rep_op) */            scan_end = *(ush*)(scan%best_len-1);
+470: /* MUTANT (rep_const) */            scan_end = *(ush*)(scan+best_len-0);
+470: /* MUTANT (rep_const) */            scan_end = *(ush*)(scan+best_len--1);
+470: /* MUTANT (rep_const) */            scan_end = *(ush*)(scan+best_len-((1)+1));
+472: /* MUTANT (rep_const) */            scan_end1  = scan[best_len-0];
+472: /* MUTANT (rep_const) */            scan_end1  = scan[best_len--1];
+472: /* MUTANT (rep_const) */            scan_end1  = scan[best_len-((1)+1)];
+473: /* MUTANT (del_stmt) */ /*             scan_end   = scan[best_len]; */ 
+476: /* MUTANT (rep_op) */    } while ((cur_match = prev[cur_match & WMASK]) <= limit
+476: /* MUTANT (rep_op) */    } while ((cur_match = prev[cur_match & WMASK]) < limit
+476: /* MUTANT (rep_op) */    } while ((cur_match = prev[cur_match & WMASK]) >= limit
+476: /* MUTANT (rep_op) */    } while ((cur_match = prev[cur_match & WMASK]) == limit
+476: /* MUTANT (rep_op) */    } while ((cur_match = prev[cur_match & WMASK]) != limit
+477: /* MUTANT (rep_op) */	     || --chain_length != 0);
+477: /* MUTANT (rep_op) */	     && ++chain_length != 0);
+477: /* MUTANT (rep_op) */	     && --chain_length == 0);
+477: /* MUTANT (rep_const) */	     && --chain_length != 1);
+477: /* MUTANT (rep_const) */	     && --chain_length != -1);
+479: /* MUTANT (del_stmt) */ /*     return best_len; */ 
+489: /* MUTANT (del_stmt) */ /*     int length; */ 
+492: /* MUTANT (rep_op) */    if (memcmp((char*)window - match,
+492: /* MUTANT (rep_op) */    if (memcmp((char*)window * match,
+492: /* MUTANT (rep_op) */    if (memcmp((char*)window % match,
+493: /* MUTANT (rep_op) */                (char*)window - start, length) != EQUAL) {
+493: /* MUTANT (rep_op) */                (char*)window * start, length) != EQUAL) {
+493: /* MUTANT (rep_op) */                (char*)window % start, length) != EQUAL) {
+493: /* MUTANT (rep_op) */                (char*)window + start, length) == EQUAL) {
+497: /* MUTANT (del_stmt) */ /*         error("invalid match"); */ 
+499: /* MUTANT (rep_op) */    if (verbose <= 1) {
+499: /* MUTANT (rep_op) */    if (verbose < 1) {
+499: /* MUTANT (rep_op) */    if (verbose >= 1) {
+499: /* MUTANT (rep_op) */    if (verbose == 1) {
+499: /* MUTANT (rep_op) */    if (verbose != 1) {
+499: /* MUTANT (rep_const) */    if (verbose > 0) {
+499: /* MUTANT (rep_const) */    if (verbose > -1) {
+499: /* MUTANT (rep_const) */    if (verbose > ((1)+1)) {
+499: /* MUTANT (negate) */    if(! (verbose > 1)) {
+500: /* MUTANT (del_stmt) */ /*         fprintf(stderr,"\\[%d,%d]", start-match, length); */ 
+501: /* MUTANT (del_stmt) */ /*         do { putc(window[start++], stderr); */  } while (--length != 0);
+501: /* MUTANT (del_stmt) */ /*         do { putc(window[start++], stderr); */  /*  } while (--length != 0); */ 
+501: /* MUTANT (del_stmt) */        do { putc(window[start++], stderr); /*  } while (--length != 0); */ 
+501: /* MUTANT (rep_op) */        do { putc(window[start--], stderr); } while (--length != 0);
+501: /* MUTANT (rep_op) */        do { putc(window[start++], stderr); } while (++length != 0);
+501: /* MUTANT (rep_op) */        do { putc(window[start++], stderr); } while (--length == 0);
+501: /* MUTANT (rep_const) */        do { putc(window[start++], stderr); } while (--length != 1);
+501: /* MUTANT (rep_const) */        do { putc(window[start++], stderr); } while (--length != -1);
+501: /* MUTANT (negate) */        do { putc(window[start++], stderr); } while(! (--length != 0));
+518: /* MUTANT (del_stmt) */ /*     register unsigned n, m; */ 
+519: /* MUTANT (del_stmt) */ /*     unsigned more = (unsigned)(window_size - (ulg)lookahead - (ulg)strstart); */ 
+525: /* MUTANT (rep_op) */    if (more != (unsigned)EOF) {
+525: /* MUTANT (negate) */    if(! (more == (unsigned)EOF)) {
+529: /* MUTANT (del_stmt) */ /*         more--; */ 
+529: /* MUTANT (rep_op) */        more++;
+530: /* MUTANT (rep_op) */    } else if (strstart <= WSIZE+MAX_DIST) {
+530: /* MUTANT (rep_op) */    } else if (strstart < WSIZE+MAX_DIST) {
+530: /* MUTANT (rep_op) */    } else if (strstart > WSIZE+MAX_DIST) {
+530: /* MUTANT (rep_op) */    } else if (strstart == WSIZE+MAX_DIST) {
+530: /* MUTANT (rep_op) */    } else if (strstart != WSIZE+MAX_DIST) {
+530: /* MUTANT (rep_op) */    } else if (strstart >= WSIZE-MAX_DIST) {
+530: /* MUTANT (rep_op) */    } else if (strstart >= WSIZE*MAX_DIST) {
+530: /* MUTANT (rep_op) */    } else if (strstart >= WSIZE%MAX_DIST) {
+530: /* MUTANT (negate) */    } else if(! (strstart >= WSIZE+MAX_DIST)) {
+534: /* MUTANT (del_stmt) */ /*         Assert(window_size == (ulg)2*WSIZE, "no sliding with BIG_MEM"); */ 
+534: /* MUTANT (rep_op) */        Assert(window_size != (ulg)2*WSIZE, "no sliding with BIG_MEM");
+534: /* MUTANT (rep_const) */        Assert(window_size == (ulg)0*WSIZE, "no sliding with BIG_MEM");
+534: /* MUTANT (rep_const) */        Assert(window_size == (ulg)1*WSIZE, "no sliding with BIG_MEM");
+534: /* MUTANT (rep_const) */        Assert(window_size == (ulg)-1*WSIZE, "no sliding with BIG_MEM");
+534: /* MUTANT (rep_const) */        Assert(window_size == (ulg)((2)+1)*WSIZE, "no sliding with BIG_MEM");
+534: /* MUTANT (rep_const) */        Assert(window_size == (ulg)((2)-1)*WSIZE, "no sliding with BIG_MEM");
+536: /* MUTANT (del_stmt) */ /*         memcpy((char*)window, (char*)window+WSIZE, (unsigned)WSIZE); */ 
+536: /* MUTANT (rep_op) */        memcpy((char*)window, (char*)window-WSIZE, (unsigned)WSIZE);
+536: /* MUTANT (rep_op) */        memcpy((char*)window, (char*)window*WSIZE, (unsigned)WSIZE);
+536: /* MUTANT (rep_op) */        memcpy((char*)window, (char*)window%WSIZE, (unsigned)WSIZE);
+537: /* MUTANT (del_stmt) */ /*         match_start -= WSIZE; */ 
+537: /* MUTANT (rep_op) */        match_start += WSIZE;
+537: /* MUTANT (rep_op) */        match_start *= WSIZE;
+537: /* MUTANT (rep_op) */        match_start %= WSIZE;
+538: /* MUTANT (del_stmt) */ /*         strstart    -= WSIZE; */  /* we now have strstart >= MAX_DIST: */
+538: /* MUTANT (rep_op) */        strstart    += WSIZE; /* we now have strstart >= MAX_DIST: */
+538: /* MUTANT (rep_op) */        strstart    *= WSIZE; /* we now have strstart >= MAX_DIST: */
+538: /* MUTANT (rep_op) */        strstart    %= WSIZE; /* we now have strstart >= MAX_DIST: */
+540: /* MUTANT (del_stmt) */ /*         block_start -= (long) WSIZE; */ 
+540: /* MUTANT (rep_op) */        block_start += (long) WSIZE;
+540: /* MUTANT (rep_op) */        block_start *= (long) WSIZE;
+540: /* MUTANT (rep_op) */        block_start %= (long) WSIZE;
+542: /* MUTANT (rep_op) */        for (n = 0; n <= HASH_SIZE; n++) {
+542: /* MUTANT (rep_op) */        for (n = 0; n > HASH_SIZE; n++) {
+542: /* MUTANT (rep_op) */        for (n = 0; n >= HASH_SIZE; n++) {
+542: /* MUTANT (rep_op) */        for (n = 0; n == HASH_SIZE; n++) {
+542: /* MUTANT (rep_op) */        for (n = 0; n != HASH_SIZE; n++) {
+542: /* MUTANT (rep_op) */        for (n = 0; n < HASH_SIZE; n--) {
+542: /* MUTANT (rep_const) */        for (n = 1; n < HASH_SIZE; n++) {
+542: /* MUTANT (rep_const) */        for (n = -1; n < HASH_SIZE; n++) {
+543: /* MUTANT (del_stmt) */ /*             m = head[n]; */ 
+544: /* MUTANT (del_stmt) */ /*             head[n] = (Pos)(m >= WSIZE ? m-WSIZE : NIL); */ 
+544: /* MUTANT (rep_op) */            head[n] = (Pos)(m <= WSIZE ? m-WSIZE : NIL);
+544: /* MUTANT (rep_op) */            head[n] = (Pos)(m < WSIZE ? m-WSIZE : NIL);
+544: /* MUTANT (rep_op) */            head[n] = (Pos)(m > WSIZE ? m-WSIZE : NIL);
+544: /* MUTANT (rep_op) */            head[n] = (Pos)(m == WSIZE ? m-WSIZE : NIL);
+544: /* MUTANT (rep_op) */            head[n] = (Pos)(m != WSIZE ? m-WSIZE : NIL);
+546: /* MUTANT (rep_op) */        for (n = 0; n <= WSIZE; n++) {
+546: /* MUTANT (rep_op) */        for (n = 0; n > WSIZE; n++) {
+546: /* MUTANT (rep_op) */        for (n = 0; n >= WSIZE; n++) {
+546: /* MUTANT (rep_op) */        for (n = 0; n == WSIZE; n++) {
+546: /* MUTANT (rep_op) */        for (n = 0; n != WSIZE; n++) {
+546: /* MUTANT (rep_op) */        for (n = 0; n < WSIZE; n--) {
+546: /* MUTANT (rep_const) */        for (n = 1; n < WSIZE; n++) {
+546: /* MUTANT (rep_const) */        for (n = -1; n < WSIZE; n++) {
+547: /* MUTANT (del_stmt) */ /*             m = prev[n]; */ 
+548: /* MUTANT (del_stmt) */ /*             prev[n] = (Pos)(m >= WSIZE ? m-WSIZE : NIL); */ 
+548: /* MUTANT (rep_op) */            prev[n] = (Pos)(m <= WSIZE ? m-WSIZE : NIL);
+548: /* MUTANT (rep_op) */            prev[n] = (Pos)(m < WSIZE ? m-WSIZE : NIL);
+548: /* MUTANT (rep_op) */            prev[n] = (Pos)(m > WSIZE ? m-WSIZE : NIL);
+548: /* MUTANT (rep_op) */            prev[n] = (Pos)(m == WSIZE ? m-WSIZE : NIL);
+548: /* MUTANT (rep_op) */            prev[n] = (Pos)(m != WSIZE ? m-WSIZE : NIL);
+553: /* MUTANT (rep_op) */        more -= WSIZE;
+553: /* MUTANT (rep_op) */        more *= WSIZE;
+553: /* MUTANT (rep_op) */        more %= WSIZE;
+556: /* MUTANT (negate) */    if(! (!eofile)) {
+557: /* MUTANT (del_stmt) */ /*         n = read_buf((char*)window+strstart+lookahead, more); */ 
+557: /* MUTANT (rep_op) */        n = read_buf((char*)window-strstart+lookahead, more);
+557: /* MUTANT (rep_op) */        n = read_buf((char*)window*strstart+lookahead, more);
+557: /* MUTANT (rep_op) */        n = read_buf((char*)window%strstart+lookahead, more);
+557: /* MUTANT (rep_op) */        n = read_buf((char*)window+strstart-lookahead, more);
+557: /* MUTANT (rep_op) */        n = read_buf((char*)window+strstart*lookahead, more);
+557: /* MUTANT (rep_op) */        n = read_buf((char*)window+strstart%lookahead, more);
+558: /* MUTANT (rep_op) */        if (n != 0 || n == (unsigned)EOF) {
+558: /* MUTANT (rep_op) */        if (n == 0 && n == (unsigned)EOF) {
+558: /* MUTANT (rep_op) */        if (n == 0 || n != (unsigned)EOF) {
+558: /* MUTANT (rep_const) */        if (n == 1 || n == (unsigned)EOF) {
+558: /* MUTANT (rep_const) */        if (n == -1 || n == (unsigned)EOF) {
+558: /* MUTANT (negate) */        if(! (n == 0 || n == (unsigned)EOF)) {
+559: /* MUTANT (del_stmt) */ /*             eofile = 1; */ 
+559: /* MUTANT (rep_const) */            eofile = 0;
+559: /* MUTANT (rep_const) */            eofile = -1;
+559: /* MUTANT (rep_const) */            eofile = ((1)+1);
+561: /* MUTANT (del_stmt) */ /*             lookahead += n; */ 
+561: /* MUTANT (rep_op) */            lookahead -= n;
+561: /* MUTANT (rep_op) */            lookahead *= n;
+561: /* MUTANT (rep_op) */            lookahead %= n;
+571: /* MUTANT (rep_op) */   flush_block(block_start <= 0L ? (char*)&window[(unsigned)block_start] : \
+571: /* MUTANT (rep_op) */   flush_block(block_start < 0L ? (char*)&window[(unsigned)block_start] : \
+571: /* MUTANT (rep_op) */   flush_block(block_start > 0L ? (char*)&window[(unsigned)block_start] : \
+571: /* MUTANT (rep_op) */   flush_block(block_start == 0L ? (char*)&window[(unsigned)block_start] : \
+571: /* MUTANT (rep_op) */   flush_block(block_start != 0L ? (char*)&window[(unsigned)block_start] : \
+571: /* MUTANT (rep_const) */   flush_block(block_start >= 1L ? (char*)&window[(unsigned)block_start] : \
+571: /* MUTANT (rep_const) */   flush_block(block_start >= -1L ? (char*)&window[(unsigned)block_start] : \
+582: /* MUTANT (del_stmt) */ /*     IPos hash_head; */  /* head of the hash chain */
+583: /* MUTANT (del_stmt) */ /*     int flush; */       /* set if current block must be flushed */
+584: /* MUTANT (del_stmt) */ /*     unsigned match_length = 0; */   /* length of best match */
+584: /* MUTANT (rep_const) */    unsigned match_length = 1;  /* length of best match */
+584: /* MUTANT (rep_const) */    unsigned match_length = -1;  /* length of best match */
+586: /* MUTANT (del_stmt) */ /*     prev_length = MIN_MATCH-1; */ 
+586: /* MUTANT (rep_const) */    prev_length = MIN_MATCH-0;
+586: /* MUTANT (rep_const) */    prev_length = MIN_MATCH--1;
+586: /* MUTANT (rep_const) */    prev_length = MIN_MATCH-((1)+1);
+587: /* MUTANT (rep_op) */    while (lookahead == 0) {
+587: /* MUTANT (rep_const) */    while (lookahead != 1) {
+587: /* MUTANT (rep_const) */    while (lookahead != -1) {
+587: /* MUTANT (negate) */    while(! (lookahead != 0)) {
+591: /* MUTANT (del_stmt) */ /*         INSERT_STRING(strstart, hash_head); */ 
+596: /* MUTANT (rep_op) */        if (hash_head == NIL && strstart - hash_head <= MAX_DIST) {
+596: /* MUTANT (rep_op) */        if (hash_head != NIL || strstart - hash_head <= MAX_DIST) {
+596: /* MUTANT (rep_op) */        if (hash_head != NIL && strstart - hash_head < MAX_DIST) {
+596: /* MUTANT (rep_op) */        if (hash_head != NIL && strstart - hash_head > MAX_DIST) {
+596: /* MUTANT (rep_op) */        if (hash_head != NIL && strstart - hash_head >= MAX_DIST) {
+596: /* MUTANT (rep_op) */        if (hash_head != NIL && strstart - hash_head == MAX_DIST) {
+596: /* MUTANT (rep_op) */        if (hash_head != NIL && strstart - hash_head != MAX_DIST) {
+596: /* MUTANT (negate) */        if(! (hash_head != NIL && strstart - hash_head <= MAX_DIST)) {
+601: /* MUTANT (del_stmt) */ /*             match_length = longest_match (hash_head); */ 
+603: /* MUTANT (del_stmt) */ /*             if (match_length > lookahead) match_length = lookahead; */ 
+603: /* MUTANT (rep_op) */            if (match_length <= lookahead) match_length = lookahead;
+603: /* MUTANT (rep_op) */            if (match_length < lookahead) match_length = lookahead;
+603: /* MUTANT (rep_op) */            if (match_length >= lookahead) match_length = lookahead;
+603: /* MUTANT (rep_op) */            if (match_length == lookahead) match_length = lookahead;
+603: /* MUTANT (rep_op) */            if (match_length != lookahead) match_length = lookahead;
+603: /* MUTANT (negate) */            if(! (match_length > lookahead)) match_length = lookahead;
+605: /* MUTANT (rep_op) */        if (match_length <= MIN_MATCH) {
+605: /* MUTANT (rep_op) */        if (match_length < MIN_MATCH) {
+605: /* MUTANT (rep_op) */        if (match_length > MIN_MATCH) {
+605: /* MUTANT (rep_op) */        if (match_length == MIN_MATCH) {
+605: /* MUTANT (rep_op) */        if (match_length != MIN_MATCH) {
+605: /* MUTANT (negate) */        if(! (match_length >= MIN_MATCH)) {
+606: /* MUTANT (del_stmt) */ /*             check_match(strstart, match_start, match_length); */ 
+608: /* MUTANT (del_stmt) */ /*             flush = ct_tally(strstart-match_start, match_length - MIN_MATCH); */ 
+610: /* MUTANT (del_stmt) */ /*             lookahead -= match_length; */ 
+610: /* MUTANT (rep_op) */            lookahead += match_length;
+610: /* MUTANT (rep_op) */            lookahead *= match_length;
+610: /* MUTANT (rep_op) */            lookahead %= match_length;
+615: /* MUTANT (rep_op) */            if (match_length < max_insert_length) {
+615: /* MUTANT (rep_op) */            if (match_length > max_insert_length) {
+615: /* MUTANT (rep_op) */            if (match_length >= max_insert_length) {
+615: /* MUTANT (rep_op) */            if (match_length == max_insert_length) {
+615: /* MUTANT (rep_op) */            if (match_length != max_insert_length) {
+615: /* MUTANT (negate) */            if(! (match_length <= max_insert_length)) {
+616: /* MUTANT (del_stmt) */ /*                 match_length--; */  /* string at strstart already in hash table */
+616: /* MUTANT (rep_op) */                match_length++; /* string at strstart already in hash table */
+618: /* MUTANT (del_stmt) */ /*                     strstart++; */ 
+618: /* MUTANT (rep_op) */                    strstart--;
+619: /* MUTANT (del_stmt) */ /*                     INSERT_STRING(strstart, hash_head); */ 
+625: /* MUTANT (del_stmt) */ /*                 } while (--match_length != 0); */ 
+625: /* MUTANT (rep_op) */                } while (++match_length != 0);
+625: /* MUTANT (rep_op) */                } while (--match_length == 0);
+625: /* MUTANT (rep_const) */                } while (--match_length != 1);
+625: /* MUTANT (rep_const) */                } while (--match_length != -1);
+625: /* MUTANT (negate) */                } while(! (--match_length != 0));
+626: /* MUTANT (del_stmt) */ /* 	        strstart++; */  
+626: /* MUTANT (rep_op) */	        strstart--; 
+628: /* MUTANT (del_stmt) */ /* 	        strstart += match_length; */ 
+628: /* MUTANT (rep_op) */	        strstart -= match_length;
+628: /* MUTANT (rep_op) */	        strstart *= match_length;
+628: /* MUTANT (rep_op) */	        strstart %= match_length;
+629: /* MUTANT (del_stmt) */ /* 	        match_length = 0; */ 
+629: /* MUTANT (rep_const) */	        match_length = 1;
+629: /* MUTANT (rep_const) */	        match_length = -1;
+630: /* MUTANT (del_stmt) */ /* 	        ins_h = window[strstart]; */ 
+631: /* MUTANT (del_stmt) */ /* 	        UPDATE_HASH(ins_h, window[strstart+1]); */ 
+631: /* MUTANT (rep_op) */	        UPDATE_HASH(ins_h, window[strstart-1]);
+631: /* MUTANT (rep_op) */	        UPDATE_HASH(ins_h, window[strstart*1]);
+631: /* MUTANT (rep_op) */	        UPDATE_HASH(ins_h, window[strstart%1]);
+631: /* MUTANT (rep_const) */	        UPDATE_HASH(ins_h, window[strstart+0]);
+631: /* MUTANT (rep_const) */	        UPDATE_HASH(ins_h, window[strstart+-1]);
+631: /* MUTANT (rep_const) */	        UPDATE_HASH(ins_h, window[strstart+((1)+1)]);
+632: #if MIN_MATCH != 0 /* MUTANT (rep_const) */
+632: #if MIN_MATCH != 1 /* MUTANT (rep_const) */
+632: #if MIN_MATCH != -1 /* MUTANT (rep_const) */
+632: #if MIN_MATCH != ((3)+1) /* MUTANT (rep_const) */
+632: #if MIN_MATCH != ((3)-1) /* MUTANT (rep_const) */
+633: /* MUTANT (rep_const) */                Call UPDATE_HASH() MIN_MATCH-0 more times
+633: /* MUTANT (rep_const) */                Call UPDATE_HASH() MIN_MATCH-1 more times
+633: /* MUTANT (rep_const) */                Call UPDATE_HASH() MIN_MATCH--1 more times
+633: /* MUTANT (rep_const) */                Call UPDATE_HASH() MIN_MATCH-((3)+1) more times
+633: /* MUTANT (rep_const) */                Call UPDATE_HASH() MIN_MATCH-((3)-1) more times
+638: /* MUTANT (del_stmt) */ /*             Tracevv((stderr,"%c",window[strstart])); */ 
+639: /* MUTANT (del_stmt) */ /*             flush = ct_tally (0, window[strstart]); */ 
+639: /* MUTANT (rep_const) */            flush = ct_tally (1, window[strstart]);
+639: /* MUTANT (rep_const) */            flush = ct_tally (-1, window[strstart]);
+640: /* MUTANT (del_stmt) */ /*             lookahead--; */ 
+640: /* MUTANT (rep_op) */            lookahead++;
+641: /* MUTANT (del_stmt) */ /* 	    strstart++; */  
+641: /* MUTANT (rep_op) */	    strstart--; 
+643: /* MUTANT (rep_const) */        if (flush) FLUSH_BLOCK(1), block_start = strstart;
+643: /* MUTANT (rep_const) */        if (flush) FLUSH_BLOCK(-1), block_start = strstart;
+643: /* MUTANT (negate) */        if(! (flush)) FLUSH_BLOCK(0), block_start = strstart;
+650: /* MUTANT (del_stmt) */ /*         while (lookahead < MIN_LOOKAHEAD && !eofile) fill_window(); */ 
+650: /* MUTANT (rep_op) */        while (lookahead <= MIN_LOOKAHEAD && !eofile) fill_window();
+650: /* MUTANT (rep_op) */        while (lookahead > MIN_LOOKAHEAD && !eofile) fill_window();
+650: /* MUTANT (rep_op) */        while (lookahead >= MIN_LOOKAHEAD && !eofile) fill_window();
+650: /* MUTANT (rep_op) */        while (lookahead == MIN_LOOKAHEAD && !eofile) fill_window();
+650: /* MUTANT (rep_op) */        while (lookahead != MIN_LOOKAHEAD && !eofile) fill_window();
+650: /* MUTANT (rep_op) */        while (lookahead < MIN_LOOKAHEAD || !eofile) fill_window();
+650: /* MUTANT (negate) */        while(! (lookahead < MIN_LOOKAHEAD && !eofile)) fill_window();
+653: /* MUTANT (rep_const) */    return FLUSH_BLOCK(0); /* eof */
+653: /* MUTANT (rep_const) */    return FLUSH_BLOCK(-1); /* eof */
+653: /* MUTANT (rep_const) */    return FLUSH_BLOCK(((1)+1)); /* eof */
+663: /* MUTANT (del_stmt) */ /*     IPos hash_head; */           /* head of hash chain */
+664: /* MUTANT (del_stmt) */ /*     IPos prev_match; */          /* previous match */
+665: /* MUTANT (del_stmt) */ /*     int flush; */                /* set if current block must be flushed */
+666: /* MUTANT (del_stmt) */ /*     int match_available = 0; */  /* set if previous match exists */
+666: /* MUTANT (rep_const) */    int match_available = 1; /* set if previous match exists */
+666: /* MUTANT (rep_const) */    int match_available = -1; /* set if previous match exists */
+667: /* MUTANT (del_stmt) */ /*     register unsigned match_length = MIN_MATCH-1; */  /* length of best match */
+667: /* MUTANT (rep_const) */    register unsigned match_length = MIN_MATCH-0; /* length of best match */
+667: /* MUTANT (rep_const) */    register unsigned match_length = MIN_MATCH--1; /* length of best match */
+667: /* MUTANT (rep_const) */    register unsigned match_length = MIN_MATCH-((1)+1); /* length of best match */
+672: /* MUTANT (rep_op) */    if (compr_level < 3) return deflate_fast(); /* optimized for speed */
+672: /* MUTANT (rep_op) */    if (compr_level > 3) return deflate_fast(); /* optimized for speed */
+672: /* MUTANT (rep_op) */    if (compr_level >= 3) return deflate_fast(); /* optimized for speed */
+672: /* MUTANT (rep_op) */    if (compr_level == 3) return deflate_fast(); /* optimized for speed */
+672: /* MUTANT (rep_op) */    if (compr_level != 3) return deflate_fast(); /* optimized for speed */
+672: /* MUTANT (rep_const) */    if (compr_level <= 0) return deflate_fast(); /* optimized for speed */
+672: /* MUTANT (rep_const) */    if (compr_level <= 1) return deflate_fast(); /* optimized for speed */
+672: /* MUTANT (rep_const) */    if (compr_level <= -1) return deflate_fast(); /* optimized for speed */
+672: /* MUTANT (rep_const) */    if (compr_level <= ((3)+1)) return deflate_fast(); /* optimized for speed */
+672: /* MUTANT (rep_const) */    if (compr_level <= ((3)-1)) return deflate_fast(); /* optimized for speed */
+672: /* MUTANT (negate) */    if(! (compr_level <= 3)) return deflate_fast(); /* optimized for speed */
+675: /* MUTANT (rep_op) */    while (lookahead == 0) {
+675: /* MUTANT (rep_const) */    while (lookahead != 1) {
+675: /* MUTANT (rep_const) */    while (lookahead != -1) {
+675: /* MUTANT (negate) */    while(! (lookahead != 0)) {
+679: /* MUTANT (del_stmt) */ /*         INSERT_STRING(strstart, hash_head); */ 
+683: /* MUTANT (del_stmt) */ /*         prev_length = match_length, prev_match = match_start; */ 
+684: /* MUTANT (del_stmt) */ /*         match_length = MIN_MATCH-1; */ 
+684: /* MUTANT (rep_const) */        match_length = MIN_MATCH-0;
+684: /* MUTANT (rep_const) */        match_length = MIN_MATCH--1;
+684: /* MUTANT (rep_const) */        match_length = MIN_MATCH-((1)+1);
+686: /* MUTANT (rep_op) */        if (hash_head == NIL && prev_length < max_lazy_match &&
+686: /* MUTANT (rep_op) */        if (hash_head != NIL || prev_length < max_lazy_match &&
+686: /* MUTANT (rep_op) */        if (hash_head != NIL && prev_length <= max_lazy_match &&
+686: /* MUTANT (rep_op) */        if (hash_head != NIL && prev_length > max_lazy_match &&
+686: /* MUTANT (rep_op) */        if (hash_head != NIL && prev_length >= max_lazy_match &&
+686: /* MUTANT (rep_op) */        if (hash_head != NIL && prev_length == max_lazy_match &&
+686: /* MUTANT (rep_op) */        if (hash_head != NIL && prev_length != max_lazy_match &&
+686: /* MUTANT (rep_op) */        if (hash_head != NIL && prev_length < max_lazy_match ||
+687: /* MUTANT (rep_op) */            strstart - hash_head < MAX_DIST) {
+687: /* MUTANT (rep_op) */            strstart - hash_head > MAX_DIST) {
+687: /* MUTANT (rep_op) */            strstart - hash_head >= MAX_DIST) {
+687: /* MUTANT (rep_op) */            strstart - hash_head == MAX_DIST) {
+687: /* MUTANT (rep_op) */            strstart - hash_head != MAX_DIST) {
+692: /* MUTANT (del_stmt) */ /*             match_length = longest_match (hash_head); */ 
+694: /* MUTANT (del_stmt) */ /*             if (match_length > lookahead) match_length = lookahead; */ 
+694: /* MUTANT (rep_op) */            if (match_length <= lookahead) match_length = lookahead;
+694: /* MUTANT (rep_op) */            if (match_length < lookahead) match_length = lookahead;
+694: /* MUTANT (rep_op) */            if (match_length >= lookahead) match_length = lookahead;
+694: /* MUTANT (rep_op) */            if (match_length == lookahead) match_length = lookahead;
+694: /* MUTANT (rep_op) */            if (match_length != lookahead) match_length = lookahead;
+694: /* MUTANT (negate) */            if(! (match_length > lookahead)) match_length = lookahead;
+697: /* MUTANT (rep_op) */            if (match_length != MIN_MATCH && strstart-match_start > TOO_FAR){
+697: /* MUTANT (rep_op) */            if (match_length == MIN_MATCH || strstart-match_start > TOO_FAR){
+697: /* MUTANT (rep_op) */            if (match_length == MIN_MATCH && strstart-match_start <= TOO_FAR){
+697: /* MUTANT (rep_op) */            if (match_length == MIN_MATCH && strstart-match_start < TOO_FAR){
+697: /* MUTANT (rep_op) */            if (match_length == MIN_MATCH && strstart-match_start >= TOO_FAR){
+697: /* MUTANT (rep_op) */            if (match_length == MIN_MATCH && strstart-match_start == TOO_FAR){
+697: /* MUTANT (rep_op) */            if (match_length == MIN_MATCH && strstart-match_start != TOO_FAR){
+697: /* MUTANT (negate) */            if(! (match_length == MIN_MATCH && strstart-match_start > TOO_FAR)){
+701: /* MUTANT (del_stmt) */ /*                 match_length--; */ 
+701: /* MUTANT (rep_op) */                match_length++;
+707: /* MUTANT (rep_op) */        if (prev_length <= MIN_MATCH && match_length <= prev_length) {
+707: /* MUTANT (rep_op) */        if (prev_length < MIN_MATCH && match_length <= prev_length) {
+707: /* MUTANT (rep_op) */        if (prev_length > MIN_MATCH && match_length <= prev_length) {
+707: /* MUTANT (rep_op) */        if (prev_length == MIN_MATCH && match_length <= prev_length) {
+707: /* MUTANT (rep_op) */        if (prev_length != MIN_MATCH && match_length <= prev_length) {
+707: /* MUTANT (rep_op) */        if (prev_length >= MIN_MATCH || match_length <= prev_length) {
+707: /* MUTANT (rep_op) */        if (prev_length >= MIN_MATCH && match_length < prev_length) {
+707: /* MUTANT (rep_op) */        if (prev_length >= MIN_MATCH && match_length > prev_length) {
+707: /* MUTANT (rep_op) */        if (prev_length >= MIN_MATCH && match_length >= prev_length) {
+707: /* MUTANT (rep_op) */        if (prev_length >= MIN_MATCH && match_length == prev_length) {
+707: /* MUTANT (rep_op) */        if (prev_length >= MIN_MATCH && match_length != prev_length) {
+707: /* MUTANT (negate) */        if(! (prev_length >= MIN_MATCH && match_length <= prev_length)) {
+709: /* MUTANT (del_stmt) */ /*             check_match(strstart-1, prev_match, prev_length); */ 
+709: /* MUTANT (rep_const) */            check_match(strstart-0, prev_match, prev_length);
+709: /* MUTANT (rep_const) */            check_match(strstart--1, prev_match, prev_length);
+709: /* MUTANT (rep_const) */            check_match(strstart-((1)+1), prev_match, prev_length);
+711: /* MUTANT (del_stmt) */ /*             flush = ct_tally(strstart-1-prev_match, prev_length - MIN_MATCH); */ 
+711: /* MUTANT (rep_const) */            flush = ct_tally(strstart-0-prev_match, prev_length - MIN_MATCH);
+711: /* MUTANT (rep_const) */            flush = ct_tally(strstart--1-prev_match, prev_length - MIN_MATCH);
+711: /* MUTANT (rep_const) */            flush = ct_tally(strstart-((1)+1)-prev_match, prev_length - MIN_MATCH);
+716: /* MUTANT (del_stmt) */ /*             lookahead -= prev_length-1; */ 
+716: /* MUTANT (rep_op) */            lookahead += prev_length-1;
+716: /* MUTANT (rep_op) */            lookahead *= prev_length-1;
+716: /* MUTANT (rep_op) */            lookahead %= prev_length-1;
+716: /* MUTANT (rep_const) */            lookahead -= prev_length-0;
+716: /* MUTANT (rep_const) */            lookahead -= prev_length--1;
+716: /* MUTANT (rep_const) */            lookahead -= prev_length-((1)+1);
+717: /* MUTANT (del_stmt) */ /*             prev_length -= 2; */ 
+717: /* MUTANT (rep_op) */            prev_length += 2;
+717: /* MUTANT (rep_op) */            prev_length *= 2;
+717: /* MUTANT (rep_op) */            prev_length %= 2;
+717: /* MUTANT (rep_const) */            prev_length -= 0;
+717: /* MUTANT (rep_const) */            prev_length -= 1;
+717: /* MUTANT (rep_const) */            prev_length -= -1;
+717: /* MUTANT (rep_const) */            prev_length -= ((2)+1);
+717: /* MUTANT (rep_const) */            prev_length -= ((2)-1);
+719: /* MUTANT (del_stmt) */ /*                 strstart++; */ 
+719: /* MUTANT (rep_op) */                strstart--;
+720: /* MUTANT (del_stmt) */ /*                 INSERT_STRING(strstart, hash_head); */ 
+726: /* MUTANT (del_stmt) */ /*             } while (--prev_length != 0); */ 
+726: /* MUTANT (rep_op) */            } while (++prev_length != 0);
+726: /* MUTANT (rep_op) */            } while (--prev_length == 0);
+726: /* MUTANT (rep_const) */            } while (--prev_length != 1);
+726: /* MUTANT (rep_const) */            } while (--prev_length != -1);
+726: /* MUTANT (negate) */            } while(! (--prev_length != 0));
+727: /* MUTANT (del_stmt) */ /*             match_available = 0; */ 
+727: /* MUTANT (rep_const) */            match_available = 1;
+727: /* MUTANT (rep_const) */            match_available = -1;
+728: /* MUTANT (del_stmt) */ /*             match_length = MIN_MATCH-1; */ 
+728: /* MUTANT (rep_const) */            match_length = MIN_MATCH-0;
+728: /* MUTANT (rep_const) */            match_length = MIN_MATCH--1;
+728: /* MUTANT (rep_const) */            match_length = MIN_MATCH-((1)+1);
+729: /* MUTANT (del_stmt) */ /*             strstart++; */ 
+729: /* MUTANT (rep_op) */            strstart--;
+730: /* MUTANT (del_stmt) */ /*             if (flush) FLUSH_BLOCK(0), block_start = strstart; */ 
+730: /* MUTANT (rep_const) */            if (flush) FLUSH_BLOCK(1), block_start = strstart;
+730: /* MUTANT (rep_const) */            if (flush) FLUSH_BLOCK(-1), block_start = strstart;
+730: /* MUTANT (negate) */            if(! (flush)) FLUSH_BLOCK(0), block_start = strstart;
+732: /* MUTANT (negate) */        } else if(! (match_available)) {
+737: /* MUTANT (del_stmt) */ /*             Tracevv((stderr,"%c",window[strstart-1])); */ 
+737: /* MUTANT (rep_const) */            Tracevv((stderr,"%c",window[strstart-0]));
+737: /* MUTANT (rep_const) */            Tracevv((stderr,"%c",window[strstart--1]));
+737: /* MUTANT (rep_const) */            Tracevv((stderr,"%c",window[strstart-((1)+1)]));
+738: /* MUTANT (rep_const) */            if (ct_tally (1, window[strstart-1])) {
+738: /* MUTANT (rep_const) */            if (ct_tally (-1, window[strstart-1])) {
+738: /* MUTANT (rep_const) */            if (ct_tally (0, window[strstart-0])) {
+738: /* MUTANT (rep_const) */            if (ct_tally (0, window[strstart--1])) {
+738: /* MUTANT (rep_const) */            if (ct_tally (0, window[strstart-((1)+1)])) {
+738: /* MUTANT (negate) */            if(! (ct_tally (0, window[strstart-1]))) {
+739: /* MUTANT (del_stmt) */ /*                 FLUSH_BLOCK(0), block_start = strstart; */ 
+739: /* MUTANT (rep_const) */                FLUSH_BLOCK(1), block_start = strstart;
+739: /* MUTANT (rep_const) */                FLUSH_BLOCK(-1), block_start = strstart;
+741: /* MUTANT (rep_op) */            strstart--;
+742: /* MUTANT (del_stmt) */ /*             lookahead--; */ 
+742: /* MUTANT (rep_op) */            lookahead++;
+747: /* MUTANT (del_stmt) */ /*             match_available = 1; */ 
+747: /* MUTANT (rep_const) */            match_available = 0;
+747: /* MUTANT (rep_const) */            match_available = -1;
+747: /* MUTANT (rep_const) */            match_available = ((1)+1);
+748: /* MUTANT (del_stmt) */ /*             strstart++; */ 
+748: /* MUTANT (rep_op) */            strstart--;
+749: /* MUTANT (del_stmt) */ /*             lookahead--; */ 
+749: /* MUTANT (rep_op) */            lookahead++;
+751: /* MUTANT (rep_op) */        Assert (strstart < isize && lookahead <= isize, "a bit too far");
+751: /* MUTANT (rep_op) */        Assert (strstart > isize && lookahead <= isize, "a bit too far");
+751: /* MUTANT (rep_op) */        Assert (strstart >= isize && lookahead <= isize, "a bit too far");
+751: /* MUTANT (rep_op) */        Assert (strstart == isize && lookahead <= isize, "a bit too far");
+751: /* MUTANT (rep_op) */        Assert (strstart != isize && lookahead <= isize, "a bit too far");
+751: /* MUTANT (rep_op) */        Assert (strstart <= isize || lookahead <= isize, "a bit too far");
+751: /* MUTANT (rep_op) */        Assert (strstart <= isize && lookahead < isize, "a bit too far");
+751: /* MUTANT (rep_op) */        Assert (strstart <= isize && lookahead > isize, "a bit too far");
+751: /* MUTANT (rep_op) */        Assert (strstart <= isize && lookahead >= isize, "a bit too far");
+751: /* MUTANT (rep_op) */        Assert (strstart <= isize && lookahead == isize, "a bit too far");
+751: /* MUTANT (rep_op) */        Assert (strstart <= isize && lookahead != isize, "a bit too far");
+758: /* MUTANT (del_stmt) */ /*         while (lookahead < MIN_LOOKAHEAD && !eofile) fill_window(); */ 
+758: /* MUTANT (rep_op) */        while (lookahead <= MIN_LOOKAHEAD && !eofile) fill_window();
+758: /* MUTANT (rep_op) */        while (lookahead > MIN_LOOKAHEAD && !eofile) fill_window();
+758: /* MUTANT (rep_op) */        while (lookahead >= MIN_LOOKAHEAD && !eofile) fill_window();
+758: /* MUTANT (rep_op) */        while (lookahead == MIN_LOOKAHEAD && !eofile) fill_window();
+758: /* MUTANT (rep_op) */        while (lookahead != MIN_LOOKAHEAD && !eofile) fill_window();
+758: /* MUTANT (rep_op) */        while (lookahead < MIN_LOOKAHEAD || !eofile) fill_window();
+758: /* MUTANT (negate) */        while(! (lookahead < MIN_LOOKAHEAD && !eofile)) fill_window();
+760: /* MUTANT (rep_const) */    if (match_available) ct_tally (1, window[strstart-1]);
+760: /* MUTANT (rep_const) */    if (match_available) ct_tally (-1, window[strstart-1]);
+760: /* MUTANT (rep_const) */    if (match_available) ct_tally (0, window[strstart-0]);
+760: /* MUTANT (rep_const) */    if (match_available) ct_tally (0, window[strstart--1]);
+760: /* MUTANT (rep_const) */    if (match_available) ct_tally (0, window[strstart-((1)+1)]);
+760: /* MUTANT (negate) */    if(! (match_available)) ct_tally (0, window[strstart-1]);
+762: /* MUTANT (del_stmt) */ /*     return FLUSH_BLOCK(1); */  /* eof */
+762: /* MUTANT (rep_const) */    return FLUSH_BLOCK(0); /* eof */
+762: /* MUTANT (rep_const) */    return FLUSH_BLOCK(-1); /* eof */
+762: /* MUTANT (rep_const) */    return FLUSH_BLOCK(((1)+1)); /* eof */
