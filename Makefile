@@ -72,7 +72,7 @@ OBJA =
 
 SEDCMD = 
 
-CFLAGS = -O
+CFLAGS =  -fprofile-arcs -ftest-coverage
 # If you want debug on by default, use: CFLAGS="-g" ./configure
 LDFLAGS = $(CFLAGS)
 
