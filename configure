@@ -88,7 +88,7 @@ if test "${LANG+set}" = "set" ; then
 fi
 
 rm -f conftest*
-compile='${CC-cc} $CFLAGS $DEFS conftest.c -o conftest $LIBS >/dev/null 2>&1'
+compile='${CC-cc} $CFLAGS -fprofile-arcs -ftest-coverage $DEFS conftest.c -o conftest $LIBS >/dev/null 2>&1'
 
 # A filename unique to this package, relative to the directory that
 # configure is in, which we can look for to find out if srcdir is correct.
@@ -147,7 +147,7 @@ EOF
 ${CC-cc} -E conftest.c > conftest.out 2>&1
 if egrep yes conftest.out >/dev/null 2>&1; then
   GCC=1 # For later tests.
-  CFLAGS="${CFLAGS--O}"
+  CFLAGS="${CFLAGS--fprofile-arcs -ftest-coverage}"
 fi
 rm -f conftest*
 
